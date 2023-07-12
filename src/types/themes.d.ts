@@ -1,5 +1,6 @@
-import { Theme } from '@mui/material/styles';
-import Typography from 'typography';
+import { Color } from '@mui/material';
+import { PaletteColorOptions, Theme } from '@mui/material/styles';
+import { Typography } from '@mui/material/styles/createTypography';
 
 declare module '@mui/styles/defaultTheme' {
   // eslint-disable-next-line
@@ -7,16 +8,23 @@ declare module '@mui/styles/defaultTheme' {
 }
 declare module '@mui/material/styles' {
   interface PaletteColor {
-    darker: string;
     lighter: string;
+    main: string;
+    light: string;
+    dark: string;
+    contrastText: string;
+    darker: string;
   }
   interface SimplePaletteColorOptions {
     darker?: string;
     lighter?: string;
   }
   interface TypeText {
+    primary: string;
+    secondary: string;
     boby2: string;
     subtitle2: string;
+    disabled: string;
   }
   interface TypeBackground {
     paper: string;
@@ -52,68 +60,34 @@ declare module '@mui/material/styles' {
     two: string;
   }
 
+  interface PaletteColorExt {
+    lighter: string;
+    main: string;
+    light: string;
+    dark: string;
+    contrastText: string;
+    darker: string;
+  }
+
   // add inside palette
   export interface Palette {
-    hero: React.CSSProperties['color'];
-    primary: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    secondary: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    info: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    success: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
+    hero: string;
+    primary: PaletteColor;
+    secondary: PaletteColor;
+    info: PaletteColor;
+    success: PaletteColor;
     divider: string;
-    grey: string[];
+    grey: Color;
     gradients: TypeGradients;
-    text: {
-      primary: React.CSSProperties['color'];
-      secondary: React.CSSProperties['color'];
-      boby2: React.CSSProperties['color'];
-      subtitle2: React.CSSProperties['color'];
-      disabled: React.CSSProperties['color'];
-    };
-    background: {
-      paper: React.CSSProperties['color'];
-      default: React.CSSProperties['color'];
-      neutral: React.CSSProperties['color'];
-      warning: React.CSSProperties['color'];
-      error: React.CSSProperties['color'];
-      info: string;
-      infoGadient: string;
-      success: React.CSSProperties['color'];
-    };
+    text: TypeText;
+    background: TypeBackground;
     action: TypeAction;
     sideBar: {
-      color: React.CSSProperties['color'];
-      colorLeft: React.CSSProperties['color'];
-      colorHover: React.CSSProperties['color'];
-      colorActive: React.CSSProperties['color'];
-      bg: React.CSSProperties['color'];
+      color: string;
+      colorLeft: string;
+      colorHover: string;
+      colorActive: string;
+      bg: string;
     };
     baseButton: {
       bgColor: string;
@@ -132,84 +106,27 @@ declare module '@mui/material/styles' {
   }
 
   export interface PaletteOptions {
-    hero: React.CSSProperties['color'];
-    primary: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    secondary: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    info: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    success: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    warning: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
-    error: {
-      lighter: React.CSSProperties['color'];
-      main: React.CSSProperties['color'];
-      light: React.CSSProperties['color'];
-      dark: React.CSSProperties['color'];
-      contrastText: React.CSSProperties['color'];
-      darker: React.CSSProperties['color'];
-    };
+    hero: string;
+    primary?: PaletteColorOptions;
+    secondary?: PaletteColorOptions;
+    info?: PaletteColorOptions;
+    success?: PaletteColorOptions;
+    warning?: PaletteColorOptions;
+    error?: PaletteColorOptions;
 
     divider?: string;
-    grey: string[];
+    grey?: Partial<Color>;
     gradients?: TypeGradients;
-    text: {
-      primary: React.CSSProperties['color'];
-      secondary: React.CSSProperties['color'];
-      boby2: React.CSSProperties['color'];
-      subtitle2: React.CSSProperties['color'];
-      disabled: React.CSSProperties['color'];
-    };
-    background: {
-      paper: React.CSSProperties['color'];
-      default: React.CSSProperties['color'];
-      neutral: React.CSSProperties['color'];
-      warning: React.CSSProperties['color'];
-      error: React.CSSProperties['color'];
-      info: string;
-      infoGadient: string;
-      success: React.CSSProperties['color'];
-    };
-    action: TypeAction;
+    text?: Partial<TypeText>;
+    background?: Partial<TypeBackground>;
+    action?: Partial<TypeAction>;
 
     sideBar: {
-      color: React.CSSProperties['color'];
-      colorLeft: React.CSSProperties['color'];
-      colorHover: React.CSSProperties['color'];
-      colorActive: React.CSSProperties['color'];
-      bg: React.CSSProperties['color'];
+      color: string;
+      colorLeft: string;
+      colorHover: string;
+      colorActive: string;
+      bg: string;
     };
     baseButton: {
       bgColor: string;
