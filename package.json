@@ -1,0 +1,25 @@
+{
+  "name": "mui-themes-extand",
+  "version": "1.0.0",
+  "description": "Boilerplate for extends mui5 themes ",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/riflemanIm/mui-themes-extand.git"
+  },
+  "keywords": [
+    "mui5",
+    "theme",
+    "themes",
+    "palette"
+  ],
+  "author": "Oleg Lambin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riflemanIm/mui-themes-extand/issues"
+  },
+  "homepage": "https://github.com/riflemanIm/mui-themes-extand#readme"
+}
