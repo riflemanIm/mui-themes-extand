@@ -18,10 +18,14 @@ export default [
         exports: "named",
       },
     ],
+    namedExports: {
+      "react-js": ["isValidElementType"],
+    },
     plugins: [
       babel({
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],
+        exclude: /node_modules/,
       }),
       external({
         includeDependencies: true,

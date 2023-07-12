@@ -1,4 +1,4 @@
-import { Theme, alpha } from '@mui/material/styles';
+import { Theme, alpha } from "@mui/material/styles";
 
 export default function Input(theme: Theme) {
   return {
@@ -20,11 +20,11 @@ export default function Input(theme: Theme) {
     MuiInput: {
       styleOverrides: {
         underline: {
-          '&:before': {
-            borderBottom: '1px solid rgb(196 196 196)',
+          "&:before": {
+            borderBottom: "1px solid rgb(196 196 196)",
           },
-          '&:hover:not(.Mui-disabled):before': {
-            borderBottom: '2px solid rgb(97, 87, 255, 0.3)',
+          "&:hover:not(.Mui-disabled):before": {
+            borderBottom: "2px solid rgb(97, 87, 255, 0.3)",
           },
         },
       },
@@ -33,18 +33,18 @@ export default function Input(theme: Theme) {
       styleOverrides: {
         root: {
           backgroundColor: alpha(theme.palette.grey[500], 0.12),
-          '&:hover': {
+          "&:hover": {
             backgroundColor: alpha(theme.palette.grey[500], 0.16),
           },
-          '&.Mui-focused': {
+          "&.Mui-focused": {
             backgroundColor: theme.palette.action.focus,
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             backgroundColor: theme.palette.action.disabledBackground,
           },
         },
         underline: {
-          '&:before': {
+          "&:before": {
             borderBottomColor: alpha(theme.palette.grey[500], 0.56),
           },
         },
@@ -54,25 +54,25 @@ export default function Input(theme: Theme) {
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(0.8),
-          backgroundColor: 'transparent',
-          '&.Mui-focused': {
-            backgroundColor: '#fff',
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            backgroundColor: "#fff",
           },
-          '& fieldset': {
+          "& fieldset": {
             borderColor: theme.palette.primary.light,
           },
-          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha(theme.palette.primary.main, 0.2),
           },
-          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha(theme.palette.primary.main, 0.2),
           },
-          '&:hover .MuiOutlinedInput-notchedOutline': {
+          "&:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: theme.palette.hero, // root border color
-            borderWidth: '2px',
+            borderWidth: "2px",
           },
-          '&.Mui-focused fieldset': {
-            borderWidth: '2px',
+          "&.Mui-focused fieldset": {
+            borderWidth: "2px",
           },
         },
       },

@@ -1,20 +1,20 @@
-import logoHero from "../images/logo_hero_minfin.svg";
-import { ReactComponent as LogoHeader } from "../images/logo_minfin.svg";
-import heroImg from "../images/heroImgPatientMinfin.svg";
-import logoOnly from "../images/logo_only_minfin.svg";
+import logoHero from "src/images/logo_hero_minfin.svg";
+import LogoHeader from "src/images/logo_minfin.svg";
+import heroImg from "src/images/heroImgPatientMinfin.svg";
+import logoOnly from "src/images/logo_only_minfin.svg";
 // import profileBg from '../images/profile_bg.svg';
-import alterDone from "../images/appointment_done_minfin.svg";
-import checkMark from "../images/check_mark_minfin.svg";
-import mmkNoRecords from "../images/mmk_no_records_minfin.svg";
-import alterCallDrDone from "../images/call_dr_done_minfin.svg";
-import { ReactComponent as AppStoreIcon } from "../images/appStoreBlack.svg";
-import { ReactComponent as GooglePlayIcon } from "../images/googlePlayBlack.svg";
-import { ReactComponent as RuStoreIcon } from "../images/ruStoreBlack.svg";
+import alterDone from "src/images/appointment_done_minfin.svg";
+import checkMark from "src/images/check_mark_minfin.svg";
+import mmkNoRecords from "src/images/mmk_no_records_minfin.svg";
+import alterCallDrDone from "src/images/call_dr_done_minfin.svg";
+import AppStoreIcon from "src/images/appStoreBlack.svg";
+import GooglePlayIcon from "src/images/googlePlayBlack.svg";
+import RuStoreIcon from "src/images/ruStoreBlack.svg";
 
 //import call from '../images/call_doc_minfin.svg';
-import phone from "../images/call_minfin.svg";
-import visit from "../images/visit_minfin.svg";
-import clinic from "../images/clinic_minfin.svg";
+import phone from "src/images/call_minfin.svg";
+import visit from "src/images/visit_minfin.svg";
+import clinic from "src/images/clinic_minfin.svg";
 
 const custom = {
   defTitle: "ФГБУ «МФК Минфина России»",

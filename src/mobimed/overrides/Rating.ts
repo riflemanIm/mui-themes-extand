@@ -1,6 +1,6 @@
 // ----------------------------------------------------------------------
 
-import { Theme } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 
 export default function Rating(theme: Theme) {
   return {
@@ -8,7 +8,7 @@ export default function Rating(theme: Theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.dark,
-          '& span > span': {
+          "& span > span": {
             top: 0,
             left: 0,
           },

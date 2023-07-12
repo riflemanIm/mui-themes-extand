@@ -1,22 +1,22 @@
 // ----------------------------------------------------------------------
 
-import { Theme } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 
 export default function Lists(theme: Theme) {
   return {
     MuiListItem: {
       styleOverrides: {
         root: {
-          '&$selected': {
-            backgroundColor: '#F3F5FF !important',
-            '&:focus': {
-              backgroundColor: '#F3F5FF',
+          "&$selected": {
+            backgroundColor: "#F3F5FF !important",
+            "&:focus": {
+              backgroundColor: "#F3F5FF",
             },
           },
         },
         button: {
-          '&:hover, &:focus': {
-            backgroundColor: '#F3F5FF',
+          "&:hover, &:focus": {
+            backgroundColor: "#F3F5FF",
           },
         },
       },
@@ -24,8 +24,8 @@ export default function Lists(theme: Theme) {
     MuiListItemIcon: {
       styleOverrides: {
         root: {
-          color: 'inherit',
-          minWidth: 'auto',
+          color: "inherit",
+          minWidth: "auto",
           marginRight: theme.spacing(2),
         },
       },
@@ -33,7 +33,7 @@ export default function Lists(theme: Theme) {
     MuiListItemAvatar: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
+          minWidth: "auto",
           marginRight: theme.spacing(2),
         },
       },

@@ -1,23 +1,23 @@
-import logoHero from "../images/logo_hero_mediadoc.svg";
-import { ReactComponent as LogoHeader } from "../images/logo_mediadoc.svg";
-import heroImg from "../images/heroImgPatient.svg";
-import logoOnly from "../images/logo_only.svg";
+import logoHero from "src/images/logo_hero_mediadoc.svg";
+import LogoHeader from "src/images/logo_mediadoc.svg";
+import heroImg from "src/images/heroImgPatient.svg";
+import logoOnly from "src/images/logo_only.svg";
 // import profileBg from '../images/profile_bg.svg';
-import alterDone from "../images/appointment_done.svg";
+import alterDone from "src/images/appointment_done.svg";
 
-import checkMark from "../images/check_mark.svg";
-import mmkNoRecords from "../images/mmk_no_records.svg";
-import alterCallDrDone from "../images/call_dr_done.svg";
-import { ReactComponent as AppStoreIcon } from "../images/appStore.svg";
-import { ReactComponent as GooglePlayIcon } from "../images/googlePlay.svg";
-import { ReactComponent as RuStoreIcon } from "../images/ruStoreBlack.svg";
+import checkMark from "src/images/check_mark.svg";
+import mmkNoRecords from "src/images/mmk_no_records.svg";
+import alterCallDrDone from "src/images/call_dr_done.svg";
+import AppStoreIcon from "src/images/appStore.svg";
+import GooglePlayIcon from "src/images/googlePlay.svg";
+import RuStoreIcon from "src/images/ruStoreBlack.svg";
 
 //import call from '../images/call_doc.svg';
-import favorites from "../images/favorites.svg";
-import mmk from "../images/first_button_mmk.svg";
+import favorites from "src/images/favorites.svg";
+import mmk from "src/images/first_button_mmk.svg";
 //import phone from '../images/call.svg';
-import visit from "../images/visit.svg";
-import clinic from "../images/clinic.svg";
+import visit from "src/images/visit.svg";
+import clinic from "src/images/clinic.svg";
 
 const custom = {
   defTitle: "MediaDoc.net",

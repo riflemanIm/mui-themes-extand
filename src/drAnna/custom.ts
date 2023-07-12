@@ -1,21 +1,21 @@
-import logoHero from "../images/logo_hero_drAnna.svg";
-import { ReactComponent as LogoHeader } from "../images/logo_drAnna.svg";
-import heroImg from "../images/heroImgPatientDrAnna.svg";
-import logoOnly from "../images/logo_only_dr_anna.svg";
+import logoHero from "src/images/logo_hero_drAnna.svg";
+import LogoHeader from "src/images/logo_drAnna.svg";
+import heroImg from "src/images/heroImgPatientDrAnna.svg";
+import logoOnly from "src/images/logo_only_dr_anna.svg";
 // import profileBg from '../images/profile_bg_dr_anna.svg';
-import alterDone from "../images/appointment_done_dr_anna.svg";
-import { ReactComponent as AppStoreIcon } from "../images/appStore.svg";
-import { ReactComponent as GooglePlayIcon } from "../images/googlePlay.svg";
-import { ReactComponent as RuStoreIcon } from "../images/ruStoreBlack.svg";
+import alterDone from "src/images/appointment_done_dr_anna.svg";
+import AppStoreIcon from "src/images/appStore.svg";
+import GooglePlayIcon from "src/images/googlePlay.svg";
+import RuStoreIcon from "src/images/ruStoreBlack.svg";
 
-import checkMark from "../images/check_mark_dr_anna.svg";
-import mmkNoRecords from "../images/mmk_no_records_dr_anna.svg";
-import alterCallDrDone from "../images/call_dr_done.svg";
-import call from "../images/call_doc.svg";
+import checkMark from "src/images/check_mark_dr_anna.svg";
+import mmkNoRecords from "src/images/mmk_no_records_dr_anna.svg";
+import alterCallDrDone from "src/images/call_dr_done.svg";
+import call from "src/images/call_doc.svg";
 //import covid from '../images/covid.svg';
-import phone from "../images/call.svg";
-import visit from "../images/visit.svg";
-import clinic from "../images/clinic.svg";
+import phone from "src/images/call.svg";
+import visit from "src/images/visit.svg";
+import clinic from "src/images/clinic.svg";
 
 const custom = {
   defTitle: `Доктор Анна `,

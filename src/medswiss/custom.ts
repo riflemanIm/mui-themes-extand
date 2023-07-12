@@ -1,26 +1,26 @@
-import logoHero from "../images/logo_hero_medswiss.svg";
-import { ReactComponent as LogoHeader } from "../images/logo_medswiss.svg";
-import heroImg from "../images/heroImgPatient.svg";
-import logoOnly from "../images/logo_only_medswiss.svg";
+import logoHero from "src/images/logo_hero_medswiss.svg";
+import LogoHeader from "src/images/logo_medswiss.svg";
+import heroImg from "src/images/heroImgPatient.svg";
+import logoOnly from "src/images/logo_only_medswiss.svg";
 // import profileBg from '../images/profile_bg.svg';
-import alterDone from "../images/appointment_done.svg";
-import config from "../../config";
-import { ReactComponent as AppStoreIcon } from "../images/appStore.svg";
-import { ReactComponent as GooglePlayIcon } from "../images/googlePlay.svg";
-import { ReactComponent as RuStoreIcon } from "../images/ruStoreBlack.svg";
+import alterDone from "src/images/appointment_done.svg";
 
-import checkMark from "../images/check_mark_medswiss.svg";
-import mmkNoRecords from "../images/mmk_no_records_medswiss.svg";
-import alterCallDrDone from "../images/call_dr_done.svg";
-import call from "../images/call_doc.svg";
+import AppStoreIcon from "src/images/appStore.svg";
+import GooglePlayIcon from "src/images/googlePlay.svg";
+import RuStoreIcon from "src/images/ruStoreBlack.svg";
+
+import checkMark from "src/images/check_mark_medswiss.svg";
+import mmkNoRecords from "src/images/mmk_no_records_medswiss.svg";
+import alterCallDrDone from "src/images/call_dr_done.svg";
+import call from "src/images/call_doc.svg";
 //import covid from '../images/covid.svg';
-import phone from "../images/call.svg";
-import visit from "../images/visit.svg";
-import clinic from "../images/clinic.svg";
+import phone from "src/images/call.svg";
+import visit from "src/images/visit.svg";
+import clinic from "src/images/clinic.svg";
 
 const custom = {
-  defTitle: `MedSwiss.${config.defLang}`,
-  defDescr: `MedSwiss.${config.defLang} - для Вас и Вашей семьи`,
+  defTitle: `MedSwiss`,
+  defDescr: `MedSwiss - для Вас и Вашей семьи`,
   AppStoreIcon,
   GooglePlayIcon,
   RuStoreIcon,

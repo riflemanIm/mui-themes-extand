@@ -1,21 +1,21 @@
-import logoHero from "../images/logo_hero_medincenter.svg";
-import { ReactComponent as LogoHeader } from "../images/logo_header_medincenter.svg";
-import heroImg from "../images/heroImgPatientMedinCenter.svg";
-import logoOnly from "../images/logo_only_medincenter.svg";
+import logoHero from "src/images/logo_hero_medincenter.svg";
+import LogoHeader from "src/images/logo_header_medincenter.svg";
+import heroImg from "src/images/heroImgPatientMedinCenter.svg";
+import logoOnly from "src/images/logo_only_medincenter.svg";
 // import profileBg from '../images/profile_bg.svg';
-import alterDone from "../images/appointment_done_medincenter.svg";
-import { ReactComponent as AppStoreIcon } from "../images/appStoreBlack.svg";
-import { ReactComponent as GooglePlayIcon } from "../images/googlePlayBlack.svg";
-import { ReactComponent as RuStoreIcon } from "../images/ruStoreBlack.svg";
+import alterDone from "src/images/appointment_done_medincenter.svg";
+import AppStoreIcon from "src/images/appStoreBlack.svg";
+import GooglePlayIcon from "src/images/googlePlayBlack.svg";
+import RuStoreIcon from "src/images/ruStoreBlack.svg";
 
-import checkMark from "../images/check_mark_medin.svg";
-import mmkNoRecords from "../images/mmk_no_records_medin.svg";
-import alterCallDrDone from "../images/call_dr_done.svg";
-import call from "../images/call_doc.svg";
+import checkMark from "src/images/check_mark_medin.svg";
+import mmkNoRecords from "src/images/mmk_no_records_medin.svg";
+import alterCallDrDone from "src/images/call_dr_done.svg";
+import call from "src/images/call_doc.svg";
 //import covid from '../images/covid.svg';
-import phone from "../images/call.svg";
-import visit from "../images/visit.svg";
-import clinic from "../images/clinic.svg";
+import phone from "src/images/call.svg";
+import visit from "src/images/visit.svg";
+import clinic from "src/images/clinic.svg";
 
 const custom = {
   defTitle: "Мединцентр",

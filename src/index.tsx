@@ -1,23 +1,21 @@
-import React, { useMemo } from 'react';
-import './types/themes.d';
+import React, { useMemo } from "react";
 
-import { CssBaseline } from '@mui/material';
+import { CssBaseline } from "@mui/material";
 import {
   ThemeProvider as MUIThemeProvider,
   createTheme,
   StyledEngineProvider,
   ThemeOptions,
-} from '@mui/material/styles';
+} from "@mui/material/styles";
 
-import getTheme from './getTheme';
+import getTheme from "./getTheme";
 
 export default function ThemeProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const { palette, typography, custom, componentsOverride } =
-    getTheme();
+  const { palette, typography, custom, componentsOverride } = getTheme();
 
   const themeOptions = useMemo<ThemeOptions>(
     () => ({
@@ -25,7 +23,7 @@ export default function ThemeProvider({
       typography,
       custom,
     }),
-    [],
+    []
   );
 
   const theme = createTheme(themeOptions);

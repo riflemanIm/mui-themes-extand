@@ -1,9 +1,6 @@
-import { alpha } from '@mui/material';
+import { alpha } from "@mui/material";
 
-export function createGradient(
-  color1: string,
-  color2: string,
-): string {
+export function createGradient(color1: string, color2: string): string {
   return `linear-gradient(to bottom, ${color1}, ${color2})`;
 }
 export function pxToRem(value: number): string {
@@ -14,7 +11,7 @@ export const createShadow = (color: string) => {
   const transparent2 = alpha(color, 0.14);
   const transparent3 = alpha(color, 0.12);
   return [
-    'none',
+    "none",
     `0px 2px 1px -1px ${transparent1},0px 1px 1px 0px ${transparent2},0px 1px 3px 0px ${transparent3}`,
     `0px 3px 1px -2px ${transparent1},0px 2px 2px 0px ${transparent2},0px 1px 5px 0px ${transparent3}`,
     `0px 3px 3px -2px ${transparent1},0px 3px 4px 0px ${transparent2},0px 1px 8px 0px ${transparent3}`,
@@ -44,22 +41,22 @@ export const createShadow = (color: string) => {
 
 // SETUP COLORS
 export const GREY = {
-  0: '#FFFFFF',
-  100: '#F9FAFB',
-  200: '#F4F6F8',
-  300: '#DFE3E8',
-  400: '#C4CDD5',
-  500: '#919EAB',
-  600: '#637381',
-  700: '#454F5B',
-  800: '#212B36',
-  900: '#161C24',
-  500_8: alpha('#919EAB', 0.08),
-  500_12: alpha('#919EAB', 0.12),
-  500_16: alpha('#919EAB', 0.16),
-  500_24: alpha('#919EAB', 0.24),
-  500_32: alpha('#919EAB', 0.32),
-  500_48: alpha('#919EAB', 0.48),
-  500_56: alpha('#919EAB', 0.56),
-  500_80: alpha('#919EAB', 0.8),
+  0: "#FFFFFF",
+  100: "#F9FAFB",
+  200: "#F4F6F8",
+  300: "#DFE3E8",
+  400: "#C4CDD5",
+  500: "#919EAB",
+  600: "#637381",
+  700: "#454F5B",
+  800: "#212B36",
+  900: "#161C24",
+  500_8: alpha("#919EAB", 0.08),
+  500_12: alpha("#919EAB", 0.12),
+  500_16: alpha("#919EAB", 0.16),
+  500_24: alpha("#919EAB", 0.24),
+  500_32: alpha("#919EAB", 0.32),
+  500_48: alpha("#919EAB", 0.48),
+  500_56: alpha("#919EAB", 0.56),
+  500_80: alpha("#919EAB", 0.8),
 };
