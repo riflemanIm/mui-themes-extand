@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import componentsOverride from './overrides';
+import componentsOverride from "./overrides";
 declare const _default: {
     palette: {
         hero: string;
@@ -135,61 +134,6 @@ declare const _default: {
         };
     };
     typography: import("@mui/material").TypographyVariantsOptions;
-    custom: {
-        defTitle: string;
-        defDescr: string;
-        AppStoreIcon: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        GooglePlayIcon: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        RuStoreIcon: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        linkRuStore: string;
-        linkGooglePlay: string;
-        linkAppStore: string;
-        logoHero: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        LogoHeader: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        logoOnly: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        heroImg: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        alterDone: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        alterCallDrDone: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        mmkNoRecords: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        checkMark: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        requireVisitCustomCheck: boolean;
-        isFaqEnabled: boolean;
-        defaultMapZoom: number;
-        availableLanguages: string;
-        countryCode: string;
-        phoneMask: string;
-        ambulancePhone: string;
-        ageLimitLow: number;
-        ageLimitHigh: number;
-        defaultSpecialization: string;
-        firstButtons: {
-            phone: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-            visit: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-            clinic: import("react").FunctionComponent<import("react").SVGAttributes<SVGElement>>;
-        };
-        showFastButtonsOnMainPage: boolean;
-        showStoreLinks: boolean;
-        isPaymentsEnabled: boolean;
-        showLoginDoctorButton: boolean;
-        showFavoriteDoctors: boolean;
-        showDoctorsRating: boolean;
-        authMenuItems: string[];
-        showLanguageSwitch: boolean;
-        filterWithPlanningOnly: boolean;
-        filterWithTimeSlotsOnly: boolean;
-        showFilterOnline: boolean;
-        showChatWithOperator: boolean;
-        isGetInvoicesLocal: boolean;
-        showTimeSlotsCacheSwitch: boolean;
-        showVisitPrice: boolean;
-        unAuthMenuItems: string[];
-        showQrCodeAuth: boolean;
-        requireStartPageAuth: boolean;
-        authIdentifiers: string;
-        showEsiaAuth: boolean;
-        showInsuranceDMS: boolean;
-        showInsuranceOMS: boolean;
-    };
     componentsOverride: typeof componentsOverride;
 };
 export default _default;

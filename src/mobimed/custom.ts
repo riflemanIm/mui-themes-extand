@@ -68,7 +68,7 @@ const custom = {
     "invoices",
     "directions",
     "drugs",
-    "map",
+    "map"
   ],
   showLanguageSwitch: true, // appInfo
   filterWithPlanningOnly: false, // appInfo
@@ -85,6 +85,6 @@ const custom = {
   authIdentifiers: "both", //  appInfo (email | phone | both)
   showEsiaAuth: true, // appInfo
   showInsuranceDMS: true, // appInfo
-  showInsuranceOMS: true, // appInfo
+  showInsuranceOMS: true // appInfo
 };
 export default custom;

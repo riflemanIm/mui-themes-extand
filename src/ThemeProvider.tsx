@@ -5,23 +5,22 @@ import {
   ThemeProvider as MUIThemeProvider,
   createTheme,
   StyledEngineProvider,
-  ThemeOptions,
+  ThemeOptions
 } from "@mui/material/styles";
 
 import getTheme from "./getTheme";
 
 export default function ThemeProvider({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
-  const { palette, typography, custom, componentsOverride } = getTheme();
+  const { palette, typography, componentsOverride } = getTheme();
 
   const themeOptions = useMemo<ThemeOptions>(
     () => ({
       palette,
-      typography,
-      custom,
+      typography
     }),
     []
   );
