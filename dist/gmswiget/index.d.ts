@@ -1,4 +1,5 @@
-export default function getTheme(name?: string): {
+import componentsOverride from './overrides';
+declare const _default: {
     palette: {
         hero: string;
         primary: {
@@ -133,5 +134,6 @@ export default function getTheme(name?: string): {
         };
     };
     typography: import("@mui/material").TypographyVariantsOptions;
-    componentsOverride: typeof import("./drAnna/overrides").default;
+    componentsOverride: typeof componentsOverride;
 };
+export default _default;
