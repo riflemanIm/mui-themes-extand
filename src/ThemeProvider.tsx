@@ -11,11 +11,13 @@ import {
 import getTheme from "./getTheme";
 
 export default function ThemeProvider({
-  children
+  children,
+  name
 }: {
   children: React.ReactNode;
+  name?: string;
 }) {
-  const { palette, typography, componentsOverride } = getTheme();
+  const { palette, typography, componentsOverride } = getTheme(name);
 
   const themeOptions = useMemo<ThemeOptions>(
     () => ({
