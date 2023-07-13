@@ -1,1 +1,2 @@
-export * from "./ThemeProvider";
+import ThemeProvider from "./ThemeProvider";
+export default ThemeProvider;
