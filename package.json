@@ -46,11 +46,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@emotion/babel-preset-css-prop": "^11.10.0",
-    "@emotion/core": "^11.0.0",
-    "@emotion/css": "^11.10.5",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.4",
     "@mui/styles": "^5.11.2",
     "react": "^18.2.0",
@@ -59,7 +54,9 @@
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "*",
+    "react-dom": "*",
+    "@mui/material": "*",
+    "@mui/styles": "*"
   }
 }
