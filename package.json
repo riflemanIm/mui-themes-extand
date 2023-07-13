@@ -23,6 +23,10 @@
     "url": "https://github.com/riflemanIm/mui-themes-extand/issues"
   },
   "homepage": "https://github.com/riflemanIm/mui-themes-extand#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.22.8",
     "@emotion/react": "^11.11.1",

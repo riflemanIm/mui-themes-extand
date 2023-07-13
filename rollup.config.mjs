@@ -1,8 +1,9 @@
 import babel from "rollup-plugin-babel";
-import resolve from "@rollup/plugin-node-resolve";
-import external from "rollup-plugin-peer-deps-external";
+//import resolve from "@rollup/plugin-node-resolve";
+//import external from "rollup-plugin-peer-deps-external";
 import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2"; // For Typescript
+//import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 export default [
   {
@@ -23,16 +24,13 @@ export default [
     },
     plugins: [
       babel({
+        babelHelpers: "bundled",
         exclude: "node_modules/**",
-        presets: ["@babel/preset-react"],
-        exclude: /node_modules/,
+        presets: ["@babel/preset-env", "@babel/preset-react"],
       }),
-      external({
-        includeDependencies: true,
-      }),
-      resolve(),
-      terser(),
       typescript({ useTsconfigDeclarationDir: true }),
+
+      terser(),
     ],
   },
 ];
