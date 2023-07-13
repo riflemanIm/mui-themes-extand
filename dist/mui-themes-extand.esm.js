@@ -721,7 +721,6 @@ function ComponentsOverrides(theme) {
 var mobimed = {
   palette: palette,
   typography: typography,
-  //  custom,
   componentsOverride: ComponentsOverrides
 };
 
@@ -1409,7 +1408,6 @@ function ComponentsOverrides$1(theme) {
 var drAnna = {
   palette: palette$1,
   typography: typography$1,
-  //  custom,
   componentsOverride: ComponentsOverrides$1
 };
 
@@ -2097,7 +2095,6 @@ function ComponentsOverrides$2(theme) {
 var gms = {
   palette: palette$2,
   typography: typography$2,
-  //  custom,
   componentsOverride: ComponentsOverrides$2
 };
 
@@ -2782,7 +2779,6 @@ function ComponentsOverrides$3(theme) {
 var medincenter = {
   palette: palette$3,
   typography: typography$3,
-  //  custom,
   componentsOverride: ComponentsOverrides$3
 };
 
@@ -3468,7 +3464,6 @@ function ComponentsOverrides$4(theme) {
 var medswiss = {
   palette: palette$4,
   typography: typography$4,
-  //  custom,
   componentsOverride: ComponentsOverrides$4
 };
 
@@ -4155,7 +4150,6 @@ function ComponentsOverrides$5(theme) {
 var mediadoc = {
   palette: palette$5,
   typography: typography$5,
-  //  custom,
   componentsOverride: ComponentsOverrides$5
 };
 
@@ -4839,7 +4833,6 @@ function ComponentsOverrides$6(theme) {
 var minfin = {
   palette: palette$6,
   typography: typography$6,
-  //  custom,
   componentsOverride: ComponentsOverrides$6
 };
 
@@ -5523,7 +5516,6 @@ function ComponentsOverrides$7(theme) {
 var pimu = {
   palette: palette$7,
   typography: typography$7,
-  //  custom,
   componentsOverride: ComponentsOverrides$7
 };
 
@@ -6207,7 +6199,6 @@ function ComponentsOverrides$8(theme) {
 var ncn = {
   palette: palette$8,
   typography: typography$8,
-  //  custom,
   componentsOverride: ComponentsOverrides$8
 };
 
@@ -6891,7 +6882,6 @@ function ComponentsOverrides$9(theme) {
 var sibgmu = {
   palette: palette$9,
   typography: typography$9,
-  //  custom,
   componentsOverride: ComponentsOverrides$9
 };
 
