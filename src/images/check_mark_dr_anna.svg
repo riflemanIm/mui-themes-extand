@@ -1,9 +1,0 @@
-<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M45 90C69.8528 90 90 69.8528 90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 69.8528 20.1472 90 45 90Z"
-        fill="#41C0CD" />
-    <path d="M27 52.8127L39.7423 66L61 44" stroke="#28A9C6" stroke-width="8" stroke-linecap="round"
-        stroke-linejoin="round" />
-    <path d="M29 46.8127L41.7423 60L63 38" stroke="white" stroke-width="8" stroke-linecap="round"
-        stroke-linejoin="round" />
-</svg>

@@ -1,7 +1,6 @@
 import mobimed from "./mobimed";
 import drAnna from "./drAnna";
 import gms from "./gms";
-import gmswiget from "./gmswiget";
 import medincenter from "./medincenter";
 import medswiss from "./medswiss";
 import mediadoc from "./mediadoc";
@@ -15,8 +14,6 @@ export default function getTheme(name?: string) {
     ? drAnna
     : name === "gms"
     ? gms
-    : name === "gmswiget"
-    ? gmswiget
     : name === "medincenter"
     ? medincenter
     : name === "medswiss"
