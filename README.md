@@ -1,12 +1,12 @@
 Sometimes there is a need to have multiple MUI themes in one project. For example, when you create a personal account for several companies. This library is designed to do just that. Moreover, the standard MUI palette has been expanded there.
 
-This packge thats e [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Install package in your project
 
-### `yarn add mui-themes-extand`
+#### `yarn add mui-themes-extand`
 
-### `import ThemeProvider from 'mui-themes-extand';`
+#### `import ThemeProvider from 'mui-themes-extand';`
 
 ```
 <ThemeProvider name={NAME_THEME}>
@@ -14,7 +14,7 @@ This packge thats e [Create React App](https://github.com/facebook/create-react-
 </ThemeProvider>
 ```
 
-## Where `NAME_THEME` in can be one of the 10 suggested custom themes, namely:
+### Where `NAME_THEME` in can be one of the 10 suggested custom themes, namely:
 
 ```
 
