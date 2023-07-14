@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { alpha, CssBaseline as CssBaseline$b } from '@mui/material';
+import { alpha, CssBaseline as CssBaseline$a } from '@mui/material';
 import { alpha as alpha$1, createTheme, StyledEngineProvider, ThemeProvider as ThemeProvider$1 } from '@mui/material/styles';
 import tinycolor from 'tinycolor2';
 
@@ -2103,60 +2103,60 @@ var lighterenRate$3 = 1.5;
 var lightenRate$3 = 7.5;
 var darkenRate$3 = 15;
 var darkerRate$3 = 30;
-var primary$3 = '#EA9D00';
-var secondary$3 = '#559BDC';
-var warning$3 = '#FF4D75';
-var success$3 = '#34DFA2';
-var info$3 = '#FF9690';
-var error$3 = '#FF4D75';
-var hero$3 = '#004D8F';
+var primary$3 = "#1F3E9A";
+var secondary$3 = "#a4aecb";
+var warning$3 = "#F57069";
+var success$3 = "#34DFA2";
+var info$3 = "#FF9690";
+var hero$3 = "#1F3E9A";
+var error$3 = "#f44336";
 var PRIMARY$3 = {
   lighter: /*#__PURE__*/tinycolor(primary$3).lighten(lighterenRate$3).toHexString(),
   main: primary$3,
   light: /*#__PURE__*/tinycolor(primary$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$3).darken(darkenRate$3).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$3).darken(darkerRate$3).toHexString(),
-  contrastText: '#fff'
+  contrastText: "#fff"
 };
 var SECONDARY$3 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$3,
   light: /*#__PURE__*/tinycolor(secondary$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$3).darken(darkenRate$3).toHexString(),
-  contrastText: '#ccc',
-  darker: '#091A7A'
+  contrastText: "#ccc",
+  darker: "#091A7A"
 };
 var INFO$3 = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$3,
   light: /*#__PURE__*/tinycolor(info$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$3).darken(darkenRate$3).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$3 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$3,
   light: /*#__PURE__*/tinycolor(success$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$3).darken(darkenRate$3).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$3 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$3,
   light: /*#__PURE__*/tinycolor(warning$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$3).darken(darkenRate$3).toHexString(),
-  darker: '#7A4F01',
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$3 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$3,
   light: /*#__PURE__*/tinycolor(error$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$3).darken(darkenRate$3).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$3 = {
   primary: /*#__PURE__*/createGradient(PRIMARY$3.light, PRIMARY$3.main),
@@ -2164,8 +2164,8 @@ var GRADIENTS$3 = {
   success: /*#__PURE__*/createGradient(SUCCESS$3.light, SUCCESS$3.main),
   warning: /*#__PURE__*/createGradient(WARNING$3.light, WARNING$3.main),
   error: /*#__PURE__*/createGradient(ERROR$3.light, ERROR$3.main),
-  one: '#EDAA21',
-  two: '#EB9D02'
+  one: "#366CE3",
+  two: "#584CFF"
 };
 var palette$3 = {
   hero: hero$3,
@@ -2186,14 +2186,14 @@ var palette$3 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
+    paper: "#fff",
     "default": GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
     infoGadient: /*#__PURE__*/createGradient(INFO$3.lighter, INFO$3.light),
-    success: '#FFE7CE'
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -2204,88 +2204,88 @@ var palette$3 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#004D8F',
-    toggle2: '#004D8F',
-    toggle3: '#fff',
-    toggle4: '#fff'
+    toggle1: "#1F3E9A",
+    toggle2: "#1F3E9A",
+    toggle3: "#F1F4FC",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#7C7D80',
-    colorHover: '#EDAA21',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#7C7D80",
+    colorHover: "#1F3E9A",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #EDAA21 3.01%, #EB9D02 95.95%)',
-    bgColorHover: 'linear-gradient(139.78deg, #FBC24F 3.01%, #FCB629 95.95%);',
-    shadow: '0px 2px 2px rgb(237 170 33 / 16%)'
+    bgColor: "linear-gradient(139.78deg, #366CE3 3.01%, #584CFF 95.95%)",
+    bgColorHover: "linear-gradient(139.78deg, #517EF8 3.01%, #574FFE 95.95%)",
+    shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
   },
   bgLight: {
-    one: '#efefef',
-    two: '#f3f3f3',
-    disabled: 'rgb(237, 170, 33, 0.3)'
+    one: "#f3f3f3",
+    two: "rgba(241, 244, 252, 0.6)",
+    disabled: "#90cbe6"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(237 170 33, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
   }
 };
 
-var FONT_PRIMARY$3 = 'Montserrat';
+var FONT_PRIMARY$3 = "Avenir Next Cyr";
 var typography$3 = {
   fontFamily: FONT_PRIMARY$3,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 600,
   h1: {
-    fontSize: '1.8rem',
+    fontSize: "2.0rem",
     fontWeight: 500
   },
   h2: {
-    fontSize: '1.6rem',
+    fontSize: "1.7rem",
     fontWeight: 500
   },
   h3: {
-    fontSize: '1.4rem',
+    fontSize: "1.64rem",
     fontWeight: 500
   },
   h4: {
-    fontSize: '1.2rem'
+    fontSize: "1.5rem"
   },
   h5: {
-    fontSize: '1.1rem'
+    fontSize: "1.285rem"
   },
   h6: {
-    fontSize: '0.8rem'
+    fontSize: "1.05rem"
   },
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(10)
+    fontSize: /*#__PURE__*/pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem(14)
   }
 };
 
@@ -2309,11 +2309,11 @@ function Paper$3(theme) {
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: '#FFFFFF',
-          backgroundSize: 'cover',
-          boxSizing: 'border-box',
+          backgroundColor: "#FFFFFF",
+          backgroundSize: "cover",
+          boxSizing: "border-box",
           boxShadow: theme.palette.shadows.card,
-          transition: 'none'
+          transition: "none"
         }
       }
     }
@@ -2340,11 +2340,11 @@ function Input$3(theme) {
     MuiInput: {
       styleOverrides: {
         underline: {
-          '&:before': {
-            borderBottom: '1px solid rgb(196 196 196)'
+          "&:before": {
+            borderBottom: "1px solid rgb(196 196 196)"
           },
-          '&:hover:not(.Mui-disabled):before': {
-            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
+          "&:hover:not(.Mui-disabled):before": {
+            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
           }
         }
       }
@@ -2353,18 +2353,18 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           backgroundColor: alpha$1(theme.palette.grey[500], 0.12),
-          '&:hover': {
+          "&:hover": {
             backgroundColor: alpha$1(theme.palette.grey[500], 0.16)
           },
-          '&.Mui-focused': {
+          "&.Mui-focused": {
             backgroundColor: theme.palette.action.focus
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             backgroundColor: theme.palette.action.disabledBackground
           }
         },
         underline: {
-          '&:before': {
+          "&:before": {
             borderBottomColor: alpha$1(theme.palette.grey[500], 0.56)
           }
         }
@@ -2374,25 +2374,25 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(0.8),
-          backgroundColor: 'transparent',
-          '&.Mui-focused': {
-            backgroundColor: '#fff'
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            backgroundColor: "#fff"
           },
-          '& fieldset': {
+          "& fieldset": {
             borderColor: theme.palette.primary.light
           },
-          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
           },
-          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
           },
-          '&:hover .MuiOutlinedInput-notchedOutline': {
+          "&:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: theme.palette.hero,
-            borderWidth: '2px'
+            borderWidth: "2px"
           },
-          '&.Mui-focused fieldset': {
-            borderWidth: '2px'
+          "&.Mui-focused fieldset": {
+            borderWidth: "2px"
           }
         }
       }
@@ -2406,82 +2406,82 @@ function Button$3(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.bgLight.disabled + " !important",
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColorHover + " !important",
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.main,
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: '#FFEFDA',
-          boxShadow: 'none',
-          '&:hover': {
+          backgroundColor: "transparent",
+          boxShadow: "none",
+          "&:hover": {
             color: theme.palette.primary.light
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -2513,8 +2513,8 @@ function Backdrop$3(theme) {
       styleOverrides: {
         root: {
           background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
-          '&.MuiBackdrop-invisible': {
-            background: 'transparent'
+          "&.MuiBackdrop-invisible": {
+            background: "transparent"
           }
         }
       }
@@ -2550,7 +2550,6 @@ function Typography$3(theme) {
   };
 }
 
-// ----------------------------------------------------------------------
 function CssBaseline$3() {
   return {
     MuiCssBaseline: {
@@ -2614,23 +2613,23 @@ function ToggleButton$3(theme) {
     MuiToggleButton: {
       styleOverrides: {
         root: {
-          padding: '0px 12px',
+          padding: "0px 12px",
           border: "1px solid " + theme.palette.action.toggle1,
-          width: '100%',
+          width: "100%",
           height: 42,
-          boxSizing: 'border-box',
+          boxSizing: "border-box",
           borderRadius: theme.spacing(0.6),
-          textTransform: 'none',
-          fontStyle: 'normal',
+          textTransform: "none",
+          fontStyle: "normal",
           fontWeight: 500,
           color: theme.palette.action.toggle2,
           background: theme.palette.action.toggle3,
           boxShadow: theme.palette.shadows.card,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.action.toggle4,
             background: theme.palette.action.toggle2 + " !important"
           },
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.action.toggle4,
             backgroundColor: theme.palette.action.toggle1
           }
@@ -2646,7 +2645,7 @@ function AppBar$3(theme) {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          boxShadow: 'none !important',
+          boxShadow: "none !important",
           background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
         }
       }
@@ -2660,7 +2659,7 @@ function IconButton$3(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          '& span > svg': {
+          "& span > svg": {
             color: theme.palette.primary.main
           }
         }
@@ -2669,27 +2668,21 @@ function IconButton$3(theme) {
   };
 }
 
-function Picker$3(theme) {
-  var _root, _root2;
+function Picker$3() {
   return {
     MuiPickerStaticWrapper: {
       styleOverrides: {
-        root: (_root = {
-          margin: 0,
-          backgroundColor: 'transparent',
-          width: 'auto'
-        }, _root[theme.breakpoints.down('lg')] = {
-          width: 290
-        }, _root)
+        root: {
+          minWidth: 'auto',
+          backgroundColor: 'transparent'
+        }
       }
     },
     MuiCalendarPicker: {
       styleOverrides: {
-        root: (_root2 = {
-          width: 'auto'
-        }, _root2[theme.breakpoints.down('lg')] = {
-          width: 290
-        }, _root2.margin = 0, _root2)
+        root: {
+          width: 300
+        }
       }
     }
   };
@@ -2702,7 +2695,7 @@ function Rating$3(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.main,
-          '& span > span': {
+          "& span > span": {
             top: 0,
             left: 0
           }
@@ -2712,7 +2705,6 @@ function Rating$3(theme) {
   };
 }
 
-// ----------------------------------------------------------------------
 function Menu$3() {
   return {
     MuiMenu: {
@@ -2754,7 +2746,6 @@ function Alert$3(theme) {
   };
 }
 
-// ----------------------------------------------------------------------
 function Link$3() {
   return {
     MuiLink: {
@@ -2780,26 +2771,12 @@ function Badge$3() {
   };
 }
 
-function Select(theme) {
-  return {
-    MuiSelect: {
-      styleOverrides: {
-        select: {
-          backgroundColor: theme.palette.bgLight.two,
-          whiteSpace: 'break-spaces',
-          fontSize: '0.83rem'
-        }
-      }
-    }
-  };
-}
-
 //
 function ComponentsOverrides$3(theme) {
-  return Object.assign(AppBar$3(theme), Card$3(theme), Input$3(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(theme), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3(), Select(theme));
+  return Object.assign(AppBar$3(theme), Card$3(theme), Input$3(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
 }
 
-var gmswiget = {
+var medincenter = {
   palette: palette$3,
   typography: typography$3,
   componentsOverride: ComponentsOverrides$3
@@ -2810,12 +2787,12 @@ var lighterenRate$4 = 1.5;
 var lightenRate$4 = 7.5;
 var darkenRate$4 = 15;
 var darkerRate$4 = 30;
-var primary$4 = "#1F3E9A";
-var secondary$4 = "#a4aecb";
+var primary$4 = "#4576E6";
+var secondary$4 = "#73D7F5";
 var warning$4 = "#F57069";
 var success$4 = "#34DFA2";
 var info$4 = "#FF9690";
-var hero$4 = "#1F3E9A";
+var hero$4 = "#4576E6";
 var error$4 = "#f44336";
 var PRIMARY$4 = {
   lighter: /*#__PURE__*/tinycolor(primary$4).lighten(lighterenRate$4).toHexString(),
@@ -2871,8 +2848,8 @@ var GRADIENTS$4 = {
   success: /*#__PURE__*/createGradient(SUCCESS$4.light, SUCCESS$4.main),
   warning: /*#__PURE__*/createGradient(WARNING$4.light, WARNING$4.main),
   error: /*#__PURE__*/createGradient(ERROR$4.light, ERROR$4.main),
-  one: "#366CE3",
-  two: "#584CFF"
+  one: "#4576E6",
+  two: "#295BCE"
 };
 var palette$4 = {
   hero: hero$4,
@@ -2911,27 +2888,27 @@ var palette$4 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: "#1F3E9A",
-    toggle2: "#1F3E9A",
+    toggle1: "#828EFA",
+    toggle2: "#4576E6",
     toggle3: "#F1F4FC",
-    toggle4: "#fff"
+    toggle4: "#828EFA"
   },
   sideBar: {
     color: "#7C7D80",
     colorLeft: "#7C7D80",
-    colorHover: "#1F3E9A",
+    colorHover: "#6157FF",
     colorActive: "#000",
     bg: "#fff"
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #366CE3 3.01%, #584CFF 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #517EF8 3.01%, #574FFE 95.95%)",
+    bgColor: "linear-gradient(163.61deg, #4576E6 3.01%, #295BCE 95.95%)",
+    bgColorHover: "linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), linear-gradient(164.16deg, #788AFF 3.01%, #6C71FF 46.58%, #675CFF 95.95%)",
     shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
   },
   bgLight: {
-    one: "#f3f3f3",
-    two: "rgba(241, 244, 252, 0.6)",
-    disabled: "#90cbe6"
+    one: "#F1F4FC",
+    two: "#efefef",
+    disabled: "rgb(97, 87, 255, 0.3)"
   },
   shadows: {
     card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
@@ -3086,7 +3063,7 @@ function Input$4(theme) {
             backgroundColor: "#fff"
           },
           "& fieldset": {
-            borderColor: theme.palette.primary.light
+            borderColor: alpha$1(theme.palette.grey[500], 0.56)
           },
           "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
@@ -3257,6 +3234,7 @@ function Typography$4(theme) {
   };
 }
 
+// ----------------------------------------------------------------------
 function CssBaseline$4() {
   return {
     MuiCssBaseline: {
@@ -3483,7 +3461,7 @@ function ComponentsOverrides$4(theme) {
   return Object.assign(AppBar$4(theme), Card$4(theme), Input$4(theme), Paper$4(theme), Button$4(theme), Tooltip$4(theme), Backdrop$4(theme), Typography$4(theme), CssBaseline$4(), Autocomplete$4(theme), ToggleButton$4(theme), IconButton$4(theme), Picker$4(), Rating$4(theme), Menu$4(), Alert$4(theme), Link$4(), Badge$4());
 }
 
-var medincenter = {
+var medswiss = {
   palette: palette$4,
   typography: typography$4,
   componentsOverride: ComponentsOverrides$4
@@ -3494,13 +3472,13 @@ var lighterenRate$5 = 1.5;
 var lightenRate$5 = 7.5;
 var darkenRate$5 = 15;
 var darkerRate$5 = 30;
-var primary$5 = "#4576E6";
+var primary$5 = "#6157FF";
 var secondary$5 = "#73D7F5";
 var warning$5 = "#F57069";
 var success$5 = "#34DFA2";
-var info$5 = "#FF9690";
-var hero$5 = "#4576E6";
+var info$5 = "#abb3ff";
 var error$5 = "#f44336";
+var hero$5 = "#6157FF";
 var PRIMARY$5 = {
   lighter: /*#__PURE__*/tinycolor(primary$5).lighten(lighterenRate$5).toHexString(),
   main: primary$5,
@@ -3555,8 +3533,8 @@ var GRADIENTS$5 = {
   success: /*#__PURE__*/createGradient(SUCCESS$5.light, SUCCESS$5.main),
   warning: /*#__PURE__*/createGradient(WARNING$5.light, WARNING$5.main),
   error: /*#__PURE__*/createGradient(ERROR$5.light, ERROR$5.main),
-  one: "#4576E6",
-  two: "#295BCE"
+  one: "#7385FF",
+  two: "#584DFF"
 };
 var palette$5 = {
   hero: hero$5,
@@ -3596,9 +3574,9 @@ var palette$5 = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: "#828EFA",
-    toggle2: "#4576E6",
+    toggle2: "#6157FF",
     toggle3: "#F1F4FC",
-    toggle4: "#828EFA"
+    toggle4: "#fff"
   },
   sideBar: {
     color: "#7C7D80",
@@ -3608,7 +3586,7 @@ var palette$5 = {
     bg: "#fff"
   },
   baseButton: {
-    bgColor: "linear-gradient(163.61deg, #4576E6 3.01%, #295BCE 95.95%)",
+    bgColor: "linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)",
     bgColorHover: "linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), linear-gradient(164.16deg, #788AFF 3.01%, #6C71FF 46.58%, #675CFF 95.95%)",
     shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
   },
@@ -3770,7 +3748,7 @@ function Input$5(theme) {
             backgroundColor: "#fff"
           },
           "& fieldset": {
-            borderColor: alpha$1(theme.palette.grey[500], 0.56)
+            borderColor: theme.palette.primary.light
           },
           "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
@@ -3779,7 +3757,7 @@ function Input$5(theme) {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
           },
           "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: theme.palette.hero,
+            borderColor: theme.palette.primary.dark,
             borderWidth: "2px"
           },
           "&.Mui-focused fieldset": {
@@ -3838,7 +3816,6 @@ function Button$5(theme) {
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
           "&:hover": {
-            color: theme.palette.primary.main,
             background: theme.palette.bgLight.two,
             boxShadow: "none"
           }
@@ -4097,6 +4074,7 @@ function Rating$5(theme) {
   };
 }
 
+// ----------------------------------------------------------------------
 function Menu$5() {
   return {
     MuiMenu: {
@@ -4138,6 +4116,7 @@ function Alert$5(theme) {
   };
 }
 
+// ----------------------------------------------------------------------
 function Link$5() {
   return {
     MuiLink: {
@@ -4168,7 +4147,7 @@ function ComponentsOverrides$5(theme) {
   return Object.assign(AppBar$5(theme), Card$5(theme), Input$5(theme), Paper$5(theme), Button$5(theme), Tooltip$5(theme), Backdrop$5(theme), Typography$5(theme), CssBaseline$5(), Autocomplete$5(theme), ToggleButton$5(theme), IconButton$5(theme), Picker$5(), Rating$5(theme), Menu$5(), Alert$5(theme), Link$5(), Badge$5());
 }
 
-var medswiss = {
+var mediadoc = {
   palette: palette$5,
   typography: typography$5,
   componentsOverride: ComponentsOverrides$5
@@ -4179,13 +4158,13 @@ var lighterenRate$6 = 1.5;
 var lightenRate$6 = 7.5;
 var darkenRate$6 = 15;
 var darkerRate$6 = 30;
-var primary$6 = "#6157FF";
-var secondary$6 = "#73D7F5";
-var warning$6 = "#F57069";
-var success$6 = "#34DFA2";
-var info$6 = "#abb3ff";
-var error$6 = "#f44336";
-var hero$6 = "#6157FF";
+var primary$6 = "#49A65C";
+var secondary$6 = "#58ca70";
+var warning$6 = "#FA847E";
+var success$6 = "#4DAE00";
+var info$6 = "#FECB07";
+var error$6 = "#FF9690";
+var hero$6 = "#F57069";
 var PRIMARY$6 = {
   lighter: /*#__PURE__*/tinycolor(primary$6).lighten(lighterenRate$6).toHexString(),
   main: primary$6,
@@ -4200,15 +4179,15 @@ var SECONDARY$6 = {
   light: /*#__PURE__*/tinycolor(secondary$6).lighten(lightenRate$6).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$6).darken(darkenRate$6).toHexString(),
   contrastText: "#ccc",
-  darker: "#091A7A"
+  darker: "#E87780"
 };
 var INFO$6 = {
-  lighter: "#D0F2FF",
+  lighter: "#FCEDF2",
   main: info$6,
   light: /*#__PURE__*/tinycolor(info$6).lighten(lightenRate$6).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$6).darken(darkenRate$6).toHexString(),
   contrastText: "#fff",
-  darker: "#04297A"
+  darker: "#F7BFBC"
 };
 var SUCCESS$6 = {
   lighter: "#E9FCD4",
@@ -4240,8 +4219,8 @@ var GRADIENTS$6 = {
   success: /*#__PURE__*/createGradient(SUCCESS$6.light, SUCCESS$6.main),
   warning: /*#__PURE__*/createGradient(WARNING$6.light, WARNING$6.main),
   error: /*#__PURE__*/createGradient(ERROR$6.light, ERROR$6.main),
-  one: "#7385FF",
-  two: "#584DFF"
+  one: "#44A357",
+  two: "#28933E"
 };
 var palette$6 = {
   hero: hero$6,
@@ -4263,11 +4242,11 @@ var palette$6 = {
   },
   background: {
     paper: "#fff",
-    "default": GREY[100],
-    neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
-    info: "rgba(97, 87, 255, 0.1);",
+    "default": "#fff",
+    neutral: GREY[100],
+    warning: "#ECECEC",
+    error: "#edd1d1",
+    info: "rgba(174 33 3, 0.4)",
     infoGadient: /*#__PURE__*/createGradient(INFO$6.lighter, INFO$6.light),
     success: "#FFE7CE"
   },
@@ -4280,31 +4259,31 @@ var palette$6 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: "#828EFA",
-    toggle2: "#6157FF",
-    toggle3: "#F1F4FC",
+    toggle1: PRIMARY$6.main,
+    toggle2: PRIMARY$6.dark,
+    toggle3: "#EDFCFA",
     toggle4: "#fff"
   },
   sideBar: {
     color: "#7C7D80",
     colorLeft: "#7C7D80",
-    colorHover: "#6157FF",
+    colorHover: "#445A68",
     colorActive: "#000",
-    bg: "#fff"
+    bg: "#FFF"
   },
   baseButton: {
-    bgColor: "linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)",
-    bgColorHover: "linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), linear-gradient(164.16deg, #788AFF 3.01%, #6C71FF 46.58%, #675CFF 95.95%)",
-    shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
+    bgColor: "linear-gradient(139.78deg, #44A357 3.01%, #28933E 95.95%)",
+    bgColorHover: "linear-gradient(139.78deg, #61C876 3.01%, #3DAD54 95.95%)",
+    shadow: "0px 3px 5px rgba(0, 0, 0, 0.08)"
   },
   bgLight: {
-    one: "#F1F4FC",
-    two: "#efefef",
-    disabled: "rgb(97, 87, 255, 0.3)"
+    one: "#F4F4F4",
+    two: "#F1FCF7",
+    disabled: "#add6b5"
   },
   shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
+    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(0, 0, 0, 0.15)"
   }
 };
 
@@ -4441,7 +4420,7 @@ function Input$6(theme) {
         },
         underline: {
           "&:before": {
-            borderBottomColor: alpha$1(theme.palette.grey[500], 0.56)
+            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
           }
         }
       }
@@ -4455,7 +4434,7 @@ function Input$6(theme) {
             backgroundColor: "#fff"
           },
           "& fieldset": {
-            borderColor: theme.palette.primary.light
+            borderColor: alpha$1(theme.palette.grey[500], 0.32)
           },
           "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
@@ -4625,7 +4604,6 @@ function Typography$6(theme) {
   };
 }
 
-// ----------------------------------------------------------------------
 function CssBaseline$6() {
   return {
     MuiCssBaseline: {
@@ -4722,7 +4700,7 @@ function AppBar$6(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background: "linear-gradient(139.78deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
         }
       }
     }
@@ -4781,7 +4759,6 @@ function Rating$6(theme) {
   };
 }
 
-// ----------------------------------------------------------------------
 function Menu$6() {
   return {
     MuiMenu: {
@@ -4823,7 +4800,6 @@ function Alert$6(theme) {
   };
 }
 
-// ----------------------------------------------------------------------
 function Link$6() {
   return {
     MuiLink: {
@@ -4854,7 +4830,7 @@ function ComponentsOverrides$6(theme) {
   return Object.assign(AppBar$6(theme), Card$6(theme), Input$6(theme), Paper$6(theme), Button$6(theme), Tooltip$6(theme), Backdrop$6(theme), Typography$6(theme), CssBaseline$6(), Autocomplete$6(theme), ToggleButton$6(theme), IconButton$6(theme), Picker$6(), Rating$6(theme), Menu$6(), Alert$6(theme), Link$6(), Badge$6());
 }
 
-var mediadoc = {
+var minfin = {
   palette: palette$6,
   typography: typography$6,
   componentsOverride: ComponentsOverrides$6
@@ -4865,13 +4841,13 @@ var lighterenRate$7 = 1.5;
 var lightenRate$7 = 7.5;
 var darkenRate$7 = 15;
 var darkerRate$7 = 30;
-var primary$7 = "#49A65C";
-var secondary$7 = "#58ca70";
-var warning$7 = "#FA847E";
-var success$7 = "#4DAE00";
-var info$7 = "#FECB07";
-var error$7 = "#FF9690";
-var hero$7 = "#F57069";
+var primary$7 = "#DB4141";
+var secondary$7 = "#F7BFBC";
+var warning$7 = "#F57069";
+var success$7 = "#FFC9AB";
+var info$7 = "#F2D0B2";
+var error$7 = "#802121";
+var hero$7 = "#B00C2F";
 var PRIMARY$7 = {
   lighter: /*#__PURE__*/tinycolor(primary$7).lighten(lighterenRate$7).toHexString(),
   main: primary$7,
@@ -4926,8 +4902,8 @@ var GRADIENTS$7 = {
   success: /*#__PURE__*/createGradient(SUCCESS$7.light, SUCCESS$7.main),
   warning: /*#__PURE__*/createGradient(WARNING$7.light, WARNING$7.main),
   error: /*#__PURE__*/createGradient(ERROR$7.light, ERROR$7.main),
-  one: "#44A357",
-  two: "#28933E"
+  one: "#EB323F",
+  two: "#981127"
 };
 var palette$7 = {
   hero: hero$7,
@@ -4949,10 +4925,10 @@ var palette$7 = {
   },
   background: {
     paper: "#fff",
-    "default": "#fff",
-    neutral: GREY[100],
-    warning: "#ECECEC",
-    error: "#edd1d1",
+    "default": GREY[100],
+    neutral: GREY[200],
+    warning: "#FEF1F0",
+    error: "#ECECEC",
     info: "rgba(174 33 3, 0.4)",
     infoGadient: /*#__PURE__*/createGradient(INFO$7.lighter, INFO$7.light),
     success: "#FFE7CE"
@@ -4967,34 +4943,34 @@ var palette$7 = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: PRIMARY$7.main,
-    toggle2: PRIMARY$7.dark,
-    toggle3: "#EDFCFA",
+    toggle2: PRIMARY$7.light,
+    toggle3: "#FCEDF2",
     toggle4: "#fff"
   },
   sideBar: {
-    color: "#7C7D80",
-    colorLeft: "#7C7D80",
-    colorHover: "#445A68",
+    color: "#DB4141",
+    colorLeft: "#DB4141",
+    colorHover: "#802121",
     colorActive: "#000",
-    bg: "#FFF"
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #44A357 3.01%, #28933E 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #61C876 3.01%, #3DAD54 95.95%)",
-    shadow: "0px 3px 5px rgba(0, 0, 0, 0.08)"
+    bgColor: "linear-gradient(139.78deg, #EB323F 3.01%, #981127 95.95%)",
+    bgColorHover: "linear-gradient(139.78deg, #F44652 3.01%, #BB3046 95.95%)",
+    shadow: "0px 1px 4px rgba(0, 0, 0, 0.15)"
   },
   bgLight: {
     one: "#F4F4F4",
-    two: "#F1FCF7",
-    disabled: "#add6b5"
+    two: "#FFEEEE",
+    disabled: "rgba(174, 33, 3, 0.4)"
   },
   shadows: {
-    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(0, 0, 0, 0.15)"
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
-var FONT_PRIMARY$7 = "Avenir Next Cyr";
+var FONT_PRIMARY$7 = "Glober SemiBold";
 var typography$7 = {
   fontFamily: FONT_PRIMARY$7,
   fontWeightRegular: 400,
@@ -5048,6 +5024,7 @@ var typography$7 = {
     fontWeight: 500,
     lineHeight: 24 / 14,
     fontSize: /*#__PURE__*/pxToRem(14)
+    //    textTransform: 'capitalize',
   }
 };
 
@@ -5141,7 +5118,7 @@ function Input$7(theme) {
             backgroundColor: "#fff"
           },
           "& fieldset": {
-            borderColor: alpha$1(theme.palette.grey[500], 0.32)
+            borderColor: alpha$1(theme.palette.primary.main, 0.32)
           },
           "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
@@ -5407,7 +5384,7 @@ function AppBar$7(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(139.78deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
         }
       }
     }
@@ -5537,7 +5514,7 @@ function ComponentsOverrides$7(theme) {
   return Object.assign(AppBar$7(theme), Card$7(theme), Input$7(theme), Paper$7(theme), Button$7(theme), Tooltip$7(theme), Backdrop$7(theme), Typography$7(theme), CssBaseline$7(), Autocomplete$7(theme), ToggleButton$7(theme), IconButton$7(theme), Picker$7(), Rating$7(theme), Menu$7(), Alert$7(theme), Link$7(), Badge$7());
 }
 
-var minfin = {
+var pimu = {
   palette: palette$7,
   typography: typography$7,
   componentsOverride: ComponentsOverrides$7
@@ -5548,13 +5525,13 @@ var lighterenRate$8 = 1.5;
 var lightenRate$8 = 7.5;
 var darkenRate$8 = 15;
 var darkerRate$8 = 30;
-var primary$8 = "#DB4141";
-var secondary$8 = "#F7BFBC";
-var warning$8 = "#F57069";
-var success$8 = "#FFC9AB";
+var primary$8 = "#1B719E";
+var secondary$8 = "#A6CCBE";
+var warning$8 = "#3AAEEC";
+var success$8 = "#1B719E";
 var info$8 = "#F2D0B2";
-var error$8 = "#802121";
-var hero$8 = "#B00C2F";
+var error$8 = "#FF9690";
+var hero$8 = "#2188bf";
 var PRIMARY$8 = {
   lighter: /*#__PURE__*/tinycolor(primary$8).lighten(lighterenRate$8).toHexString(),
   main: primary$8,
@@ -5609,8 +5586,8 @@ var GRADIENTS$8 = {
   success: /*#__PURE__*/createGradient(SUCCESS$8.light, SUCCESS$8.main),
   warning: /*#__PURE__*/createGradient(WARNING$8.light, WARNING$8.main),
   error: /*#__PURE__*/createGradient(ERROR$8.light, ERROR$8.main),
-  one: "#EB323F",
-  two: "#981127"
+  one: "#2AB6CA",
+  two: "#28909B"
 };
 var palette$8 = {
   hero: hero$8,
@@ -5632,10 +5609,10 @@ var palette$8 = {
   },
   background: {
     paper: "#fff",
-    "default": GREY[100],
-    neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
+    "default": "#fff",
+    neutral: GREY[100],
+    warning: "#ECECEC",
+    error: "#edd1d1",
     info: "rgba(174 33 3, 0.4)",
     infoGadient: /*#__PURE__*/createGradient(INFO$8.lighter, INFO$8.light),
     success: "#FFE7CE"
@@ -5650,34 +5627,34 @@ var palette$8 = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: PRIMARY$8.main,
-    toggle2: PRIMARY$8.light,
-    toggle3: "#FCEDF2",
+    toggle2: PRIMARY$8.dark,
+    toggle3: "#EDFCFA",
     toggle4: "#fff"
   },
   sideBar: {
-    color: "#DB4141",
-    colorLeft: "#DB4141",
+    color: "#7C7D80",
+    colorLeft: "#2AB6CA",
     colorHover: "#802121",
     colorActive: "#000",
-    bg: "#fff"
+    bg: "#FFF"
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #EB323F 3.01%, #981127 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #F44652 3.01%, #BB3046 95.95%)",
-    shadow: "0px 1px 4px rgba(0, 0, 0, 0.15)"
+    bgColor: "linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)",
+    bgColorHover: "linear-gradient(139.78deg, #28909B 3.01%, #28909B 85.95%)",
+    shadow: "0px 3px 5px rgba(101, 101, 101, 0.2)"
   },
   bgLight: {
-    one: "#F4F4F4",
-    two: "#FFEEEE",
-    disabled: "rgba(174, 33, 3, 0.4)"
+    one: "#F1FBFC",
+    two: "#F1FCF7",
+    disabled: "#2ab6ca8a"
   },
   shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
     firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
-var FONT_PRIMARY$8 = "Glober SemiBold";
+var FONT_PRIMARY$8 = "Avenir Next Cyr";
 var typography$8 = {
   fontFamily: FONT_PRIMARY$8,
   fontWeightRegular: 400,
@@ -5731,7 +5708,6 @@ var typography$8 = {
     fontWeight: 500,
     lineHeight: 24 / 14,
     fontSize: /*#__PURE__*/pxToRem(14)
-    //    textTransform: 'capitalize',
   }
 };
 
@@ -5811,7 +5787,7 @@ function Input$8(theme) {
         },
         underline: {
           "&:before": {
-            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
+            borderBottomColor: alpha$1(theme.palette.grey[500], 0.16)
           }
         }
       }
@@ -6091,7 +6067,7 @@ function AppBar$8(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background: "linear-gradient(180deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
         }
       }
     }
@@ -6221,7 +6197,7 @@ function ComponentsOverrides$8(theme) {
   return Object.assign(AppBar$8(theme), Card$8(theme), Input$8(theme), Paper$8(theme), Button$8(theme), Tooltip$8(theme), Backdrop$8(theme), Typography$8(theme), CssBaseline$8(), Autocomplete$8(theme), ToggleButton$8(theme), IconButton$8(theme), Picker$8(), Rating$8(theme), Menu$8(), Alert$8(theme), Link$8(), Badge$8());
 }
 
-var pimu = {
+var ncn = {
   palette: palette$8,
   typography: typography$8,
   componentsOverride: ComponentsOverrides$8
@@ -6232,13 +6208,13 @@ var lighterenRate$9 = 1.5;
 var lightenRate$9 = 7.5;
 var darkenRate$9 = 15;
 var darkerRate$9 = 30;
-var primary$9 = "#1B719E";
-var secondary$9 = "#A6CCBE";
-var warning$9 = "#3AAEEC";
-var success$9 = "#1B719E";
+var primary$9 = "#2E3146";
+var secondary$9 = "#B4193C";
+var warning$9 = "#F57069";
+var success$9 = "#FFC9AB";
 var info$9 = "#F2D0B2";
-var error$9 = "#FF9690";
-var hero$9 = "#2188bf";
+var error$9 = "#802121";
+var hero$9 = "#B00C2F";
 var PRIMARY$9 = {
   lighter: /*#__PURE__*/tinycolor(primary$9).lighten(lighterenRate$9).toHexString(),
   main: primary$9,
@@ -6293,8 +6269,8 @@ var GRADIENTS$9 = {
   success: /*#__PURE__*/createGradient(SUCCESS$9.light, SUCCESS$9.main),
   warning: /*#__PURE__*/createGradient(WARNING$9.light, WARNING$9.main),
   error: /*#__PURE__*/createGradient(ERROR$9.light, ERROR$9.main),
-  one: "#2AB6CA",
-  two: "#28909B"
+  one: "#7A232E",
+  two: "#B4193C"
 };
 var palette$9 = {
   hero: hero$9,
@@ -6316,10 +6292,10 @@ var palette$9 = {
   },
   background: {
     paper: "#fff",
-    "default": "#fff",
-    neutral: GREY[100],
-    warning: "#ECECEC",
-    error: "#edd1d1",
+    "default": GREY[100],
+    neutral: GREY[200],
+    warning: "#FEF1F0",
+    error: "#ECECEC",
     info: "rgba(174 33 3, 0.4)",
     infoGadient: /*#__PURE__*/createGradient(INFO$9.lighter, INFO$9.light),
     success: "#FFE7CE"
@@ -6334,29 +6310,29 @@ var palette$9 = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: PRIMARY$9.main,
-    toggle2: PRIMARY$9.dark,
-    toggle3: "#EDFCFA",
+    toggle2: PRIMARY$9.light,
+    toggle3: "#FCEDF2",
     toggle4: "#fff"
   },
   sideBar: {
-    color: "#7C7D80",
-    colorLeft: "#2AB6CA",
-    colorHover: "#802121",
-    colorActive: "#000",
-    bg: "#FFF"
+    color: "#2E3146",
+    colorLeft: "#B4193C",
+    colorHover: "#E20B00",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #28909B 3.01%, #28909B 85.95%)",
-    shadow: "0px 3px 5px rgba(101, 101, 101, 0.2)"
+    bgColor: "linear-gradient(139.78deg, #B4193C 3.01%, #7A232E 95.95%)",
+    bgColorHover: "linear-gradient(139.78deg, #4C4C4C 3.01%, #7A232E 95.95%)",
+    shadow: "0px 1px 4px rgba(0, 0, 0, 0.15)"
   },
   bgLight: {
-    one: "#F1FBFC",
-    two: "#F1FCF7",
-    disabled: "#2ab6ca8a"
+    one: "#F4F4F4",
+    two: "#FFEEEE",
+    disabled: "rgba(174, 33, 3, 0.4)"
   },
   shadows: {
-    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
     firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
@@ -6494,7 +6470,7 @@ function Input$9(theme) {
         },
         underline: {
           "&:before": {
-            borderBottomColor: alpha$1(theme.palette.grey[500], 0.16)
+            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
           }
         }
       }
@@ -6508,7 +6484,7 @@ function Input$9(theme) {
             backgroundColor: "#fff"
           },
           "& fieldset": {
-            borderColor: alpha$1(theme.palette.primary.main, 0.32)
+            borderColor: alpha$1(theme.palette.grey[500], 0.32)
           },
           "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
@@ -6774,7 +6750,7 @@ function AppBar$9(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(180deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
         }
       }
     }
@@ -6904,697 +6880,14 @@ function ComponentsOverrides$9(theme) {
   return Object.assign(AppBar$9(theme), Card$9(theme), Input$9(theme), Paper$9(theme), Button$9(theme), Tooltip$9(theme), Backdrop$9(theme), Typography$9(theme), CssBaseline$9(), Autocomplete$9(theme), ToggleButton$9(theme), IconButton$9(theme), Picker$9(), Rating$9(theme), Menu$9(), Alert$9(theme), Link$9(), Badge$9());
 }
 
-var ncn = {
+var sibgmu = {
   palette: palette$9,
   typography: typography$9,
   componentsOverride: ComponentsOverrides$9
 };
 
-// ----------------------------------------------------------------------
-var lighterenRate$a = 1.5;
-var lightenRate$a = 7.5;
-var darkenRate$a = 15;
-var darkerRate$a = 30;
-var primary$a = "#2E3146";
-var secondary$a = "#B4193C";
-var warning$a = "#F57069";
-var success$a = "#FFC9AB";
-var info$a = "#F2D0B2";
-var error$a = "#802121";
-var hero$a = "#B00C2F";
-var PRIMARY$a = {
-  lighter: /*#__PURE__*/tinycolor(primary$a).lighten(lighterenRate$a).toHexString(),
-  main: primary$a,
-  light: /*#__PURE__*/tinycolor(primary$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$a).darken(darkenRate$a).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$a).darken(darkerRate$a).toHexString(),
-  contrastText: "#fff"
-};
-var SECONDARY$a = {
-  lighter: "#D6E4FF",
-  main: secondary$a,
-  light: /*#__PURE__*/tinycolor(secondary$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$a).darken(darkenRate$a).toHexString(),
-  contrastText: "#ccc",
-  darker: "#E87780"
-};
-var INFO$a = {
-  lighter: "#FCEDF2",
-  main: info$a,
-  light: /*#__PURE__*/tinycolor(info$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$a).darken(darkenRate$a).toHexString(),
-  contrastText: "#fff",
-  darker: "#F7BFBC"
-};
-var SUCCESS$a = {
-  lighter: "#E9FCD4",
-  main: success$a,
-  light: /*#__PURE__*/tinycolor(success$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$a).darken(darkenRate$a).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D"
-};
-var WARNING$a = {
-  lighter: "#FFF7CD",
-  main: warning$a,
-  light: /*#__PURE__*/tinycolor(warning$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$a).darken(darkenRate$a).toHexString(),
-  darker: "#7A4F01",
-  contrastText: GREY[800]
-};
-var ERROR$a = {
-  lighter: "#FFE7D9",
-  main: error$a,
-  light: /*#__PURE__*/tinycolor(error$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$a).darken(darkenRate$a).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff"
-};
-var GRADIENTS$a = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$a.light, PRIMARY$a.main),
-  info: /*#__PURE__*/createGradient(INFO$a.light, INFO$a.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$a.light, SUCCESS$a.main),
-  warning: /*#__PURE__*/createGradient(WARNING$a.light, WARNING$a.main),
-  error: /*#__PURE__*/createGradient(ERROR$a.light, ERROR$a.main),
-  one: "#7A232E",
-  two: "#B4193C"
-};
-var palette$a = {
-  hero: hero$a,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$a),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$a),
-  info: /*#__PURE__*/_extends({}, INFO$a),
-  success: /*#__PURE__*/_extends({}, SUCCESS$a),
-  warning: /*#__PURE__*/_extends({}, WARNING$a),
-  error: /*#__PURE__*/_extends({}, ERROR$a),
-  grey: GREY,
-  gradients: GRADIENTS$a,
-  divider: GREY[50024],
-  text: {
-    primary: GREY[800],
-    secondary: GREY[600],
-    boby2: GREY[600],
-    subtitle2: GREY[50080],
-    disabled: GREY[400]
-  },
-  background: {
-    paper: "#fff",
-    "default": GREY[100],
-    neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
-    info: "rgba(174 33 3, 0.4)",
-    infoGadient: /*#__PURE__*/createGradient(INFO$a.lighter, INFO$a.light),
-    success: "#FFE7CE"
-  },
-  action: {
-    active: GREY[600],
-    hover: GREY[5008],
-    selected: GREY[50016],
-    disabled: GREY[50080],
-    disabledBackground: GREY[50024],
-    focus: GREY[50024],
-    hoverOpacity: 0.08,
-    disabledOpacity: 0.48,
-    toggle1: PRIMARY$a.main,
-    toggle2: PRIMARY$a.light,
-    toggle3: "#FCEDF2",
-    toggle4: "#fff"
-  },
-  sideBar: {
-    color: "#2E3146",
-    colorLeft: "#B4193C",
-    colorHover: "#E20B00",
-    colorActive: "#000000",
-    bg: "#fff"
-  },
-  baseButton: {
-    bgColor: "linear-gradient(139.78deg, #B4193C 3.01%, #7A232E 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #4C4C4C 3.01%, #7A232E 95.95%)",
-    shadow: "0px 1px 4px rgba(0, 0, 0, 0.15)"
-  },
-  bgLight: {
-    one: "#F4F4F4",
-    two: "#FFEEEE",
-    disabled: "rgba(174, 33, 3, 0.4)"
-  },
-  shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
-  }
-};
-
-var FONT_PRIMARY$a = "Avenir Next Cyr";
-var typography$a = {
-  fontFamily: FONT_PRIMARY$a,
-  fontWeightRegular: 400,
-  fontWeightMedium: 500,
-  fontWeightBold: 600,
-  h1: {
-    fontSize: "2.0rem",
-    fontWeight: 500
-  },
-  h2: {
-    fontSize: "1.7rem",
-    fontWeight: 500
-  },
-  h3: {
-    fontSize: "1.64rem",
-    fontWeight: 500
-  },
-  h4: {
-    fontSize: "1.5rem"
-  },
-  h5: {
-    fontSize: "1.285rem"
-  },
-  h6: {
-    fontSize: "1.05rem"
-  },
-  subtitle1: {
-    fontWeight: 400,
-    lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
-  },
-  subtitle2: {
-    fontWeight: 450,
-    lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
-  },
-  body1: {
-    lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
-  },
-  body2: {
-    fontWeight: 400,
-    lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
-  },
-  caption: {
-    lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
-  },
-  button: {
-    fontWeight: 500,
-    lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
-  }
-};
-
-// ----------------------------------------------------------------------
-function Card$a(theme) {
-  return {
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Paper$a(theme) {
-  return {
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          backgroundColor: "#FFFFFF",
-          backgroundSize: "cover",
-          boxSizing: "border-box",
-          boxShadow: theme.palette.shadows.card,
-          transition: "none"
-        }
-      }
-    }
-  };
-}
-
-function Input$a(theme) {
-  return {
-    // MuiInputBase: {
-    //   styleOverrides: {
-    //     root: {
-    //       '&.Mui-disabled': {
-    //         '& svg': { color: theme.palette.text.disabled }
-    //       }
-    //     },
-    //     input: {
-    //       '&::placeholder': {
-    //         opacity: 1,
-    //         color: theme.palette.text.disabled
-    //       }
-    //     }
-    //   }
-    // },
-    MuiInput: {
-      styleOverrides: {
-        underline: {
-          "&:before": {
-            borderBottom: "1px solid rgb(196 196 196)"
-          },
-          "&:hover:not(.Mui-disabled):before": {
-            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
-          }
-        }
-      }
-    },
-    MuiFilledInput: {
-      styleOverrides: {
-        root: {
-          backgroundColor: alpha$1(theme.palette.grey[500], 0.12),
-          "&:hover": {
-            backgroundColor: alpha$1(theme.palette.grey[500], 0.16)
-          },
-          "&.Mui-focused": {
-            backgroundColor: theme.palette.action.focus
-          },
-          "&.Mui-disabled": {
-            backgroundColor: theme.palette.action.disabledBackground
-          }
-        },
-        underline: {
-          "&:before": {
-            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
-          }
-        }
-      }
-    },
-    MuiOutlinedInput: {
-      styleOverrides: {
-        root: {
-          borderRadius: theme.spacing(0.8),
-          backgroundColor: "transparent",
-          "&.Mui-focused": {
-            backgroundColor: "#fff"
-          },
-          "& fieldset": {
-            borderColor: alpha$1(theme.palette.grey[500], 0.32)
-          },
-          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
-            borderColor: alpha$1(theme.palette.primary.main, 0.2)
-          },
-          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: alpha$1(theme.palette.primary.main, 0.2)
-          },
-          "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: theme.palette.primary.dark,
-            borderWidth: "2px"
-          },
-          "&.Mui-focused fieldset": {
-            borderWidth: "2px"
-          }
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Button$a(theme) {
-  return {
-    MuiButtonBase: {
-      styleOverrides: {
-        root: {
-          textTransform: "inherit"
-        }
-      }
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          textTransform: "inherit",
-          borderRadius: 5,
-          fontStyle: "normal",
-          fontWeight: 500,
-          boxShadow: "none",
-          border: 0,
-          "&:hover": {
-            border: 0,
-            background: "transparent"
-          },
-          "&.Mui-disabled": {
-            background: theme.palette.bgLight.disabled + " !important",
-            color: "#fff !important"
-          },
-          "&.Mui-select": {
-            backgroundColor: theme.palette.primary.main,
-            color: "#fff",
-            border: "1px solid #bdbdbd"
-          }
-        },
-        containedPrimary: {
-          color: "#fff",
-          background: theme.palette.baseButton.bgColor,
-          boxShadow: theme.palette.baseButton.shadow,
-          "&:hover": {
-            background: theme.palette.baseButton.bgColorHover + " !important",
-            boxShadow: "none"
-          }
-        },
-        containedSecondary: {
-          color: theme.palette.hero,
-          background: theme.palette.bgLight.one,
-          boxShadow: theme.palette.baseButton.shadow,
-          "&:hover": {
-            background: theme.palette.bgLight.two,
-            boxShadow: "none"
-          }
-        },
-        outlinedPrimary: {
-          color: theme.palette.primary.main,
-          backgroundColor: "transparent",
-          boxShadow: "none",
-          "&:hover": {
-            color: theme.palette.primary.light
-          }
-        },
-        containedSuccess: {
-          color: "#fff",
-          backgroundColor: theme.palette.success.main,
-          "&:hover": {
-            backgroundColor: theme.palette.success.light,
-            boxShadow: "none"
-          }
-        },
-        containedWarning: {
-          color: "#fff",
-          backgroundColor: theme.palette.warning.main,
-          "&:hover": {
-            backgroundColor: theme.palette.warning.light,
-            boxShadow: "none"
-          }
-        },
-        containedInfo: {
-          color: "#fff",
-          backgroundColor: theme.palette.info.main,
-          "&:hover": {
-            backgroundColor: theme.palette.info.light,
-            boxShadow: "none"
-          }
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Tooltip$a(theme) {
-  return {
-    MuiTooltip: {
-      styleOverrides: {
-        tooltip: {
-          backgroundColor: theme.palette.grey[800]
-        },
-        arrow: {
-          color: theme.palette.grey[800]
-        }
-      }
-    }
-  };
-}
-
-function Backdrop$a(theme) {
-  var varLow = alpha$1(theme.palette.grey[900], 0.3);
-  var varHigh = alpha$1(theme.palette.grey[900], 0.9);
-  return {
-    MuiBackdrop: {
-      styleOverrides: {
-        root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
-          "&.MuiBackdrop-invisible": {
-            background: "transparent"
-          }
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Typography$a(theme) {
-  return {
-    MuiTypography: {
-      styleOverrides: {
-        paragraph: {
-          marginBottom: theme.spacing(2)
-        },
-        gutterBottom: {
-          marginBottom: theme.spacing(2)
-        },
-        body2: {
-          color: theme.palette.text.boby2
-        },
-        caption: {
-          fontSize: 14
-        },
-        caption_date: {
-          fontSize: 13
-        },
-        subtitle2: {
-          color: theme.palette.text.subtitle2
-        }
-      }
-    }
-  };
-}
-
-function CssBaseline$a() {
-  return {
-    MuiCssBaseline: {
-      styleOverrides: {
-        '*': {
-          margin: 0,
-          padding: 0,
-          boxSizing: 'border-box'
-        },
-        html: {
-          width: '100%',
-          height: '100%',
-          WebkitOverflowScrolling: 'touch'
-        },
-        body: {
-          width: '100%',
-          height: '100%'
-        },
-        '#root': {
-          width: '100%',
-          height: '100%'
-        },
-        input: {
-          '&[type=number]': {
-            MozAppearance: 'textfield',
-            '&::-webkit-outer-spin-button': {
-              margin: 0,
-              WebkitAppearance: 'none'
-            },
-            '&::-webkit-inner-spin-button': {
-              margin: 0,
-              WebkitAppearance: 'none'
-            }
-          }
-        },
-        img: {
-          display: 'block',
-          maxWidth: '100%'
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Autocomplete$a(theme) {
-  return {
-    MuiAutocomplete: {
-      styleOverrides: {
-        paper: {
-          boxShadow: theme.palette.shadows.card
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function ToggleButton$a(theme) {
-  return {
-    MuiToggleButton: {
-      styleOverrides: {
-        root: {
-          padding: "0px 12px",
-          border: "1px solid " + theme.palette.action.toggle1,
-          width: "100%",
-          height: 42,
-          boxSizing: "border-box",
-          borderRadius: theme.spacing(0.6),
-          textTransform: "none",
-          fontStyle: "normal",
-          fontWeight: 500,
-          color: theme.palette.action.toggle2,
-          background: theme.palette.action.toggle3,
-          boxShadow: theme.palette.shadows.card,
-          "&:hover": {
-            color: theme.palette.action.toggle4,
-            background: theme.palette.action.toggle2 + " !important"
-          },
-          "&.Mui-selected": {
-            color: theme.palette.action.toggle4,
-            backgroundColor: theme.palette.action.toggle1
-          }
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function AppBar$a(theme) {
-  return {
-    MuiAppBar: {
-      styleOverrides: {
-        root: {
-          boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function IconButton$a(theme) {
-  return {
-    MuiIconButton: {
-      styleOverrides: {
-        root: {
-          "& span > svg": {
-            color: theme.palette.primary.main
-          }
-        }
-      }
-    }
-  };
-}
-
-function Picker$a() {
-  return {
-    MuiPickerStaticWrapper: {
-      styleOverrides: {
-        root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
-        }
-      }
-    },
-    MuiCalendarPicker: {
-      styleOverrides: {
-        root: {
-          width: 300
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Rating$a(theme) {
-  return {
-    MuiRating: {
-      styleOverrides: {
-        root: {
-          color: theme.palette.primary.main,
-          "& span > span": {
-            top: 0,
-            left: 0
-          }
-        }
-      }
-    }
-  };
-}
-
-function Menu$a() {
-  return {
-    MuiMenu: {
-      styleOverrides: {
-        paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
-        }
-      }
-    }
-  };
-}
-
-// ----------------------------------------------------------------------
-function Alert$a(theme) {
-  return {
-    MuiAlert: {
-      styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
-        root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
-        },
-        standardWarning: {
-          backgroundColor: theme.palette.background.warning
-        },
-        standardError: {
-          backgroundColor: theme.palette.background.error
-        },
-        standardInfo: {
-          backgroundColor: theme.palette.background.info
-        },
-        standardSuccess: {
-          backgroundColor: theme.palette.background.success
-        }
-      }
-    }
-  };
-}
-
-function Link$a() {
-  return {
-    MuiLink: {
-      styleOverrides: {
-        root: {
-          textDecoration: 'none'
-        }
-      }
-    }
-  };
-}
-
-function Badge$a() {
-  return {
-    MuiBadge: {
-      styleOverrides: {
-        colorWarning: {
-          color: '#fff',
-          fontWeight: 500
-        }
-      }
-    }
-  };
-}
-
-//
-function ComponentsOverrides$a(theme) {
-  return Object.assign(AppBar$a(theme), Card$a(theme), Input$a(theme), Paper$a(theme), Button$a(theme), Tooltip$a(theme), Backdrop$a(theme), Typography$a(theme), CssBaseline$a(), Autocomplete$a(theme), ToggleButton$a(theme), IconButton$a(theme), Picker$a(), Rating$a(theme), Menu$a(), Alert$a(theme), Link$a(), Badge$a());
-}
-
-var sibgmu = {
-  palette: palette$a,
-  typography: typography$a,
-  componentsOverride: ComponentsOverrides$a
-};
-
 function getTheme(name) {
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "gmswiget" ? gmswiget : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : mobimed;
+  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : mobimed;
 }
 
 function ThemeProvider(_ref) {
@@ -7616,7 +6909,7 @@ function ThemeProvider(_ref) {
     injectFirst: true
   }, /*#__PURE__*/React.createElement(ThemeProvider$1, {
     theme: theme
-  }, /*#__PURE__*/React.createElement(CssBaseline$b, null), children));
+  }, /*#__PURE__*/React.createElement(CssBaseline$a, null), children));
 }
 
 export default ThemeProvider;
