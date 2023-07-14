@@ -1,4 +1,4 @@
-#Sometimes there is a need to have multiple MUI themes in one project. For example, when you create a personal account for several companies. This library is designed to do just that. Moreover, the standard MUI palette has been expanded there.
+Sometimes there is a need to have multiple MUI themes in one project. For example, when you create a personal account for several companies. This library is designed to do just that. Moreover, the standard MUI palette has been expanded there.
 
 This packge thats e [Create React App](https://github.com/facebook/create-react-app).
 
@@ -27,6 +27,6 @@ const NAME_THEME = 'gms';
 const NAME_THEME = 'pimu';
 const NAME_THEME = 'ncn';
 const NAME_THEME = 'minfin';
-const NAME_THEME = 'minfin';
+const NAME_THEME = 'sibgmu';
 
 ```
