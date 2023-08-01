@@ -134,7 +134,7 @@ const palette = {
     bgColorHover:
       'linear-gradient(163.61deg, #D3C8AF 3.01%, #B79D6C 95.95%)',
 
-    shadow: '0px 1px 4px rgba(111, 102, 255, 0.4)',
+    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)',
   },
   bgLight: {
     one: '#F6F4F0',
@@ -142,8 +142,8 @@ const palette = {
     disabled: '#D0C8B5',
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)',
+    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)',
   },
 };
 
