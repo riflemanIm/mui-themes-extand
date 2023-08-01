@@ -8,8 +8,10 @@ import minfin from "./minfin";
 import pimu from "./pimu";
 import ncn from "./ncn";
 import sibgmu from "./sibgmu";
+import mositalmed from "./mositalmed";
 
 export default function getTheme(name?: string) {
+  console.log("name", name);
   return name === "drAnna"
     ? drAnna
     : name === "gms"
@@ -28,5 +30,7 @@ export default function getTheme(name?: string) {
     ? ncn
     : name === "sibgmu"
     ? sibgmu
+    : name === "mositalmed"
+    ? mositalmed
     : mobimed;
 }
