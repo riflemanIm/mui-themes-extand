@@ -7007,7 +7007,7 @@ var palette$a = {
   baseButton: {
     bgColor: 'linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)',
     bgColorHover: 'linear-gradient(163.61deg, #D3C8AF 3.01%, #B79D6C 95.95%)',
-    shadow: '0px 1px 4px rgba(111, 102, 255, 0.4)'
+    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
   },
   bgLight: {
     one: '#F6F4F0',
@@ -7015,37 +7015,37 @@ var palette$a = {
     disabled: '#D0C8B5'
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
   }
 };
 
-var FONT_PRIMARY$a = "Avenir Next Cyr";
+var FONT_PRIMARY$a = 'Roboto';
 var typography$a = {
   fontFamily: FONT_PRIMARY$a,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 600,
   h1: {
-    fontSize: "2.0rem",
+    fontSize: '2.0rem',
     fontWeight: 500
   },
   h2: {
-    fontSize: "1.7rem",
+    fontSize: '1.7rem',
     fontWeight: 500
   },
   h3: {
-    fontSize: "1.64rem",
+    fontSize: '1.64rem',
     fontWeight: 500
   },
   h4: {
-    fontSize: "1.5rem"
+    fontSize: '1.5rem'
   },
   h5: {
-    fontSize: "1.285rem"
+    fontSize: '1.285rem'
   },
   h6: {
-    fontSize: "1.05rem"
+    fontSize: '1.05rem'
   },
   subtitle1: {
     fontWeight: 400,
