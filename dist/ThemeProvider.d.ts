@@ -1,5 +1,7 @@
 import React from "react";
-export default function ThemeProvider({ children, name }: {
+import { Theme } from "@mui/material/styles";
+export default function ThemeProvider({ children, name, theme }: {
     children: React.ReactNode;
     name?: string;
+    theme?: Theme;
 }): React.JSX.Element;

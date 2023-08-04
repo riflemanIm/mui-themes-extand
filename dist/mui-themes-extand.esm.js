@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { alpha, CssBaseline as CssBaseline$b } from '@mui/material';
-import { alpha as alpha$1, createTheme, StyledEngineProvider, ThemeProvider as ThemeProvider$1 } from '@mui/material/styles';
+import { alpha as alpha$1, StyledEngineProvider, ThemeProvider as ThemeProvider$1, createTheme } from '@mui/material/styles';
 import tinycolor from 'tinycolor2';
 
 function _extends() {
@@ -7569,25 +7569,30 @@ function getTheme(name) {
   return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : mobimed;
 }
 
-function ThemeProvider(_ref) {
-  var children = _ref.children,
-    name = _ref.name;
+var makeCustomTheme = function makeCustomTheme(name) {
   var _getTheme = getTheme(name),
     palette = _getTheme.palette,
     typography = _getTheme.typography,
     componentsOverride = _getTheme.componentsOverride;
-  var themeOptions = useMemo(function () {
-    return {
-      palette: palette,
-      typography: typography
-    };
-  }, []);
+  var themeOptions = {
+    palette: palette,
+    typography: typography
+  };
   var theme = createTheme(themeOptions);
   theme.components = componentsOverride(theme);
+  return theme;
+};
+function ThemeProvider(_ref) {
+  var children = _ref.children,
+    name = _ref.name,
+    theme = _ref.theme;
+  var customTheme = useMemo(function () {
+    return name || !theme ? makeCustomTheme(name) : theme;
+  }, [name, theme]);
   return /*#__PURE__*/React.createElement(StyledEngineProvider, {
     injectFirst: true
   }, /*#__PURE__*/React.createElement(ThemeProvider$1, {
-    theme: theme
+    theme: customTheme
   }, /*#__PURE__*/React.createElement(CssBaseline$b, null), children));
 }
 
