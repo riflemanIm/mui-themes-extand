@@ -31,7 +31,7 @@ export default function ThemeProvider({
   name?: string;
   theme?: Theme
 }) {
-  const customTheme = useMemo(() =>
+  const customTheme = useMemo<Theme>(() =>
     name || !theme ? makeCustomTheme(name) : theme,
     [name, theme]
   )
