@@ -6898,60 +6898,60 @@ var lighterenRate$a = 1.5;
 var lightenRate$a = 7.5;
 var darkenRate$a = 15;
 var darkerRate$a = 30;
-var primary$a = '#AA9161';
-var secondary$a = '#D0C8B5';
-var warning$a = '#F57069';
-var success$a = '#E3F8D2';
-var info$a = '#51D713';
-var error$a = '#FA9907';
-var hero$a = '#6D0C8B5';
+var primary$a = "#AA9161";
+var secondary$a = "#D0C8B5";
+var warning$a = "#F57069";
+var success$a = "#E3F8D2";
+var info$a = "#B5A788";
+var error$a = "#FA9907";
+var hero$a = "#6D0C8B5";
 var PRIMARY$a = {
   lighter: /*#__PURE__*/tinycolor(primary$a).lighten(lighterenRate$a).toHexString(),
   main: primary$a,
   light: /*#__PURE__*/tinycolor(primary$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$a).darken(darkenRate$a).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$a).darken(darkerRate$a).toHexString(),
-  contrastText: '#fff'
+  contrastText: "#fff"
 };
 var SECONDARY$a = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$a,
   light: /*#__PURE__*/tinycolor(secondary$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$a).darken(darkenRate$a).toHexString(),
-  contrastText: '#A2916A',
-  darker: '#827657'
+  contrastText: "#A2916A",
+  darker: "#827657"
 };
 var INFO$a = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$a,
   light: /*#__PURE__*/tinycolor(info$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$a).darken(darkenRate$a).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$a = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$a,
   light: /*#__PURE__*/tinycolor(success$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$a).darken(darkenRate$a).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$a = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$a,
   light: /*#__PURE__*/tinycolor(warning$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$a).darken(darkenRate$a).toHexString(),
-  darker: '#7A4F01',
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$a = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$a,
   light: /*#__PURE__*/tinycolor(error$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$a).darken(darkenRate$a).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$a = {
   primary: /*#__PURE__*/createGradient(PRIMARY$a.light, PRIMARY$a.main),
@@ -6959,8 +6959,8 @@ var GRADIENTS$a = {
   success: /*#__PURE__*/createGradient(SUCCESS$a.light, SUCCESS$a.main),
   warning: /*#__PURE__*/createGradient(WARNING$a.light, WARNING$a.main),
   error: /*#__PURE__*/createGradient(ERROR$a.light, ERROR$a.main),
-  one: '#B5A788',
-  two: '#AA9161'
+  one: "#B5A788",
+  two: "#AA9161"
 };
 var palette$a = {
   hero: hero$a,
@@ -6981,14 +6981,14 @@ var palette$a = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
+    paper: "#fff",
     "default": GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
     infoGadient: /*#__PURE__*/createGradient(INFO$a.lighter, INFO$a.light),
-    success: '#FFE7CE'
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -6999,31 +6999,31 @@ var palette$a = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#A2916A',
-    toggle2: '#F57069',
-    toggle3: '#F2F2F1',
-    toggle4: '#fff'
+    toggle1: "#A2916A",
+    toggle2: "#F57069",
+    toggle3: "#F2F2F1",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#828383',
-    colorLeft: '#F57069',
-    colorHover: '#AA9161',
-    colorActive: '#000000',
-    bg: '#fff'
+    color: "#828383",
+    colorLeft: "#F57069",
+    colorHover: "#AA9161",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)',
-    bgColorHover: 'linear-gradient(163.61deg, #D3C8AF 3.01%, #B79D6C 95.95%)',
-    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
+    bgColor: "linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)",
+    bgColorHover: "linear-gradient(163.61deg, #D3C8AF 3.01%, #B79D6C 95.95%)",
+    shadow: "0px 3px 5px rgba(0, 0, 0, 0.08)"
   },
   bgLight: {
-    one: '#F6F4F0',
-    two: '#F3F3E4',
-    disabled: '#D0C8B5'
+    one: "#F6F4F0",
+    two: "#F3F3E4",
+    disabled: "#D0C8B5"
   },
   shadows: {
-    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
+    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(0, 0, 0, 0.15)"
   }
 };
 
