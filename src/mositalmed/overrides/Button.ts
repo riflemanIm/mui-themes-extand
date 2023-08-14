@@ -7,9 +7,9 @@ export default function Button(theme: Theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: "inherit",
-        },
-      },
+          textTransform: "inherit"
+        }
+      }
     },
     MuiButton: {
       styleOverrides: {
@@ -24,17 +24,17 @@ export default function Button(theme: Theme) {
           border: 0,
           "&:hover": {
             border: 0,
-            background: "transparent",
+            background: "transparent"
           },
           "&.Mui-disabled": {
             background: `${theme.palette.bgLight.disabled} !important`,
-            color: "#fff !important",
+            color: "#fff !important"
           },
           "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
             color: "#fff",
-            border: "1px solid #bdbdbd",
-          },
+            border: "1px solid #bdbdbd"
+          }
         },
 
         containedPrimary: {
@@ -43,8 +43,8 @@ export default function Button(theme: Theme) {
           boxShadow: theme.palette.baseButton.shadow,
           "&:hover": {
             background: `${theme.palette.baseButton.bgColorHover} !important`,
-            boxShadow: "none",
-          },
+            boxShadow: "none"
+          }
         },
 
         containedSecondary: {
@@ -53,42 +53,61 @@ export default function Button(theme: Theme) {
           boxShadow: theme.palette.baseButton.shadow,
           "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: "none",
-          },
+            boxShadow: "none"
+          }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: "transparent",
           boxShadow: "none",
           "&:hover": {
-            color: theme.palette.primary.light,
-          },
+            color: theme.palette.primary.light
+          }
         },
+        outlinedInfo: {
+          color: theme.palette.info.main,
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
+            color: theme.palette.info.dark
+          }
+        },
+        outlinedSuccess: {
+          color: theme.palette.primary.dark,
+          backgroundColor: theme.palette.success.light,
+          "&:hover": {
+            color: theme.palette.primary.darker,
+            backgroundColor: theme.palette.success.light,
+            boxShadow: "none"
+          }
+        },
+
         containedSuccess: {
           color: "#fff",
           backgroundColor: theme.palette.success.main,
           "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: "none",
-          },
+            boxShadow: "none"
+          }
         },
         containedWarning: {
           color: "#fff",
           backgroundColor: theme.palette.warning.main,
           "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: "none",
-          },
+            boxShadow: "none"
+          }
         },
         containedInfo: {
           color: "#fff",
           backgroundColor: theme.palette.info.main,
           "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: "none",
-          },
-        },
-      },
-    },
+            boxShadow: "none"
+          }
+        }
+      }
+    }
   };
 }
