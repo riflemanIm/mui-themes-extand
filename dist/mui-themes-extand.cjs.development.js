@@ -7246,6 +7246,24 @@ function Button$a(theme) {
             color: theme.palette.primary.light
           }
         },
+        outlinedInfo: {
+          color: theme.palette.info.main,
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
+            color: theme.palette.info.dark
+          }
+        },
+        outlinedSuccess: {
+          color: theme.palette.primary.dark,
+          backgroundColor: theme.palette.success.light,
+          "&:hover": {
+            color: theme.palette.primary.darker,
+            backgroundColor: theme.palette.success.light,
+            boxShadow: "none"
+          }
+        },
         containedSuccess: {
           color: "#fff",
           backgroundColor: theme.palette.success.main,

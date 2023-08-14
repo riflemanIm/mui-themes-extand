@@ -56,6 +56,24 @@ export default function Button(theme: Theme): {
                     color: string;
                 };
             };
+            outlinedInfo: {
+                color: string;
+                backgroundColor: string;
+                boxShadow: string;
+                "&:hover": {
+                    backgroundColor: string;
+                    color: string;
+                };
+            };
+            outlinedSuccess: {
+                color: string;
+                backgroundColor: string;
+                "&:hover": {
+                    color: string;
+                    backgroundColor: string;
+                    boxShadow: string;
+                };
+            };
             containedSuccess: {
                 color: string;
                 backgroundColor: string;
