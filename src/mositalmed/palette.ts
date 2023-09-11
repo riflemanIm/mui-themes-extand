@@ -11,7 +11,7 @@ const secondary = "#D0C8B5";
 const warning = "#F57069";
 const success = "#E3F8D2";
 const info = "#B5A788";
-const error = "#FA9907";
+const error = "#F57069";
 const hero = "#6D0C8B5";
 
 const PRIMARY = {

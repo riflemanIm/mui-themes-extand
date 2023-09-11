@@ -7079,7 +7079,7 @@ var secondary$a = "#D0C8B5";
 var warning$a = "#F57069";
 var success$a = "#E3F8D2";
 var info$a = "#B5A788";
-var error$a = "#FA9907";
+var error$a = "#F57069";
 var hero$a = "#6D0C8B5";
 var PRIMARY$a = {
   lighter: /*#__PURE__*/tinycolor(primary$a).lighten(lighterenRate$a).toHexString(),
@@ -7766,34 +7766,29 @@ var mositalmed = {
 };
 
 function getTheme(name) {
-  console.log("name", name);
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : mobimed;
+  console.log('name', name);
+  return name === 'drAnna' ? drAnna : name === 'gms' ? gms : name === 'medincenter' ? medincenter : name === 'medswiss' ? medswiss : name === 'mediadoc' ? mediadoc : name === 'minfin' ? minfin : name === 'pimu' ? pimu : name === 'ncn' ? ncn : name === 'sibgmu' ? sibgmu : name === 'mositalmed' ? mositalmed : mobimed;
 }
 
-var makeCustomTheme = function makeCustomTheme(name) {
+function ThemeProvider(_ref) {
+  var children = _ref.children,
+    name = _ref.name;
   var _getTheme = getTheme(name),
     palette = _getTheme.palette,
     typography = _getTheme.typography,
     componentsOverride = _getTheme.componentsOverride;
-  var themeOptions = {
-    palette: palette,
-    typography: typography
-  };
+  var themeOptions = React.useMemo(function () {
+    return {
+      palette: palette,
+      typography: typography
+    };
+  }, []);
   var theme = styles.createTheme(themeOptions);
   theme.components = componentsOverride(theme);
-  return theme;
-};
-function ThemeProvider(_ref) {
-  var children = _ref.children,
-    name = _ref.name,
-    theme = _ref.theme;
-  var customTheme = React.useMemo(function () {
-    return name || !theme ? makeCustomTheme(name) : theme;
-  }, [name, theme]);
   return /*#__PURE__*/React__default.createElement(styles.StyledEngineProvider, {
     injectFirst: true
   }, /*#__PURE__*/React__default.createElement(styles.ThemeProvider, {
-    theme: customTheme
+    theme: theme
   }, /*#__PURE__*/React__default.createElement(material.CssBaseline, null), children));
 }
 

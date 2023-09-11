@@ -1,36 +1,36 @@
-import mobimed from "./mobimed";
-import drAnna from "./drAnna";
-import gms from "./gms";
-import medincenter from "./medincenter";
-import medswiss from "./medswiss";
-import mediadoc from "./mediadoc";
-import minfin from "./minfin";
-import pimu from "./pimu";
-import ncn from "./ncn";
-import sibgmu from "./sibgmu";
-import mositalmed from "./mositalmed";
+import mobimed from './mobimed';
+import drAnna from './drAnna';
+import gms from './gms';
+import medincenter from './medincenter';
+import medswiss from './medswiss';
+import mediadoc from './mediadoc';
+import minfin from './minfin';
+import pimu from './pimu';
+import ncn from './ncn';
+import sibgmu from './sibgmu';
+import mositalmed from './mositalmed';
 
 export default function getTheme(name?: string) {
-  console.log("name", name);
-  return name === "drAnna"
+  console.log('name', name);
+  return name === 'drAnna'
     ? drAnna
-    : name === "gms"
+    : name === 'gms'
     ? gms
-    : name === "medincenter"
+    : name === 'medincenter'
     ? medincenter
-    : name === "medswiss"
+    : name === 'medswiss'
     ? medswiss
-    : name === "mediadoc"
+    : name === 'mediadoc'
     ? mediadoc
-    : name === "minfin"
+    : name === 'minfin'
     ? minfin
-    : name === "pimu"
+    : name === 'pimu'
     ? pimu
-    : name === "ncn"
+    : name === 'ncn'
     ? ncn
-    : name === "sibgmu"
+    : name === 'sibgmu'
     ? sibgmu
-    : name === "mositalmed"
+    : name === 'mositalmed'
     ? mositalmed
     : mobimed;
 }

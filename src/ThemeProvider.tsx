@@ -5,40 +5,34 @@ import {
   ThemeProvider as MUIThemeProvider,
   createTheme,
   StyledEngineProvider,
-  ThemeOptions,
-  Theme
+  ThemeOptions
 } from "@mui/material/styles";
 
 import getTheme from "./getTheme";
 
-const makeCustomTheme = (name?: string): Theme => {
+export default function ThemeProvider({
+  children,
+  name
+}: {
+  children: React.ReactNode;
+  name?: string;
+}) {
   const { palette, typography, componentsOverride } = getTheme(name);
 
-  const themeOptions: ThemeOptions = { palette, typography }
+  const themeOptions = useMemo<ThemeOptions>(
+    () => ({
+      palette,
+      typography
+    }),
+    []
+  );
 
   const theme = createTheme(themeOptions);
   theme.components = componentsOverride(theme);
 
-  return theme;
-}
-
-export default function ThemeProvider({
-  children,
-  name,
-  theme
-}: {
-  children: React.ReactNode;
-  name?: string;
-  theme?: Theme
-}) {
-  const customTheme = useMemo<Theme>(() =>
-    name || !theme ? makeCustomTheme(name) : theme,
-    [name, theme]
-  )
-
   return (
     <StyledEngineProvider injectFirst>
-      <MUIThemeProvider theme={customTheme}>
+      <MUIThemeProvider theme={theme}>
         <CssBaseline />
         {children}
       </MUIThemeProvider>
