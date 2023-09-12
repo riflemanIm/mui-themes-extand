@@ -7770,25 +7770,30 @@ function getTheme(name) {
   return name === 'drAnna' ? drAnna : name === 'gms' ? gms : name === 'medincenter' ? medincenter : name === 'medswiss' ? medswiss : name === 'mediadoc' ? mediadoc : name === 'minfin' ? minfin : name === 'pimu' ? pimu : name === 'ncn' ? ncn : name === 'sibgmu' ? sibgmu : name === 'mositalmed' ? mositalmed : mobimed;
 }
 
-function ThemeProvider(_ref) {
-  var children = _ref.children,
-    name = _ref.name;
+var makeCustomTheme = function makeCustomTheme(name) {
   var _getTheme = getTheme(name),
     palette = _getTheme.palette,
     typography = _getTheme.typography,
     componentsOverride = _getTheme.componentsOverride;
-  var themeOptions = React.useMemo(function () {
-    return {
-      palette: palette,
-      typography: typography
-    };
-  }, []);
+  var themeOptions = {
+    palette: palette,
+    typography: typography
+  };
   var theme = styles.createTheme(themeOptions);
   theme.components = componentsOverride(theme);
+  return theme;
+};
+function ThemeProvider(_ref) {
+  var children = _ref.children,
+    name = _ref.name,
+    theme = _ref.theme;
+  var customTheme = React.useMemo(function () {
+    return name || !theme ? makeCustomTheme(name) : theme;
+  }, [name, theme]);
   return /*#__PURE__*/React__default.createElement(styles.StyledEngineProvider, {
     injectFirst: true
   }, /*#__PURE__*/React__default.createElement(styles.ThemeProvider, {
-    theme: theme
+    theme: customTheme
   }, /*#__PURE__*/React__default.createElement(material.CssBaseline, null), children));
 }
 
