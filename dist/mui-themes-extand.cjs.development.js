@@ -6373,60 +6373,60 @@ var lighterenRate$9 = 1.5;
 var lightenRate$9 = 7.5;
 var darkenRate$9 = 15;
 var darkerRate$9 = 30;
-var primary$9 = "#2E3146";
-var secondary$9 = "#B4193C";
-var warning$9 = "#F57069";
-var success$9 = "#FFC9AB";
-var info$9 = "#F2D0B2";
-var error$9 = "#802121";
-var hero$9 = "#B00C2F";
+var primary$9 = '#2873AA';
+var secondary$9 = '#5F7D8E';
+var warning$9 = '#FF352A';
+var success$9 = '#4DAE00';
+var info$9 = '#C2C4CB';
+var error$9 = '#E20B00';
+var hero$9 = '#5F7D8E';
 var PRIMARY$9 = {
   lighter: /*#__PURE__*/tinycolor(primary$9).lighten(lighterenRate$9).toHexString(),
   main: primary$9,
   light: /*#__PURE__*/tinycolor(primary$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$9).darken(darkenRate$9).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$9).darken(darkerRate$9).toHexString(),
-  contrastText: "#fff"
+  contrastText: '#fff'
 };
 var SECONDARY$9 = {
-  lighter: "#D6E4FF",
+  lighter: '#D6E4FF',
   main: secondary$9,
   light: /*#__PURE__*/tinycolor(secondary$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$9).darken(darkenRate$9).toHexString(),
-  contrastText: "#ccc",
-  darker: "#E87780"
+  contrastText: '#ccc',
+  darker: '#E87780'
 };
 var INFO$9 = {
-  lighter: "#FCEDF2",
+  lighter: '#FCEDF2',
   main: info$9,
   light: /*#__PURE__*/tinycolor(info$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$9).darken(darkenRate$9).toHexString(),
-  contrastText: "#fff",
-  darker: "#F7BFBC"
+  contrastText: '#fff',
+  darker: '#F7BFBC'
 };
 var SUCCESS$9 = {
-  lighter: "#E9FCD4",
+  lighter: '#E9FCD4',
   main: success$9,
   light: /*#__PURE__*/tinycolor(success$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$9).darken(darkenRate$9).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D"
+  contrastText: '#ccc',
+  darker: '#08660D'
 };
 var WARNING$9 = {
-  lighter: "#FFF7CD",
+  lighter: '#FFF7CD',
   main: warning$9,
   light: /*#__PURE__*/tinycolor(warning$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$9).darken(darkenRate$9).toHexString(),
-  darker: "#7A4F01",
+  darker: '#7A4F01',
   contrastText: GREY[800]
 };
 var ERROR$9 = {
-  lighter: "#FFE7D9",
+  lighter: '#FFE7D9',
   main: error$9,
   light: /*#__PURE__*/tinycolor(error$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$9).darken(darkenRate$9).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff"
+  darker: '#7A0C2E',
+  contrastText: '#fff'
 };
 var GRADIENTS$9 = {
   primary: /*#__PURE__*/createGradient(PRIMARY$9.light, PRIMARY$9.main),
@@ -6434,8 +6434,8 @@ var GRADIENTS$9 = {
   success: /*#__PURE__*/createGradient(SUCCESS$9.light, SUCCESS$9.main),
   warning: /*#__PURE__*/createGradient(WARNING$9.light, WARNING$9.main),
   error: /*#__PURE__*/createGradient(ERROR$9.light, ERROR$9.main),
-  one: "#7A232E",
-  two: "#B4193C"
+  one: '#A9341E',
+  two: '#7A232E'
 };
 var palette$9 = {
   hero: hero$9,
@@ -6456,49 +6456,49 @@ var palette$9 = {
     disabled: GREY[400]
   },
   background: {
-    paper: "#fff",
+    paper: '#fff',
     "default": GREY[100],
     neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
-    info: "rgba(174 33 3, 0.4)",
+    warning: '#FEF1F0',
+    error: '#ECECEC',
+    info: 'rgba(174 33 3, 0.4)',
     infoGadient: /*#__PURE__*/createGradient(INFO$9.lighter, INFO$9.light),
-    success: "#FFE7CE"
+    success: '#FFE7CE'
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
     disabled: GREY[50080],
-    disabledBackground: GREY[50024],
+    disabledBackground: '#E7CBC7',
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: PRIMARY$9.main,
-    toggle2: PRIMARY$9.light,
-    toggle3: "#FCEDF2",
-    toggle4: "#fff"
+    toggle1: hero$9,
+    toggle2: /*#__PURE__*/tinycolor(hero$9).lighten(lightenRate$9).toHexString(),
+    toggle3: '#F5F5F5',
+    toggle4: '#fff'
   },
   sideBar: {
-    color: "#2E3146",
-    colorLeft: "#B4193C",
-    colorHover: "#E20B00",
-    colorActive: "#000000",
-    bg: "#fff"
+    color: '#7C7D80',
+    colorLeft: '#B4193C',
+    colorHover: '#E20B00',
+    colorActive: '#000000',
+    bg: '#fff'
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #B4193C 3.01%, #7A232E 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #4C4C4C 3.01%, #7A232E 95.95%)",
-    shadow: "0px 1px 4px rgba(0, 0, 0, 0.15)"
+    bgColor: 'linear-gradient(139.78deg, #A9341E 3.01%, #7A232E 95.95%)',
+    bgColorHover: 'linear-gradient(139.78deg, #E35D44 3.01%, #C03920 95.95%)',
+    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
   },
   bgLight: {
-    one: "#F4F4F4",
-    two: "#FFEEEE",
-    disabled: "rgba(174, 33, 3, 0.4)"
+    one: '#F5F5F5',
+    two: '#FFEEEE',
+    disabled: '#DFC8CA'
   },
   shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
+    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
   }
 };
 
@@ -6946,8 +6946,8 @@ function IconButton$9(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          "& span > svg": {
-            color: theme.palette.primary.main
+          '& span > svg': {
+            color: theme.palette.hero
           }
         }
       }
