@@ -7162,7 +7162,7 @@ var palette$a = {
     neutral: GREY[200],
     warning: "#FEF1F0",
     error: "#ECECEC",
-    info: "rgba(97, 87, 255, 0.1);",
+    info: "#FFEED6",
     infoGadient: /*#__PURE__*/createGradient(INFO$a.lighter, INFO$a.light),
     success: "#FFE7CE"
   },
@@ -7194,7 +7194,7 @@ var palette$a = {
   },
   bgLight: {
     one: "#F6F4F0",
-    two: "#F3F3E4",
+    two: "#F2F2F1",
     disabled: "#D0C8B5"
   },
   shadows: {
