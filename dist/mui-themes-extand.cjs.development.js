@@ -7765,9 +7765,710 @@ var mositalmed = {
   componentsOverride: ComponentsOverrides$a
 };
 
+// ----------------------------------------------------------------------
+var lighterenRate$b = 1.5;
+var lightenRate$b = 7.5;
+var darkenRate$b = 15;
+var darkerRate$b = 30;
+var primary$b = '#AC729C';
+var secondary$b = '#C8316C';
+var warning$b = '#FF4D75';
+var success$b = '#FFE7CE';
+var info$b = '#13D790';
+var error$b = '#D41442';
+var hero$b = '#BD8AAD';
+var PRIMARY$b = {
+  lighter: /*#__PURE__*/tinycolor(primary$b).lighten(lighterenRate$b).toHexString(),
+  main: primary$b,
+  light: /*#__PURE__*/tinycolor(primary$b).lighten(lightenRate$b).toHexString(),
+  dark: /*#__PURE__*/tinycolor(primary$b).darken(darkenRate$b).toHexString(),
+  darker: /*#__PURE__*/tinycolor(primary$b).darken(darkerRate$b).toHexString(),
+  contrastText: '#fff'
+};
+var SECONDARY$b = {
+  lighter: '#D6E4FF',
+  main: secondary$b,
+  light: /*#__PURE__*/tinycolor(secondary$b).lighten(lightenRate$b).toHexString(),
+  dark: /*#__PURE__*/tinycolor(secondary$b).darken(darkenRate$b).toHexString(),
+  contrastText: '#ccc',
+  darker: '#E87780'
+};
+var INFO$b = {
+  lighter: '#FCEDF2',
+  main: info$b,
+  light: /*#__PURE__*/tinycolor(info$b).lighten(lightenRate$b).toHexString(),
+  dark: /*#__PURE__*/tinycolor(info$b).darken(darkenRate$b).toHexString(),
+  contrastText: '#fff',
+  darker: '#F7BFBC'
+};
+var SUCCESS$b = {
+  lighter: '#E9FCD4',
+  main: success$b,
+  light: /*#__PURE__*/tinycolor(success$b).lighten(lightenRate$b).toHexString(),
+  dark: /*#__PURE__*/tinycolor(success$b).darken(darkenRate$b).toHexString(),
+  contrastText: '#ccc',
+  darker: '#08660D'
+};
+var WARNING$b = {
+  lighter: '#FFF7CD',
+  main: warning$b,
+  light: /*#__PURE__*/tinycolor(warning$b).lighten(lightenRate$b).toHexString(),
+  dark: /*#__PURE__*/tinycolor(warning$b).darken(darkenRate$b).toHexString(),
+  darker: '#7A4F01',
+  contrastText: GREY[800]
+};
+var ERROR$b = {
+  lighter: '#FFE7D9',
+  main: error$b,
+  light: /*#__PURE__*/tinycolor(error$b).lighten(lightenRate$b).toHexString(),
+  dark: /*#__PURE__*/tinycolor(error$b).darken(darkenRate$b).toHexString(),
+  darker: '#7A0C2E',
+  contrastText: '#fff'
+};
+var GRADIENTS$b = {
+  primary: /*#__PURE__*/createGradient(PRIMARY$b.light, PRIMARY$b.main),
+  info: /*#__PURE__*/createGradient(INFO$b.light, INFO$b.main),
+  success: /*#__PURE__*/createGradient(SUCCESS$b.light, SUCCESS$b.main),
+  warning: /*#__PURE__*/createGradient(WARNING$b.light, WARNING$b.main),
+  error: /*#__PURE__*/createGradient(ERROR$b.light, ERROR$b.main),
+  one: '#AC729C',
+  two: '#734464'
+};
+var palette$b = {
+  hero: hero$b,
+  primary: /*#__PURE__*/_extends({}, PRIMARY$b),
+  secondary: /*#__PURE__*/_extends({}, SECONDARY$b),
+  info: /*#__PURE__*/_extends({}, INFO$b),
+  success: /*#__PURE__*/_extends({}, SUCCESS$b),
+  warning: /*#__PURE__*/_extends({}, WARNING$b),
+  error: /*#__PURE__*/_extends({}, ERROR$b),
+  grey: GREY,
+  gradients: GRADIENTS$b,
+  divider: GREY[50024],
+  text: {
+    primary: GREY[800],
+    secondary: GREY[600],
+    boby2: GREY[600],
+    subtitle2: GREY[50080],
+    disabled: GREY[400]
+  },
+  background: {
+    paper: '#fff',
+    "default": '#E4FFFE',
+    neutral: GREY[200],
+    warning: '#ECECEC',
+    error: '#ECECEC',
+    info: '#F8F1FC',
+    infoGadient: /*#__PURE__*/createGradient(INFO$b.lighter, INFO$b.light),
+    success: '#FFEED6'
+  },
+  action: {
+    active: GREY[600],
+    hover: GREY[5008],
+    selected: GREY[50016],
+    disabled: '#85CCCA',
+    disabledBackground: '#85CCCA',
+    focus: GREY[50024],
+    hoverOpacity: 0.08,
+    disabledOpacity: 0.48,
+    toggle1: hero$b,
+    toggle2: /*#__PURE__*/tinycolor(hero$b).lighten(lightenRate$b).toHexString(),
+    toggle3: '#F5F5F5',
+    toggle4: '#fff'
+  },
+  sideBar: {
+    color: '#414D4C',
+    colorLeft: '#AC729C',
+    colorHover: '#744164',
+    colorActive: '#000000',
+    bg: '#fff'
+  },
+  baseButton: {
+    bgColor: 'linear-gradient(139.78deg, #AC729C 3.01%, #734464 95.95%)',
+    bgColorHover: 'linear-gradient(139.78deg, #BD8AAD 3.01%, #9C5B88 95.95%)',
+    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
+  },
+  bgLight: {
+    one: '#F9F1FC',
+    two: '#FEF0F5',
+    disabled: '#85CCCA'
+  },
+  shadows: {
+    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+  }
+};
+
+var FONT_PRIMARY$b = "Avenir Next Cyr";
+var typography$b = {
+  fontFamily: FONT_PRIMARY$b,
+  fontWeightRegular: 400,
+  fontWeightMedium: 500,
+  fontWeightBold: 600,
+  h1: {
+    fontSize: "2.0rem",
+    fontWeight: 500
+  },
+  h2: {
+    fontSize: "1.7rem",
+    fontWeight: 500
+  },
+  h3: {
+    fontSize: "1.64rem",
+    fontWeight: 500
+  },
+  h4: {
+    fontSize: "1.5rem"
+  },
+  h5: {
+    fontSize: "1.285rem"
+  },
+  h6: {
+    fontSize: "1.05rem"
+  },
+  subtitle1: {
+    fontWeight: 400,
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(16)
+  },
+  subtitle2: {
+    fontWeight: 450,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  },
+  body1: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(16)
+  },
+  body2: {
+    fontWeight: 400,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  },
+  caption: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(12)
+  },
+  button: {
+    fontWeight: 500,
+    lineHeight: 24 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  }
+};
+
+// ----------------------------------------------------------------------
+function Card$b(theme) {
+  return {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Paper$b(theme) {
+  return {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#FFFFFF",
+          backgroundSize: "cover",
+          boxSizing: "border-box",
+          boxShadow: theme.palette.shadows.card,
+          transition: "none"
+        }
+      }
+    }
+  };
+}
+
+function Input$b(theme) {
+  return {
+    // MuiInputBase: {
+    //   styleOverrides: {
+    //     root: {
+    //       '&.Mui-disabled': {
+    //         '& svg': { color: theme.palette.text.disabled }
+    //       }
+    //     },
+    //     input: {
+    //       '&::placeholder': {
+    //         opacity: 1,
+    //         color: theme.palette.text.disabled
+    //       }
+    //     }
+    //   }
+    // },
+    MuiInput: {
+      styleOverrides: {
+        underline: {
+          "&:before": {
+            borderBottom: "1px solid rgb(196 196 196)"
+          },
+          "&:hover:not(.Mui-disabled):before": {
+            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
+          }
+        }
+      }
+    },
+    MuiFilledInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: styles.alpha(theme.palette.grey[500], 0.12),
+          "&:hover": {
+            backgroundColor: styles.alpha(theme.palette.grey[500], 0.16)
+          },
+          "&.Mui-focused": {
+            backgroundColor: theme.palette.action.focus
+          },
+          "&.Mui-disabled": {
+            backgroundColor: theme.palette.action.disabledBackground
+          }
+        },
+        underline: {
+          "&:before": {
+            borderBottomColor: styles.alpha(theme.palette.grey[500], 0.48)
+          }
+        }
+      }
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: theme.spacing(0.8),
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            backgroundColor: "#fff"
+          },
+          "& fieldset": {
+            borderColor: styles.alpha(theme.palette.grey[500], 0.32)
+          },
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
+            borderColor: styles.alpha(theme.palette.primary.main, 0.2)
+          },
+          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: styles.alpha(theme.palette.primary.main, 0.2)
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: theme.palette.primary.dark,
+            borderWidth: "2px"
+          },
+          "&.Mui-focused fieldset": {
+            borderWidth: "2px"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Button$b(theme) {
+  return {
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          textTransform: 'inherit'
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'inherit',
+          borderRadius: 5,
+          fontStyle: 'normal',
+          fontWeight: 500,
+          boxShadow: 'none',
+          border: 0,
+          '&:hover': {
+            border: 0,
+            background: 'transparent'
+          },
+          '&.Mui-disabled': {
+            background: theme.palette.bgLight.disabled + " !important",
+            color: '#fff !important'
+          },
+          '&.Mui-select': {
+            backgroundColor: theme.palette.primary.main,
+            color: '#fff',
+            border: '1px solid #bdbdbd'
+          }
+        },
+        containedPrimary: {
+          color: '#fff',
+          background: theme.palette.baseButton.bgColor,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            background: theme.palette.baseButton.bgColorHover + " !important",
+            boxShadow: 'none'
+          }
+        },
+        containedSecondary: {
+          color: theme.palette.hero,
+          background: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            background: theme.palette.bgLight.two,
+            boxShadow: 'none'
+          }
+        },
+        outlinedPrimary: {
+          color: theme.palette.primary.main,
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+          '&:hover': {
+            color: theme.palette.primary.light
+          }
+        },
+        outlinedInfo: {
+          color: theme.palette.primary.main,
+          backgroundColor: '#fff',
+          boxShadow: 'none',
+          '&:hover': {
+            backgroundColor: '#fff',
+            color: theme.palette.primary.dark
+          }
+        },
+        outlinedSuccess: {
+          color: theme.palette.primary.dark,
+          backgroundColor: theme.palette.success.light,
+          '&:hover': {
+            color: theme.palette.primary.darker,
+            backgroundColor: theme.palette.success.light,
+            boxShadow: 'none'
+          }
+        },
+        containedSuccess: {
+          color: '#fff',
+          backgroundColor: theme.palette.success.main,
+          '&:hover': {
+            backgroundColor: theme.palette.success.light,
+            boxShadow: 'none'
+          }
+        },
+        containedWarning: {
+          color: '#fff',
+          backgroundColor: theme.palette.warning.main,
+          '&:hover': {
+            backgroundColor: theme.palette.warning.light,
+            boxShadow: 'none'
+          }
+        },
+        containedInfo: {
+          color: '#fff',
+          backgroundColor: theme.palette.info.main,
+          '&:hover': {
+            backgroundColor: theme.palette.info.light,
+            boxShadow: 'none'
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Tooltip$b(theme) {
+  return {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          backgroundColor: theme.palette.grey[800]
+        },
+        arrow: {
+          color: theme.palette.grey[800]
+        }
+      }
+    }
+  };
+}
+
+function Backdrop$b(theme) {
+  var varLow = styles.alpha(theme.palette.grey[900], 0.3);
+  var varHigh = styles.alpha(theme.palette.grey[900], 0.9);
+  return {
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          "&.MuiBackdrop-invisible": {
+            background: "transparent"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Typography$b(theme) {
+  return {
+    MuiTypography: {
+      styleOverrides: {
+        paragraph: {
+          marginBottom: theme.spacing(2)
+        },
+        gutterBottom: {
+          marginBottom: theme.spacing(2)
+        },
+        body2: {
+          color: theme.palette.text.boby2
+        },
+        caption: {
+          fontSize: 14
+        },
+        caption_date: {
+          fontSize: 13
+        },
+        subtitle2: {
+          color: theme.palette.text.subtitle2
+        }
+      }
+    }
+  };
+}
+
+function CssBaseline$b() {
+  return {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '*': {
+          margin: 0,
+          padding: 0,
+          boxSizing: 'border-box'
+        },
+        html: {
+          width: '100%',
+          height: '100%',
+          WebkitOverflowScrolling: 'touch'
+        },
+        body: {
+          width: '100%',
+          height: '100%'
+        },
+        '#root': {
+          width: '100%',
+          height: '100%'
+        },
+        input: {
+          '&[type=number]': {
+            MozAppearance: 'textfield',
+            '&::-webkit-outer-spin-button': {
+              margin: 0,
+              WebkitAppearance: 'none'
+            },
+            '&::-webkit-inner-spin-button': {
+              margin: 0,
+              WebkitAppearance: 'none'
+            }
+          }
+        },
+        img: {
+          display: 'block',
+          maxWidth: '100%'
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Autocomplete$b(theme) {
+  return {
+    MuiAutocomplete: {
+      styleOverrides: {
+        paper: {
+          boxShadow: theme.palette.shadows.card
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function ToggleButton$b(theme) {
+  return {
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          padding: "0px 12px",
+          border: "1px solid " + theme.palette.action.toggle1,
+          width: "100%",
+          height: 42,
+          boxSizing: "border-box",
+          borderRadius: theme.spacing(0.6),
+          textTransform: "none",
+          fontStyle: "normal",
+          fontWeight: 500,
+          color: theme.palette.action.toggle2,
+          background: theme.palette.action.toggle3,
+          boxShadow: theme.palette.shadows.card,
+          "&:hover": {
+            color: theme.palette.action.toggle4,
+            background: theme.palette.action.toggle2 + " !important"
+          },
+          "&.Mui-selected": {
+            color: theme.palette.action.toggle4,
+            backgroundColor: theme.palette.action.toggle1
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function AppBar$b(theme) {
+  return {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          boxShadow: "none !important",
+          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function IconButton$b(theme) {
+  return {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          '& span > svg': {
+            color: theme.palette.hero
+          }
+        }
+      }
+    }
+  };
+}
+
+function Picker$b() {
+  return {
+    MuiPickerStaticWrapper: {
+      styleOverrides: {
+        root: {
+          minWidth: 'auto',
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+    MuiCalendarPicker: {
+      styleOverrides: {
+        root: {
+          width: 300
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Rating$b(theme) {
+  return {
+    MuiRating: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.main,
+          "& span > span": {
+            top: 0,
+            left: 0
+          }
+        }
+      }
+    }
+  };
+}
+
+function Menu$b() {
+  return {
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Alert$b(theme) {
+  return {
+    MuiAlert: {
+      styleOverrides: {
+        icon: {
+          color: theme.palette.success.dark + " !important"
+        },
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        },
+        standardWarning: {
+          backgroundColor: theme.palette.background.warning
+        },
+        standardError: {
+          backgroundColor: theme.palette.background.error
+        },
+        standardInfo: {
+          backgroundColor: theme.palette.background.info
+        },
+        standardSuccess: {
+          backgroundColor: theme.palette.background.success
+        }
+      }
+    }
+  };
+}
+
+function Link$b() {
+  return {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none'
+        }
+      }
+    }
+  };
+}
+
+function Badge$b() {
+  return {
+    MuiBadge: {
+      styleOverrides: {
+        colorWarning: {
+          color: '#fff',
+          fontWeight: 500
+        }
+      }
+    }
+  };
+}
+
+//
+function ComponentsOverrides$b(theme) {
+  return Object.assign(AppBar$b(theme), Card$b(theme), Input$b(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
+}
+
+var skyfert = {
+  palette: palette$b,
+  typography: typography$b,
+  componentsOverride: ComponentsOverrides$b
+};
+
 function getTheme(name) {
-  console.log('name', name);
-  return name === 'drAnna' ? drAnna : name === 'gms' ? gms : name === 'medincenter' ? medincenter : name === 'medswiss' ? medswiss : name === 'mediadoc' ? mediadoc : name === 'minfin' ? minfin : name === 'pimu' ? pimu : name === 'ncn' ? ncn : name === 'sibgmu' ? sibgmu : name === 'mositalmed' ? mositalmed : mobimed;
+  console.log("name", name);
+  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : mobimed;
 }
 
 var makeCustomTheme = function makeCustomTheme(name) {
