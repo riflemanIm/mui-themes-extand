@@ -7763,60 +7763,60 @@ var lighterenRate$b = 1.5;
 var lightenRate$b = 7.5;
 var darkenRate$b = 15;
 var darkerRate$b = 30;
-var primary$b = '#AC729C';
-var secondary$b = '#C8316C';
-var warning$b = '#FF4D75';
-var success$b = '#FFE7CE';
-var info$b = '#13D790';
-var error$b = '#D41442';
-var hero$b = '#BD8AAD';
+var primary$b = "#AC729C";
+var secondary$b = "#C8316C";
+var warning$b = "#FF4D75";
+var success$b = "#FFE7CE";
+var info$b = "#D9DEEC";
+var error$b = "#D41442";
+var hero$b = "#BD8AAD";
 var PRIMARY$b = {
   lighter: /*#__PURE__*/tinycolor(primary$b).lighten(lighterenRate$b).toHexString(),
   main: primary$b,
   light: /*#__PURE__*/tinycolor(primary$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$b).darken(darkenRate$b).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$b).darken(darkerRate$b).toHexString(),
-  contrastText: '#fff'
+  contrastText: "#fff"
 };
 var SECONDARY$b = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$b,
   light: /*#__PURE__*/tinycolor(secondary$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$b).darken(darkenRate$b).toHexString(),
-  contrastText: '#ccc',
-  darker: '#E87780'
+  contrastText: "#ccc",
+  darker: "#E87780"
 };
 var INFO$b = {
-  lighter: '#FCEDF2',
+  lighter: "#F8F1FC",
   main: info$b,
   light: /*#__PURE__*/tinycolor(info$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$b).darken(darkenRate$b).toHexString(),
-  contrastText: '#fff',
-  darker: '#F7BFBC'
+  contrastText: "#fff",
+  darker: "#F7BFBC"
 };
 var SUCCESS$b = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$b,
   light: /*#__PURE__*/tinycolor(success$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$b).darken(darkenRate$b).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$b = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$b,
   light: /*#__PURE__*/tinycolor(warning$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$b).darken(darkenRate$b).toHexString(),
-  darker: '#7A4F01',
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$b = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$b,
   light: /*#__PURE__*/tinycolor(error$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$b).darken(darkenRate$b).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$b = {
   primary: /*#__PURE__*/createGradient(PRIMARY$b.light, PRIMARY$b.main),
@@ -7824,8 +7824,8 @@ var GRADIENTS$b = {
   success: /*#__PURE__*/createGradient(SUCCESS$b.light, SUCCESS$b.main),
   warning: /*#__PURE__*/createGradient(WARNING$b.light, WARNING$b.main),
   error: /*#__PURE__*/createGradient(ERROR$b.light, ERROR$b.main),
-  one: '#AC729C',
-  two: '#734464'
+  one: "#AC729C",
+  two: "#734464"
 };
 var palette$b = {
   hero: hero$b,
@@ -7846,49 +7846,49 @@ var palette$b = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#E4FFFE',
+    paper: "#fff",
+    "default": "#E4FFFE",
     neutral: GREY[200],
-    warning: '#ECECEC',
-    error: '#ECECEC',
-    info: '#F8F1FC',
-    infoGadient: /*#__PURE__*/createGradient(INFO$b.lighter, INFO$b.light),
-    success: '#FFEED6'
+    warning: "#ECECEC",
+    error: "#ECECEC",
+    info: "#F8F1FC",
+    infoGadient: /*#__PURE__*/createGradient(INFO$b.light, INFO$b.main),
+    success: "#FFEED6"
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
-    disabled: '#85CCCA',
-    disabledBackground: '#85CCCA',
+    disabled: "#85CCCA",
+    disabledBackground: "#85CCCA",
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$b,
     toggle2: /*#__PURE__*/tinycolor(hero$b).lighten(lightenRate$b).toHexString(),
-    toggle3: '#F5F5F5',
-    toggle4: '#fff'
+    toggle3: "#F5F5F5",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#414D4C',
-    colorLeft: '#AC729C',
-    colorHover: '#744164',
-    colorActive: '#000000',
-    bg: '#fff'
+    color: "#414D4C",
+    colorLeft: "#AC729C",
+    colorHover: "#744164",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #AC729C 3.01%, #734464 95.95%)',
-    bgColorHover: 'linear-gradient(139.78deg, #BD8AAD 3.01%, #9C5B88 95.95%)',
-    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
+    bgColor: "linear-gradient(139.78deg, #AC729C 3.01%, #734464 95.95%)",
+    bgColorHover: "linear-gradient(139.78deg, #BD8AAD 3.01%, #9C5B88 95.95%)",
+    shadow: "0px 4px 15px rgba(0, 0, 0, 0.08)"
   },
   bgLight: {
-    one: '#F9F1FC',
-    two: '#FEF0F5',
-    disabled: '#85CCCA'
+    one: "#F9F1FC",
+    two: "#FEF0F5",
+    disabled: "#CAB5C3"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
@@ -8370,6 +8370,9 @@ function Rating$b(theme) {
   return {
     MuiRating: {
       styleOverrides: {
+        icon: {
+          color: theme.palette.primary.main
+        },
         root: {
           color: theme.palette.primary.main,
           "& span > span": {
