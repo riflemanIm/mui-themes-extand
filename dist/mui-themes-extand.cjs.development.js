@@ -7854,7 +7854,7 @@ var palette$b = {
   },
   background: {
     paper: "#fff",
-    "default": "#E4FFFE",
+    "default": "#fff",
     neutral: GREY[200],
     warning: "#ECECEC",
     error: "#ECECEC",
