@@ -1,7 +1,8 @@
-export default function CssBaseline(): {
+import { Theme } from "@mui/material/styles";
+export default function CssBaseline(theme: Theme): {
     MuiCssBaseline: {
         styleOverrides: {
-            '*': {
+            "*": {
                 margin: number;
                 padding: number;
                 boxSizing: string;
@@ -14,19 +15,20 @@ export default function CssBaseline(): {
             body: {
                 width: string;
                 height: string;
+                backgroundColor: string;
             };
-            '#root': {
+            "#root": {
                 width: string;
                 height: string;
             };
             input: {
-                '&[type=number]': {
+                "&[type=number]": {
                     MozAppearance: string;
-                    '&::-webkit-outer-spin-button': {
+                    "&::-webkit-outer-spin-button": {
                         margin: number;
                         WebkitAppearance: string;
                     };
-                    '&::-webkit-inner-spin-button': {
+                    "&::-webkit-inner-spin-button": {
                         margin: number;
                         WebkitAppearance: string;
                     };

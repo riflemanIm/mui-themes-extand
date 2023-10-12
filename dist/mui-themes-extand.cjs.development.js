@@ -8234,44 +8234,45 @@ function Typography$b(theme) {
   };
 }
 
-function CssBaseline$b() {
+function CssBaseline$b(theme) {
   return {
     MuiCssBaseline: {
       styleOverrides: {
-        '*': {
+        "*": {
           margin: 0,
           padding: 0,
-          boxSizing: 'border-box'
+          boxSizing: "border-box"
         },
         html: {
-          width: '100%',
-          height: '100%',
-          WebkitOverflowScrolling: 'touch'
+          width: "100%",
+          height: "100%",
+          WebkitOverflowScrolling: "touch"
         },
         body: {
-          width: '100%',
-          height: '100%'
+          width: "100%",
+          height: "100%",
+          backgroundColor: theme.palette.background["default"]
         },
-        '#root': {
-          width: '100%',
-          height: '100%'
+        "#root": {
+          width: "100%",
+          height: "100%"
         },
         input: {
-          '&[type=number]': {
-            MozAppearance: 'textfield',
-            '&::-webkit-outer-spin-button': {
+          "&[type=number]": {
+            MozAppearance: "textfield",
+            "&::-webkit-outer-spin-button": {
               margin: 0,
-              WebkitAppearance: 'none'
+              WebkitAppearance: "none"
             },
-            '&::-webkit-inner-spin-button': {
+            "&::-webkit-inner-spin-button": {
               margin: 0,
-              WebkitAppearance: 'none'
+              WebkitAppearance: "none"
             }
           }
         },
         img: {
-          display: 'block',
-          maxWidth: '100%'
+          display: "block",
+          maxWidth: "100%"
         }
       }
     }
@@ -8460,7 +8461,7 @@ function Badge$b() {
 
 //
 function ComponentsOverrides$b(theme) {
-  return Object.assign(AppBar$b(theme), Card$b(theme), Input$b(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
+  return Object.assign(AppBar$b(theme), Card$b(theme), Input$b(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(theme), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
 }
 
 var skyfert = {

@@ -32,7 +32,7 @@ export default function ComponentsOverrides(theme: Theme) {
     Tooltip(theme),
     Backdrop(theme),
     Typography(theme),
-    CssBaseline(),
+    CssBaseline(theme),
     Autocomplete(theme),
     ToggleButton(theme),
     IconButton(theme),
