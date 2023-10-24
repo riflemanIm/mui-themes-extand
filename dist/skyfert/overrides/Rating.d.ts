@@ -1,4 +1,4 @@
-import { Theme } from "@mui/material/styles";
+import { Theme } from '@mui/material/styles';
 export default function Rating(theme: Theme): {
     MuiRating: {
         styleOverrides: {
@@ -7,7 +7,7 @@ export default function Rating(theme: Theme): {
             };
             root: {
                 color: string;
-                "& span > span": {
+                '& span > span': {
                     top: number;
                     left: number;
                 };

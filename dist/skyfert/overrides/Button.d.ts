@@ -53,7 +53,9 @@ export default function Button(theme: Theme): {
                 backgroundColor: string;
                 boxShadow: string;
                 '&:hover': {
+                    backgroundColor: string;
                     color: string;
+                    boxShadow: string;
                 };
             };
             outlinedInfo: {

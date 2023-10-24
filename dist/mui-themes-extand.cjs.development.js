@@ -400,10 +400,12 @@ function Button(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -1104,10 +1106,12 @@ function Button$1(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -1808,10 +1812,12 @@ function Button$2(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -2162,60 +2168,60 @@ var lighterenRate$3 = 1.5;
 var lightenRate$3 = 7.5;
 var darkenRate$3 = 15;
 var darkerRate$3 = 30;
-var primary$3 = "#1F3E9A";
-var secondary$3 = "#a4aecb";
-var warning$3 = "#F57069";
-var success$3 = "#34DFA2";
-var info$3 = "#FF9690";
-var hero$3 = "#1F3E9A";
-var error$3 = "#f44336";
+var primary$3 = '#1F524A';
+var secondary$3 = '#EA99AB';
+var warning$3 = '#EF7785';
+var success$3 = '#FFE7CE';
+var info$3 = '#D7F5DF';
+var error$3 = '#D76977';
+var hero$3 = '#5A9388';
 var PRIMARY$3 = {
   lighter: /*#__PURE__*/tinycolor(primary$3).lighten(lighterenRate$3).toHexString(),
   main: primary$3,
   light: /*#__PURE__*/tinycolor(primary$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$3).darken(darkenRate$3).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$3).darken(darkerRate$3).toHexString(),
-  contrastText: "#fff"
+  contrastText: '#fff'
 };
 var SECONDARY$3 = {
-  lighter: "#D6E4FF",
+  lighter: '#D6E4FF',
   main: secondary$3,
   light: /*#__PURE__*/tinycolor(secondary$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$3).darken(darkenRate$3).toHexString(),
-  contrastText: "#ccc",
-  darker: "#091A7A"
+  contrastText: '#ccc',
+  darker: '#E87780'
 };
 var INFO$3 = {
-  lighter: "#D0F2FF",
+  lighter: '#F8FFFA',
   main: info$3,
   light: /*#__PURE__*/tinycolor(info$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$3).darken(darkenRate$3).toHexString(),
-  contrastText: "#fff",
-  darker: "#04297A"
+  contrastText: '#fff',
+  darker: '#F7BFBC'
 };
 var SUCCESS$3 = {
-  lighter: "#E9FCD4",
+  lighter: '#E9FCD4',
   main: success$3,
   light: /*#__PURE__*/tinycolor(success$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$3).darken(darkenRate$3).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D"
+  contrastText: '#ccc',
+  darker: '#08660D'
 };
 var WARNING$3 = {
-  lighter: "#FFF7CD",
+  lighter: '#FFF7CD',
   main: warning$3,
   light: /*#__PURE__*/tinycolor(warning$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$3).darken(darkenRate$3).toHexString(),
-  darker: "#7A4F01",
+  darker: '#7A4F01',
   contrastText: GREY[800]
 };
 var ERROR$3 = {
-  lighter: "#FFE7D9",
+  lighter: '#FFE7D9',
   main: error$3,
   light: /*#__PURE__*/tinycolor(error$3).lighten(lightenRate$3).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$3).darken(darkenRate$3).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff"
+  darker: '#7A0C2E',
+  contrastText: '#fff'
 };
 var GRADIENTS$3 = {
   primary: /*#__PURE__*/createGradient(PRIMARY$3.light, PRIMARY$3.main),
@@ -2223,8 +2229,8 @@ var GRADIENTS$3 = {
   success: /*#__PURE__*/createGradient(SUCCESS$3.light, SUCCESS$3.main),
   warning: /*#__PURE__*/createGradient(WARNING$3.light, WARNING$3.main),
   error: /*#__PURE__*/createGradient(ERROR$3.light, ERROR$3.main),
-  one: "#366CE3",
-  two: "#584CFF"
+  one: '#1F524A',
+  two: '#005349'
 };
 var palette$3 = {
   hero: hero$3,
@@ -2245,49 +2251,49 @@ var palette$3 = {
     disabled: GREY[400]
   },
   background: {
-    paper: "#fff",
-    "default": GREY[100],
+    paper: '#fff',
+    "default": '#fff',
     neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
-    info: "rgba(97, 87, 255, 0.1);",
-    infoGadient: /*#__PURE__*/createGradient(INFO$3.lighter, INFO$3.light),
-    success: "#FFE7CE"
+    warning: '#F1CBC6',
+    error: '#ECECEC',
+    info: '#F8FFFA',
+    infoGadient: /*#__PURE__*/createGradient(INFO$3.light, INFO$3.main),
+    success: '#FFEED6'
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
-    disabled: GREY[50080],
-    disabledBackground: GREY[50024],
+    disabled: '#005349',
+    disabledBackground: '#005349',
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: "#1F3E9A",
-    toggle2: "#1F3E9A",
-    toggle3: "#F1F4FC",
-    toggle4: "#fff"
+    toggle1: hero$3,
+    toggle2: /*#__PURE__*/tinycolor(hero$3).lighten(lightenRate$3).toHexString(),
+    toggle3: '#F5F5F5',
+    toggle4: '#fff'
   },
   sideBar: {
-    color: "#7C7D80",
-    colorLeft: "#7C7D80",
-    colorHover: "#1F3E9A",
-    colorActive: "#000",
-    bg: "#fff"
+    color: '#7C7D80',
+    colorLeft: '#1F524A',
+    colorHover: '#025047',
+    colorActive: '#000000',
+    bg: '#fff'
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #366CE3 3.01%, #584CFF 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #517EF8 3.01%, #574FFE 95.95%)",
-    shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
+    bgColor: 'linear-gradient(139.78deg, #1F524A 3.01%, #005349 95.95%)',
+    bgColorHover: 'linear-gradient(139.78deg, #1F524A 3.01%, #005349 95.95%)',
+    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
   },
   bgLight: {
-    one: "#f3f3f3",
-    two: "rgba(241, 244, 252, 0.6)",
-    disabled: "#90cbe6"
+    one: '#EDF5F0',
+    two: '#EFF9F7',
+    disabled: '#9AB7B3'
   },
   shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
+    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
   }
 };
 
@@ -2399,11 +2405,11 @@ function Input$3(theme) {
     MuiInput: {
       styleOverrides: {
         underline: {
-          "&:before": {
-            borderBottom: "1px solid rgb(196 196 196)"
+          '&:before': {
+            borderBottom: '1px solid rgb(196 196 196)'
           },
-          "&:hover:not(.Mui-disabled):before": {
-            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
+          '&:hover:not(.Mui-disabled):before': {
+            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
           }
         }
       }
@@ -2412,19 +2418,19 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           backgroundColor: styles.alpha(theme.palette.grey[500], 0.12),
-          "&:hover": {
+          '&:hover': {
             backgroundColor: styles.alpha(theme.palette.grey[500], 0.16)
           },
-          "&.Mui-focused": {
+          '&.Mui-focused': {
             backgroundColor: theme.palette.action.focus
           },
-          "&.Mui-disabled": {
+          '&.Mui-disabled': {
             backgroundColor: theme.palette.action.disabledBackground
           }
         },
         underline: {
-          "&:before": {
-            borderBottomColor: styles.alpha(theme.palette.grey[500], 0.56)
+          '&:before': {
+            borderBottomColor: styles.alpha(theme.palette.grey[500], 0.48)
           }
         }
       }
@@ -2433,25 +2439,25 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(0.8),
-          backgroundColor: "transparent",
-          "&.Mui-focused": {
-            backgroundColor: "#fff"
+          backgroundColor: 'transparent',
+          '&.Mui-focused': {
+            backgroundColor: '#fff'
           },
-          "& fieldset": {
-            borderColor: theme.palette.primary.light
+          '& fieldset': {
+            borderColor: '#D6E8D9'
           },
-          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
+          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
             borderColor: styles.alpha(theme.palette.primary.main, 0.2)
           },
-          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
+          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
             borderColor: styles.alpha(theme.palette.primary.main, 0.2)
           },
-          "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: theme.palette.hero,
-            borderWidth: "2px"
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: theme.palette.primary.dark,
+            borderWidth: '2px'
           },
-          "&.Mui-focused fieldset": {
-            borderWidth: "2px"
+          '&.Mui-focused fieldset': {
+            borderWidth: '2px'
           }
         }
       }
@@ -2507,15 +2513,18 @@ function Button$3(theme) {
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: 'none',
+            color: theme.palette.primary.dark
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -2626,7 +2635,7 @@ function Typography$3(theme) {
   };
 }
 
-function CssBaseline$3() {
+function CssBaseline$3(theme) {
   return {
     MuiCssBaseline: {
       styleOverrides: {
@@ -2642,7 +2651,8 @@ function CssBaseline$3() {
         },
         body: {
           width: '100%',
-          height: '100%'
+          height: '100%',
+          backgroundColor: theme.palette.background["default"]
         },
         '#root': {
           width: '100%',
@@ -2735,8 +2745,8 @@ function IconButton$3(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          "& span > svg": {
-            color: theme.palette.primary.main
+          '& span > svg': {
+            color: theme.palette.hero
           }
         }
       }
@@ -2769,9 +2779,12 @@ function Rating$3(theme) {
   return {
     MuiRating: {
       styleOverrides: {
+        icon: {
+          color: theme.palette.primary.main
+        },
         root: {
           color: theme.palette.primary.main,
-          "& span > span": {
+          '& span > span': {
             top: 0,
             left: 0
           }
@@ -2849,7 +2862,7 @@ function Badge$3() {
 
 //
 function ComponentsOverrides$3(theme) {
-  return Object.assign(AppBar$3(theme), Card$3(theme), Input$3(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
+  return Object.assign(AppBar$3(theme), Card$3(theme), Input$3(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(theme), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
 }
 
 var medincenter = {
@@ -3213,10 +3226,12 @@ function Button$4(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -3915,10 +3930,12 @@ function Button$5(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -4619,10 +4636,12 @@ function Button$6(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -5321,10 +5340,12 @@ function Button$7(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -6022,10 +6043,12 @@ function Button$8(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -6373,60 +6396,60 @@ var lighterenRate$9 = 1.5;
 var lightenRate$9 = 7.5;
 var darkenRate$9 = 15;
 var darkerRate$9 = 30;
-var primary$9 = "#2873AA";
-var secondary$9 = "#5F7D8E";
-var warning$9 = "#FF352A";
-var success$9 = "#4DAE00";
-var info$9 = "#C2C4CB";
-var error$9 = "#E20B00";
-var hero$9 = "#5F7D8E";
+var primary$9 = '#2873AA';
+var secondary$9 = '#5F7D8E';
+var warning$9 = '#FF352A';
+var success$9 = '#4DAE00';
+var info$9 = '#C2C4CB';
+var error$9 = '#E20B00';
+var hero$9 = '#5F7D8E';
 var PRIMARY$9 = {
   lighter: /*#__PURE__*/tinycolor(primary$9).lighten(lighterenRate$9).toHexString(),
   main: primary$9,
   light: /*#__PURE__*/tinycolor(primary$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$9).darken(darkenRate$9).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$9).darken(darkerRate$9).toHexString(),
-  contrastText: "#fff"
+  contrastText: '#fff'
 };
 var SECONDARY$9 = {
-  lighter: "#D6E4FF",
+  lighter: '#D6E4FF',
   main: secondary$9,
   light: /*#__PURE__*/tinycolor(secondary$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$9).darken(darkenRate$9).toHexString(),
-  contrastText: "#ccc",
-  darker: "#E87780"
+  contrastText: '#ccc',
+  darker: '#E87780'
 };
 var INFO$9 = {
-  lighter: "#FCEDF2",
+  lighter: '#FCEDF2',
   main: info$9,
   light: /*#__PURE__*/tinycolor(info$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$9).darken(darkenRate$9).toHexString(),
-  contrastText: "#fff",
-  darker: "#F7BFBC"
+  contrastText: '#fff',
+  darker: '#F7BFBC'
 };
 var SUCCESS$9 = {
-  lighter: "#E9FCD4",
+  lighter: '#E9FCD4',
   main: success$9,
   light: /*#__PURE__*/tinycolor(success$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$9).darken(darkenRate$9).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D"
+  contrastText: '#ccc',
+  darker: '#08660D'
 };
 var WARNING$9 = {
-  lighter: "#FFF7CD",
+  lighter: '#FFF7CD',
   main: warning$9,
   light: /*#__PURE__*/tinycolor(warning$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$9).darken(darkenRate$9).toHexString(),
-  darker: "#7A4F01",
+  darker: '#7A4F01',
   contrastText: GREY[800]
 };
 var ERROR$9 = {
-  lighter: "#FFE7D9",
+  lighter: '#FFE7D9',
   main: error$9,
   light: /*#__PURE__*/tinycolor(error$9).lighten(lightenRate$9).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$9).darken(darkenRate$9).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff"
+  darker: '#7A0C2E',
+  contrastText: '#fff'
 };
 var GRADIENTS$9 = {
   primary: /*#__PURE__*/createGradient(PRIMARY$9.light, PRIMARY$9.main),
@@ -6434,8 +6457,8 @@ var GRADIENTS$9 = {
   success: /*#__PURE__*/createGradient(SUCCESS$9.light, SUCCESS$9.main),
   warning: /*#__PURE__*/createGradient(WARNING$9.light, WARNING$9.main),
   error: /*#__PURE__*/createGradient(ERROR$9.light, ERROR$9.main),
-  one: "#A9341E",
-  two: "#7A232E"
+  one: '#A9341E',
+  two: '#7A232E'
 };
 var palette$9 = {
   hero: hero$9,
@@ -6456,49 +6479,49 @@ var palette$9 = {
     disabled: GREY[400]
   },
   background: {
-    paper: "#fff",
+    paper: '#fff',
     "default": GREY[100],
     neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
-    info: "rgba(174 33 3, 0.4)",
+    warning: '#FEF1F0',
+    error: '#ECECEC',
+    info: 'rgba(174 33 3, 0.4)',
     infoGadient: /*#__PURE__*/createGradient(INFO$9.lighter, INFO$9.light),
-    success: "#FFE7CE"
+    success: '#FFE7CE'
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
     disabled: GREY[50080],
-    disabledBackground: "#E7CBC7",
+    disabledBackground: '#E7CBC7',
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$9,
     toggle2: /*#__PURE__*/tinycolor(hero$9).lighten(lightenRate$9).toHexString(),
-    toggle3: "#F5F5F5",
-    toggle4: "#fff"
+    toggle3: '#F5F5F5',
+    toggle4: '#fff'
   },
   sideBar: {
-    color: "#7C7D80",
-    colorLeft: "#B4193C",
-    colorHover: "#E20B00",
-    colorActive: "#000000",
-    bg: "#fff"
+    color: '#7C7D80',
+    colorLeft: '#B4193C',
+    colorHover: '#E20B00',
+    colorActive: '#000000',
+    bg: '#fff'
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #A9341E 3.01%, #7A232E 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #E35D44 3.01%, #C03920 95.95%)",
-    shadow: "0px 4px 15px rgba(0, 0, 0, 0.08)"
+    bgColor: 'linear-gradient(139.78deg, #A9341E 3.01%, #7A232E 95.95%)',
+    bgColorHover: 'linear-gradient(139.78deg, #E35D44 3.01%, #C03920 95.95%)',
+    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
   },
   bgLight: {
-    one: "#FFEEEE",
-    two: "#F5F5F5",
-    disabled: "#DFC8CA"
+    one: '#FFEEEE',
+    two: '#F5F5F5',
+    disabled: '#DFC8CA'
   },
   shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
+    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
   }
 };
 
@@ -6723,10 +6746,12 @@ function Button$9(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -7074,60 +7099,60 @@ var lighterenRate$a = 1.5;
 var lightenRate$a = 7.5;
 var darkenRate$a = 15;
 var darkerRate$a = 30;
-var primary$a = "#AA9161";
-var secondary$a = "#D0C8B5";
-var warning$a = "#F57069";
-var success$a = "#E3F8D2";
-var info$a = "#B5A788";
-var error$a = "#F57069";
-var hero$a = "#6D0C8B5";
+var primary$a = '#AA9161';
+var secondary$a = '#D0C8B5';
+var warning$a = '#F57069';
+var success$a = '#E3F8D2';
+var info$a = '#B5A788';
+var error$a = '#F57069';
+var hero$a = '#6D0C8B5';
 var PRIMARY$a = {
   lighter: /*#__PURE__*/tinycolor(primary$a).lighten(lighterenRate$a).toHexString(),
   main: primary$a,
   light: /*#__PURE__*/tinycolor(primary$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$a).darken(darkenRate$a).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$a).darken(darkerRate$a).toHexString(),
-  contrastText: "#fff"
+  contrastText: '#fff'
 };
 var SECONDARY$a = {
-  lighter: "#D6E4FF",
+  lighter: '#D6E4FF',
   main: secondary$a,
   light: /*#__PURE__*/tinycolor(secondary$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$a).darken(darkenRate$a).toHexString(),
-  contrastText: "#A2916A",
-  darker: "#827657"
+  contrastText: '#A2916A',
+  darker: '#827657'
 };
 var INFO$a = {
-  lighter: "#D0F2FF",
+  lighter: '#D0F2FF',
   main: info$a,
   light: /*#__PURE__*/tinycolor(info$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$a).darken(darkenRate$a).toHexString(),
-  contrastText: "#fff",
-  darker: "#04297A"
+  contrastText: '#fff',
+  darker: '#04297A'
 };
 var SUCCESS$a = {
-  lighter: "#E9FCD4",
+  lighter: '#E9FCD4',
   main: success$a,
   light: /*#__PURE__*/tinycolor(success$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$a).darken(darkenRate$a).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D"
+  contrastText: '#ccc',
+  darker: '#08660D'
 };
 var WARNING$a = {
-  lighter: "#FFF7CD",
+  lighter: '#FFF7CD',
   main: warning$a,
   light: /*#__PURE__*/tinycolor(warning$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$a).darken(darkenRate$a).toHexString(),
-  darker: "#7A4F01",
+  darker: '#7A4F01',
   contrastText: GREY[800]
 };
 var ERROR$a = {
-  lighter: "#FFE7D9",
+  lighter: '#FFE7D9',
   main: error$a,
   light: /*#__PURE__*/tinycolor(error$a).lighten(lightenRate$a).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$a).darken(darkenRate$a).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff"
+  darker: '#7A0C2E',
+  contrastText: '#fff'
 };
 var GRADIENTS$a = {
   primary: /*#__PURE__*/createGradient(PRIMARY$a.light, PRIMARY$a.main),
@@ -7135,8 +7160,8 @@ var GRADIENTS$a = {
   success: /*#__PURE__*/createGradient(SUCCESS$a.light, SUCCESS$a.main),
   warning: /*#__PURE__*/createGradient(WARNING$a.light, WARNING$a.main),
   error: /*#__PURE__*/createGradient(ERROR$a.light, ERROR$a.main),
-  one: "#B5A788",
-  two: "#AA9161"
+  one: '#B5A788',
+  two: '#AA9161'
 };
 var palette$a = {
   hero: hero$a,
@@ -7157,14 +7182,14 @@ var palette$a = {
     disabled: GREY[400]
   },
   background: {
-    paper: "#fff",
+    paper: '#fff',
     "default": GREY[100],
     neutral: GREY[200],
-    warning: "#FEF1F0",
-    error: "#ECECEC",
-    info: "#FFEED6",
+    warning: '#FEF1F0',
+    error: '#ECECEC',
+    info: '#FFEED6',
     infoGadient: /*#__PURE__*/createGradient(INFO$a.lighter, INFO$a.light),
-    success: "#FFE7CE"
+    success: '#FFE7CE'
   },
   action: {
     active: GREY[600],
@@ -7175,31 +7200,31 @@ var palette$a = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: "#A2916A",
-    toggle2: "#F57069",
-    toggle3: "#F2F2F1",
-    toggle4: "#fff"
+    toggle1: '#A2916A',
+    toggle2: '#F57069',
+    toggle3: '#F2F2F1',
+    toggle4: '#fff'
   },
   sideBar: {
-    color: "#828383",
-    colorLeft: "#F57069",
-    colorHover: "#AA9161",
-    colorActive: "#000000",
-    bg: "#fff"
+    color: '#828383',
+    colorLeft: '#F57069',
+    colorHover: '#AA9161',
+    colorActive: '#000000',
+    bg: '#fff'
   },
   baseButton: {
-    bgColor: "linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)",
-    bgColorHover: "linear-gradient(163.61deg, #D3C8AF 3.01%, #B79D6C 95.95%)",
-    shadow: "0px 3px 5px rgba(0, 0, 0, 0.08)"
+    bgColor: 'linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)',
+    bgColorHover: 'linear-gradient(163.61deg, #D3C8AF 3.01%, #B79D6C 95.95%)',
+    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
   },
   bgLight: {
-    one: "#F6F4F0",
-    two: "#F2F2F1",
-    disabled: "#D0C8B5"
+    one: '#F6F4F0',
+    two: '#F2F2F1',
+    disabled: '#D0C8B5'
   },
   shadows: {
-    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(0, 0, 0, 0.15)"
+    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
   }
 };
 
@@ -7416,10 +7441,12 @@ function Button$a(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -7770,60 +7797,60 @@ var lighterenRate$b = 1.5;
 var lightenRate$b = 7.5;
 var darkenRate$b = 15;
 var darkerRate$b = 30;
-var primary$b = "#AC729C";
-var secondary$b = "#C8316C";
-var warning$b = "#FF4D75";
-var success$b = "#FFE7CE";
-var info$b = "#D9DEEC";
-var error$b = "#D41442";
-var hero$b = "#BD8AAD";
+var primary$b = '#AC729C';
+var secondary$b = '#C8316C';
+var warning$b = '#FF4D75';
+var success$b = '#FFE7CE';
+var info$b = '#D9DEEC';
+var error$b = '#D41442';
+var hero$b = '#BD8AAD';
 var PRIMARY$b = {
   lighter: /*#__PURE__*/tinycolor(primary$b).lighten(lighterenRate$b).toHexString(),
   main: primary$b,
   light: /*#__PURE__*/tinycolor(primary$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$b).darken(darkenRate$b).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$b).darken(darkerRate$b).toHexString(),
-  contrastText: "#fff"
+  contrastText: '#fff'
 };
 var SECONDARY$b = {
-  lighter: "#D6E4FF",
+  lighter: '#D6E4FF',
   main: secondary$b,
   light: /*#__PURE__*/tinycolor(secondary$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$b).darken(darkenRate$b).toHexString(),
-  contrastText: "#ccc",
-  darker: "#E87780"
+  contrastText: '#ccc',
+  darker: '#E87780'
 };
 var INFO$b = {
-  lighter: "#F8F1FC",
+  lighter: '#F8F1FC',
   main: info$b,
   light: /*#__PURE__*/tinycolor(info$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$b).darken(darkenRate$b).toHexString(),
-  contrastText: "#fff",
-  darker: "#F7BFBC"
+  contrastText: '#fff',
+  darker: '#F7BFBC'
 };
 var SUCCESS$b = {
-  lighter: "#E9FCD4",
+  lighter: '#E9FCD4',
   main: success$b,
   light: /*#__PURE__*/tinycolor(success$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$b).darken(darkenRate$b).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D"
+  contrastText: '#ccc',
+  darker: '#08660D'
 };
 var WARNING$b = {
-  lighter: "#FFF7CD",
+  lighter: '#FFF7CD',
   main: warning$b,
   light: /*#__PURE__*/tinycolor(warning$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$b).darken(darkenRate$b).toHexString(),
-  darker: "#7A4F01",
+  darker: '#7A4F01',
   contrastText: GREY[800]
 };
 var ERROR$b = {
-  lighter: "#FFE7D9",
+  lighter: '#FFE7D9',
   main: error$b,
   light: /*#__PURE__*/tinycolor(error$b).lighten(lightenRate$b).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$b).darken(darkenRate$b).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff"
+  darker: '#7A0C2E',
+  contrastText: '#fff'
 };
 var GRADIENTS$b = {
   primary: /*#__PURE__*/createGradient(PRIMARY$b.light, PRIMARY$b.main),
@@ -7831,8 +7858,8 @@ var GRADIENTS$b = {
   success: /*#__PURE__*/createGradient(SUCCESS$b.light, SUCCESS$b.main),
   warning: /*#__PURE__*/createGradient(WARNING$b.light, WARNING$b.main),
   error: /*#__PURE__*/createGradient(ERROR$b.light, ERROR$b.main),
-  one: "#AC729C",
-  two: "#734464"
+  one: '#AC729C',
+  two: '#734464'
 };
 var palette$b = {
   hero: hero$b,
@@ -7853,49 +7880,49 @@ var palette$b = {
     disabled: GREY[400]
   },
   background: {
-    paper: "#fff",
-    "default": "#fff",
+    paper: '#fff',
+    "default": '#E4FFFE',
     neutral: GREY[200],
-    warning: "#ECECEC",
-    error: "#ECECEC",
-    info: "#F8F1FC",
+    warning: '#ECECEC',
+    error: '#ECECEC',
+    info: '#F8F1FC',
     infoGadient: /*#__PURE__*/createGradient(INFO$b.light, INFO$b.main),
-    success: "#FFEED6"
+    success: '#FFEED6'
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
-    disabled: "#85CCCA",
-    disabledBackground: "#85CCCA",
+    disabled: '#85CCCA',
+    disabledBackground: '#85CCCA',
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$b,
     toggle2: /*#__PURE__*/tinycolor(hero$b).lighten(lightenRate$b).toHexString(),
-    toggle3: "#F5F5F5",
-    toggle4: "#fff"
+    toggle3: '#F5F5F5',
+    toggle4: '#fff'
   },
   sideBar: {
-    color: "#414D4C",
-    colorLeft: "#AC729C",
-    colorHover: "#744164",
-    colorActive: "#000000",
-    bg: "#fff"
+    color: '#414D4C',
+    colorLeft: '#AC729C',
+    colorHover: '#744164',
+    colorActive: '#000000',
+    bg: '#fff'
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #AC729C 3.01%, #734464 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #BD8AAD 3.01%, #9C5B88 95.95%)",
-    shadow: "0px 4px 15px rgba(0, 0, 0, 0.08)"
+    bgColor: 'linear-gradient(139.78deg, #AC729C 3.01%, #734464 95.95%)',
+    bgColorHover: 'linear-gradient(139.78deg, #BD8AAD 3.01%, #9C5B88 95.95%)',
+    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
   },
   bgLight: {
-    one: "#F9F1FC",
-    two: "#FEF0F5",
-    disabled: "#CAB5C3"
+    one: '#F9F1FC',
+    two: '#FEF0F5',
+    disabled: '#CAB5C3'
   },
   shadows: {
-    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
+    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
   }
 };
 
@@ -8120,10 +8147,12 @@ function Button$b(theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: 'transparent',
-          boxShadow: 'none',
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            color: theme.palette.primary.light
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
           }
         },
         outlinedInfo: {
@@ -8238,41 +8267,41 @@ function CssBaseline$b(theme) {
   return {
     MuiCssBaseline: {
       styleOverrides: {
-        "*": {
+        '*': {
           margin: 0,
           padding: 0,
-          boxSizing: "border-box"
+          boxSizing: 'border-box'
         },
         html: {
-          width: "100%",
-          height: "100%",
-          WebkitOverflowScrolling: "touch"
+          width: '100%',
+          height: '100%',
+          WebkitOverflowScrolling: 'touch'
         },
         body: {
-          width: "100%",
-          height: "100%",
+          width: '100%',
+          height: '100%',
           backgroundColor: theme.palette.background["default"]
         },
-        "#root": {
-          width: "100%",
-          height: "100%"
+        '#root': {
+          width: '100%',
+          height: '100%'
         },
         input: {
-          "&[type=number]": {
-            MozAppearance: "textfield",
-            "&::-webkit-outer-spin-button": {
+          '&[type=number]': {
+            MozAppearance: 'textfield',
+            '&::-webkit-outer-spin-button': {
               margin: 0,
-              WebkitAppearance: "none"
+              WebkitAppearance: 'none'
             },
-            "&::-webkit-inner-spin-button": {
+            '&::-webkit-inner-spin-button': {
               margin: 0,
-              WebkitAppearance: "none"
+              WebkitAppearance: 'none'
             }
           }
         },
         img: {
-          display: "block",
-          maxWidth: "100%"
+          display: 'block',
+          maxWidth: '100%'
         }
       }
     }
@@ -8383,7 +8412,7 @@ function Rating$b(theme) {
         },
         root: {
           color: theme.palette.primary.main,
-          "& span > span": {
+          '& span > span': {
             top: 0,
             left: 0
           }
