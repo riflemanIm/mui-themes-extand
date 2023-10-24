@@ -1,26 +1,26 @@
 //
 
-import Card from "./Card";
-import Paper from "./Paper";
-import Input from "./Input";
-import Button from "./Button";
-import Tooltip from "./Tooltip";
-import Backdrop from "./Backdrop";
-import Typography from "./Typography";
-import CssBaseline from "./CssBaseline";
-import Autocomplete from "./Autocomplete";
-import ToggleButton from "./ToggleButton";
-import AppBar from "./AppBar";
-import IconButton from "./IconButton";
-import Picker from "./Picker";
-import Rating from "./Rating";
-import Menu from "./Menu";
-import Alert from "./Alert";
-import Link from "./Link";
-import Badge from "./Badge";
+import Card from './Card';
+import Paper from './Paper';
+import Input from './Input';
+import Button from './Button';
+import Tooltip from './Tooltip';
+import Backdrop from './Backdrop';
+import Typography from './Typography';
+import CssBaseline from './CssBaseline';
+import Autocomplete from './Autocomplete';
+import ToggleButton from './ToggleButton';
+import AppBar from './AppBar';
+import IconButton from './IconButton';
+import Picker from './Picker';
+import Rating from './Rating';
+import Menu from './Menu';
+import Alert from './Alert';
+import Link from './Link';
+import Badge from './Badge';
 // ----------------------------------------------------------------------
 
-import { Theme } from "@mui/material/styles";
+import { Theme } from '@mui/material/styles';
 
 export default function ComponentsOverrides(theme: Theme) {
   return Object.assign(
@@ -41,6 +41,6 @@ export default function ComponentsOverrides(theme: Theme) {
     Menu(),
     Alert(theme),
     Link(),
-    Badge()
+    Badge(),
   );
 }

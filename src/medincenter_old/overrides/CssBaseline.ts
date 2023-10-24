@@ -1,6 +1,4 @@
-import { Theme } from '@mui/material/styles';
-
-export default function CssBaseline(theme: Theme) {
+export default function CssBaseline() {
   return {
     MuiCssBaseline: {
       styleOverrides: {
@@ -17,7 +15,6 @@ export default function CssBaseline(theme: Theme) {
         body: {
           width: '100%',
           height: '100%',
-          backgroundColor: theme.palette.background.default,
         },
         '#root': {
           width: '100%',

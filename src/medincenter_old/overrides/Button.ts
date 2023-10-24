@@ -58,12 +58,10 @@ export default function Button(theme: Theme) {
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
-          backgroundColor: theme.palette.bgLight.one,
-          boxShadow: theme.palette.baseButton.shadow,
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
           '&:hover': {
-            backgroundColor: theme.palette.bgLight.two,
-            color: theme.palette.primary.dark,
-            boxShadow: 'none',
+            color: theme.palette.primary.light,
           },
         },
         outlinedInfo: {
