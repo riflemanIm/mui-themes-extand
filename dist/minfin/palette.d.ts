@@ -118,13 +118,11 @@ declare const palette: {
     };
     baseButton: {
         bgColor: string;
-        bgColorHover: string;
         shadow: string;
     };
     bgLight: {
         one: string;
         two: string;
-        disabled: string;
     };
     shadows: {
         card: string;

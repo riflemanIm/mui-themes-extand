@@ -27,7 +27,8 @@ export default function Button(theme: Theme) {
             background: 'transparent',
           },
           '&.Mui-disabled': {
-            background: `${theme.palette.bgLight.disabled} !important`,
+            background: `${theme.palette.baseButton.bgColor} !important`,
+            opacity: theme.palette.action.disabledOpacity,
             color: '#fff !important',
           },
           '&.Mui-select': {

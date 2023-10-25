@@ -1,5 +1,5 @@
-import tinycolor from "tinycolor2";
-import { GREY, createGradient } from "../paletteFuncs";
+import tinycolor from 'tinycolor2';
+import { GREY, createGradient } from '../paletteFuncs';
 
 // ----------------------------------------------------------------------
 const lighterenRate = 1.5;
@@ -7,13 +7,13 @@ const lightenRate = 7.5;
 const darkenRate = 15;
 const darkerRate = 30;
 
-const primary = "#1B719E";
-const secondary = "#A6CCBE";
-const warning = "#3AAEEC";
-const success = "#1B719E";
-const info = "#F2D0B2";
-const error = "#FF9690";
-const hero = "#2188bf";
+const primary = '#1B719E';
+const secondary = '#A6CCBE';
+const warning = '#3AAEEC';
+const success = '#1B719E';
+const info = '#F2D0B2';
+const error = '#FF9690';
+const hero = '#2188bf';
 
 const PRIMARY = {
   lighter: tinycolor(primary).lighten(lighterenRate).toHexString(),
@@ -21,52 +21,52 @@ const PRIMARY = {
   light: tinycolor(primary).lighten(lightenRate).toHexString(),
   dark: tinycolor(primary).darken(darkenRate).toHexString(),
   darker: tinycolor(primary).darken(darkerRate).toHexString(),
-  contrastText: "#fff",
+  contrastText: '#fff',
 };
 
 const SECONDARY = {
-  lighter: "#D6E4FF",
+  lighter: '#D6E4FF',
   main: secondary,
   light: tinycolor(secondary).lighten(lightenRate).toHexString(),
   dark: tinycolor(secondary).darken(darkenRate).toHexString(),
-  contrastText: "#ccc",
-  darker: "#E87780",
+  contrastText: '#ccc',
+  darker: '#E87780',
 };
 
 const INFO = {
-  lighter: "#FCEDF2",
+  lighter: '#FCEDF2',
   main: info,
   light: tinycolor(info).lighten(lightenRate).toHexString(),
   dark: tinycolor(info).darken(darkenRate).toHexString(),
-  contrastText: "#fff",
-  darker: "#F7BFBC",
+  contrastText: '#fff',
+  darker: '#F7BFBC',
 };
 
 const SUCCESS = {
-  lighter: "#E9FCD4",
+  lighter: '#E9FCD4',
   main: success,
   light: tinycolor(success).lighten(lightenRate).toHexString(),
   dark: tinycolor(success).darken(darkenRate).toHexString(),
-  contrastText: "#ccc",
-  darker: "#08660D",
+  contrastText: '#ccc',
+  darker: '#08660D',
 };
 
 const WARNING = {
-  lighter: "#FFF7CD",
+  lighter: '#FFF7CD',
   main: warning,
   light: tinycolor(warning).lighten(lightenRate).toHexString(),
   dark: tinycolor(warning).darken(darkenRate).toHexString(),
-  darker: "#7A4F01",
+  darker: '#7A4F01',
   contrastText: GREY[800],
 };
 
 const ERROR = {
-  lighter: "#FFE7D9",
+  lighter: '#FFE7D9',
   main: error,
   light: tinycolor(error).lighten(lightenRate).toHexString(),
   dark: tinycolor(error).darken(darkenRate).toHexString(),
-  darker: "#7A0C2E",
-  contrastText: "#fff",
+  darker: '#7A0C2E',
+  contrastText: '#fff',
 };
 
 const GRADIENTS = {
@@ -75,8 +75,8 @@ const GRADIENTS = {
   success: createGradient(SUCCESS.light, SUCCESS.main),
   warning: createGradient(WARNING.light, WARNING.main),
   error: createGradient(ERROR.light, ERROR.main),
-  one: "#2AB6CA",
-  two: "#28909B",
+  one: '#2AB6CA',
+  two: '#28909B',
 };
 
 const palette = {
@@ -100,14 +100,14 @@ const palette = {
     disabled: GREY[400],
   },
   background: {
-    paper: "#fff",
-    default: "#fff",
+    paper: '#fff',
+    default: '#fff',
     neutral: GREY[100],
-    warning: "#ECECEC",
-    error: "#edd1d1",
-    info: "rgba(174 33 3, 0.4)",
+    warning: '#ECECEC',
+    error: '#edd1d1',
+    info: 'rgba(174 33 3, 0.4)',
     infoGadient: createGradient(INFO.lighter, INFO.light),
-    success: "#FFE7CE",
+    success: '#FFE7CE',
   },
   action: {
     active: GREY[600],
@@ -120,29 +120,28 @@ const palette = {
     disabledOpacity: 0.48,
     toggle1: PRIMARY.main,
     toggle2: PRIMARY.dark,
-    toggle3: "#EDFCFA",
-    toggle4: "#fff",
+    toggle3: '#EDFCFA',
+    toggle4: '#fff',
   },
   sideBar: {
-    color: "#7C7D80",
-    colorLeft: "#2AB6CA",
-    colorHover: "#802121",
-    colorActive: "#000",
-    bg: "#FFF",
+    color: '#7C7D80',
+    colorLeft: '#2AB6CA',
+    colorHover: '#802121',
+    colorActive: '#000',
+    bg: '#FFF',
   },
   baseButton: {
-    bgColor: "linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)",
-    bgColorHover: "linear-gradient(139.78deg, #28909B 3.01%, #28909B 85.95%)",
-    shadow: "0px 3px 5px rgba(101, 101, 101, 0.2)",
+    bgColor:
+      'linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)',
+    shadow: '0px 3px 5px rgba(101, 101, 101, 0.2)',
   },
   bgLight: {
-    one: "#F1FBFC",
-    two: "#F1FCF7",
-    disabled: "#2ab6ca8a",
+    one: '#F1FBFC',
+    two: '#F1FCF7',
   },
   shadows: {
-    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
-    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)",
+    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)',
   },
 };
 

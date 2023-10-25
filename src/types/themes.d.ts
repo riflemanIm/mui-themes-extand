@@ -1,12 +1,12 @@
-import { Color } from "@mui/material";
-import { PaletteColorOptions, Theme } from "@mui/material/styles";
-import { Typography } from "@mui/material/styles/createTypography";
+import { Color } from '@mui/material';
+import { PaletteColorOptions, Theme } from '@mui/material/styles';
+import { Typography } from '@mui/material/styles/createTypography';
 
-declare module "@mui/styles/defaultTheme" {
+declare module '@mui/styles/defaultTheme' {
   // eslint-disable-next-line
   interface DefaultTheme extends Theme {}
 }
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   interface PaletteColor {
     lighter: string;
     main: string;
@@ -91,13 +91,11 @@ declare module "@mui/material/styles" {
     };
     baseButton: {
       bgColor: string;
-      bgColorHover: string;
       shadow: string;
     };
     bgLight: {
       one: string;
       two: string;
-      disabled: string;
     };
     shadows: {
       card: string;
@@ -130,13 +128,11 @@ declare module "@mui/material/styles" {
     };
     baseButton: {
       bgColor: string;
-      bgColorHover: string;
       shadow: string;
     };
     bgLight: {
       one: string;
       two: string;
-      disabled: string;
     };
     shadows: {
       card: string;
@@ -145,7 +141,7 @@ declare module "@mui/material/styles" {
   }
 }
 
-declare module "@mui/material/styles" {
+declare module '@mui/material/styles' {
   // fix the type error when referencing the Theme object in your styled component
   export interface Theme {
     palette: Palette;

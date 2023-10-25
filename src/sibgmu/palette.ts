@@ -134,16 +134,12 @@ const palette = {
   baseButton: {
     bgColor:
       'linear-gradient(139.78deg, #A9341E 3.01%, #7A232E 95.95%)',
-    bgColorHover:
-      'linear-gradient(139.78deg, #E35D44 3.01%, #C03920 95.95%)',
-
     shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)',
   },
 
   bgLight: {
     one: '#FFEEEE',
     two: '#F5F5F5',
-    disabled: '#DFC8CA',
   },
   shadows: {
     card: '0px 2px 35px rgba(78, 72, 190, 0.08)',

@@ -22,6 +22,7 @@ export default function Button(theme: Theme): {
                 };
                 '&.Mui-disabled': {
                     background: string;
+                    opacity: number;
                     color: string;
                 };
                 '&.Mui-select': {

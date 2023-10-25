@@ -113,7 +113,7 @@ const palette = {
     active: GREY[600],
     hover: GREY[500_8],
     selected: GREY[500_16],
-    disabled: '#85CCCA',
+
     disabledBackground: '#85CCCA',
     focus: GREY[500_24],
     hoverOpacity: 0.08,
@@ -134,16 +134,12 @@ const palette = {
   baseButton: {
     bgColor:
       'linear-gradient(139.78deg, #AC729C 3.01%, #734464 95.95%)',
-    bgColorHover:
-      'linear-gradient(139.78deg, #BD8AAD 3.01%, #9C5B88 95.95%)',
-
     shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)',
   },
 
   bgLight: {
     one: '#F9F1FC',
     two: '#FEF0F5',
-    disabled: '#CAB5C3',
   },
   shadows: {
     card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
