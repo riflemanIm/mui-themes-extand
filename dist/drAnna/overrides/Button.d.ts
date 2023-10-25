@@ -36,6 +36,7 @@ export default function Button(theme: Theme): {
                 boxShadow: string;
                 '&:hover': {
                     background: string;
+                    opacity: number;
                     boxShadow: string;
                 };
             };

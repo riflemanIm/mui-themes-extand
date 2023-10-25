@@ -385,7 +385,8 @@ function Button(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -1091,7 +1092,8 @@ function Button$1(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -1797,7 +1799,8 @@ function Button$2(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -2503,7 +2506,8 @@ function Button$3(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -3211,7 +3215,8 @@ function Button$4(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -3915,7 +3920,8 @@ function Button$5(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -4621,7 +4627,8 @@ function Button$6(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -5325,7 +5332,8 @@ function Button$7(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -6028,7 +6036,8 @@ function Button$8(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -6731,7 +6740,8 @@ function Button$9(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -7426,7 +7436,8 @@ function Button$a(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
@@ -8132,7 +8143,8 @@ function Button$b(theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: theme.palette.baseButton.bgColorHover + " !important",
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none'
           }
         },
