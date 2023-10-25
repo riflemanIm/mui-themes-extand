@@ -29,25 +29,25 @@
   },
   "homepage": "https://github.com/riflemanIm/mui-themes-extand#readme",
   "devDependencies": {
-    "@babel/preset-react": "^7.22.5",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.7",
+    "@babel/preset-react": "^7.22.15",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
     "@types/react-router-dom": "^5.3.3",
-    "@types/tinycolor2": "^1.4.3",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.38.0",
-    "eslint-plugin-react": "^7.32.2",
+    "@types/tinycolor2": "^1.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tinycolor2": "^1.6.0",
     "tsdx": "^0.14.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@mui/material": "^5.14.0",
-    "@mui/styles": "^5.14.0"
+    "@mui/material": "^5.14.15",
+    "@mui/styles": "^5.14.15"
   },
   "peerDependencies": {
     "@mui/material": "*",
