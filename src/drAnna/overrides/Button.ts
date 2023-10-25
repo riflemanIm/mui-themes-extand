@@ -42,7 +42,8 @@ export default function Button(theme: Theme) {
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
-            background: `${theme.palette.baseButton.bgColorHover} !important`,
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
             boxShadow: 'none',
           },
         },
