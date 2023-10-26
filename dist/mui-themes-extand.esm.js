@@ -2160,12 +2160,12 @@ var gms = {
 var lighterenRate$3 = 1.5;
 var lightenRate$3 = 7.5;
 var darkenRate$3 = 15;
-var darkerRate$3 = 30;
-var primary$3 = '#1F524A';
-var secondary$3 = '#EA99AB';
+var darkerRate$3 = 20;
+var primary$3 = '#0A6252';
+var secondary$3 = '#7C7D80';
 var warning$3 = '#EF7785';
-var success$3 = '#FFE7CE';
-var info$3 = '#D7F5DF';
+var success$3 = '#4DAE00';
+var info$3 = '#C2C4CB';
 var error$3 = '#D76977';
 var hero$3 = '#5A9388';
 var PRIMARY$3 = {
@@ -2248,10 +2248,10 @@ var palette$3 = {
     "default": '#fff',
     neutral: GREY[200],
     warning: '#F1CBC6',
-    error: '#ECECEC',
-    info: '#F8FFFA',
+    error: '#BBCAC7',
+    info: '#EDF5F0',
     infoGadient: /*#__PURE__*/createGradient(INFO$3.light, INFO$3.main),
-    success: '#FFEED6'
+    success: '#E3F8D2'
   },
   action: {
     active: GREY[600],
@@ -2804,23 +2804,35 @@ function Alert$3(theme) {
     MuiAlert: {
       styleOverrides: {
         icon: {
-          color: theme.palette.success.dark + " !important"
+          fontSize: 28
         },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning.main
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error.main
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info.main
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success.dark
+          }
         }
       }
     }

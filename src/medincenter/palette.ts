@@ -5,13 +5,13 @@ import { GREY, createGradient } from '../paletteFuncs';
 const lighterenRate = 1.5;
 const lightenRate = 7.5;
 const darkenRate = 15;
-const darkerRate = 30;
+const darkerRate = 20;
 
-const primary = '#1F524A';
-const secondary = '#EA99AB';
+const primary = '#0A6252';
+const secondary = '#7C7D80';
 const warning = '#EF7785';
-const success = '#FFE7CE';
-const info = '#D7F5DF';
+const success = '#4DAE00';
+const info = '#C2C4CB';
 const error = '#D76977';
 const hero = '#5A9388';
 
@@ -104,10 +104,10 @@ const palette = {
     default: '#fff',
     neutral: GREY[200],
     warning: '#F1CBC6',
-    error: '#ECECEC',
-    info: '#F8FFFA',
+    error: '#BBCAC7',
+    info: '#EDF5F0',
     infoGadient: createGradient(INFO.light, INFO.main),
-    success: '#FFEED6',
+    success: '#E3F8D2',
   },
   action: {
     active: GREY[600],

@@ -1,9 +1,9 @@
-import { Theme } from "@mui/material/styles";
+import { Theme } from '@mui/material/styles';
 export default function Alert(theme: Theme): {
     MuiAlert: {
         styleOverrides: {
             icon: {
-                color: string;
+                fontSize: number;
             };
             root: {
                 boxShadow: string;
@@ -11,15 +11,27 @@ export default function Alert(theme: Theme): {
             };
             standardWarning: {
                 backgroundColor: string;
+                icon: {
+                    color: string;
+                };
             };
             standardError: {
                 backgroundColor: string;
+                icon: {
+                    color: string;
+                };
             };
             standardInfo: {
                 backgroundColor: string;
+                icon: {
+                    color: string;
+                };
             };
             standardSuccess: {
                 backgroundColor: string;
+                icon: {
+                    color: string;
+                };
             };
         };
     };
