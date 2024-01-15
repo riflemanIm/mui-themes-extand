@@ -101,7 +101,6 @@ declare const _default: {
             active: string;
             hover: string;
             selected: string;
-            disabled: string;
             disabledBackground: string;
             focus: string;
             hoverOpacity: number;
@@ -120,13 +119,11 @@ declare const _default: {
         };
         baseButton: {
             bgColor: string;
-            bgColorHover: string;
             shadow: string;
         };
         bgLight: {
             one: string;
             two: string;
-            disabled: string;
         };
         shadows: {
             card: string;

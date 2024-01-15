@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { alpha, CssBaseline as CssBaseline$c } from '@mui/material';
+import { alpha, CssBaseline as CssBaseline$d } from '@mui/material';
 import { alpha as alpha$1, StyledEngineProvider, ThemeProvider as ThemeProvider$1, createTheme } from '@mui/material/styles';
 import tinycolor from 'tinycolor2';
 
@@ -8502,9 +8502,716 @@ var skyfert = {
   componentsOverride: ComponentsOverrides$b
 };
 
+// ----------------------------------------------------------------------
+var lighterenRate$c = 1.5;
+var lightenRate$c = 7.5;
+var darkenRate$c = 15;
+var darkerRate$c = 30;
+var primary$c = '#204568';
+var secondary$c = '#A8D7BA';
+var warning$c = '#C76277';
+var success$c = '#5CAA7F';
+var info$c = '#BCC3D2';
+var error$c = '#C76277';
+var hero$c = '#426A90';
+var PRIMARY$c = {
+  lighter: /*#__PURE__*/tinycolor(primary$c).lighten(lighterenRate$c).toHexString(),
+  main: primary$c,
+  light: /*#__PURE__*/tinycolor(primary$c).lighten(lightenRate$c).toHexString(),
+  dark: /*#__PURE__*/tinycolor(primary$c).darken(darkenRate$c).toHexString(),
+  darker: /*#__PURE__*/tinycolor(primary$c).darken(darkerRate$c).toHexString(),
+  contrastText: '#fff'
+};
+var SECONDARY$c = {
+  lighter: '#F6F4F0',
+  main: secondary$c,
+  light: /*#__PURE__*/tinycolor(secondary$c).lighten(lightenRate$c).toHexString(),
+  dark: /*#__PURE__*/tinycolor(secondary$c).darken(darkenRate$c).toHexString(),
+  contrastText: '#ccc',
+  darker: '#E87780'
+};
+var INFO$c = {
+  lighter: '#E8F2F5',
+  main: info$c,
+  light: /*#__PURE__*/tinycolor(info$c).lighten(lightenRate$c).toHexString(),
+  dark: /*#__PURE__*/tinycolor(info$c).darken(darkenRate$c).toHexString(),
+  contrastText: '#fff',
+  darker: '#F7BFBC'
+};
+var SUCCESS$c = {
+  lighter: '#F6F4F0',
+  main: success$c,
+  light: /*#__PURE__*/tinycolor(success$c).lighten(lightenRate$c).toHexString(),
+  dark: /*#__PURE__*/tinycolor(success$c).darken(darkenRate$c).toHexString(),
+  contrastText: '#ccc',
+  darker: '#08660D'
+};
+var WARNING$c = {
+  lighter: '#FEF1F0',
+  main: warning$c,
+  light: /*#__PURE__*/tinycolor(warning$c).lighten(lightenRate$c).toHexString(),
+  dark: /*#__PURE__*/tinycolor(warning$c).darken(darkenRate$c).toHexString(),
+  darker: '#7A4F01',
+  contrastText: GREY[800]
+};
+var ERROR$c = {
+  lighter: '#FEF1F0',
+  main: error$c,
+  light: /*#__PURE__*/tinycolor(error$c).lighten(lightenRate$c).toHexString(),
+  dark: /*#__PURE__*/tinycolor(error$c).darken(darkenRate$c).toHexString(),
+  darker: '#7A0C2E',
+  contrastText: '#fff'
+};
+var GRADIENTS$c = {
+  primary: /*#__PURE__*/createGradient(PRIMARY$c.light, PRIMARY$c.main),
+  info: /*#__PURE__*/createGradient(INFO$c.light, INFO$c.main),
+  success: /*#__PURE__*/createGradient(SUCCESS$c.light, SUCCESS$c.main),
+  warning: /*#__PURE__*/createGradient(WARNING$c.light, WARNING$c.main),
+  error: /*#__PURE__*/createGradient(ERROR$c.light, ERROR$c.main),
+  one: '#073D5F',
+  two: '#022D47'
+};
+var palette$c = {
+  hero: hero$c,
+  primary: /*#__PURE__*/_extends({}, PRIMARY$c),
+  secondary: /*#__PURE__*/_extends({}, SECONDARY$c),
+  info: /*#__PURE__*/_extends({}, INFO$c),
+  success: /*#__PURE__*/_extends({}, SUCCESS$c),
+  warning: /*#__PURE__*/_extends({}, WARNING$c),
+  error: /*#__PURE__*/_extends({}, ERROR$c),
+  grey: GREY,
+  gradients: GRADIENTS$c,
+  divider: GREY[50024],
+  text: {
+    primary: GREY[800],
+    secondary: GREY[600],
+    boby2: GREY[600],
+    subtitle2: GREY[50080],
+    disabled: GREY[400]
+  },
+  background: {
+    paper: '#fff',
+    "default": '#fff',
+    neutral: GREY[200],
+    warning: '#FEF1F0',
+    error: '#FEF1F0',
+    info: '#EDF7FC',
+    infoGadient: /*#__PURE__*/createGradient(SECONDARY$c.light, SECONDARY$c.lighter),
+    success: '#D9EFE2'
+  },
+  action: {
+    active: GREY[600],
+    hover: GREY[5008],
+    selected: GREY[50016],
+    disabledBackground: '#F7F7F8',
+    focus: GREY[50024],
+    hoverOpacity: 0.08,
+    disabledOpacity: 0.48,
+    toggle1: hero$c,
+    toggle2: /*#__PURE__*/tinycolor(hero$c).lighten(lightenRate$c).toHexString(),
+    toggle3: '#F5F5F5',
+    toggle4: '#fff'
+  },
+  sideBar: {
+    color: '#939FAE',
+    colorLeft: '#426A90',
+    colorHover: '#4A6F93',
+    colorActive: '#000000',
+    bg: '#fff'
+  },
+  baseButton: {
+    bgColor: 'linear-gradient(139.78deg, #073D5F 3.01%, #022D47 95.95%)',
+    shadow: '0px 4px 15px 0px rgba(35, 40, 48, 0.08)'
+  },
+  bgLight: {
+    one: '#E8F2F5',
+    two: '#FEF1F0'
+  },
+  shadows: {
+    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
+    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+  }
+};
+
+var FONT_PRIMARY$c = "Avenir Next Cyr";
+var typography$c = {
+  fontFamily: FONT_PRIMARY$c,
+  fontWeightRegular: 400,
+  fontWeightMedium: 500,
+  fontWeightBold: 600,
+  h1: {
+    fontSize: "2.0rem",
+    fontWeight: 500
+  },
+  h2: {
+    fontSize: "1.7rem",
+    fontWeight: 500
+  },
+  h3: {
+    fontSize: "1.64rem",
+    fontWeight: 500
+  },
+  h4: {
+    fontSize: "1.5rem"
+  },
+  h5: {
+    fontSize: "1.285rem"
+  },
+  h6: {
+    fontSize: "1.05rem"
+  },
+  subtitle1: {
+    fontWeight: 400,
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(16)
+  },
+  subtitle2: {
+    fontWeight: 450,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  },
+  body1: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(16)
+  },
+  body2: {
+    fontWeight: 400,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  },
+  caption: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(12)
+  },
+  button: {
+    fontWeight: 500,
+    lineHeight: 24 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  }
+};
+
+// ----------------------------------------------------------------------
+function Card$c(theme) {
+  return {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Paper$c(theme) {
+  return {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#FFFFFF",
+          backgroundSize: "cover",
+          boxSizing: "border-box",
+          boxShadow: theme.palette.shadows.card,
+          transition: "none"
+        }
+      }
+    }
+  };
+}
+
+function Input$c(theme) {
+  return {
+    // MuiInputBase: {
+    //   styleOverrides: {
+    //     root: {
+    //       '&.Mui-disabled': {
+    //         '& svg': { color: theme.palette.text.disabled }
+    //       }
+    //     },
+    //     input: {
+    //       '&::placeholder': {
+    //         opacity: 1,
+    //         color: theme.palette.text.disabled
+    //       }
+    //     }
+    //   }
+    // },
+    MuiInput: {
+      styleOverrides: {
+        underline: {
+          '&:before': {
+            borderBottom: '1px solid rgb(196 196 196)'
+          },
+          '&:hover:not(.Mui-disabled):before': {
+            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
+          }
+        }
+      }
+    },
+    MuiFilledInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: alpha$1(theme.palette.grey[500], 0.12),
+          '&:hover': {
+            backgroundColor: alpha$1(theme.palette.grey[500], 0.16)
+          },
+          '&.Mui-focused': {
+            backgroundColor: theme.palette.action.focus
+          },
+          '&.Mui-disabled': {
+            backgroundColor: theme.palette.action.disabledBackground
+          }
+        },
+        underline: {
+          '&:before': {
+            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
+          }
+        }
+      }
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderWidth: 2,
+          borderRadius: theme.spacing(0.8),
+          backgroundColor: 'transparent',
+          '&.Mui-focused': {
+            backgroundColor: '#fff'
+          },
+          '& fieldset': {
+            borderColor: alpha$1(theme.palette.primary.light, 0.32)
+          },
+          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+            borderColor: alpha$1(theme.palette.primary.main, 0.2)
+          },
+          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: alpha$1(theme.palette.primary.main, 0.2)
+          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: theme.palette.primary.main,
+            borderWidth: 2
+          },
+          '&.Mui-focused fieldset': {
+            borderWidth: 2
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Button$c(theme) {
+  return {
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          textTransform: 'inherit'
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'inherit',
+          borderRadius: 5,
+          fontStyle: 'normal',
+          fontWeight: 500,
+          boxShadow: 'none',
+          border: 0,
+          '&:hover': {
+            border: 0,
+            background: 'transparent'
+          },
+          '&.Mui-disabled': {
+            background: theme.palette.baseButton.bgColor + " !important",
+            opacity: theme.palette.action.disabledOpacity,
+            color: '#fff !important'
+          },
+          '&.Mui-select': {
+            backgroundColor: theme.palette.primary.main,
+            color: '#fff',
+            border: '1px solid #bdbdbd'
+          }
+        },
+        containedPrimary: {
+          color: '#fff',
+          background: theme.palette.baseButton.bgColor,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
+            boxShadow: 'none'
+          }
+        },
+        containedSecondary: {
+          color: theme.palette.hero,
+          background: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            background: theme.palette.bgLight.two,
+            boxShadow: 'none'
+          }
+        },
+        outlinedPrimary: {
+          color: theme.palette.primary.main,
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
+          }
+        },
+        outlinedInfo: {
+          color: theme.palette.primary.main,
+          backgroundColor: '#fff',
+          boxShadow: 'none',
+          '&:hover': {
+            backgroundColor: '#fff',
+            color: theme.palette.primary.dark
+          }
+        },
+        outlinedSuccess: {
+          color: theme.palette.primary.dark,
+          backgroundColor: theme.palette.success.light,
+          '&:hover': {
+            color: theme.palette.primary.darker,
+            backgroundColor: theme.palette.success.light,
+            boxShadow: 'none'
+          }
+        },
+        containedSuccess: {
+          color: '#fff',
+          backgroundColor: theme.palette.success.main,
+          '&:hover': {
+            backgroundColor: theme.palette.success.light,
+            boxShadow: 'none'
+          }
+        },
+        containedWarning: {
+          color: '#fff',
+          backgroundColor: theme.palette.warning.main,
+          '&:hover': {
+            backgroundColor: theme.palette.warning.light,
+            boxShadow: 'none'
+          }
+        },
+        containedInfo: {
+          color: '#fff',
+          backgroundColor: theme.palette.info.main,
+          '&:hover': {
+            backgroundColor: theme.palette.info.light,
+            boxShadow: 'none'
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Tooltip$c(theme) {
+  return {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          backgroundColor: theme.palette.grey[800]
+        },
+        arrow: {
+          color: theme.palette.grey[800]
+        }
+      }
+    }
+  };
+}
+
+function Backdrop$c(theme) {
+  var varLow = alpha$1(theme.palette.grey[900], 0.3);
+  var varHigh = alpha$1(theme.palette.grey[900], 0.9);
+  return {
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          "&.MuiBackdrop-invisible": {
+            background: "transparent"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Typography$c(theme) {
+  return {
+    MuiTypography: {
+      styleOverrides: {
+        paragraph: {
+          marginBottom: theme.spacing(2)
+        },
+        gutterBottom: {
+          marginBottom: theme.spacing(2)
+        },
+        body2: {
+          color: theme.palette.text.boby2
+        },
+        caption: {
+          fontSize: 14
+        },
+        caption_date: {
+          fontSize: 13
+        },
+        subtitle2: {
+          color: theme.palette.text.subtitle2
+        }
+      }
+    }
+  };
+}
+
+function CssBaseline$c(theme) {
+  return {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '*': {
+          margin: 0,
+          padding: 0,
+          boxSizing: 'border-box'
+        },
+        html: {
+          width: '100%',
+          height: '100%',
+          WebkitOverflowScrolling: 'touch'
+        },
+        body: {
+          width: '100%',
+          height: '100%',
+          backgroundColor: theme.palette.background["default"]
+        },
+        '#root': {
+          width: '100%',
+          height: '100%'
+        },
+        input: {
+          '&[type=number]': {
+            MozAppearance: 'textfield',
+            '&::-webkit-outer-spin-button': {
+              margin: 0,
+              WebkitAppearance: 'none'
+            },
+            '&::-webkit-inner-spin-button': {
+              margin: 0,
+              WebkitAppearance: 'none'
+            }
+          }
+        },
+        img: {
+          display: 'block',
+          maxWidth: '100%'
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Autocomplete$c(theme) {
+  return {
+    MuiAutocomplete: {
+      styleOverrides: {
+        paper: {
+          boxShadow: theme.palette.shadows.card
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function ToggleButton$c(theme) {
+  return {
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          padding: "0px 12px",
+          border: "1px solid " + theme.palette.action.toggle1,
+          width: "100%",
+          height: 42,
+          boxSizing: "border-box",
+          borderRadius: theme.spacing(0.6),
+          textTransform: "none",
+          fontStyle: "normal",
+          fontWeight: 500,
+          color: theme.palette.action.toggle2,
+          background: theme.palette.action.toggle3,
+          boxShadow: theme.palette.shadows.card,
+          "&:hover": {
+            color: theme.palette.action.toggle4,
+            background: theme.palette.action.toggle2 + " !important"
+          },
+          "&.Mui-selected": {
+            color: theme.palette.action.toggle4,
+            backgroundColor: theme.palette.action.toggle1
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function AppBar$c(theme) {
+  return {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          boxShadow: "none !important",
+          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function IconButton$c(theme) {
+  return {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          '& span > svg': {
+            color: theme.palette.hero
+          }
+        }
+      }
+    }
+  };
+}
+
+function Picker$c() {
+  return {
+    MuiPickerStaticWrapper: {
+      styleOverrides: {
+        root: {
+          minWidth: 'auto',
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+    MuiCalendarPicker: {
+      styleOverrides: {
+        root: {
+          width: 300
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Rating$c(theme) {
+  return {
+    MuiRating: {
+      styleOverrides: {
+        icon: {
+          color: theme.palette.primary.main
+        },
+        root: {
+          color: theme.palette.primary.main,
+          '& span > span': {
+            top: 0,
+            left: 0
+          }
+        }
+      }
+    }
+  };
+}
+
+function Menu$c() {
+  return {
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Alert$c(theme) {
+  return {
+    MuiAlert: {
+      styleOverrides: {
+        icon: {
+          color: theme.palette.success.dark + " !important"
+        },
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        },
+        standardWarning: {
+          backgroundColor: theme.palette.background.warning
+        },
+        standardError: {
+          backgroundColor: theme.palette.background.error
+        },
+        standardInfo: {
+          backgroundColor: theme.palette.background.info
+        },
+        standardSuccess: {
+          backgroundColor: theme.palette.background.success
+        }
+      }
+    }
+  };
+}
+
+function Link$c() {
+  return {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none'
+        }
+      }
+    }
+  };
+}
+
+function Badge$c() {
+  return {
+    MuiBadge: {
+      styleOverrides: {
+        colorWarning: {
+          color: '#fff',
+          fontWeight: 500
+        }
+      }
+    }
+  };
+}
+
+//
+function ComponentsOverrides$c(theme) {
+  return Object.assign(AppBar$c(theme), Card$c(theme), Input$c(theme), Paper$c(theme), Button$c(theme), Tooltip$c(theme), Backdrop$c(theme), Typography$c(theme), CssBaseline$c(theme), Autocomplete$c(theme), ToggleButton$c(theme), IconButton$c(theme), Picker$c(), Rating$c(theme), Menu$c(), Alert$c(theme), Link$c(), Badge$c());
+}
+
+var white_fang = {
+  palette: palette$c,
+  typography: typography$c,
+  componentsOverride: ComponentsOverrides$c
+};
+
 function getTheme(name) {
   console.log("name", name);
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : mobimed;
+  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : mobimed;
 }
 
 var makeCustomTheme = function makeCustomTheme(name) {
@@ -8531,7 +9238,7 @@ function ThemeProvider(_ref) {
     injectFirst: true
   }, /*#__PURE__*/React.createElement(ThemeProvider$1, {
     theme: customTheme
-  }, /*#__PURE__*/React.createElement(CssBaseline$c, null), children));
+  }, /*#__PURE__*/React.createElement(CssBaseline$d, null), children));
 }
 
 export default ThemeProvider;

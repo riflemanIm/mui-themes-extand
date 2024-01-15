@@ -100,7 +100,6 @@ export default function getTheme(name?: string): {
             active: string;
             hover: string;
             selected: string;
-            disabled: string;
             disabledBackground: string;
             focus: string;
             hoverOpacity: number;
@@ -119,13 +118,11 @@ export default function getTheme(name?: string): {
         };
         baseButton: {
             bgColor: string;
-            bgColorHover: string;
             shadow: string;
         };
         bgLight: {
             one: string;
             two: string;
-            disabled: string;
         };
         shadows: {
             card: string;
@@ -133,5 +130,5 @@ export default function getTheme(name?: string): {
         };
     };
     typography: import("@mui/material").TypographyVariantsOptions;
-    componentsOverride: typeof import("./drAnna/overrides").default;
+    componentsOverride: typeof import("./medincenter/overrides").default;
 };
