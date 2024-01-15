@@ -10,6 +10,7 @@ import ncn from "./ncn";
 import sibgmu from "./sibgmu";
 import mositalmed from "./mositalmed";
 import skyfert from "./skyfert";
+import white_fang from "./white_fang";
 
 export default function getTheme(name?: string) {
   console.log("name", name);
@@ -35,5 +36,7 @@ export default function getTheme(name?: string) {
     ? mositalmed
     : name === "skyfert"
     ? skyfert
+    : name === "white_fang"
+    ? white_fang
     : mobimed;
 }
