@@ -8508,7 +8508,7 @@ var lightenRate$c = 7.5;
 var darkenRate$c = 15;
 var darkerRate$c = 30;
 var primary$c = '#204568';
-var secondary$c = '#A8D7BA';
+var secondary$c = '#4A6F93';
 var warning$c = '#C76277';
 var success$c = '#5CAA7F';
 var info$c = '#BCC3D2';
@@ -8531,7 +8531,7 @@ var SECONDARY$c = {
   darker: '#E87780'
 };
 var INFO$c = {
-  lighter: '#E8F2F5',
+  lighter: '#F6F4F0',
   main: info$c,
   light: /*#__PURE__*/tinycolor(info$c).lighten(lightenRate$c).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$c).darken(darkenRate$c).toHexString(),
@@ -8847,7 +8847,7 @@ function Button$c(theme) {
           }
         },
         containedSecondary: {
-          color: theme.palette.hero,
+          color: theme.palette.secondary.main,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
