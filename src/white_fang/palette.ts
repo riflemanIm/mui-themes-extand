@@ -8,7 +8,7 @@ const darkenRate = 15;
 const darkerRate = 30;
 
 const primary = '#204568';
-const secondary = '#A8D7BA';
+const secondary = '#4A6F93';
 const warning = '#C76277';
 const success = '#5CAA7F';
 const info = '#BCC3D2';
@@ -34,7 +34,7 @@ const SECONDARY = {
 };
 
 const INFO = {
-  lighter: '#E8F2F5',
+  lighter: '#F6F4F0',
   main: info,
   light: tinycolor(info).lighten(lightenRate).toHexString(),
   dark: tinycolor(info).darken(darkenRate).toHexString(),

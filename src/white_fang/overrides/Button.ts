@@ -50,7 +50,7 @@ export default function Button(theme: Theme) {
         },
 
         containedSecondary: {
-          color: theme.palette.hero,
+          color: theme.palette.secondary.main,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
           '&:hover': {
