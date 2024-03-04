@@ -11,6 +11,7 @@ import sibgmu from "./sibgmu";
 import mositalmed from "./mositalmed";
 import skyfert from "./skyfert";
 import white_fang from "./white_fang";
+import kalinchenko from "./kalinchenko";
 
 export default function getTheme(name?: string) {
   console.log("name", name);
@@ -38,5 +39,7 @@ export default function getTheme(name?: string) {
     ? skyfert
     : name === "white_fang"
     ? white_fang
+    : name === "kalinchenko"
+    ? kalinchenko
     : mobimed;
 }
