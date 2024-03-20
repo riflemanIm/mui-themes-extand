@@ -683,24 +683,33 @@ function Alert(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -1389,24 +1398,33 @@ function Alert$1(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -2095,24 +2113,33 @@ function Alert$2(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -3519,24 +3546,33 @@ function Alert$4(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -4224,24 +4260,33 @@ function Alert$5(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -4928,24 +4973,33 @@ function Alert$6(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -5632,24 +5686,33 @@ function Alert$7(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -6335,24 +6398,33 @@ function Alert$8(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -7038,24 +7110,33 @@ function Alert$9(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -7735,24 +7816,33 @@ function Alert$a(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -8442,24 +8532,33 @@ function Alert$b(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -9149,24 +9248,33 @@ function Alert$c(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
@@ -9846,24 +9954,33 @@ function Alert$d(theme) {
   return {
     MuiAlert: {
       styleOverrides: {
-        icon: {
-          color: theme.palette.success.dark + " !important"
-        },
         root: {
           boxShadow: theme.palette.shadows.card,
           borderRadius: theme.spacing(1)
         },
         standardWarning: {
-          backgroundColor: theme.palette.background.warning
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
         },
         standardError: {
-          backgroundColor: theme.palette.background.error
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
         },
         standardInfo: {
-          backgroundColor: theme.palette.background.info
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
         },
         standardSuccess: {
-          backgroundColor: theme.palette.background.success
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
         }
       }
     }
