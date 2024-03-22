@@ -1,11 +1,11 @@
-import palette from "./palette";
-import typography from "./typography";
-
-import componentsOverride from "./overrides";
+import palette from './palette';
+import typography from './typography';
+import './fonts/stylesheet.css';
+import componentsOverride from './overrides';
 
 export default {
   palette,
   typography,
 
-  componentsOverride
+  componentsOverride,
 };

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Glober SemiBold Free';
+    src: url('GloberSemiBoldFree.eot');
+    src: url('GloberSemiBoldFree.eot?#iefix') format('embedded-opentype'),
+        url('GloberSemiBoldFree.woff2') format('woff2'),
+        url('GloberSemiBoldFree.woff') format('woff'),
+        url('GloberSemiBoldFree.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glober Thin Free';
+    src: url('GloberThinFree.eot');
+    src: url('GloberThinFree.eot?#iefix') format('embedded-opentype'),
+        url('GloberThinFree.woff2') format('woff2'),
+        url('GloberThinFree.woff') format('woff'),
+        url('GloberThinFree.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
