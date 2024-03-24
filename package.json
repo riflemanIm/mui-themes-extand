@@ -39,8 +39,12 @@
     "eslint": "^8.52.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "tinycolor2": "^1.6.0",
     "tsdx": "^0.14.1",
     "typescript": "^5.2.2"

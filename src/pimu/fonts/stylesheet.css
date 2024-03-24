@@ -4,11 +4,11 @@
 /* ---------- Glober -------------*/
 @font-face {
     font-family: 'Glober SemiBold';
-    src: url('Glober/GloberSemiBoldFree.eot');
-    src: url('Glober/GloberSemiBoldFree.eot?#iefix') format('embedded-opentype'),
-        url('Glober/GloberSemiBoldFree.woff2') format('woff2'),
-        url('Glober/GloberSemiBoldFree.woff') format('woff'),
-        url('Glober/GloberSemiBoldFree.ttf') format('truetype');
+    src: url('./Glober/GloberSemiBoldFree.eot');
+    src: url('./Glober/GloberSemiBoldFree.eot?#iefix') format('embedded-opentype'),
+        url('./Glober/GloberSemiBoldFree.woff2') format('woff2'),
+        url('./Glober/GloberSemiBoldFree.woff') format('woff'),
+        url('./Glober/GloberSemiBoldFree.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -16,11 +16,11 @@
 
 @font-face {
     font-family: 'Glober Thin';
-    src: url('Glober/GloberThinFree.eot');
-    src: url('Glober/GloberThinFree.eot?#iefix') format('embedded-opentype'),
-        url('Glober/GloberThinFree.woff2') format('woff2'),
-        url('Glober/GloberThinFree.woff') format('woff'),
-        url('Glober/GloberThinFree.ttf') format('truetype');
+    src: url('./Glober/GloberThinFree.eot');
+    src: url('./Glober/GloberThinFree.eot?#iefix') format('embedded-opentype'),
+        url('./Glober/GloberThinFree.woff2') format('woff2'),
+        url('./Glober/GloberThinFree.woff') format('woff'),
+        url('./Glober/GloberThinFree.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;

@@ -1,4 +1,5 @@
-import componentsOverride from "./overrides";
+import './fonts/stylesheet.css';
+import componentsOverride from './overrides';
 declare const _default: {
     palette: {
         hero: string;
