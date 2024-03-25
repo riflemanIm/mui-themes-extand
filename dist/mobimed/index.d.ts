@@ -1,4 +1,3 @@
-import './fonts/stylesheet.css';
 import componentsOverride from './overrides';
 declare const _default: {
     palette: {
@@ -16,8 +15,8 @@ declare const _default: {
             main: string;
             light: string;
             dark: string;
-            contrastText: string;
             darker: string;
+            contrastText: string;
         };
         info: {
             lighter: string;

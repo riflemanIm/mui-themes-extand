@@ -1,6 +1,7 @@
 const copy = require("rollup-plugin-copy");
 const bundleSize = require("rollup-plugin-bundle-size");
-const postcss = require("rollup-plugin-postcss");
+// let static_files = require("rollup-plugin-static-files");
+// const url = require("rollup-plugin-url");
 
 module.exports = {
   rollup(config) {
@@ -9,12 +10,17 @@ module.exports = {
     config.plugins.push(
       copy({ targets: [{ src: "src/index.d.ts", dest: "dist" }] })
     );
-    config.plugins.push(
-      postcss({
-        modules: true
-      })
-    );
-
+    // config.plugins.push(
+    //   static_files({
+    //     include: ["./fonts"]
+    //   })
+    // );
+    // config.plugins.push(
+    //   url({
+    //     incude: ["**/*.ttf", "**/*.eot", "**/*.woff", "**/*.woff2"],
+    //     limit: 0
+    //   })
+    // );
     return config;
   }
 };

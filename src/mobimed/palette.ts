@@ -28,8 +28,8 @@ const SECONDARY = {
   main: secondary,
   light: tinycolor(secondary).lighten(lightenRate).toHexString(),
   dark: tinycolor(secondary).darken(darkenRate).toHexString(),
+  darker: tinycolor(primary).darken(darkerRate).toHexString(),
   contrastText: '#ccc',
-  darker: '#091A7A',
 };
 
 const INFO = {
@@ -99,7 +99,7 @@ const palette = {
   },
   background: {
     paper: '#fff',
-    default: GREY[100],
+    default: '#fff',
     neutral: GREY[200],
     warning: '#FEF1F0',
     error: '#ECECEC',
