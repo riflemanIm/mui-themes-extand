@@ -1,27 +1,31 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', { value: true });
+Object.defineProperty(exports, "__esModule", { value: true });
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+function _interopDefault(ex) {
+  return ex && typeof ex === "object" && "default" in ex ? ex["default"] : ex;
+}
 
-var React = require('react');
+var React = require("react");
 var React__default = _interopDefault(React);
-var material = require('@mui/material');
-var styles = require('@mui/material/styles');
-var tinycolor = _interopDefault(require('tinycolor2'));
+var material = require("@mui/material");
+var styles = require("@mui/material/styles");
+var tinycolor = _interopDefault(require("tinycolor2"));
 
 function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
+  _extends = Object.assign
+    ? Object.assign.bind()
+    : function(target) {
+        for (var i = 1; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+              target[key] = source[key];
+            }
+          }
         }
-      }
-    }
-    return target;
-  };
+        return target;
+      };
   return _extends.apply(this, arguments);
 }
 
@@ -43,14 +47,14 @@ var GREY = {
   700: "#454F5B",
   800: "#212B36",
   900: "#161C24",
-  5008: /*#__PURE__*/material.alpha("#919EAB", 0.08),
-  50012: /*#__PURE__*/material.alpha("#919EAB", 0.12),
-  50016: /*#__PURE__*/material.alpha("#919EAB", 0.16),
-  50024: /*#__PURE__*/material.alpha("#919EAB", 0.24),
-  50032: /*#__PURE__*/material.alpha("#919EAB", 0.32),
-  50048: /*#__PURE__*/material.alpha("#919EAB", 0.48),
-  50056: /*#__PURE__*/material.alpha("#919EAB", 0.56),
-  50080: /*#__PURE__*/material.alpha("#919EAB", 0.8)
+  5008: /*#__PURE__*/ material.alpha("#919EAB", 0.08),
+  50012: /*#__PURE__*/ material.alpha("#919EAB", 0.12),
+  50016: /*#__PURE__*/ material.alpha("#919EAB", 0.16),
+  50024: /*#__PURE__*/ material.alpha("#919EAB", 0.24),
+  50032: /*#__PURE__*/ material.alpha("#919EAB", 0.32),
+  50048: /*#__PURE__*/ material.alpha("#919EAB", 0.48),
+  50056: /*#__PURE__*/ material.alpha("#919EAB", 0.56),
+  50080: /*#__PURE__*/ material.alpha("#919EAB", 0.8)
 };
 
 // ----------------------------------------------------------------------
@@ -58,78 +62,108 @@ var lighterenRate = 1.5;
 var lightenRate = 7.5;
 var darkenRate = 15;
 var darkerRate = 30;
-var primary = '#6157FF';
-var secondary = '#73D7F5';
-var warning = '#F57069';
-var success = '#34DFA2';
-var info = '#abb3ff';
-var error = '#f44336';
-var hero = '#6157FF';
+var primary = "#6157FF";
+var secondary = "#73D7F5";
+var warning = "#F57069";
+var success = "#34DFA2";
+var info = "#abb3ff";
+var error = "#f44336";
+var hero = "#6157FF";
 var PRIMARY = {
-  lighter: /*#__PURE__*/tinycolor(primary).lighten(lighterenRate).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary)
+    .lighten(lighterenRate)
+    .toHexString(),
   main: primary,
-  light: /*#__PURE__*/tinycolor(primary).lighten(lightenRate).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary).darken(darkenRate).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary).darken(darkerRate).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary)
+    .lighten(lightenRate)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary)
+    .darken(darkenRate)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary)
+    .darken(darkerRate)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary,
-  light: /*#__PURE__*/tinycolor(secondary).lighten(lightenRate).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary).darken(darkenRate).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary).darken(darkerRate).toHexString(),
-  contrastText: '#ccc'
+  light: /*#__PURE__*/ tinycolor(secondary)
+    .lighten(lightenRate)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary)
+    .darken(darkenRate)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary)
+    .darken(darkerRate)
+    .toHexString(),
+  contrastText: "#ccc"
 };
 var INFO = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info,
-  light: /*#__PURE__*/tinycolor(info).lighten(lightenRate).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info).darken(darkenRate).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info)
+    .lighten(lightenRate)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info)
+    .darken(darkenRate)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success,
-  light: /*#__PURE__*/tinycolor(success).lighten(lightenRate).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success).darken(darkenRate).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success)
+    .lighten(lightenRate)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success)
+    .darken(darkenRate)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning,
-  light: /*#__PURE__*/tinycolor(warning).lighten(lightenRate).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning).darken(darkenRate).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning)
+    .lighten(lightenRate)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning)
+    .darken(darkenRate)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error,
-  light: /*#__PURE__*/tinycolor(error).lighten(lightenRate).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error).darken(darkenRate).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error)
+    .lighten(lightenRate)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error)
+    .darken(darkenRate)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS = {
-  primary: /*#__PURE__*/createGradient(PRIMARY.light, PRIMARY.main),
-  info: /*#__PURE__*/createGradient(INFO.light, INFO.main),
-  success: /*#__PURE__*/createGradient(SUCCESS.light, SUCCESS.main),
-  warning: /*#__PURE__*/createGradient(WARNING.light, WARNING.main),
-  error: /*#__PURE__*/createGradient(ERROR.light, ERROR.main),
-  one: '#7385FF',
-  two: '#584DFF'
+  primary: /*#__PURE__*/ createGradient(PRIMARY.light, PRIMARY.main),
+  info: /*#__PURE__*/ createGradient(INFO.light, INFO.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS.light, SUCCESS.main),
+  warning: /*#__PURE__*/ createGradient(WARNING.light, WARNING.main),
+  error: /*#__PURE__*/ createGradient(ERROR.light, ERROR.main),
+  one: "#7385FF",
+  two: "#584DFF"
 };
 var palette = {
   hero: hero,
-  primary: /*#__PURE__*/_extends({}, PRIMARY),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY),
-  info: /*#__PURE__*/_extends({}, INFO),
-  success: /*#__PURE__*/_extends({}, SUCCESS),
-  warning: /*#__PURE__*/_extends({}, WARNING),
-  error: /*#__PURE__*/_extends({}, ERROR),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY),
+  info: /*#__PURE__*/ _extends({}, INFO),
+  success: /*#__PURE__*/ _extends({}, SUCCESS),
+  warning: /*#__PURE__*/ _extends({}, WARNING),
+  error: /*#__PURE__*/ _extends({}, ERROR),
   grey: GREY,
   gradients: GRADIENTS,
   divider: GREY[50024],
@@ -141,14 +175,14 @@ var palette = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#fff',
+    paper: "#fff",
+    default: "#fff",
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
-    infoGadient: /*#__PURE__*/createGradient(INFO.lighter, INFO.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
+    infoGadient: /*#__PURE__*/ createGradient(INFO.lighter, INFO.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -159,81 +193,81 @@ var palette = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#828EFA',
-    toggle2: '#6157FF',
-    toggle3: '#F1F4FC',
-    toggle4: '#fff'
+    toggle1: "#828EFA",
+    toggle2: "#6157FF",
+    toggle3: "#F1F4FC",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#7C7D80',
-    colorHover: '#6157FF',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#7C7D80",
+    colorHover: "#6157FF",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)',
-    shadow: '0px 1px 4px rgba(111, 102, 255, 0.4)'
+    bgColor: "linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)",
+    shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#efefef'
+    one: "#F1F4FC",
+    two: "#efefef"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
   }
 };
 
-var FONT_PRIMARY = 'Avenir Next Cyr';
+var FONT_PRIMARY = "Avenir Next Cyr";
 var typography = {
   fontFamily: FONT_PRIMARY,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 600,
   h1: {
-    fontSize: '2.0rem',
+    fontSize: "2.0rem",
     fontWeight: 500
   },
   h2: {
-    fontSize: '1.7rem',
+    fontSize: "1.7rem",
     fontWeight: 500
   },
   h3: {
-    fontSize: '1.64rem',
+    fontSize: "1.64rem",
     fontWeight: 500
   },
   h4: {
-    fontSize: '1.5rem'
+    fontSize: "1.5rem"
   },
   h5: {
-    fontSize: '1.285rem'
+    fontSize: "1.285rem"
   },
   h6: {
-    fontSize: '1.05rem'
+    fontSize: "1.05rem"
   },
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   // overline: {
   //   fontWeight: 500,
@@ -245,7 +279,7 @@ var typography = {
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -351,103 +385,103 @@ function Button(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -479,7 +513,20 @@ function Backdrop(theme) {
       styleOverrides: {
         root: {
           //          backgroundColor: theme.palette.grey[600],
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -520,7 +567,10 @@ function Typography(theme) {
 function CssBaseline(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -577,7 +627,12 @@ function AppBar(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -604,8 +659,8 @@ function Picker() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -642,7 +697,8 @@ function Menu() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -693,7 +749,7 @@ function Link() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -705,7 +761,7 @@ function Badge() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -715,7 +771,26 @@ function Badge() {
 
 //
 function ComponentsOverrides(theme) {
-  return Object.assign(AppBar(theme), Card(theme), Input(theme), Paper(theme), Button(theme), Tooltip(theme), Backdrop(theme), Typography(theme), CssBaseline(theme), Autocomplete(theme), ToggleButton(theme), IconButton(theme), Picker(), Rating(theme), Menu(), Alert(theme), Link(), Badge());
+  return Object.assign(
+    AppBar(theme),
+    Card(theme),
+    Input(theme),
+    Paper(theme),
+    Button(theme),
+    Tooltip(theme),
+    Backdrop(theme),
+    Typography(theme),
+    CssBaseline(theme),
+    Autocomplete(theme),
+    ToggleButton(theme),
+    IconButton(theme),
+    Picker(),
+    Rating(theme),
+    Menu(),
+    Alert(theme),
+    Link(),
+    Badge()
+  );
 }
 
 var mobimed = {
@@ -729,78 +804,106 @@ var lighterenRate$1 = 1.5;
 var lightenRate$1 = 7.5;
 var darkenRate$1 = 15;
 var darkerRate$1 = 30;
-var primary$1 = '#E61565';
-var secondary$1 = '#28B7C6';
-var warning$1 = '#FF9690';
-var success$1 = '#F2D0B2';
-var info$1 = '#FF9690';
-var hero$1 = '#E31363';
-var error$1 = '#f44336';
+var primary$1 = "#E61565";
+var secondary$1 = "#28B7C6";
+var warning$1 = "#FF9690";
+var success$1 = "#F2D0B2";
+var info$1 = "#FF9690";
+var hero$1 = "#E31363";
+var error$1 = "#f44336";
 var PRIMARY$1 = {
-  lighter: /*#__PURE__*/tinycolor(primary$1).lighten(lighterenRate$1).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$1)
+    .lighten(lighterenRate$1)
+    .toHexString(),
   main: primary$1,
-  light: /*#__PURE__*/tinycolor(primary$1).lighten(lightenRate$1).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$1).darken(darkenRate$1).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$1).darken(darkerRate$1).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$1)
+    .lighten(lightenRate$1)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$1)
+    .darken(darkenRate$1)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$1)
+    .darken(darkerRate$1)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$1 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$1,
-  light: /*#__PURE__*/tinycolor(secondary$1).lighten(lightenRate$1).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$1).darken(darkenRate$1).toHexString(),
-  contrastText: '#ccc',
-  darker: '#091A7A'
+  light: /*#__PURE__*/ tinycolor(secondary$1)
+    .lighten(lightenRate$1)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$1)
+    .darken(darkenRate$1)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#091A7A"
 };
 var INFO$1 = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$1,
-  light: /*#__PURE__*/tinycolor(info$1).lighten(lightenRate$1).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$1).darken(darkenRate$1).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info$1)
+    .lighten(lightenRate$1)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$1)
+    .darken(darkenRate$1)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$1 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$1,
-  light: /*#__PURE__*/tinycolor(success$1).lighten(lightenRate$1).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$1).darken(darkenRate$1).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$1)
+    .lighten(lightenRate$1)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$1)
+    .darken(darkenRate$1)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$1 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$1,
-  light: /*#__PURE__*/tinycolor(warning$1).lighten(lightenRate$1).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$1).darken(darkenRate$1).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$1)
+    .lighten(lightenRate$1)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$1)
+    .darken(darkenRate$1)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$1 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$1,
-  light: /*#__PURE__*/tinycolor(error$1).lighten(lightenRate$1).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$1).darken(darkenRate$1).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$1)
+    .lighten(lightenRate$1)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$1)
+    .darken(darkenRate$1)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$1 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$1.light, PRIMARY$1.main),
-  info: /*#__PURE__*/createGradient(INFO$1.light, INFO$1.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$1.light, SUCCESS$1.main),
-  warning: /*#__PURE__*/createGradient(WARNING$1.light, WARNING$1.main),
-  error: /*#__PURE__*/createGradient(ERROR$1.light, ERROR$1.main),
-  one: '#49545d',
-  two: '#3F4A52'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$1.light, PRIMARY$1.main),
+  info: /*#__PURE__*/ createGradient(INFO$1.light, INFO$1.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$1.light, SUCCESS$1.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$1.light, WARNING$1.main),
+  error: /*#__PURE__*/ createGradient(ERROR$1.light, ERROR$1.main),
+  one: "#49545d",
+  two: "#3F4A52"
 };
 var palette$1 = {
   hero: hero$1,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$1),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$1),
-  info: /*#__PURE__*/_extends({}, INFO$1),
-  success: /*#__PURE__*/_extends({}, SUCCESS$1),
-  warning: /*#__PURE__*/_extends({}, WARNING$1),
-  error: /*#__PURE__*/_extends({}, ERROR$1),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$1),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$1),
+  info: /*#__PURE__*/ _extends({}, INFO$1),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$1),
+  warning: /*#__PURE__*/ _extends({}, WARNING$1),
+  error: /*#__PURE__*/ _extends({}, ERROR$1),
   grey: GREY,
   gradients: GRADIENTS$1,
   divider: GREY[50024],
@@ -812,14 +915,14 @@ var palette$1 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
-    infoGadient: /*#__PURE__*/createGradient(INFO$1.lighter, INFO$1.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$1.lighter, INFO$1.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -830,29 +933,29 @@ var palette$1 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#E61565',
-    toggle2: '#28B7C6',
-    toggle3: '#fff',
-    toggle4: '#fff'
+    toggle1: "#E61565",
+    toggle2: "#28B7C6",
+    toggle3: "#fff",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#fff',
-    colorLeft: '#28B7C6',
-    colorHover: '#3F4A52',
-    colorActive: '#000',
-    bg: '#28B7C6'
+    color: "#fff",
+    colorLeft: "#28B7C6",
+    colorHover: "#3F4A52",
+    colorActive: "#000",
+    bg: "#28B7C6"
   },
   baseButton: {
-    bgColor: 'linear-gradient(180deg, #E31363 0%, #C2024C 100%)',
-    shadow: '0px 2px 2px rgba(103 162 171, 0.4)'
+    bgColor: "linear-gradient(180deg, #E31363 0%, #C2024C 100%)",
+    shadow: "0px 2px 2px rgba(103 162 171, 0.4)"
   },
   bgLight: {
-    one: '#E8F5F6',
-    two: '#C1EFF4'
+    one: "#E8F5F6",
+    two: "#C1EFF4"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(103 162 171, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(103 162 171, 0.15)"
   }
 };
 
@@ -886,30 +989,30 @@ var typography$1 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -1030,103 +1133,103 @@ function Button$1(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -1157,7 +1260,20 @@ function Backdrop$1(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -1198,7 +1314,10 @@ function Typography$1(theme) {
 function CssBaseline$1(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -1255,7 +1374,12 @@ function AppBar$1(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -1282,8 +1406,8 @@ function Picker$1() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -1320,7 +1444,8 @@ function Menu$1() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -1371,7 +1496,7 @@ function Link$1() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -1383,7 +1508,7 @@ function Badge$1() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -1393,7 +1518,26 @@ function Badge$1() {
 
 //
 function ComponentsOverrides$1(theme) {
-  return Object.assign(AppBar$1(theme), Card$1(theme), Input$1(theme), Paper$1(theme), Button$1(theme), Tooltip$1(theme), Backdrop$1(theme), Typography$1(theme), CssBaseline$1(theme), Autocomplete$1(theme), ToggleButton$1(theme), IconButton$1(theme), Picker$1(), Rating$1(theme), Menu$1(), Alert$1(theme), Link$1(), Badge$1());
+  return Object.assign(
+    AppBar$1(theme),
+    Card$1(theme),
+    Input$1(theme),
+    Paper$1(theme),
+    Button$1(theme),
+    Tooltip$1(theme),
+    Backdrop$1(theme),
+    Typography$1(theme),
+    CssBaseline$1(theme),
+    Autocomplete$1(theme),
+    ToggleButton$1(theme),
+    IconButton$1(theme),
+    Picker$1(),
+    Rating$1(theme),
+    Menu$1(),
+    Alert$1(theme),
+    Link$1(),
+    Badge$1()
+  );
 }
 
 var drAnna = {
@@ -1407,78 +1551,106 @@ var lighterenRate$2 = 1.5;
 var lightenRate$2 = 7.5;
 var darkenRate$2 = 15;
 var darkerRate$2 = 30;
-var primary$2 = '#EA9D00';
-var secondary$2 = '#559BDC';
-var warning$2 = '#FF4D75';
-var success$2 = '#34DFA2';
-var info$2 = '#FF9690';
-var error$2 = '#FF4D75';
-var hero$2 = '#004D8F';
+var primary$2 = "#EA9D00";
+var secondary$2 = "#559BDC";
+var warning$2 = "#FF4D75";
+var success$2 = "#34DFA2";
+var info$2 = "#FF9690";
+var error$2 = "#FF4D75";
+var hero$2 = "#004D8F";
 var PRIMARY$2 = {
-  lighter: /*#__PURE__*/tinycolor(primary$2).lighten(lighterenRate$2).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$2)
+    .lighten(lighterenRate$2)
+    .toHexString(),
   main: primary$2,
-  light: /*#__PURE__*/tinycolor(primary$2).lighten(lightenRate$2).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$2).darken(darkenRate$2).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$2).darken(darkerRate$2).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$2)
+    .lighten(lightenRate$2)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$2)
+    .darken(darkenRate$2)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$2)
+    .darken(darkerRate$2)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$2 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$2,
-  light: /*#__PURE__*/tinycolor(secondary$2).lighten(lightenRate$2).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$2).darken(darkenRate$2).toHexString(),
-  contrastText: '#ccc',
-  darker: '#091A7A'
+  light: /*#__PURE__*/ tinycolor(secondary$2)
+    .lighten(lightenRate$2)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$2)
+    .darken(darkenRate$2)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#091A7A"
 };
 var INFO$2 = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$2,
-  light: /*#__PURE__*/tinycolor(info$2).lighten(lightenRate$2).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$2).darken(darkenRate$2).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info$2)
+    .lighten(lightenRate$2)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$2)
+    .darken(darkenRate$2)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$2 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$2,
-  light: /*#__PURE__*/tinycolor(success$2).lighten(lightenRate$2).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$2).darken(darkenRate$2).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$2)
+    .lighten(lightenRate$2)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$2)
+    .darken(darkenRate$2)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$2 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$2,
-  light: /*#__PURE__*/tinycolor(warning$2).lighten(lightenRate$2).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$2).darken(darkenRate$2).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$2)
+    .lighten(lightenRate$2)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$2)
+    .darken(darkenRate$2)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$2 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$2,
-  light: /*#__PURE__*/tinycolor(error$2).lighten(lightenRate$2).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$2).darken(darkenRate$2).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$2)
+    .lighten(lightenRate$2)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$2)
+    .darken(darkenRate$2)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$2 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$2.light, PRIMARY$2.main),
-  info: /*#__PURE__*/createGradient(INFO$2.light, INFO$2.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$2.light, SUCCESS$2.main),
-  warning: /*#__PURE__*/createGradient(WARNING$2.light, WARNING$2.main),
-  error: /*#__PURE__*/createGradient(ERROR$2.light, ERROR$2.main),
-  one: '#EDAA21',
-  two: '#EB9D02'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$2.light, PRIMARY$2.main),
+  info: /*#__PURE__*/ createGradient(INFO$2.light, INFO$2.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$2.light, SUCCESS$2.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$2.light, WARNING$2.main),
+  error: /*#__PURE__*/ createGradient(ERROR$2.light, ERROR$2.main),
+  one: "#EDAA21",
+  two: "#EB9D02"
 };
 var palette$2 = {
   hero: hero$2,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$2),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$2),
-  info: /*#__PURE__*/_extends({}, INFO$2),
-  success: /*#__PURE__*/_extends({}, SUCCESS$2),
-  warning: /*#__PURE__*/_extends({}, WARNING$2),
-  error: /*#__PURE__*/_extends({}, ERROR$2),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$2),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$2),
+  info: /*#__PURE__*/ _extends({}, INFO$2),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$2),
+  warning: /*#__PURE__*/ _extends({}, WARNING$2),
+  error: /*#__PURE__*/ _extends({}, ERROR$2),
   grey: GREY,
   gradients: GRADIENTS$2,
   divider: GREY[50024],
@@ -1490,14 +1662,14 @@ var palette$2 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
-    infoGadient: /*#__PURE__*/createGradient(INFO$2.lighter, INFO$2.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$2.lighter, INFO$2.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -1508,29 +1680,29 @@ var palette$2 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#004D8F',
-    toggle2: '#004D8F',
-    toggle3: '#fff',
-    toggle4: '#fff'
+    toggle1: "#004D8F",
+    toggle2: "#004D8F",
+    toggle3: "#fff",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#7C7D80',
-    colorHover: '#EDAA21',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#7C7D80",
+    colorHover: "#EDAA21",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #EDAA21 3.01%, #EB9D02 95.95%)',
-    shadow: '0px 2px 2px rgb(237 170 33 / 16%)'
+    bgColor: "linear-gradient(139.78deg, #EDAA21 3.01%, #EB9D02 95.95%)",
+    shadow: "0px 2px 2px rgb(237 170 33 / 16%)"
   },
   bgLight: {
-    one: '#efefef',
-    two: '#f3f3f3'
+    one: "#efefef",
+    two: "#f3f3f3"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(237 170 33, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(237 170 33, 0.15)"
   }
 };
 
@@ -1564,30 +1736,30 @@ var typography$2 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -1708,103 +1880,103 @@ function Button$2(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -1835,7 +2007,20 @@ function Backdrop$2(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -1876,7 +2061,10 @@ function Typography$2(theme) {
 function CssBaseline$2(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -1933,7 +2121,12 @@ function AppBar$2(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -1960,8 +2153,8 @@ function Picker$2() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -1998,7 +2191,8 @@ function Menu$2() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -2049,7 +2243,7 @@ function Link$2() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -2061,7 +2255,7 @@ function Badge$2() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -2071,7 +2265,26 @@ function Badge$2() {
 
 //
 function ComponentsOverrides$2(theme) {
-  return Object.assign(AppBar$2(theme), Card$2(theme), Input$2(theme), Paper$2(theme), Button$2(theme), Tooltip$2(theme), Backdrop$2(theme), Typography$2(theme), CssBaseline$2(theme), Autocomplete$2(theme), ToggleButton$2(theme), IconButton$2(theme), Picker$2(), Rating$2(theme), Menu$2(), Alert$2(theme), Link$2(), Badge$2());
+  return Object.assign(
+    AppBar$2(theme),
+    Card$2(theme),
+    Input$2(theme),
+    Paper$2(theme),
+    Button$2(theme),
+    Tooltip$2(theme),
+    Backdrop$2(theme),
+    Typography$2(theme),
+    CssBaseline$2(theme),
+    Autocomplete$2(theme),
+    ToggleButton$2(theme),
+    IconButton$2(theme),
+    Picker$2(),
+    Rating$2(theme),
+    Menu$2(),
+    Alert$2(theme),
+    Link$2(),
+    Badge$2()
+  );
 }
 
 var gms = {
@@ -2093,70 +2306,98 @@ var info$3 = "#C2C4CB";
 var error$3 = "#D76977";
 var hero$3 = "#5A9388";
 var PRIMARY$3 = {
-  lighter: /*#__PURE__*/tinycolor(primary$3).lighten(lighterenRate$3).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$3)
+    .lighten(lighterenRate$3)
+    .toHexString(),
   main: primary$3,
-  light: /*#__PURE__*/tinycolor(primary$3).lighten(lightenRate$3).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$3).darken(darkenRate$3).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$3).darken(darkerRate$3).toHexString(),
+  light: /*#__PURE__*/ tinycolor(primary$3)
+    .lighten(lightenRate$3)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$3)
+    .darken(darkenRate$3)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$3)
+    .darken(darkerRate$3)
+    .toHexString(),
   contrastText: "#fff"
 };
 var SECONDARY$3 = {
   lighter: "#D6E4FF",
   main: secondary$3,
-  light: /*#__PURE__*/tinycolor(secondary$3).lighten(lightenRate$3).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$3).darken(darkenRate$3).toHexString(),
+  light: /*#__PURE__*/ tinycolor(secondary$3)
+    .lighten(lightenRate$3)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$3)
+    .darken(darkenRate$3)
+    .toHexString(),
   contrastText: "#ccc",
   darker: "#E87780"
 };
 var INFO$3 = {
   lighter: "#F8FFFA",
   main: info$3,
-  light: /*#__PURE__*/tinycolor(info$3).lighten(lightenRate$3).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$3).darken(darkenRate$3).toHexString(),
+  light: /*#__PURE__*/ tinycolor(info$3)
+    .lighten(lightenRate$3)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$3)
+    .darken(darkenRate$3)
+    .toHexString(),
   contrastText: "#fff",
   darker: "#F7BFBC"
 };
 var SUCCESS$3 = {
   lighter: "#E9FCD4",
   main: success$3,
-  light: /*#__PURE__*/tinycolor(success$3).lighten(lightenRate$3).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$3).darken(darkenRate$3).toHexString(),
+  light: /*#__PURE__*/ tinycolor(success$3)
+    .lighten(lightenRate$3)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$3)
+    .darken(darkenRate$3)
+    .toHexString(),
   contrastText: "#ccc",
   darker: "#08660D"
 };
 var WARNING$3 = {
   lighter: "#FFF7CD",
   main: warning$3,
-  light: /*#__PURE__*/tinycolor(warning$3).lighten(lightenRate$3).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$3).darken(darkenRate$3).toHexString(),
+  light: /*#__PURE__*/ tinycolor(warning$3)
+    .lighten(lightenRate$3)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$3)
+    .darken(darkenRate$3)
+    .toHexString(),
   darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$3 = {
   lighter: "#FFE7D9",
   main: error$3,
-  light: /*#__PURE__*/tinycolor(error$3).lighten(lightenRate$3).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$3).darken(darkenRate$3).toHexString(),
+  light: /*#__PURE__*/ tinycolor(error$3)
+    .lighten(lightenRate$3)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$3)
+    .darken(darkenRate$3)
+    .toHexString(),
   darker: "#7A0C2E",
   contrastText: "#fff"
 };
 var GRADIENTS$3 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$3.light, PRIMARY$3.main),
-  info: /*#__PURE__*/createGradient(INFO$3.light, INFO$3.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$3.light, SUCCESS$3.main),
-  warning: /*#__PURE__*/createGradient(WARNING$3.light, WARNING$3.main),
-  error: /*#__PURE__*/createGradient(ERROR$3.light, ERROR$3.main),
+  primary: /*#__PURE__*/ createGradient(PRIMARY$3.light, PRIMARY$3.main),
+  info: /*#__PURE__*/ createGradient(INFO$3.light, INFO$3.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$3.light, SUCCESS$3.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$3.light, WARNING$3.main),
+  error: /*#__PURE__*/ createGradient(ERROR$3.light, ERROR$3.main),
   one: "#1F524A",
   two: "#005349"
 };
 var palette$3 = {
   hero: hero$3,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$3),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$3),
-  info: /*#__PURE__*/_extends({}, INFO$3),
-  success: /*#__PURE__*/_extends({}, SUCCESS$3),
-  warning: /*#__PURE__*/_extends({}, WARNING$3),
-  error: /*#__PURE__*/_extends({}, ERROR$3),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$3),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$3),
+  info: /*#__PURE__*/ _extends({}, INFO$3),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$3),
+  warning: /*#__PURE__*/ _extends({}, WARNING$3),
+  error: /*#__PURE__*/ _extends({}, ERROR$3),
   grey: GREY,
   gradients: GRADIENTS$3,
   divider: GREY[50024],
@@ -2169,12 +2410,12 @@ var palette$3 = {
   },
   background: {
     paper: "#fff",
-    "default": "#fff",
+    default: "#fff",
     neutral: GREY[200],
     warning: "#F1CBC6",
     error: "#BBCAC7",
     info: "#EDF5F0",
-    infoGadient: /*#__PURE__*/createGradient("#D7F5DF", "#F8FFFA"),
+    infoGadient: /*#__PURE__*/ createGradient("#D7F5DF", "#F8FFFA"),
     success: "#E3F8D2"
   },
   action: {
@@ -2186,7 +2427,9 @@ var palette$3 = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$3,
-    toggle2: /*#__PURE__*/tinycolor(hero$3).lighten(lightenRate$3).toHexString(),
+    toggle2: /*#__PURE__*/ tinycolor(hero$3)
+      .lighten(lightenRate$3)
+      .toHexString(),
     toggle3: "#F5F5F5",
     toggle4: "#fff"
   },
@@ -2241,30 +2484,30 @@ var typography$3 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -2319,11 +2562,11 @@ function Input$3(theme) {
     MuiInput: {
       styleOverrides: {
         underline: {
-          '&:before': {
-            borderBottom: '1px solid rgb(196 196 196)'
+          "&:before": {
+            borderBottom: "1px solid rgb(196 196 196)"
           },
-          '&:hover:not(.Mui-disabled):before': {
-            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
+          "&:hover:not(.Mui-disabled):before": {
+            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
           }
         }
       }
@@ -2332,18 +2575,18 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           backgroundColor: styles.alpha(theme.palette.grey[500], 0.12),
-          '&:hover': {
+          "&:hover": {
             backgroundColor: styles.alpha(theme.palette.grey[500], 0.16)
           },
-          '&.Mui-focused': {
+          "&.Mui-focused": {
             backgroundColor: theme.palette.action.focus
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             backgroundColor: theme.palette.action.disabledBackground
           }
         },
         underline: {
-          '&:before': {
+          "&:before": {
             borderBottomColor: styles.alpha(theme.palette.grey[500], 0.48)
           }
         }
@@ -2353,25 +2596,25 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(0.8),
-          backgroundColor: 'transparent',
-          '&.Mui-focused': {
-            backgroundColor: '#fff'
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            backgroundColor: "#fff"
           },
-          '& fieldset': {
-            borderColor: '#D6E8D9'
+          "& fieldset": {
+            borderColor: "#D6E8D9"
           },
-          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: styles.alpha(theme.palette.primary.main, 0.2)
           },
-          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: styles.alpha(theme.palette.primary.main, 0.2)
           },
-          '&:hover .MuiOutlinedInput-notchedOutline': {
+          "&:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: theme.palette.primary.dark,
-            borderWidth: '2px'
+            borderWidth: "2px"
           },
-          '&.Mui-focused fieldset': {
-            borderWidth: '2px'
+          "&.Mui-focused fieldset": {
+            borderWidth: "2px"
           }
         }
       }
@@ -2385,51 +2628,51 @@ function Button$3(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none',
+            boxShadow: "none",
             color: theme.palette.primary.dark
           }
         },
@@ -2437,52 +2680,52 @@ function Button$3(theme) {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -2513,7 +2756,20 @@ function Backdrop$3(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -2554,7 +2810,10 @@ function Typography$3(theme) {
 function CssBaseline$3(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -2611,7 +2870,12 @@ function AppBar$3(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -2624,7 +2888,7 @@ function IconButton$3(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          '& span > svg': {
+          "& span > svg": {
             color: theme.palette.hero
           }
         }
@@ -2638,8 +2902,8 @@ function Picker$3() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -2663,7 +2927,7 @@ function Rating$3(theme) {
         },
         root: {
           color: theme.palette.primary.main,
-          '& span > span': {
+          "& span > span": {
             top: 0,
             left: 0
           }
@@ -2678,7 +2942,8 @@ function Menu$3() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -2731,7 +2996,7 @@ function Link$3() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -2743,7 +3008,7 @@ function Badge$3() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -2753,7 +3018,26 @@ function Badge$3() {
 
 //
 function ComponentsOverrides$3(theme) {
-  return Object.assign(AppBar$3(theme), Card$3(theme), Input$3(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(theme), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
+  return Object.assign(
+    AppBar$3(theme),
+    Card$3(theme),
+    Input$3(theme),
+    Paper$3(theme),
+    Button$3(theme),
+    Tooltip$3(theme),
+    Backdrop$3(theme),
+    Typography$3(theme),
+    CssBaseline$3(theme),
+    Autocomplete$3(theme),
+    ToggleButton$3(theme),
+    IconButton$3(theme),
+    Picker$3(),
+    Rating$3(theme),
+    Menu$3(),
+    Alert$3(theme),
+    Link$3(),
+    Badge$3()
+  );
 }
 
 var medincenter = {
@@ -2767,78 +3051,106 @@ var lighterenRate$4 = 1.5;
 var lightenRate$4 = 7.5;
 var darkenRate$4 = 15;
 var darkerRate$4 = 30;
-var primary$4 = '#4576E6';
-var secondary$4 = '#73D7F5';
-var warning$4 = '#F57069';
-var success$4 = '#34DFA2';
-var info$4 = '#FF9690';
-var hero$4 = '#4576E6';
-var error$4 = '#f44336';
+var primary$4 = "#4576E6";
+var secondary$4 = "#73D7F5";
+var warning$4 = "#F57069";
+var success$4 = "#34DFA2";
+var info$4 = "#FF9690";
+var hero$4 = "#4576E6";
+var error$4 = "#f44336";
 var PRIMARY$4 = {
-  lighter: /*#__PURE__*/tinycolor(primary$4).lighten(lighterenRate$4).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$4)
+    .lighten(lighterenRate$4)
+    .toHexString(),
   main: primary$4,
-  light: /*#__PURE__*/tinycolor(primary$4).lighten(lightenRate$4).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$4).darken(darkenRate$4).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$4).darken(darkerRate$4).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$4)
+    .lighten(lightenRate$4)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$4)
+    .darken(darkenRate$4)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$4)
+    .darken(darkerRate$4)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$4 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$4,
-  light: /*#__PURE__*/tinycolor(secondary$4).lighten(lightenRate$4).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$4).darken(darkenRate$4).toHexString(),
-  contrastText: '#ccc',
-  darker: '#091A7A'
+  light: /*#__PURE__*/ tinycolor(secondary$4)
+    .lighten(lightenRate$4)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$4)
+    .darken(darkenRate$4)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#091A7A"
 };
 var INFO$4 = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$4,
-  light: /*#__PURE__*/tinycolor(info$4).lighten(lightenRate$4).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$4).darken(darkenRate$4).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info$4)
+    .lighten(lightenRate$4)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$4)
+    .darken(darkenRate$4)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$4 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$4,
-  light: /*#__PURE__*/tinycolor(success$4).lighten(lightenRate$4).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$4).darken(darkenRate$4).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$4)
+    .lighten(lightenRate$4)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$4)
+    .darken(darkenRate$4)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$4 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$4,
-  light: /*#__PURE__*/tinycolor(warning$4).lighten(lightenRate$4).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$4).darken(darkenRate$4).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$4)
+    .lighten(lightenRate$4)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$4)
+    .darken(darkenRate$4)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$4 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$4,
-  light: /*#__PURE__*/tinycolor(error$4).lighten(lightenRate$4).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$4).darken(darkenRate$4).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$4)
+    .lighten(lightenRate$4)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$4)
+    .darken(darkenRate$4)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$4 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$4.light, PRIMARY$4.main),
-  info: /*#__PURE__*/createGradient(INFO$4.light, INFO$4.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$4.light, SUCCESS$4.main),
-  warning: /*#__PURE__*/createGradient(WARNING$4.light, WARNING$4.main),
-  error: /*#__PURE__*/createGradient(ERROR$4.light, ERROR$4.main),
-  one: '#4576E6',
-  two: '#295BCE'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$4.light, PRIMARY$4.main),
+  info: /*#__PURE__*/ createGradient(INFO$4.light, INFO$4.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$4.light, SUCCESS$4.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$4.light, WARNING$4.main),
+  error: /*#__PURE__*/ createGradient(ERROR$4.light, ERROR$4.main),
+  one: "#4576E6",
+  two: "#295BCE"
 };
 var palette$4 = {
   hero: hero$4,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$4),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$4),
-  info: /*#__PURE__*/_extends({}, INFO$4),
-  success: /*#__PURE__*/_extends({}, SUCCESS$4),
-  warning: /*#__PURE__*/_extends({}, WARNING$4),
-  error: /*#__PURE__*/_extends({}, ERROR$4),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$4),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$4),
+  info: /*#__PURE__*/ _extends({}, INFO$4),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$4),
+  warning: /*#__PURE__*/ _extends({}, WARNING$4),
+  error: /*#__PURE__*/ _extends({}, ERROR$4),
   grey: GREY,
   gradients: GRADIENTS$4,
   divider: GREY[50024],
@@ -2850,14 +3162,14 @@ var palette$4 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
-    infoGadient: /*#__PURE__*/createGradient(INFO$4.lighter, INFO$4.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$4.lighter, INFO$4.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -2868,29 +3180,29 @@ var palette$4 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#828EFA',
-    toggle2: '#4576E6',
-    toggle3: '#F1F4FC',
-    toggle4: '#828EFA'
+    toggle1: "#828EFA",
+    toggle2: "#4576E6",
+    toggle3: "#F1F4FC",
+    toggle4: "#828EFA"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#7C7D80',
-    colorHover: '#6157FF',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#7C7D80",
+    colorHover: "#6157FF",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(163.61deg, #4576E6 3.01%, #295BCE 95.95%)',
-    shadow: '0px 1px 4px rgba(111, 102, 255, 0.4)'
+    bgColor: "linear-gradient(163.61deg, #4576E6 3.01%, #295BCE 95.95%)",
+    shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#efefef'
+    one: "#F1F4FC",
+    two: "#efefef"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
   }
 };
 
@@ -2924,30 +3236,30 @@ var typography$4 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -3068,103 +3380,103 @@ function Button$4(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -3195,7 +3507,20 @@ function Backdrop$4(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -3236,7 +3561,10 @@ function Typography$4(theme) {
 function CssBaseline$4(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -3293,7 +3621,12 @@ function AppBar$4(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -3320,8 +3653,8 @@ function Picker$4() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -3357,7 +3690,8 @@ function Menu$4() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -3407,7 +3741,7 @@ function Link$4() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -3419,7 +3753,7 @@ function Badge$4() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -3429,7 +3763,26 @@ function Badge$4() {
 
 //
 function ComponentsOverrides$4(theme) {
-  return Object.assign(AppBar$4(theme), Card$4(theme), Input$4(theme), Paper$4(theme), Button$4(theme), Tooltip$4(theme), Backdrop$4(theme), Typography$4(theme), CssBaseline$4(theme), Autocomplete$4(theme), ToggleButton$4(theme), IconButton$4(theme), Picker$4(), Rating$4(theme), Menu$4(), Alert$4(theme), Link$4(), Badge$4());
+  return Object.assign(
+    AppBar$4(theme),
+    Card$4(theme),
+    Input$4(theme),
+    Paper$4(theme),
+    Button$4(theme),
+    Tooltip$4(theme),
+    Backdrop$4(theme),
+    Typography$4(theme),
+    CssBaseline$4(theme),
+    Autocomplete$4(theme),
+    ToggleButton$4(theme),
+    IconButton$4(theme),
+    Picker$4(),
+    Rating$4(theme),
+    Menu$4(),
+    Alert$4(theme),
+    Link$4(),
+    Badge$4()
+  );
 }
 
 var medswiss = {
@@ -3443,78 +3796,106 @@ var lighterenRate$5 = 1.5;
 var lightenRate$5 = 7.5;
 var darkenRate$5 = 15;
 var darkerRate$5 = 30;
-var primary$5 = '#6157FF';
-var secondary$5 = '#73D7F5';
-var warning$5 = '#F57069';
-var success$5 = '#34DFA2';
-var info$5 = '#abb3ff';
-var error$5 = '#f44336';
-var hero$5 = '#6157FF';
+var primary$5 = "#6157FF";
+var secondary$5 = "#73D7F5";
+var warning$5 = "#F57069";
+var success$5 = "#34DFA2";
+var info$5 = "#abb3ff";
+var error$5 = "#f44336";
+var hero$5 = "#6157FF";
 var PRIMARY$5 = {
-  lighter: /*#__PURE__*/tinycolor(primary$5).lighten(lighterenRate$5).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$5)
+    .lighten(lighterenRate$5)
+    .toHexString(),
   main: primary$5,
-  light: /*#__PURE__*/tinycolor(primary$5).lighten(lightenRate$5).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$5).darken(darkenRate$5).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$5).darken(darkerRate$5).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$5)
+    .lighten(lightenRate$5)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$5)
+    .darken(darkenRate$5)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$5)
+    .darken(darkerRate$5)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$5 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$5,
-  light: /*#__PURE__*/tinycolor(secondary$5).lighten(lightenRate$5).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$5).darken(darkenRate$5).toHexString(),
-  contrastText: '#ccc',
-  darker: '#091A7A'
+  light: /*#__PURE__*/ tinycolor(secondary$5)
+    .lighten(lightenRate$5)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$5)
+    .darken(darkenRate$5)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#091A7A"
 };
 var INFO$5 = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$5,
-  light: /*#__PURE__*/tinycolor(info$5).lighten(lightenRate$5).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$5).darken(darkenRate$5).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info$5)
+    .lighten(lightenRate$5)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$5)
+    .darken(darkenRate$5)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$5 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$5,
-  light: /*#__PURE__*/tinycolor(success$5).lighten(lightenRate$5).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$5).darken(darkenRate$5).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$5)
+    .lighten(lightenRate$5)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$5)
+    .darken(darkenRate$5)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$5 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$5,
-  light: /*#__PURE__*/tinycolor(warning$5).lighten(lightenRate$5).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$5).darken(darkenRate$5).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$5)
+    .lighten(lightenRate$5)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$5)
+    .darken(darkenRate$5)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$5 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$5,
-  light: /*#__PURE__*/tinycolor(error$5).lighten(lightenRate$5).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$5).darken(darkenRate$5).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$5)
+    .lighten(lightenRate$5)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$5)
+    .darken(darkenRate$5)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$5 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$5.light, PRIMARY$5.main),
-  info: /*#__PURE__*/createGradient(INFO$5.light, INFO$5.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$5.light, SUCCESS$5.main),
-  warning: /*#__PURE__*/createGradient(WARNING$5.light, WARNING$5.main),
-  error: /*#__PURE__*/createGradient(ERROR$5.light, ERROR$5.main),
-  one: '#7385FF',
-  two: '#584DFF'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$5.light, PRIMARY$5.main),
+  info: /*#__PURE__*/ createGradient(INFO$5.light, INFO$5.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$5.light, SUCCESS$5.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$5.light, WARNING$5.main),
+  error: /*#__PURE__*/ createGradient(ERROR$5.light, ERROR$5.main),
+  one: "#7385FF",
+  two: "#584DFF"
 };
 var palette$5 = {
   hero: hero$5,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$5),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$5),
-  info: /*#__PURE__*/_extends({}, INFO$5),
-  success: /*#__PURE__*/_extends({}, SUCCESS$5),
-  warning: /*#__PURE__*/_extends({}, WARNING$5),
-  error: /*#__PURE__*/_extends({}, ERROR$5),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$5),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$5),
+  info: /*#__PURE__*/ _extends({}, INFO$5),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$5),
+  warning: /*#__PURE__*/ _extends({}, WARNING$5),
+  error: /*#__PURE__*/ _extends({}, ERROR$5),
   grey: GREY,
   gradients: GRADIENTS$5,
   divider: GREY[50024],
@@ -3526,14 +3907,14 @@ var palette$5 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(97, 87, 255, 0.1);',
-    infoGadient: /*#__PURE__*/createGradient(INFO$5.lighter, INFO$5.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(97, 87, 255, 0.1);",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$5.lighter, INFO$5.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -3544,29 +3925,29 @@ var palette$5 = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#828EFA',
-    toggle2: '#6157FF',
-    toggle3: '#F1F4FC',
-    toggle4: '#fff'
+    toggle1: "#828EFA",
+    toggle2: "#6157FF",
+    toggle3: "#F1F4FC",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#7C7D80',
-    colorHover: '#6157FF',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#7C7D80",
+    colorHover: "#6157FF",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)',
-    shadow: '0px 1px 4px rgba(111, 102, 255, 0.4)'
+    bgColor: "linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)",
+    shadow: "0px 1px 4px rgba(111, 102, 255, 0.4)"
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#efefef'
+    one: "#F1F4FC",
+    two: "#efefef"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
   }
 };
 
@@ -3600,30 +3981,30 @@ var typography$5 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -3744,103 +4125,103 @@ function Button$5(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -3871,7 +4252,20 @@ function Backdrop$5(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -3912,7 +4306,10 @@ function Typography$5(theme) {
 function CssBaseline$5(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -3969,7 +4366,12 @@ function AppBar$5(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -3996,8 +4398,8 @@ function Picker$5() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -4034,7 +4436,8 @@ function Menu$5() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -4085,7 +4488,7 @@ function Link$5() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -4097,7 +4500,7 @@ function Badge$5() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -4107,7 +4510,26 @@ function Badge$5() {
 
 //
 function ComponentsOverrides$5(theme) {
-  return Object.assign(AppBar$5(theme), Card$5(theme), Input$5(theme), Paper$5(theme), Button$5(theme), Tooltip$5(theme), Backdrop$5(theme), Typography$5(theme), CssBaseline$5(theme), Autocomplete$5(theme), ToggleButton$5(theme), IconButton$5(theme), Picker$5(), Rating$5(theme), Menu$5(), Alert$5(theme), Link$5(), Badge$5());
+  return Object.assign(
+    AppBar$5(theme),
+    Card$5(theme),
+    Input$5(theme),
+    Paper$5(theme),
+    Button$5(theme),
+    Tooltip$5(theme),
+    Backdrop$5(theme),
+    Typography$5(theme),
+    CssBaseline$5(theme),
+    Autocomplete$5(theme),
+    ToggleButton$5(theme),
+    IconButton$5(theme),
+    Picker$5(),
+    Rating$5(theme),
+    Menu$5(),
+    Alert$5(theme),
+    Link$5(),
+    Badge$5()
+  );
 }
 
 var mediadoc = {
@@ -4121,78 +4543,106 @@ var lighterenRate$6 = 1.5;
 var lightenRate$6 = 7.5;
 var darkenRate$6 = 15;
 var darkerRate$6 = 30;
-var primary$6 = '#49A65C';
-var secondary$6 = '#58ca70';
-var warning$6 = '#FA847E';
-var success$6 = '#4DAE00';
-var info$6 = '#FECB07';
-var error$6 = '#FF9690';
-var hero$6 = '#F57069';
+var primary$6 = "#49A65C";
+var secondary$6 = "#58ca70";
+var warning$6 = "#FA847E";
+var success$6 = "#4DAE00";
+var info$6 = "#FECB07";
+var error$6 = "#FF9690";
+var hero$6 = "#F57069";
 var PRIMARY$6 = {
-  lighter: /*#__PURE__*/tinycolor(primary$6).lighten(lighterenRate$6).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$6)
+    .lighten(lighterenRate$6)
+    .toHexString(),
   main: primary$6,
-  light: /*#__PURE__*/tinycolor(primary$6).lighten(lightenRate$6).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$6).darken(darkenRate$6).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$6).darken(darkerRate$6).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$6)
+    .lighten(lightenRate$6)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$6)
+    .darken(darkenRate$6)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$6)
+    .darken(darkerRate$6)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$6 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$6,
-  light: /*#__PURE__*/tinycolor(secondary$6).lighten(lightenRate$6).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$6).darken(darkenRate$6).toHexString(),
-  contrastText: '#ccc',
-  darker: '#E87780'
+  light: /*#__PURE__*/ tinycolor(secondary$6)
+    .lighten(lightenRate$6)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$6)
+    .darken(darkenRate$6)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#E87780"
 };
 var INFO$6 = {
-  lighter: '#FCEDF2',
+  lighter: "#FCEDF2",
   main: info$6,
-  light: /*#__PURE__*/tinycolor(info$6).lighten(lightenRate$6).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$6).darken(darkenRate$6).toHexString(),
-  contrastText: '#fff',
-  darker: '#F7BFBC'
+  light: /*#__PURE__*/ tinycolor(info$6)
+    .lighten(lightenRate$6)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$6)
+    .darken(darkenRate$6)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#F7BFBC"
 };
 var SUCCESS$6 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$6,
-  light: /*#__PURE__*/tinycolor(success$6).lighten(lightenRate$6).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$6).darken(darkenRate$6).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$6)
+    .lighten(lightenRate$6)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$6)
+    .darken(darkenRate$6)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$6 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$6,
-  light: /*#__PURE__*/tinycolor(warning$6).lighten(lightenRate$6).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$6).darken(darkenRate$6).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$6)
+    .lighten(lightenRate$6)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$6)
+    .darken(darkenRate$6)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$6 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$6,
-  light: /*#__PURE__*/tinycolor(error$6).lighten(lightenRate$6).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$6).darken(darkenRate$6).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$6)
+    .lighten(lightenRate$6)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$6)
+    .darken(darkenRate$6)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$6 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$6.light, PRIMARY$6.main),
-  info: /*#__PURE__*/createGradient(INFO$6.light, INFO$6.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$6.light, SUCCESS$6.main),
-  warning: /*#__PURE__*/createGradient(WARNING$6.light, WARNING$6.main),
-  error: /*#__PURE__*/createGradient(ERROR$6.light, ERROR$6.main),
-  one: '#44A357',
-  two: '#28933E'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$6.light, PRIMARY$6.main),
+  info: /*#__PURE__*/ createGradient(INFO$6.light, INFO$6.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$6.light, SUCCESS$6.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$6.light, WARNING$6.main),
+  error: /*#__PURE__*/ createGradient(ERROR$6.light, ERROR$6.main),
+  one: "#44A357",
+  two: "#28933E"
 };
 var palette$6 = {
   hero: hero$6,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$6),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$6),
-  info: /*#__PURE__*/_extends({}, INFO$6),
-  success: /*#__PURE__*/_extends({}, SUCCESS$6),
-  warning: /*#__PURE__*/_extends({}, WARNING$6),
-  error: /*#__PURE__*/_extends({}, ERROR$6),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$6),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$6),
+  info: /*#__PURE__*/ _extends({}, INFO$6),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$6),
+  warning: /*#__PURE__*/ _extends({}, WARNING$6),
+  error: /*#__PURE__*/ _extends({}, ERROR$6),
   grey: GREY,
   gradients: GRADIENTS$6,
   divider: GREY[50024],
@@ -4204,14 +4654,14 @@ var palette$6 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#fff',
+    paper: "#fff",
+    default: "#fff",
     neutral: GREY[100],
-    warning: '#ECECEC',
-    error: '#edd1d1',
-    info: 'rgba(174 33 3, 0.4)',
-    infoGadient: /*#__PURE__*/createGradient(INFO$6.lighter, INFO$6.light),
-    success: '#FFE7CE'
+    warning: "#ECECEC",
+    error: "#edd1d1",
+    info: "rgba(174 33 3, 0.4)",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$6.lighter, INFO$6.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -4224,27 +4674,27 @@ var palette$6 = {
     disabledOpacity: 0.48,
     toggle1: PRIMARY$6.main,
     toggle2: PRIMARY$6.dark,
-    toggle3: '#EDFCFA',
-    toggle4: '#fff'
+    toggle3: "#EDFCFA",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#7C7D80',
-    colorHover: '#445A68',
-    colorActive: '#000',
-    bg: '#FFF'
+    color: "#7C7D80",
+    colorLeft: "#7C7D80",
+    colorHover: "#445A68",
+    colorActive: "#000",
+    bg: "#FFF"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #44A357 3.01%, #28933E 95.95%)',
-    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
+    bgColor: "linear-gradient(139.78deg, #44A357 3.01%, #28933E 95.95%)",
+    shadow: "0px 3px 5px rgba(0, 0, 0, 0.08)"
   },
   bgLight: {
-    one: '#F4F4F4',
-    two: '#F1FCF7'
+    one: "#F4F4F4",
+    two: "#F1FCF7"
   },
   shadows: {
-    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
+    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(0, 0, 0, 0.15)"
   }
 };
 
@@ -4278,30 +4728,30 @@ var typography$6 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -4422,103 +4872,103 @@ function Button$6(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -4549,7 +4999,20 @@ function Backdrop$6(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -4590,7 +5053,10 @@ function Typography$6(theme) {
 function CssBaseline$6(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -4647,7 +5113,12 @@ function AppBar$6(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(139.78deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(139.78deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -4674,8 +5145,8 @@ function Picker$6() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -4711,7 +5182,8 @@ function Menu$6() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -4761,7 +5233,7 @@ function Link$6() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -4773,7 +5245,7 @@ function Badge$6() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -4783,7 +5255,26 @@ function Badge$6() {
 
 //
 function ComponentsOverrides$6(theme) {
-  return Object.assign(AppBar$6(theme), Card$6(theme), Input$6(theme), Paper$6(theme), Button$6(theme), Tooltip$6(theme), Backdrop$6(theme), Typography$6(theme), CssBaseline$6(theme), Autocomplete$6(theme), ToggleButton$6(theme), IconButton$6(theme), Picker$6(), Rating$6(theme), Menu$6(), Alert$6(theme), Link$6(), Badge$6());
+  return Object.assign(
+    AppBar$6(theme),
+    Card$6(theme),
+    Input$6(theme),
+    Paper$6(theme),
+    Button$6(theme),
+    Tooltip$6(theme),
+    Backdrop$6(theme),
+    Typography$6(theme),
+    CssBaseline$6(theme),
+    Autocomplete$6(theme),
+    ToggleButton$6(theme),
+    IconButton$6(theme),
+    Picker$6(),
+    Rating$6(theme),
+    Menu$6(),
+    Alert$6(theme),
+    Link$6(),
+    Badge$6()
+  );
 }
 
 var minfin = {
@@ -4797,78 +5288,106 @@ var lighterenRate$7 = 1.5;
 var lightenRate$7 = 7.5;
 var darkenRate$7 = 15;
 var darkerRate$7 = 30;
-var primary$7 = '#DB4141';
-var secondary$7 = '#F7BFBC';
-var warning$7 = '#F57069';
-var success$7 = '#FFC9AB';
-var info$7 = '#F2D0B2';
-var error$7 = '#802121';
-var hero$7 = '#B00C2F';
+var primary$7 = "#DB4141";
+var secondary$7 = "#F7BFBC";
+var warning$7 = "#F57069";
+var success$7 = "#FFC9AB";
+var info$7 = "#F2D0B2";
+var error$7 = "#802121";
+var hero$7 = "#B00C2F";
 var PRIMARY$7 = {
-  lighter: /*#__PURE__*/tinycolor(primary$7).lighten(lighterenRate$7).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$7)
+    .lighten(lighterenRate$7)
+    .toHexString(),
   main: primary$7,
-  light: /*#__PURE__*/tinycolor(primary$7).lighten(lightenRate$7).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$7).darken(darkenRate$7).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$7).darken(darkerRate$7).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$7)
+    .lighten(lightenRate$7)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$7)
+    .darken(darkenRate$7)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$7)
+    .darken(darkerRate$7)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$7 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$7,
-  light: /*#__PURE__*/tinycolor(secondary$7).lighten(lightenRate$7).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$7).darken(darkenRate$7).toHexString(),
-  contrastText: '#ccc',
-  darker: '#E87780'
+  light: /*#__PURE__*/ tinycolor(secondary$7)
+    .lighten(lightenRate$7)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$7)
+    .darken(darkenRate$7)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#E87780"
 };
 var INFO$7 = {
-  lighter: '#FCEDF2',
+  lighter: "#FCEDF2",
   main: info$7,
-  light: /*#__PURE__*/tinycolor(info$7).lighten(lightenRate$7).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$7).darken(darkenRate$7).toHexString(),
-  contrastText: '#fff',
-  darker: '#F7BFBC'
+  light: /*#__PURE__*/ tinycolor(info$7)
+    .lighten(lightenRate$7)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$7)
+    .darken(darkenRate$7)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#F7BFBC"
 };
 var SUCCESS$7 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$7,
-  light: /*#__PURE__*/tinycolor(success$7).lighten(lightenRate$7).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$7).darken(darkenRate$7).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$7)
+    .lighten(lightenRate$7)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$7)
+    .darken(darkenRate$7)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$7 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$7,
-  light: /*#__PURE__*/tinycolor(warning$7).lighten(lightenRate$7).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$7).darken(darkenRate$7).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$7)
+    .lighten(lightenRate$7)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$7)
+    .darken(darkenRate$7)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$7 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$7,
-  light: /*#__PURE__*/tinycolor(error$7).lighten(lightenRate$7).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$7).darken(darkenRate$7).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$7)
+    .lighten(lightenRate$7)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$7)
+    .darken(darkenRate$7)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$7 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$7.light, PRIMARY$7.main),
-  info: /*#__PURE__*/createGradient(INFO$7.light, INFO$7.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$7.light, SUCCESS$7.main),
-  warning: /*#__PURE__*/createGradient(WARNING$7.light, WARNING$7.main),
-  error: /*#__PURE__*/createGradient(ERROR$7.light, ERROR$7.main),
-  one: '#EB323F',
-  two: '#981127'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$7.light, PRIMARY$7.main),
+  info: /*#__PURE__*/ createGradient(INFO$7.light, INFO$7.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$7.light, SUCCESS$7.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$7.light, WARNING$7.main),
+  error: /*#__PURE__*/ createGradient(ERROR$7.light, ERROR$7.main),
+  one: "#EB323F",
+  two: "#981127"
 };
 var palette$7 = {
   hero: hero$7,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$7),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$7),
-  info: /*#__PURE__*/_extends({}, INFO$7),
-  success: /*#__PURE__*/_extends({}, SUCCESS$7),
-  warning: /*#__PURE__*/_extends({}, WARNING$7),
-  error: /*#__PURE__*/_extends({}, ERROR$7),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$7),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$7),
+  info: /*#__PURE__*/ _extends({}, INFO$7),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$7),
+  warning: /*#__PURE__*/ _extends({}, WARNING$7),
+  error: /*#__PURE__*/ _extends({}, ERROR$7),
   grey: GREY,
   gradients: GRADIENTS$7,
   divider: GREY[50024],
@@ -4880,14 +5399,14 @@ var palette$7 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(174 33 3, 0.4)',
-    infoGadient: /*#__PURE__*/createGradient(INFO$7.lighter, INFO$7.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(174 33 3, 0.4)",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$7.lighter, INFO$7.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -4900,27 +5419,27 @@ var palette$7 = {
     disabledOpacity: 0.48,
     toggle1: PRIMARY$7.main,
     toggle2: PRIMARY$7.light,
-    toggle3: '#FCEDF2',
-    toggle4: '#fff'
+    toggle3: "#FCEDF2",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#DB4141',
-    colorLeft: '#DB4141',
-    colorHover: '#802121',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#DB4141",
+    colorLeft: "#DB4141",
+    colorHover: "#802121",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #EB323F 3.01%, #981127 95.95%)',
-    shadow: '0px 1px 4px rgba(0, 0, 0, 0.15)'
+    bgColor: "linear-gradient(139.78deg, #EB323F 3.01%, #981127 95.95%)",
+    shadow: "0px 1px 4px rgba(0, 0, 0, 0.15)"
   },
   bgLight: {
-    one: '#F4F4F4',
-    two: '#FFEEEE'
+    one: "#F4F4F4",
+    two: "#FFEEEE"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
@@ -4954,30 +5473,30 @@ var typography$7 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
     //    textTransform: 'capitalize',
   }
 };
@@ -5099,103 +5618,103 @@ function Button$7(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -5226,7 +5745,20 @@ function Backdrop$7(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -5267,7 +5799,10 @@ function Typography$7(theme) {
 function CssBaseline$7(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n\n        @font-face {\n          font-family: 'Glober SemiBold';\n          src: url(/fonts/Glober/GloberSemiBoldFree.eot);\n          src: url(/fonts/Glober/GloberSemiBoldFree.eot?#iefix) format('embedded-opentype'),\n              url(/fonts/Glober/GloberSemiBoldFree.woff2) format('woff2'),\n              url(/fonts/Glober/GloberSemiBoldFree.woff) format('woff'),\n              url(/fonts/Glober/GloberSemiBoldFree.ttf) format('truetype');\n          font-weight: 600;\n          font-style: normal;\n          font-display: swap;\n      }\n      \n\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n\n        @font-face {\n          font-family: 'Glober SemiBold';\n          src: url(/fonts/Glober/GloberSemiBoldFree.eot);\n          src: url(/fonts/Glober/GloberSemiBoldFree.eot?#iefix) format('embedded-opentype'),\n              url(/fonts/Glober/GloberSemiBoldFree.woff2) format('woff2'),\n              url(/fonts/Glober/GloberSemiBoldFree.woff) format('woff'),\n              url(/fonts/Glober/GloberSemiBoldFree.ttf) format('truetype');\n          font-weight: 600;\n          font-style: normal;\n          font-display: swap;\n      }\n      \n\n      "
     }
   };
 }
@@ -5324,7 +5859,12 @@ function AppBar$7(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -5351,8 +5891,8 @@ function Picker$7() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -5388,7 +5928,8 @@ function Menu$7() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -5438,7 +5979,7 @@ function Link$7() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -5450,7 +5991,7 @@ function Badge$7() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -5460,7 +6001,26 @@ function Badge$7() {
 
 //
 function ComponentsOverrides$7(theme) {
-  return Object.assign(AppBar$7(theme), Card$7(theme), Input$7(theme), Paper$7(theme), Button$7(theme), Tooltip$7(theme), Backdrop$7(theme), Typography$7(theme), CssBaseline$7(theme), Autocomplete$7(theme), ToggleButton$7(theme), IconButton$7(theme), Picker$7(), Rating$7(theme), Menu$7(), Alert$7(theme), Link$7(), Badge$7());
+  return Object.assign(
+    AppBar$7(theme),
+    Card$7(theme),
+    Input$7(theme),
+    Paper$7(theme),
+    Button$7(theme),
+    Tooltip$7(theme),
+    Backdrop$7(theme),
+    Typography$7(theme),
+    CssBaseline$7(theme),
+    Autocomplete$7(theme),
+    ToggleButton$7(theme),
+    IconButton$7(theme),
+    Picker$7(),
+    Rating$7(theme),
+    Menu$7(),
+    Alert$7(theme),
+    Link$7(),
+    Badge$7()
+  );
 }
 
 var pimu = {
@@ -5474,78 +6034,106 @@ var lighterenRate$8 = 1.5;
 var lightenRate$8 = 7.5;
 var darkenRate$8 = 15;
 var darkerRate$8 = 30;
-var primary$8 = '#1B719E';
-var secondary$8 = '#A6CCBE';
-var warning$8 = '#3AAEEC';
-var success$8 = '#1B719E';
-var info$8 = '#F2D0B2';
-var error$8 = '#FF9690';
-var hero$8 = '#2188bf';
+var primary$8 = "#1B719E";
+var secondary$8 = "#A6CCBE";
+var warning$8 = "#3AAEEC";
+var success$8 = "#1B719E";
+var info$8 = "#F2D0B2";
+var error$8 = "#FF9690";
+var hero$8 = "#2188bf";
 var PRIMARY$8 = {
-  lighter: /*#__PURE__*/tinycolor(primary$8).lighten(lighterenRate$8).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$8)
+    .lighten(lighterenRate$8)
+    .toHexString(),
   main: primary$8,
-  light: /*#__PURE__*/tinycolor(primary$8).lighten(lightenRate$8).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$8).darken(darkenRate$8).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$8).darken(darkerRate$8).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$8)
+    .lighten(lightenRate$8)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$8)
+    .darken(darkenRate$8)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$8)
+    .darken(darkerRate$8)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$8 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$8,
-  light: /*#__PURE__*/tinycolor(secondary$8).lighten(lightenRate$8).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$8).darken(darkenRate$8).toHexString(),
-  contrastText: '#ccc',
-  darker: '#E87780'
+  light: /*#__PURE__*/ tinycolor(secondary$8)
+    .lighten(lightenRate$8)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$8)
+    .darken(darkenRate$8)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#E87780"
 };
 var INFO$8 = {
-  lighter: '#FCEDF2',
+  lighter: "#FCEDF2",
   main: info$8,
-  light: /*#__PURE__*/tinycolor(info$8).lighten(lightenRate$8).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$8).darken(darkenRate$8).toHexString(),
-  contrastText: '#fff',
-  darker: '#F7BFBC'
+  light: /*#__PURE__*/ tinycolor(info$8)
+    .lighten(lightenRate$8)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$8)
+    .darken(darkenRate$8)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#F7BFBC"
 };
 var SUCCESS$8 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$8,
-  light: /*#__PURE__*/tinycolor(success$8).lighten(lightenRate$8).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$8).darken(darkenRate$8).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$8)
+    .lighten(lightenRate$8)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$8)
+    .darken(darkenRate$8)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$8 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$8,
-  light: /*#__PURE__*/tinycolor(warning$8).lighten(lightenRate$8).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$8).darken(darkenRate$8).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$8)
+    .lighten(lightenRate$8)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$8)
+    .darken(darkenRate$8)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$8 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$8,
-  light: /*#__PURE__*/tinycolor(error$8).lighten(lightenRate$8).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$8).darken(darkenRate$8).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$8)
+    .lighten(lightenRate$8)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$8)
+    .darken(darkenRate$8)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$8 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$8.light, PRIMARY$8.main),
-  info: /*#__PURE__*/createGradient(INFO$8.light, INFO$8.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$8.light, SUCCESS$8.main),
-  warning: /*#__PURE__*/createGradient(WARNING$8.light, WARNING$8.main),
-  error: /*#__PURE__*/createGradient(ERROR$8.light, ERROR$8.main),
-  one: '#2AB6CA',
-  two: '#28909B'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$8.light, PRIMARY$8.main),
+  info: /*#__PURE__*/ createGradient(INFO$8.light, INFO$8.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$8.light, SUCCESS$8.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$8.light, WARNING$8.main),
+  error: /*#__PURE__*/ createGradient(ERROR$8.light, ERROR$8.main),
+  one: "#2AB6CA",
+  two: "#28909B"
 };
 var palette$8 = {
   hero: hero$8,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$8),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$8),
-  info: /*#__PURE__*/_extends({}, INFO$8),
-  success: /*#__PURE__*/_extends({}, SUCCESS$8),
-  warning: /*#__PURE__*/_extends({}, WARNING$8),
-  error: /*#__PURE__*/_extends({}, ERROR$8),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$8),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$8),
+  info: /*#__PURE__*/ _extends({}, INFO$8),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$8),
+  warning: /*#__PURE__*/ _extends({}, WARNING$8),
+  error: /*#__PURE__*/ _extends({}, ERROR$8),
   grey: GREY,
   gradients: GRADIENTS$8,
   divider: GREY[50024],
@@ -5557,14 +6145,14 @@ var palette$8 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#fff',
+    paper: "#fff",
+    default: "#fff",
     neutral: GREY[100],
-    warning: '#ECECEC',
-    error: '#edd1d1',
-    info: 'rgba(174 33 3, 0.4)',
-    infoGadient: /*#__PURE__*/createGradient(INFO$8.lighter, INFO$8.light),
-    success: '#FFE7CE'
+    warning: "#ECECEC",
+    error: "#edd1d1",
+    info: "rgba(174 33 3, 0.4)",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$8.lighter, INFO$8.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -5577,27 +6165,27 @@ var palette$8 = {
     disabledOpacity: 0.48,
     toggle1: PRIMARY$8.main,
     toggle2: PRIMARY$8.dark,
-    toggle3: '#EDFCFA',
-    toggle4: '#fff'
+    toggle3: "#EDFCFA",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#2AB6CA',
-    colorHover: '#802121',
-    colorActive: '#000',
-    bg: '#FFF'
+    color: "#7C7D80",
+    colorLeft: "#2AB6CA",
+    colorHover: "#802121",
+    colorActive: "#000",
+    bg: "#FFF"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)',
-    shadow: '0px 3px 5px rgba(101, 101, 101, 0.2)'
+    bgColor: "linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)",
+    shadow: "0px 3px 5px rgba(101, 101, 101, 0.2)"
   },
   bgLight: {
-    one: '#F1FBFC',
-    two: '#F1FCF7'
+    one: "#F1FBFC",
+    two: "#F1FCF7"
   },
   shadows: {
-    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
@@ -5631,30 +6219,30 @@ var typography$8 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -5775,103 +6363,103 @@ function Button$8(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -5902,7 +6490,20 @@ function Backdrop$8(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -5943,7 +6544,10 @@ function Typography$8(theme) {
 function CssBaseline$8(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -6000,7 +6604,12 @@ function AppBar$8(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(180deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(180deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -6027,8 +6636,8 @@ function Picker$8() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -6064,7 +6673,8 @@ function Menu$8() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -6114,7 +6724,7 @@ function Link$8() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -6126,7 +6736,7 @@ function Badge$8() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -6136,7 +6746,26 @@ function Badge$8() {
 
 //
 function ComponentsOverrides$8(theme) {
-  return Object.assign(AppBar$8(theme), Card$8(theme), Input$8(theme), Paper$8(theme), Button$8(theme), Tooltip$8(theme), Backdrop$8(theme), Typography$8(theme), CssBaseline$8(theme), Autocomplete$8(theme), ToggleButton$8(theme), IconButton$8(theme), Picker$8(), Rating$8(theme), Menu$8(), Alert$8(theme), Link$8(), Badge$8());
+  return Object.assign(
+    AppBar$8(theme),
+    Card$8(theme),
+    Input$8(theme),
+    Paper$8(theme),
+    Button$8(theme),
+    Tooltip$8(theme),
+    Backdrop$8(theme),
+    Typography$8(theme),
+    CssBaseline$8(theme),
+    Autocomplete$8(theme),
+    ToggleButton$8(theme),
+    IconButton$8(theme),
+    Picker$8(),
+    Rating$8(theme),
+    Menu$8(),
+    Alert$8(theme),
+    Link$8(),
+    Badge$8()
+  );
 }
 
 var ncn = {
@@ -6150,78 +6779,106 @@ var lighterenRate$9 = 1.5;
 var lightenRate$9 = 7.5;
 var darkenRate$9 = 15;
 var darkerRate$9 = 30;
-var primary$9 = '#2873AA';
-var secondary$9 = '#5F7D8E';
-var warning$9 = '#FF352A';
-var success$9 = '#4DAE00';
-var info$9 = '#C2C4CB';
-var error$9 = '#E20B00';
-var hero$9 = '#5F7D8E';
+var primary$9 = "#2873AA";
+var secondary$9 = "#5F7D8E";
+var warning$9 = "#FF352A";
+var success$9 = "#4DAE00";
+var info$9 = "#C2C4CB";
+var error$9 = "#E20B00";
+var hero$9 = "#5F7D8E";
 var PRIMARY$9 = {
-  lighter: /*#__PURE__*/tinycolor(primary$9).lighten(lighterenRate$9).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$9)
+    .lighten(lighterenRate$9)
+    .toHexString(),
   main: primary$9,
-  light: /*#__PURE__*/tinycolor(primary$9).lighten(lightenRate$9).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$9).darken(darkenRate$9).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$9).darken(darkerRate$9).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$9)
+    .lighten(lightenRate$9)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$9)
+    .darken(darkenRate$9)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$9)
+    .darken(darkerRate$9)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$9 = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$9,
-  light: /*#__PURE__*/tinycolor(secondary$9).lighten(lightenRate$9).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$9).darken(darkenRate$9).toHexString(),
-  contrastText: '#ccc',
-  darker: '#E87780'
+  light: /*#__PURE__*/ tinycolor(secondary$9)
+    .lighten(lightenRate$9)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$9)
+    .darken(darkenRate$9)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#E87780"
 };
 var INFO$9 = {
-  lighter: '#FCEDF2',
+  lighter: "#FCEDF2",
   main: info$9,
-  light: /*#__PURE__*/tinycolor(info$9).lighten(lightenRate$9).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$9).darken(darkenRate$9).toHexString(),
-  contrastText: '#fff',
-  darker: '#F7BFBC'
+  light: /*#__PURE__*/ tinycolor(info$9)
+    .lighten(lightenRate$9)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$9)
+    .darken(darkenRate$9)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#F7BFBC"
 };
 var SUCCESS$9 = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$9,
-  light: /*#__PURE__*/tinycolor(success$9).lighten(lightenRate$9).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$9).darken(darkenRate$9).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$9)
+    .lighten(lightenRate$9)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$9)
+    .darken(darkenRate$9)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$9 = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$9,
-  light: /*#__PURE__*/tinycolor(warning$9).lighten(lightenRate$9).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$9).darken(darkenRate$9).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$9)
+    .lighten(lightenRate$9)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$9)
+    .darken(darkenRate$9)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$9 = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$9,
-  light: /*#__PURE__*/tinycolor(error$9).lighten(lightenRate$9).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$9).darken(darkenRate$9).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$9)
+    .lighten(lightenRate$9)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$9)
+    .darken(darkenRate$9)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$9 = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$9.light, PRIMARY$9.main),
-  info: /*#__PURE__*/createGradient(INFO$9.light, INFO$9.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$9.light, SUCCESS$9.main),
-  warning: /*#__PURE__*/createGradient(WARNING$9.light, WARNING$9.main),
-  error: /*#__PURE__*/createGradient(ERROR$9.light, ERROR$9.main),
-  one: '#A9341E',
-  two: '#7A232E'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$9.light, PRIMARY$9.main),
+  info: /*#__PURE__*/ createGradient(INFO$9.light, INFO$9.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$9.light, SUCCESS$9.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$9.light, WARNING$9.main),
+  error: /*#__PURE__*/ createGradient(ERROR$9.light, ERROR$9.main),
+  one: "#A9341E",
+  two: "#7A232E"
 };
 var palette$9 = {
   hero: hero$9,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$9),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$9),
-  info: /*#__PURE__*/_extends({}, INFO$9),
-  success: /*#__PURE__*/_extends({}, SUCCESS$9),
-  warning: /*#__PURE__*/_extends({}, WARNING$9),
-  error: /*#__PURE__*/_extends({}, ERROR$9),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$9),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$9),
+  info: /*#__PURE__*/ _extends({}, INFO$9),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$9),
+  warning: /*#__PURE__*/ _extends({}, WARNING$9),
+  error: /*#__PURE__*/ _extends({}, ERROR$9),
   grey: GREY,
   gradients: GRADIENTS$9,
   divider: GREY[50024],
@@ -6233,47 +6890,49 @@ var palette$9 = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: 'rgba(174 33 3, 0.4)',
-    infoGadient: /*#__PURE__*/createGradient(INFO$9.lighter, INFO$9.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "rgba(174 33 3, 0.4)",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$9.lighter, INFO$9.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
     disabled: GREY[50080],
-    disabledBackground: '#E7CBC7',
+    disabledBackground: "#E7CBC7",
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$9,
-    toggle2: /*#__PURE__*/tinycolor(hero$9).lighten(lightenRate$9).toHexString(),
-    toggle3: '#F5F5F5',
-    toggle4: '#fff'
+    toggle2: /*#__PURE__*/ tinycolor(hero$9)
+      .lighten(lightenRate$9)
+      .toHexString(),
+    toggle3: "#F5F5F5",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#B4193C',
-    colorHover: '#E20B00',
-    colorActive: '#000000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#B4193C",
+    colorHover: "#E20B00",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #A9341E 3.01%, #7A232E 95.95%)',
-    shadow: '0px 4px 15px rgba(0, 0, 0, 0.08)'
+    bgColor: "linear-gradient(139.78deg, #A9341E 3.01%, #7A232E 95.95%)",
+    shadow: "0px 4px 15px rgba(0, 0, 0, 0.08)"
   },
   bgLight: {
-    one: '#FFEEEE',
-    two: '#F5F5F5'
+    one: "#FFEEEE",
+    two: "#F5F5F5"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
@@ -6307,30 +6966,30 @@ var typography$9 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -6451,103 +7110,103 @@ function Button$9(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -6578,7 +7237,20 @@ function Backdrop$9(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -6619,7 +7291,10 @@ function Typography$9(theme) {
 function CssBaseline$9(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -6676,7 +7351,12 @@ function AppBar$9(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -6689,7 +7369,7 @@ function IconButton$9(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          '& span > svg': {
+          "& span > svg": {
             color: theme.palette.hero
           }
         }
@@ -6703,8 +7383,8 @@ function Picker$9() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -6740,7 +7420,8 @@ function Menu$9() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -6790,7 +7471,7 @@ function Link$9() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -6802,7 +7483,7 @@ function Badge$9() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -6812,7 +7493,26 @@ function Badge$9() {
 
 //
 function ComponentsOverrides$9(theme) {
-  return Object.assign(AppBar$9(theme), Card$9(theme), Input$9(theme), Paper$9(theme), Button$9(theme), Tooltip$9(theme), Backdrop$9(theme), Typography$9(theme), CssBaseline$9(theme), Autocomplete$9(theme), ToggleButton$9(theme), IconButton$9(theme), Picker$9(), Rating$9(theme), Menu$9(), Alert$9(theme), Link$9(), Badge$9());
+  return Object.assign(
+    AppBar$9(theme),
+    Card$9(theme),
+    Input$9(theme),
+    Paper$9(theme),
+    Button$9(theme),
+    Tooltip$9(theme),
+    Backdrop$9(theme),
+    Typography$9(theme),
+    CssBaseline$9(theme),
+    Autocomplete$9(theme),
+    ToggleButton$9(theme),
+    IconButton$9(theme),
+    Picker$9(),
+    Rating$9(theme),
+    Menu$9(),
+    Alert$9(theme),
+    Link$9(),
+    Badge$9()
+  );
 }
 
 var sibgmu = {
@@ -6826,78 +7526,106 @@ var lighterenRate$a = 1.5;
 var lightenRate$a = 7.5;
 var darkenRate$a = 15;
 var darkerRate$a = 30;
-var primary$a = '#AA9161';
-var secondary$a = '#D0C8B5';
-var warning$a = '#F57069';
-var success$a = '#E3F8D2';
-var info$a = '#B5A788';
-var error$a = '#F57069';
-var hero$a = '#6D0C8B5';
+var primary$a = "#AA9161";
+var secondary$a = "#D0C8B5";
+var warning$a = "#F57069";
+var success$a = "#E3F8D2";
+var info$a = "#B5A788";
+var error$a = "#F57069";
+var hero$a = "#6D0C8B5";
 var PRIMARY$a = {
-  lighter: /*#__PURE__*/tinycolor(primary$a).lighten(lighterenRate$a).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$a)
+    .lighten(lighterenRate$a)
+    .toHexString(),
   main: primary$a,
-  light: /*#__PURE__*/tinycolor(primary$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$a).darken(darkenRate$a).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$a).darken(darkerRate$a).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$a)
+    .lighten(lightenRate$a)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$a)
+    .darken(darkenRate$a)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$a)
+    .darken(darkerRate$a)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$a = {
-  lighter: '#D6E4FF',
+  lighter: "#D6E4FF",
   main: secondary$a,
-  light: /*#__PURE__*/tinycolor(secondary$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$a).darken(darkenRate$a).toHexString(),
-  contrastText: '#A2916A',
-  darker: '#827657'
+  light: /*#__PURE__*/ tinycolor(secondary$a)
+    .lighten(lightenRate$a)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$a)
+    .darken(darkenRate$a)
+    .toHexString(),
+  contrastText: "#A2916A",
+  darker: "#827657"
 };
 var INFO$a = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$a,
-  light: /*#__PURE__*/tinycolor(info$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$a).darken(darkenRate$a).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info$a)
+    .lighten(lightenRate$a)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$a)
+    .darken(darkenRate$a)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$a = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$a,
-  light: /*#__PURE__*/tinycolor(success$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$a).darken(darkenRate$a).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$a)
+    .lighten(lightenRate$a)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$a)
+    .darken(darkenRate$a)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$a = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$a,
-  light: /*#__PURE__*/tinycolor(warning$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$a).darken(darkenRate$a).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$a)
+    .lighten(lightenRate$a)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$a)
+    .darken(darkenRate$a)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$a = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$a,
-  light: /*#__PURE__*/tinycolor(error$a).lighten(lightenRate$a).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$a).darken(darkenRate$a).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$a)
+    .lighten(lightenRate$a)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$a)
+    .darken(darkenRate$a)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$a = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$a.light, PRIMARY$a.main),
-  info: /*#__PURE__*/createGradient(INFO$a.light, INFO$a.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$a.light, SUCCESS$a.main),
-  warning: /*#__PURE__*/createGradient(WARNING$a.light, WARNING$a.main),
-  error: /*#__PURE__*/createGradient(ERROR$a.light, ERROR$a.main),
-  one: '#B5A788',
-  two: '#AA9161'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$a.light, PRIMARY$a.main),
+  info: /*#__PURE__*/ createGradient(INFO$a.light, INFO$a.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$a.light, SUCCESS$a.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$a.light, WARNING$a.main),
+  error: /*#__PURE__*/ createGradient(ERROR$a.light, ERROR$a.main),
+  one: "#B5A788",
+  two: "#AA9161"
 };
 var palette$a = {
   hero: hero$a,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$a),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$a),
-  info: /*#__PURE__*/_extends({}, INFO$a),
-  success: /*#__PURE__*/_extends({}, SUCCESS$a),
-  warning: /*#__PURE__*/_extends({}, WARNING$a),
-  error: /*#__PURE__*/_extends({}, ERROR$a),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$a),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$a),
+  info: /*#__PURE__*/ _extends({}, INFO$a),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$a),
+  warning: /*#__PURE__*/ _extends({}, WARNING$a),
+  error: /*#__PURE__*/ _extends({}, ERROR$a),
   grey: GREY,
   gradients: GRADIENTS$a,
   divider: GREY[50024],
@@ -6909,14 +7637,14 @@ var palette$a = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": GREY[100],
+    paper: "#fff",
+    default: GREY[100],
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#ECECEC',
-    info: '#FFEED6',
-    infoGadient: /*#__PURE__*/createGradient(INFO$a.lighter, INFO$a.light),
-    success: '#FFE7CE'
+    warning: "#FEF1F0",
+    error: "#ECECEC",
+    info: "#FFEED6",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$a.lighter, INFO$a.light),
+    success: "#FFE7CE"
   },
   action: {
     active: GREY[600],
@@ -6927,81 +7655,81 @@ var palette$a = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#A2916A',
-    toggle2: '#F57069',
-    toggle3: '#F2F2F1',
-    toggle4: '#fff'
+    toggle1: "#A2916A",
+    toggle2: "#F57069",
+    toggle3: "#F2F2F1",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#828383',
-    colorLeft: '#F57069',
-    colorHover: '#AA9161',
-    colorActive: '#000000',
-    bg: '#fff'
+    color: "#828383",
+    colorLeft: "#F57069",
+    colorHover: "#AA9161",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)',
-    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
+    bgColor: "linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)",
+    shadow: "0px 3px 5px rgba(0, 0, 0, 0.08)"
   },
   bgLight: {
-    one: '#F6F4F0',
-    two: '#F2F2F1'
+    one: "#F6F4F0",
+    two: "#F2F2F1"
   },
   shadows: {
-    card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
+    card: "0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(0, 0, 0, 0.15)"
   }
 };
 
-var FONT_PRIMARY$a = 'Roboto';
+var FONT_PRIMARY$a = "Roboto";
 var typography$a = {
   fontFamily: FONT_PRIMARY$a,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 600,
   h1: {
-    fontSize: '2.0rem',
+    fontSize: "2.0rem",
     fontWeight: 500
   },
   h2: {
-    fontSize: '1.7rem',
+    fontSize: "1.7rem",
     fontWeight: 500
   },
   h3: {
-    fontSize: '1.64rem',
+    fontSize: "1.64rem",
     fontWeight: 500
   },
   h4: {
-    fontSize: '1.5rem'
+    fontSize: "1.5rem"
   },
   h5: {
-    fontSize: '1.285rem'
+    fontSize: "1.285rem"
   },
   h6: {
-    fontSize: '1.05rem'
+    fontSize: "1.05rem"
   },
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   // overline: {
   //   fontWeight: 500,
@@ -7013,7 +7741,7 @@ var typography$a = {
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -7119,103 +7847,103 @@ function Button$a(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.info.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.info.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -7247,7 +7975,20 @@ function Backdrop$a(theme) {
       styleOverrides: {
         root: {
           //          backgroundColor: theme.palette.grey[600],
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -7288,7 +8029,10 @@ function Typography$a(theme) {
 function CssBaseline$a(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n      "
     }
   };
 }
@@ -7345,7 +8089,12 @@ function AppBar$a(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -7372,8 +8121,8 @@ function Picker$a() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -7410,7 +8159,8 @@ function Menu$a() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -7461,7 +8211,7 @@ function Link$a() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -7473,7 +8223,7 @@ function Badge$a() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -7483,7 +8233,26 @@ function Badge$a() {
 
 //
 function ComponentsOverrides$a(theme) {
-  return Object.assign(AppBar$a(theme), Card$a(theme), Input$a(theme), Paper$a(theme), Button$a(theme), Tooltip$a(theme), Backdrop$a(theme), Typography$a(theme), CssBaseline$a(theme), Autocomplete$a(theme), ToggleButton$a(theme), IconButton$a(theme), Picker$a(), Rating$a(theme), Menu$a(), Alert$a(theme), Link$a(), Badge$a());
+  return Object.assign(
+    AppBar$a(theme),
+    Card$a(theme),
+    Input$a(theme),
+    Paper$a(theme),
+    Button$a(theme),
+    Tooltip$a(theme),
+    Backdrop$a(theme),
+    Typography$a(theme),
+    CssBaseline$a(theme),
+    Autocomplete$a(theme),
+    ToggleButton$a(theme),
+    IconButton$a(theme),
+    Picker$a(),
+    Rating$a(theme),
+    Menu$a(),
+    Alert$a(theme),
+    Link$a(),
+    Badge$a()
+  );
 }
 
 var mositalmed = {
@@ -7505,70 +8274,98 @@ var info$b = "#D9DEEC";
 var error$b = "#D41442";
 var hero$b = "#BD8AAD";
 var PRIMARY$b = {
-  lighter: /*#__PURE__*/tinycolor(primary$b).lighten(lighterenRate$b).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$b)
+    .lighten(lighterenRate$b)
+    .toHexString(),
   main: primary$b,
-  light: /*#__PURE__*/tinycolor(primary$b).lighten(lightenRate$b).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$b).darken(darkenRate$b).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$b).darken(darkerRate$b).toHexString(),
+  light: /*#__PURE__*/ tinycolor(primary$b)
+    .lighten(lightenRate$b)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$b)
+    .darken(darkenRate$b)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$b)
+    .darken(darkerRate$b)
+    .toHexString(),
   contrastText: "#fff"
 };
 var SECONDARY$b = {
   lighter: "#D6E4FF",
   main: secondary$b,
-  light: /*#__PURE__*/tinycolor(secondary$b).lighten(lightenRate$b).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$b).darken(darkenRate$b).toHexString(),
+  light: /*#__PURE__*/ tinycolor(secondary$b)
+    .lighten(lightenRate$b)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$b)
+    .darken(darkenRate$b)
+    .toHexString(),
   contrastText: "#ccc",
   darker: "#E87780"
 };
 var INFO$b = {
   lighter: "#F8F1FC",
   main: info$b,
-  light: /*#__PURE__*/tinycolor(info$b).lighten(lightenRate$b).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$b).darken(darkenRate$b).toHexString(),
+  light: /*#__PURE__*/ tinycolor(info$b)
+    .lighten(lightenRate$b)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$b)
+    .darken(darkenRate$b)
+    .toHexString(),
   contrastText: "#fff",
   darker: "#F7BFBC"
 };
 var SUCCESS$b = {
   lighter: "#E9FCD4",
   main: success$b,
-  light: /*#__PURE__*/tinycolor(success$b).lighten(lightenRate$b).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$b).darken(darkenRate$b).toHexString(),
+  light: /*#__PURE__*/ tinycolor(success$b)
+    .lighten(lightenRate$b)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$b)
+    .darken(darkenRate$b)
+    .toHexString(),
   contrastText: "#ccc",
   darker: "#08660D"
 };
 var WARNING$b = {
   lighter: "#FFF7CD",
   main: warning$b,
-  light: /*#__PURE__*/tinycolor(warning$b).lighten(lightenRate$b).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$b).darken(darkenRate$b).toHexString(),
+  light: /*#__PURE__*/ tinycolor(warning$b)
+    .lighten(lightenRate$b)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$b)
+    .darken(darkenRate$b)
+    .toHexString(),
   darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$b = {
   lighter: "#FFE7D9",
   main: error$b,
-  light: /*#__PURE__*/tinycolor(error$b).lighten(lightenRate$b).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$b).darken(darkenRate$b).toHexString(),
+  light: /*#__PURE__*/ tinycolor(error$b)
+    .lighten(lightenRate$b)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$b)
+    .darken(darkenRate$b)
+    .toHexString(),
   darker: "#7A0C2E",
   contrastText: "#fff"
 };
 var GRADIENTS$b = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$b.light, PRIMARY$b.main),
-  info: /*#__PURE__*/createGradient(INFO$b.light, INFO$b.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$b.light, SUCCESS$b.main),
-  warning: /*#__PURE__*/createGradient(WARNING$b.light, WARNING$b.main),
-  error: /*#__PURE__*/createGradient(ERROR$b.light, ERROR$b.main),
+  primary: /*#__PURE__*/ createGradient(PRIMARY$b.light, PRIMARY$b.main),
+  info: /*#__PURE__*/ createGradient(INFO$b.light, INFO$b.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$b.light, SUCCESS$b.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$b.light, WARNING$b.main),
+  error: /*#__PURE__*/ createGradient(ERROR$b.light, ERROR$b.main),
   one: "#AC729C",
   two: "#734464"
 };
 var palette$b = {
   hero: hero$b,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$b),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$b),
-  info: /*#__PURE__*/_extends({}, INFO$b),
-  success: /*#__PURE__*/_extends({}, SUCCESS$b),
-  warning: /*#__PURE__*/_extends({}, WARNING$b),
-  error: /*#__PURE__*/_extends({}, ERROR$b),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$b),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$b),
+  info: /*#__PURE__*/ _extends({}, INFO$b),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$b),
+  warning: /*#__PURE__*/ _extends({}, WARNING$b),
+  error: /*#__PURE__*/ _extends({}, ERROR$b),
   grey: GREY,
   gradients: GRADIENTS$b,
   divider: GREY[50024],
@@ -7581,12 +8378,12 @@ var palette$b = {
   },
   background: {
     paper: "#fff",
-    "default": "#fff",
+    default: "#fff",
     neutral: GREY[200],
     warning: "#ECECEC",
     error: "#ECECEC",
     info: "#F8F1FC",
-    infoGadient: /*#__PURE__*/createGradient(INFO$b.light, INFO$b.main),
+    infoGadient: /*#__PURE__*/ createGradient(INFO$b.light, INFO$b.main),
     success: "#FFEED6"
   },
   action: {
@@ -7598,7 +8395,9 @@ var palette$b = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$b,
-    toggle2: /*#__PURE__*/tinycolor(hero$b).lighten(lightenRate$b).toHexString(),
+    toggle2: /*#__PURE__*/ tinycolor(hero$b)
+      .lighten(lightenRate$b)
+      .toHexString(),
     toggle3: "#F5F5F5",
     toggle4: "#fff"
   },
@@ -7653,30 +8452,30 @@ var typography$b = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -7797,103 +8596,103 @@ function Button$b(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.hero,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -7924,7 +8723,20 @@ function Backdrop$b(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -7965,7 +8777,10 @@ function Typography$b(theme) {
 function CssBaseline$b(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -8022,7 +8837,12 @@ function AppBar$b(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -8035,7 +8855,7 @@ function IconButton$b(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          '& span > svg': {
+          "& span > svg": {
             color: theme.palette.hero
           }
         }
@@ -8049,8 +8869,8 @@ function Picker$b() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -8074,7 +8894,7 @@ function Rating$b(theme) {
         },
         root: {
           color: theme.palette.primary.main,
-          '& span > span': {
+          "& span > span": {
             top: 0,
             left: 0
           }
@@ -8089,7 +8909,8 @@ function Menu$b() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -8139,7 +8960,7 @@ function Link$b() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -8151,7 +8972,7 @@ function Badge$b() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -8161,7 +8982,26 @@ function Badge$b() {
 
 //
 function ComponentsOverrides$b(theme) {
-  return Object.assign(AppBar$b(theme), Card$b(theme), Input$b(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(theme), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
+  return Object.assign(
+    AppBar$b(theme),
+    Card$b(theme),
+    Input$b(theme),
+    Paper$b(theme),
+    Button$b(theme),
+    Tooltip$b(theme),
+    Backdrop$b(theme),
+    Typography$b(theme),
+    CssBaseline$b(theme),
+    Autocomplete$b(theme),
+    ToggleButton$b(theme),
+    IconButton$b(theme),
+    Picker$b(),
+    Rating$b(theme),
+    Menu$b(),
+    Alert$b(theme),
+    Link$b(),
+    Badge$b()
+  );
 }
 
 var skyfert = {
@@ -8175,78 +9015,106 @@ var lighterenRate$c = 1.5;
 var lightenRate$c = 7.5;
 var darkenRate$c = 15;
 var darkerRate$c = 30;
-var primary$c = '#204568';
-var secondary$c = '#4A6F93';
-var warning$c = '#C76277';
-var success$c = '#5CAA7F';
-var info$c = '#BCC3D2';
-var error$c = '#C76277';
-var hero$c = '#426A90';
+var primary$c = "#204568";
+var secondary$c = "#4A6F93";
+var warning$c = "#C76277";
+var success$c = "#5CAA7F";
+var info$c = "#BCC3D2";
+var error$c = "#C76277";
+var hero$c = "#426A90";
 var PRIMARY$c = {
-  lighter: /*#__PURE__*/tinycolor(primary$c).lighten(lighterenRate$c).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$c)
+    .lighten(lighterenRate$c)
+    .toHexString(),
   main: primary$c,
-  light: /*#__PURE__*/tinycolor(primary$c).lighten(lightenRate$c).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$c).darken(darkenRate$c).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$c).darken(darkerRate$c).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$c)
+    .lighten(lightenRate$c)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$c)
+    .darken(darkenRate$c)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$c)
+    .darken(darkerRate$c)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$c = {
-  lighter: '#F6F4F0',
+  lighter: "#F6F4F0",
   main: secondary$c,
-  light: /*#__PURE__*/tinycolor(secondary$c).lighten(lightenRate$c).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$c).darken(darkenRate$c).toHexString(),
-  contrastText: '#ccc',
-  darker: '#E87780'
+  light: /*#__PURE__*/ tinycolor(secondary$c)
+    .lighten(lightenRate$c)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$c)
+    .darken(darkenRate$c)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#E87780"
 };
 var INFO$c = {
-  lighter: '#F6F4F0',
+  lighter: "#F6F4F0",
   main: info$c,
-  light: /*#__PURE__*/tinycolor(info$c).lighten(lightenRate$c).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$c).darken(darkenRate$c).toHexString(),
-  contrastText: '#fff',
-  darker: '#F7BFBC'
+  light: /*#__PURE__*/ tinycolor(info$c)
+    .lighten(lightenRate$c)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$c)
+    .darken(darkenRate$c)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#F7BFBC"
 };
 var SUCCESS$c = {
-  lighter: '#F6F4F0',
+  lighter: "#F6F4F0",
   main: success$c,
-  light: /*#__PURE__*/tinycolor(success$c).lighten(lightenRate$c).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$c).darken(darkenRate$c).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$c)
+    .lighten(lightenRate$c)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$c)
+    .darken(darkenRate$c)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$c = {
-  lighter: '#FEF1F0',
+  lighter: "#FEF1F0",
   main: warning$c,
-  light: /*#__PURE__*/tinycolor(warning$c).lighten(lightenRate$c).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$c).darken(darkenRate$c).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$c)
+    .lighten(lightenRate$c)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$c)
+    .darken(darkenRate$c)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$c = {
-  lighter: '#FEF1F0',
+  lighter: "#FEF1F0",
   main: error$c,
-  light: /*#__PURE__*/tinycolor(error$c).lighten(lightenRate$c).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$c).darken(darkenRate$c).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$c)
+    .lighten(lightenRate$c)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$c)
+    .darken(darkenRate$c)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$c = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$c.light, PRIMARY$c.main),
-  info: /*#__PURE__*/createGradient(INFO$c.light, INFO$c.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$c.light, SUCCESS$c.main),
-  warning: /*#__PURE__*/createGradient(WARNING$c.light, WARNING$c.main),
-  error: /*#__PURE__*/createGradient(ERROR$c.light, ERROR$c.main),
-  one: '#073D5F',
-  two: '#022D47'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$c.light, PRIMARY$c.main),
+  info: /*#__PURE__*/ createGradient(INFO$c.light, INFO$c.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$c.light, SUCCESS$c.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$c.light, WARNING$c.main),
+  error: /*#__PURE__*/ createGradient(ERROR$c.light, ERROR$c.main),
+  one: "#073D5F",
+  two: "#022D47"
 };
 var palette$c = {
   hero: hero$c,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$c),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$c),
-  info: /*#__PURE__*/_extends({}, INFO$c),
-  success: /*#__PURE__*/_extends({}, SUCCESS$c),
-  warning: /*#__PURE__*/_extends({}, WARNING$c),
-  error: /*#__PURE__*/_extends({}, ERROR$c),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$c),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$c),
+  info: /*#__PURE__*/ _extends({}, INFO$c),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$c),
+  warning: /*#__PURE__*/ _extends({}, WARNING$c),
+  error: /*#__PURE__*/ _extends({}, ERROR$c),
   grey: GREY,
   gradients: GRADIENTS$c,
   divider: GREY[50024],
@@ -8258,46 +9126,51 @@ var palette$c = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#fff',
+    paper: "#fff",
+    default: "#fff",
     neutral: GREY[200],
-    warning: '#FEF1F0',
-    error: '#FEF1F0',
-    info: '#EDF7FC',
-    infoGadient: /*#__PURE__*/createGradient(SECONDARY$c.light, SECONDARY$c.lighter),
-    success: '#D9EFE2'
+    warning: "#FEF1F0",
+    error: "#FEF1F0",
+    info: "#EDF7FC",
+    infoGadient: /*#__PURE__*/ createGradient(
+      SECONDARY$c.light,
+      SECONDARY$c.lighter
+    ),
+    success: "#D9EFE2"
   },
   action: {
     active: GREY[600],
     hover: GREY[5008],
     selected: GREY[50016],
-    disabledBackground: '#F7F7F8',
+    disabledBackground: "#F7F7F8",
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
     toggle1: hero$c,
-    toggle2: /*#__PURE__*/tinycolor(hero$c).lighten(lightenRate$c).toHexString(),
-    toggle3: '#F5F5F5',
-    toggle4: '#fff'
+    toggle2: /*#__PURE__*/ tinycolor(hero$c)
+      .lighten(lightenRate$c)
+      .toHexString(),
+    toggle3: "#F5F5F5",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#939FAE',
-    colorLeft: '#426A90',
-    colorHover: '#4A6F93',
-    colorActive: '#000000',
-    bg: '#fff'
+    color: "#939FAE",
+    colorLeft: "#426A90",
+    colorHover: "#4A6F93",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(139.78deg, #073D5F 3.01%, #022D47 95.95%)',
-    shadow: '0px 4px 15px 0px rgba(35, 40, 48, 0.08)'
+    bgColor: "linear-gradient(139.78deg, #073D5F 3.01%, #022D47 95.95%)",
+    shadow: "0px 4px 15px 0px rgba(35, 40, 48, 0.08)"
   },
   bgLight: {
-    one: '#E8F2F5',
-    two: '#FEF1F0'
+    one: "#E8F2F5",
+    two: "#FEF1F0"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(101, 101, 101, 0.15)"
   }
 };
 
@@ -8331,30 +9204,30 @@ var typography$c = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -8409,11 +9282,11 @@ function Input$c(theme) {
     MuiInput: {
       styleOverrides: {
         underline: {
-          '&:before': {
-            borderBottom: '1px solid rgb(196 196 196)'
+          "&:before": {
+            borderBottom: "1px solid rgb(196 196 196)"
           },
-          '&:hover:not(.Mui-disabled):before': {
-            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
+          "&:hover:not(.Mui-disabled):before": {
+            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
           }
         }
       }
@@ -8422,18 +9295,18 @@ function Input$c(theme) {
       styleOverrides: {
         root: {
           backgroundColor: styles.alpha(theme.palette.grey[500], 0.12),
-          '&:hover': {
+          "&:hover": {
             backgroundColor: styles.alpha(theme.palette.grey[500], 0.16)
           },
-          '&.Mui-focused': {
+          "&.Mui-focused": {
             backgroundColor: theme.palette.action.focus
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             backgroundColor: theme.palette.action.disabledBackground
           }
         },
         underline: {
-          '&:before': {
+          "&:before": {
             borderBottomColor: styles.alpha(theme.palette.grey[500], 0.48)
           }
         }
@@ -8444,24 +9317,24 @@ function Input$c(theme) {
         root: {
           borderWidth: 2,
           borderRadius: theme.spacing(0.8),
-          backgroundColor: 'transparent',
-          '&.Mui-focused': {
-            backgroundColor: '#fff'
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            backgroundColor: "#fff"
           },
-          '& fieldset': {
+          "& fieldset": {
             borderColor: styles.alpha(theme.palette.primary.light, 0.32)
           },
-          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
             borderColor: styles.alpha(theme.palette.primary.main, 0.2)
           },
-          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
+          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: styles.alpha(theme.palette.primary.main, 0.2)
           },
-          '&:hover .MuiOutlinedInput-notchedOutline': {
+          "&:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: theme.palette.primary.main,
             borderWidth: 2
           },
-          '&.Mui-focused fieldset': {
+          "&.Mui-focused fieldset": {
             borderWidth: 2
           }
         }
@@ -8476,103 +9349,103 @@ function Button$c(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.secondary.main,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -8603,7 +9476,20 @@ function Backdrop$c(theme) {
     MuiBackdrop: {
       styleOverrides: {
         root: {
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -8644,7 +9530,10 @@ function Typography$c(theme) {
 function CssBaseline$c(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -8701,7 +9590,12 @@ function AppBar$c(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -8714,7 +9608,7 @@ function IconButton$c(theme) {
     MuiIconButton: {
       styleOverrides: {
         root: {
-          '& span > svg': {
+          "& span > svg": {
             color: theme.palette.hero
           }
         }
@@ -8728,8 +9622,8 @@ function Picker$c() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -8753,7 +9647,7 @@ function Rating$c(theme) {
         },
         root: {
           color: theme.palette.primary.main,
-          '& span > span': {
+          "& span > span": {
             top: 0,
             left: 0
           }
@@ -8768,7 +9662,8 @@ function Menu$c() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -8818,7 +9713,7 @@ function Link$c() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -8830,7 +9725,7 @@ function Badge$c() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -8840,7 +9735,26 @@ function Badge$c() {
 
 //
 function ComponentsOverrides$c(theme) {
-  return Object.assign(AppBar$c(theme), Card$c(theme), Input$c(theme), Paper$c(theme), Button$c(theme), Tooltip$c(theme), Backdrop$c(theme), Typography$c(theme), CssBaseline$c(theme), Autocomplete$c(theme), ToggleButton$c(theme), IconButton$c(theme), Picker$c(), Rating$c(theme), Menu$c(), Alert$c(theme), Link$c(), Badge$c());
+  return Object.assign(
+    AppBar$c(theme),
+    Card$c(theme),
+    Input$c(theme),
+    Paper$c(theme),
+    Button$c(theme),
+    Tooltip$c(theme),
+    Backdrop$c(theme),
+    Typography$c(theme),
+    CssBaseline$c(theme),
+    Autocomplete$c(theme),
+    ToggleButton$c(theme),
+    IconButton$c(theme),
+    Picker$c(),
+    Rating$c(theme),
+    Menu$c(),
+    Alert$c(theme),
+    Link$c(),
+    Badge$c()
+  );
 }
 
 var white_fang = {
@@ -8854,78 +9768,106 @@ var lighterenRate$d = 1.5;
 var lightenRate$d = 7.5;
 var darkenRate$d = 15;
 var darkerRate$d = 30;
-var primary$d = '#D81440';
-var secondary$d = '#BE697C';
-var warning$d = '#F57069';
-var success$d = '#34DFA2';
-var info$d = '#FFEED6';
-var error$d = '#f44336';
-var hero$d = '#D81440';
+var primary$d = "#D81440";
+var secondary$d = "#BE697C";
+var warning$d = "#F57069";
+var success$d = "#34DFA2";
+var info$d = "#FFEED6";
+var error$d = "#f44336";
+var hero$d = "#D81440";
 var PRIMARY$d = {
-  lighter: /*#__PURE__*/tinycolor(primary$d).lighten(lighterenRate$d).toHexString(),
+  lighter: /*#__PURE__*/ tinycolor(primary$d)
+    .lighten(lighterenRate$d)
+    .toHexString(),
   main: primary$d,
-  light: /*#__PURE__*/tinycolor(primary$d).lighten(lightenRate$d).toHexString(),
-  dark: /*#__PURE__*/tinycolor(primary$d).darken(darkenRate$d).toHexString(),
-  darker: /*#__PURE__*/tinycolor(primary$d).darken(darkerRate$d).toHexString(),
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(primary$d)
+    .lighten(lightenRate$d)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(primary$d)
+    .darken(darkenRate$d)
+    .toHexString(),
+  darker: /*#__PURE__*/ tinycolor(primary$d)
+    .darken(darkerRate$d)
+    .toHexString(),
+  contrastText: "#fff"
 };
 var SECONDARY$d = {
-  lighter: '#FCF1F1',
+  lighter: "#FCF1F1",
   main: secondary$d,
-  light: /*#__PURE__*/tinycolor(secondary$d).lighten(lightenRate$d).toHexString(),
-  dark: /*#__PURE__*/tinycolor(secondary$d).darken(darkenRate$d).toHexString(),
-  contrastText: '#ccc',
-  darker: '#091A7A'
+  light: /*#__PURE__*/ tinycolor(secondary$d)
+    .lighten(lightenRate$d)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(secondary$d)
+    .darken(darkenRate$d)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#091A7A"
 };
 var INFO$d = {
-  lighter: '#ECECEC',
+  lighter: "#ECECEC",
   main: info$d,
-  light: /*#__PURE__*/tinycolor(info$d).lighten(lightenRate$d).toHexString(),
-  dark: /*#__PURE__*/tinycolor(info$d).darken(darkenRate$d).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  light: /*#__PURE__*/ tinycolor(info$d)
+    .lighten(lightenRate$d)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(info$d)
+    .darken(darkenRate$d)
+    .toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$d = {
-  lighter: '##FFEED6',
+  lighter: "##FFEED6",
   main: success$d,
-  light: /*#__PURE__*/tinycolor(success$d).lighten(lightenRate$d).toHexString(),
-  dark: /*#__PURE__*/tinycolor(success$d).darken(darkenRate$d).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  light: /*#__PURE__*/ tinycolor(success$d)
+    .lighten(lightenRate$d)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(success$d)
+    .darken(darkenRate$d)
+    .toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$d = {
-  lighter: '#E3F8D2',
+  lighter: "#E3F8D2",
   main: warning$d,
-  light: /*#__PURE__*/tinycolor(warning$d).lighten(lightenRate$d).toHexString(),
-  dark: /*#__PURE__*/tinycolor(warning$d).darken(darkenRate$d).toHexString(),
-  darker: '#7A4F01',
+  light: /*#__PURE__*/ tinycolor(warning$d)
+    .lighten(lightenRate$d)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(warning$d)
+    .darken(darkenRate$d)
+    .toHexString(),
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$d = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$d,
-  light: /*#__PURE__*/tinycolor(error$d).lighten(lightenRate$d).toHexString(),
-  dark: /*#__PURE__*/tinycolor(error$d).darken(darkenRate$d).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  light: /*#__PURE__*/ tinycolor(error$d)
+    .lighten(lightenRate$d)
+    .toHexString(),
+  dark: /*#__PURE__*/ tinycolor(error$d)
+    .darken(darkenRate$d)
+    .toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$d = {
-  primary: /*#__PURE__*/createGradient(PRIMARY$d.light, PRIMARY$d.main),
-  info: /*#__PURE__*/createGradient(INFO$d.light, INFO$d.main),
-  success: /*#__PURE__*/createGradient(SUCCESS$d.light, SUCCESS$d.main),
-  warning: /*#__PURE__*/createGradient(WARNING$d.light, WARNING$d.main),
-  error: /*#__PURE__*/createGradient(ERROR$d.light, ERROR$d.main),
-  one: '#D81440',
-  two: '#C41139'
+  primary: /*#__PURE__*/ createGradient(PRIMARY$d.light, PRIMARY$d.main),
+  info: /*#__PURE__*/ createGradient(INFO$d.light, INFO$d.main),
+  success: /*#__PURE__*/ createGradient(SUCCESS$d.light, SUCCESS$d.main),
+  warning: /*#__PURE__*/ createGradient(WARNING$d.light, WARNING$d.main),
+  error: /*#__PURE__*/ createGradient(ERROR$d.light, ERROR$d.main),
+  one: "#D81440",
+  two: "#C41139"
 };
 var palette$d = {
   hero: hero$d,
-  primary: /*#__PURE__*/_extends({}, PRIMARY$d),
-  secondary: /*#__PURE__*/_extends({}, SECONDARY$d),
-  info: /*#__PURE__*/_extends({}, INFO$d),
-  success: /*#__PURE__*/_extends({}, SUCCESS$d),
-  warning: /*#__PURE__*/_extends({}, WARNING$d),
-  error: /*#__PURE__*/_extends({}, ERROR$d),
+  primary: /*#__PURE__*/ _extends({}, PRIMARY$d),
+  secondary: /*#__PURE__*/ _extends({}, SECONDARY$d),
+  info: /*#__PURE__*/ _extends({}, INFO$d),
+  success: /*#__PURE__*/ _extends({}, SUCCESS$d),
+  warning: /*#__PURE__*/ _extends({}, WARNING$d),
+  error: /*#__PURE__*/ _extends({}, ERROR$d),
   grey: GREY,
   gradients: GRADIENTS$d,
   divider: GREY[50024],
@@ -8937,14 +9879,14 @@ var palette$d = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#fff',
+    paper: "#fff",
+    default: "#fff",
     neutral: GREY[200],
-    warning: '#F8E5E3',
-    error: '##F5D7D7',
-    info: '#FCF1F1',
-    infoGadient: /*#__PURE__*/createGradient(INFO$d.lighter, INFO$d.light),
-    success: '#E3F8D2'
+    warning: "#F8E5E3",
+    error: "##F5D7D7",
+    info: "#FCF1F1",
+    infoGadient: /*#__PURE__*/ createGradient(INFO$d.lighter, INFO$d.light),
+    success: "#E3F8D2"
   },
   action: {
     active: GREY[600],
@@ -8955,29 +9897,29 @@ var palette$d = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#BE697C',
-    toggle2: '#D81440',
-    toggle3: '#fff',
-    toggle4: '#fff'
+    toggle1: "#BE697C",
+    toggle2: "#D81440",
+    toggle3: "#fff",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#808080',
-    colorLeft: '#808080',
-    colorHover: '#D81440',
-    colorActive: '#000',
-    bg: '#fff'
+    color: "#808080",
+    colorLeft: "#808080",
+    colorHover: "#D81440",
+    colorActive: "#000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: 'linear-gradient(163.61deg, #D81440 3.01%, #C41139 95.95%)',
-    shadow: '0px 1px 4px rgba(35, 40, 48, 0.08)'
+    bgColor: "linear-gradient(163.61deg, #D81440 3.01%, #C41139 95.95%)",
+    shadow: "0px 1px 4px rgba(35, 40, 48, 0.08)"
   },
   bgLight: {
-    one: '#FCF1F1',
-    two: '#FEF1F0'
+    one: "#FCF1F1",
+    two: "#FEF1F0"
   },
   shadows: {
-    card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    card: "0px 2px 35px rgba(78, 72, 190, 0.08)",
+    firstHover: "0px 2px 35px rgba(111, 102, 255, 0.15)"
   }
 };
 
@@ -9011,25 +9953,25 @@ var typography$d = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/ pxToRem(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/ pxToRem(12)
   },
   // overline: {
   //   fontWeight: 500,
@@ -9041,7 +9983,7 @@ var typography$d = {
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/ pxToRem(14)
   }
 };
 
@@ -9147,103 +10089,103 @@ function Button$d(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
           color: theme.palette.secondary.main,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.primary.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.primary.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
@@ -9275,7 +10217,20 @@ function Backdrop$d(theme) {
       styleOverrides: {
         root: {
           //          backgroundColor: theme.palette.grey[600],
-          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          background: [
+            "rgb(22,28,36)",
+            "-moz-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "-webkit-linear-gradient(75deg, " +
+              varLow +
+              " 0%, " +
+              varHigh +
+              " 100%)",
+            "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"
+          ],
           "&.MuiBackdrop-invisible": {
             background: "transparent"
           }
@@ -9316,7 +10271,10 @@ function Typography$d(theme) {
 function CssBaseline$d(theme) {
   return {
     MuiCssBaseline: {
-      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff}) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf}) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+      styleOverrides:
+        "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" +
+        theme.palette.background["default"] +
+        ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
     }
   };
 }
@@ -9373,7 +10331,12 @@ function AppBar$d(theme) {
       styleOverrides: {
         root: {
           boxShadow: "none !important",
-          background: "linear-gradient(177.31deg, " + theme.palette.gradients.one + " 3.01%, " + theme.palette.gradients.two + " 95.95%)"
+          background:
+            "linear-gradient(177.31deg, " +
+            theme.palette.gradients.one +
+            " 3.01%, " +
+            theme.palette.gradients.two +
+            " 95.95%)"
         }
       }
     }
@@ -9400,8 +10363,8 @@ function Picker$d() {
     MuiPickerStaticWrapper: {
       styleOverrides: {
         root: {
-          minWidth: 'auto',
-          backgroundColor: 'transparent'
+          minWidth: "auto",
+          backgroundColor: "transparent"
         }
       }
     },
@@ -9438,7 +10401,8 @@ function Menu$d() {
     MuiMenu: {
       styleOverrides: {
         paper: {
-          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+          boxShadow:
+            "0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
         }
       }
     }
@@ -9489,7 +10453,7 @@ function Link$d() {
     MuiLink: {
       styleOverrides: {
         root: {
-          textDecoration: 'none'
+          textDecoration: "none"
         }
       }
     }
@@ -9501,7 +10465,7 @@ function Badge$d() {
     MuiBadge: {
       styleOverrides: {
         colorWarning: {
-          color: '#fff',
+          color: "#fff",
           fontWeight: 500
         }
       }
@@ -9511,7 +10475,26 @@ function Badge$d() {
 
 //
 function ComponentsOverrides$d(theme) {
-  return Object.assign(AppBar$d(theme), Card$d(theme), Input$d(theme), Paper$d(theme), Button$d(theme), Tooltip$d(theme), Backdrop$d(theme), Typography$d(theme), CssBaseline$d(theme), Autocomplete$d(theme), ToggleButton$d(theme), IconButton$d(theme), Picker$d(), Rating$d(theme), Menu$d(), Alert$d(theme), Link$d(), Badge$d());
+  return Object.assign(
+    AppBar$d(theme),
+    Card$d(theme),
+    Input$d(theme),
+    Paper$d(theme),
+    Button$d(theme),
+    Tooltip$d(theme),
+    Backdrop$d(theme),
+    Typography$d(theme),
+    CssBaseline$d(theme),
+    Autocomplete$d(theme),
+    ToggleButton$d(theme),
+    IconButton$d(theme),
+    Picker$d(),
+    Rating$d(theme),
+    Menu$d(),
+    Alert$d(theme),
+    Link$d(),
+    Badge$d()
+  );
 }
 
 var kalinchenko = {
@@ -9522,7 +10505,33 @@ var kalinchenko = {
 
 function getTheme(name) {
   console.log("name", name);
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : name === "kalinchenko" ? kalinchenko : mobimed;
+  return name === "drAnna"
+    ? drAnna
+    : name === "gms"
+    ? gms
+    : name === "medincenter"
+    ? medincenter
+    : name === "medswiss"
+    ? medswiss
+    : name === "mediadoc"
+    ? mediadoc
+    : name === "minfin"
+    ? minfin
+    : name === "pimu"
+    ? pimu
+    : name === "ncn"
+    ? ncn
+    : name === "sibgmu"
+    ? sibgmu
+    : name === "mositalmed"
+    ? mositalmed
+    : name === "skyfert"
+    ? skyfert
+    : name === "white_fang"
+    ? white_fang
+    : name === "kalinchenko"
+    ? kalinchenko
+    : mobimed;
 }
 
 var makeCustomTheme = function makeCustomTheme(name) {
@@ -9542,14 +10551,26 @@ function ThemeProvider(_ref) {
   var children = _ref.children,
     name = _ref.name,
     theme = _ref.theme;
-  var customTheme = React.useMemo(function () {
-    return name || !theme ? makeCustomTheme(name) : theme;
-  }, [name, theme]);
-  return /*#__PURE__*/React__default.createElement(styles.StyledEngineProvider, {
-    injectFirst: true
-  }, /*#__PURE__*/React__default.createElement(styles.ThemeProvider, {
-    theme: customTheme
-  }, /*#__PURE__*/React__default.createElement(material.CssBaseline, null), children));
+  var customTheme = React.useMemo(
+    function() {
+      return name || !theme ? makeCustomTheme(name) : theme;
+    },
+    [name, theme]
+  );
+  return /*#__PURE__*/ React__default.createElement(
+    styles.StyledEngineProvider,
+    {
+      injectFirst: true
+    },
+    /*#__PURE__*/ React__default.createElement(
+      styles.ThemeProvider,
+      {
+        theme: customTheme
+      },
+      /*#__PURE__*/ React__default.createElement(material.CssBaseline, null),
+      children
+    )
+  );
 }
 
 exports.default = ThemeProvider;
