@@ -28,6 +28,11 @@
     "url": "https://github.com/riflemanIm/mui-themes-extand/issues"
   },
   "homepage": "https://github.com/riflemanIm/mui-themes-extand#readme",
+  "dependencies": {
+    "@mui/material": "^5.14.15",
+    "@mui/styles": "^5.14.15",
+    "tinycolor2": "^1.6.0"
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.22.15",
     "@rollup/plugin-url": "^8.0.2",
@@ -50,13 +55,8 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-static-files": "^0.3.0",
     "rollup-plugin-url": "^3.0.1",
-    "tinycolor2": "^1.6.0",
     "tsdx": "^0.14.1",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "@mui/material": "^5.14.15",
-    "@mui/styles": "^5.14.15"
   },
   "peerDependencies": {
     "@mui/material": "*",
