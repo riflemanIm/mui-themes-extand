@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { alpha, CssBaseline as CssBaseline$e } from '@mui/material';
+import { alpha, CssBaseline as CssBaseline$f } from '@mui/material';
 import { alpha as alpha$1, StyledEngineProvider, ThemeProvider as ThemeProvider$1, createTheme } from '@mui/material/styles';
 import tinycolor from 'tinycolor2';
 
@@ -278,11 +278,11 @@ function Input(theme) {
     MuiInput: {
       styleOverrides: {
         underline: {
-          "&:before": {
-            borderBottom: "1px solid rgb(196 196 196)"
+          '&:before': {
+            borderBottom: '1px solid rgb(196 196 196)'
           },
-          "&:hover:not(.Mui-disabled):before": {
-            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
+          '&:hover:not(.Mui-disabled):before': {
+            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
           }
         }
       }
@@ -291,18 +291,18 @@ function Input(theme) {
       styleOverrides: {
         root: {
           backgroundColor: alpha$1(theme.palette.grey[500], 0.12),
-          "&:hover": {
+          '&:hover': {
             backgroundColor: alpha$1(theme.palette.grey[500], 0.16)
           },
-          "&.Mui-focused": {
+          '&.Mui-focused': {
             backgroundColor: theme.palette.action.focus
           },
-          "&.Mui-disabled": {
+          '&.Mui-disabled': {
             backgroundColor: theme.palette.action.disabledBackground
           }
         },
         underline: {
-          "&:before": {
+          '&:before': {
             borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
           }
         }
@@ -312,25 +312,25 @@ function Input(theme) {
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(0.8),
-          backgroundColor: "transparent",
-          "&.Mui-focused": {
-            backgroundColor: "#fff"
+          backgroundColor: 'transparent',
+          '&.Mui-focused': {
+            backgroundColor: '#fff'
           },
-          "& fieldset": {
+          '& fieldset': {
             borderColor: theme.palette.grey
           },
-          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
+          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
           },
-          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
+          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
             borderColor: alpha$1(theme.palette.primary.main, 0.2)
           },
-          "&:hover .MuiOutlinedInput-notchedOutline": {
+          '&:hover .MuiOutlinedInput-notchedOutline': {
             borderColor: theme.palette.primary.dark,
-            borderWidth: "2px"
+            borderWidth: '2px'
           },
-          "&.Mui-focused fieldset": {
-            borderWidth: "2px"
+          '&.Mui-focused fieldset': {
+            borderWidth: '2px'
           }
         }
       }
@@ -706,9 +706,24 @@ function Badge() {
   };
 }
 
+function Input$1(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides(theme) {
-  return Object.assign(AppBar(theme), Card(theme), Input(theme), Paper(theme), Button(theme), Tooltip(theme), Backdrop(theme), Typography(theme), CssBaseline(theme), Autocomplete(theme), ToggleButton(theme), IconButton(theme), Picker(), Rating(theme), Menu(), Alert(theme), Link(), Badge());
+  return Object.assign(AppBar(theme), Card(theme), Input(theme), Paper(theme), Button(theme), Tooltip(theme), Backdrop(theme), Typography(theme), CssBaseline(theme), Autocomplete(theme), ToggleButton(theme), IconButton(theme), Picker(), Rating(theme), Menu(), Alert(theme), Link(), Badge(), Input$1(theme));
 }
 
 var mobimed = {
@@ -937,7 +952,7 @@ function Paper$1(theme) {
   };
 }
 
-function Input$1(theme) {
+function Input$2(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -1386,7 +1401,7 @@ function Badge$1() {
 
 //
 function ComponentsOverrides$1(theme) {
-  return Object.assign(AppBar$1(theme), Card$1(theme), Input$1(theme), Paper$1(theme), Button$1(theme), Tooltip$1(theme), Backdrop$1(theme), Typography$1(theme), CssBaseline$1(theme), Autocomplete$1(theme), ToggleButton$1(theme), IconButton$1(theme), Picker$1(), Rating$1(theme), Menu$1(), Alert$1(theme), Link$1(), Badge$1());
+  return Object.assign(AppBar$1(theme), Card$1(theme), Input$2(theme), Paper$1(theme), Button$1(theme), Tooltip$1(theme), Backdrop$1(theme), Typography$1(theme), CssBaseline$1(theme), Autocomplete$1(theme), ToggleButton$1(theme), IconButton$1(theme), Picker$1(), Rating$1(theme), Menu$1(), Alert$1(theme), Link$1(), Badge$1());
 }
 
 var drAnna = {
@@ -1615,7 +1630,7 @@ function Paper$2(theme) {
   };
 }
 
-function Input$2(theme) {
+function Input$3(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -2064,7 +2079,7 @@ function Badge$2() {
 
 //
 function ComponentsOverrides$2(theme) {
-  return Object.assign(AppBar$2(theme), Card$2(theme), Input$2(theme), Paper$2(theme), Button$2(theme), Tooltip$2(theme), Backdrop$2(theme), Typography$2(theme), CssBaseline$2(theme), Autocomplete$2(theme), ToggleButton$2(theme), IconButton$2(theme), Picker$2(), Rating$2(theme), Menu$2(), Alert$2(theme), Link$2(), Badge$2());
+  return Object.assign(AppBar$2(theme), Card$2(theme), Input$3(theme), Paper$2(theme), Button$2(theme), Tooltip$2(theme), Backdrop$2(theme), Typography$2(theme), CssBaseline$2(theme), Autocomplete$2(theme), ToggleButton$2(theme), IconButton$2(theme), Picker$2(), Rating$2(theme), Menu$2(), Alert$2(theme), Link$2(), Badge$2());
 }
 
 var gms = {
@@ -2292,7 +2307,7 @@ function Paper$3(theme) {
   };
 }
 
-function Input$3(theme) {
+function Input$4(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -2746,7 +2761,7 @@ function Badge$3() {
 
 //
 function ComponentsOverrides$3(theme) {
-  return Object.assign(AppBar$3(theme), Card$3(theme), Input$3(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(theme), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
+  return Object.assign(AppBar$3(theme), Card$3(theme), Input$4(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(theme), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
 }
 
 var medincenter = {
@@ -2975,7 +2990,7 @@ function Paper$4(theme) {
   };
 }
 
-function Input$4(theme) {
+function Input$5(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -3422,7 +3437,7 @@ function Badge$4() {
 
 //
 function ComponentsOverrides$4(theme) {
-  return Object.assign(AppBar$4(theme), Card$4(theme), Input$4(theme), Paper$4(theme), Button$4(theme), Tooltip$4(theme), Backdrop$4(theme), Typography$4(theme), CssBaseline$4(theme), Autocomplete$4(theme), ToggleButton$4(theme), IconButton$4(theme), Picker$4(), Rating$4(theme), Menu$4(), Alert$4(theme), Link$4(), Badge$4());
+  return Object.assign(AppBar$4(theme), Card$4(theme), Input$5(theme), Paper$4(theme), Button$4(theme), Tooltip$4(theme), Backdrop$4(theme), Typography$4(theme), CssBaseline$4(theme), Autocomplete$4(theme), ToggleButton$4(theme), IconButton$4(theme), Picker$4(), Rating$4(theme), Menu$4(), Alert$4(theme), Link$4(), Badge$4());
 }
 
 var medswiss = {
@@ -3651,7 +3666,7 @@ function Paper$5(theme) {
   };
 }
 
-function Input$5(theme) {
+function Input$6(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -4100,7 +4115,7 @@ function Badge$5() {
 
 //
 function ComponentsOverrides$5(theme) {
-  return Object.assign(AppBar$5(theme), Card$5(theme), Input$5(theme), Paper$5(theme), Button$5(theme), Tooltip$5(theme), Backdrop$5(theme), Typography$5(theme), CssBaseline$5(theme), Autocomplete$5(theme), ToggleButton$5(theme), IconButton$5(theme), Picker$5(), Rating$5(theme), Menu$5(), Alert$5(theme), Link$5(), Badge$5());
+  return Object.assign(AppBar$5(theme), Card$5(theme), Input$6(theme), Paper$5(theme), Button$5(theme), Tooltip$5(theme), Backdrop$5(theme), Typography$5(theme), CssBaseline$5(theme), Autocomplete$5(theme), ToggleButton$5(theme), IconButton$5(theme), Picker$5(), Rating$5(theme), Menu$5(), Alert$5(theme), Link$5(), Badge$5());
 }
 
 var mediadoc = {
@@ -4329,7 +4344,7 @@ function Paper$6(theme) {
   };
 }
 
-function Input$6(theme) {
+function Input$7(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -4776,7 +4791,7 @@ function Badge$6() {
 
 //
 function ComponentsOverrides$6(theme) {
-  return Object.assign(AppBar$6(theme), Card$6(theme), Input$6(theme), Paper$6(theme), Button$6(theme), Tooltip$6(theme), Backdrop$6(theme), Typography$6(theme), CssBaseline$6(theme), Autocomplete$6(theme), ToggleButton$6(theme), IconButton$6(theme), Picker$6(), Rating$6(theme), Menu$6(), Alert$6(theme), Link$6(), Badge$6());
+  return Object.assign(AppBar$6(theme), Card$6(theme), Input$7(theme), Paper$6(theme), Button$6(theme), Tooltip$6(theme), Backdrop$6(theme), Typography$6(theme), CssBaseline$6(theme), Autocomplete$6(theme), ToggleButton$6(theme), IconButton$6(theme), Picker$6(), Rating$6(theme), Menu$6(), Alert$6(theme), Link$6(), Badge$6());
 }
 
 var minfin = {
@@ -5006,7 +5021,7 @@ function Paper$7(theme) {
   };
 }
 
-function Input$7(theme) {
+function Input$8(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -5453,7 +5468,7 @@ function Badge$7() {
 
 //
 function ComponentsOverrides$7(theme) {
-  return Object.assign(AppBar$7(theme), Card$7(theme), Input$7(theme), Paper$7(theme), Button$7(theme), Tooltip$7(theme), Backdrop$7(theme), Typography$7(theme), CssBaseline$7(theme), Autocomplete$7(theme), ToggleButton$7(theme), IconButton$7(theme), Picker$7(), Rating$7(theme), Menu$7(), Alert$7(theme), Link$7(), Badge$7());
+  return Object.assign(AppBar$7(theme), Card$7(theme), Input$8(theme), Paper$7(theme), Button$7(theme), Tooltip$7(theme), Backdrop$7(theme), Typography$7(theme), CssBaseline$7(theme), Autocomplete$7(theme), ToggleButton$7(theme), IconButton$7(theme), Picker$7(), Rating$7(theme), Menu$7(), Alert$7(theme), Link$7(), Badge$7());
 }
 
 var pimu = {
@@ -5682,7 +5697,7 @@ function Paper$8(theme) {
   };
 }
 
-function Input$8(theme) {
+function Input$9(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -6129,7 +6144,7 @@ function Badge$8() {
 
 //
 function ComponentsOverrides$8(theme) {
-  return Object.assign(AppBar$8(theme), Card$8(theme), Input$8(theme), Paper$8(theme), Button$8(theme), Tooltip$8(theme), Backdrop$8(theme), Typography$8(theme), CssBaseline$8(theme), Autocomplete$8(theme), ToggleButton$8(theme), IconButton$8(theme), Picker$8(), Rating$8(theme), Menu$8(), Alert$8(theme), Link$8(), Badge$8());
+  return Object.assign(AppBar$8(theme), Card$8(theme), Input$9(theme), Paper$8(theme), Button$8(theme), Tooltip$8(theme), Backdrop$8(theme), Typography$8(theme), CssBaseline$8(theme), Autocomplete$8(theme), ToggleButton$8(theme), IconButton$8(theme), Picker$8(), Rating$8(theme), Menu$8(), Alert$8(theme), Link$8(), Badge$8());
 }
 
 var ncn = {
@@ -6358,7 +6373,7 @@ function Paper$9(theme) {
   };
 }
 
-function Input$9(theme) {
+function Input$a(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -6805,7 +6820,7 @@ function Badge$9() {
 
 //
 function ComponentsOverrides$9(theme) {
-  return Object.assign(AppBar$9(theme), Card$9(theme), Input$9(theme), Paper$9(theme), Button$9(theme), Tooltip$9(theme), Backdrop$9(theme), Typography$9(theme), CssBaseline$9(theme), Autocomplete$9(theme), ToggleButton$9(theme), IconButton$9(theme), Picker$9(), Rating$9(theme), Menu$9(), Alert$9(theme), Link$9(), Badge$9());
+  return Object.assign(AppBar$9(theme), Card$9(theme), Input$a(theme), Paper$9(theme), Button$9(theme), Tooltip$9(theme), Backdrop$9(theme), Typography$9(theme), CssBaseline$9(theme), Autocomplete$9(theme), ToggleButton$9(theme), IconButton$9(theme), Picker$9(), Rating$9(theme), Menu$9(), Alert$9(theme), Link$9(), Badge$9());
 }
 
 var sibgmu = {
@@ -7041,7 +7056,7 @@ function Paper$a(theme) {
   };
 }
 
-function Input$a(theme) {
+function Input$b(theme) {
   return {
     MuiInput: {
       styleOverrides: {
@@ -7476,7 +7491,7 @@ function Badge$a() {
 
 //
 function ComponentsOverrides$a(theme) {
-  return Object.assign(AppBar$a(theme), Card$a(theme), Input$a(theme), Paper$a(theme), Button$a(theme), Tooltip$a(theme), Backdrop$a(theme), Typography$a(theme), CssBaseline$a(theme), Autocomplete$a(theme), ToggleButton$a(theme), IconButton$a(theme), Picker$a(), Rating$a(theme), Menu$a(), Alert$a(theme), Link$a(), Badge$a());
+  return Object.assign(AppBar$a(theme), Card$a(theme), Input$b(theme), Paper$a(theme), Button$a(theme), Tooltip$a(theme), Backdrop$a(theme), Typography$a(theme), CssBaseline$a(theme), Autocomplete$a(theme), ToggleButton$a(theme), IconButton$a(theme), Picker$a(), Rating$a(theme), Menu$a(), Alert$a(theme), Link$a(), Badge$a());
 }
 
 var mositalmed = {
@@ -7704,7 +7719,7 @@ function Paper$b(theme) {
   };
 }
 
-function Input$b(theme) {
+function Input$c(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -8154,7 +8169,7 @@ function Badge$b() {
 
 //
 function ComponentsOverrides$b(theme) {
-  return Object.assign(AppBar$b(theme), Card$b(theme), Input$b(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(theme), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
+  return Object.assign(AppBar$b(theme), Card$b(theme), Input$c(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(theme), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
 }
 
 var skyfert = {
@@ -8382,7 +8397,7 @@ function Paper$c(theme) {
   };
 }
 
-function Input$c(theme) {
+function Input$d(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -8831,9 +8846,24 @@ function Badge$c() {
   };
 }
 
+function Input$e(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$c(theme) {
-  return Object.assign(AppBar$c(theme), Card$c(theme), Input$c(theme), Paper$c(theme), Button$c(theme), Tooltip$c(theme), Backdrop$c(theme), Typography$c(theme), CssBaseline$c(theme), Autocomplete$c(theme), ToggleButton$c(theme), IconButton$c(theme), Picker$c(), Rating$c(theme), Menu$c(), Alert$c(theme), Link$c(), Badge$c());
+  return Object.assign(AppBar$c(theme), Card$c(theme), Input$d(theme), Paper$c(theme), Button$c(theme), Tooltip$c(theme), Backdrop$c(theme), Typography$c(theme), CssBaseline$c(theme), Autocomplete$c(theme), ToggleButton$c(theme), IconButton$c(theme), Picker$c(), Rating$c(theme), Menu$c(), Alert$c(theme), Link$c(), Badge$c(), Input$e(theme));
 }
 
 var white_fang = {
@@ -9069,7 +9099,7 @@ function Paper$d(theme) {
   };
 }
 
-function Input$d(theme) {
+function Input$f(theme) {
   return {
     MuiInput: {
       styleOverrides: {
@@ -9504,7 +9534,7 @@ function Badge$d() {
 
 //
 function ComponentsOverrides$d(theme) {
-  return Object.assign(AppBar$d(theme), Card$d(theme), Input$d(theme), Paper$d(theme), Button$d(theme), Tooltip$d(theme), Backdrop$d(theme), Typography$d(theme), CssBaseline$d(theme), Autocomplete$d(theme), ToggleButton$d(theme), IconButton$d(theme), Picker$d(), Rating$d(theme), Menu$d(), Alert$d(theme), Link$d(), Badge$d());
+  return Object.assign(AppBar$d(theme), Card$d(theme), Input$f(theme), Paper$d(theme), Button$d(theme), Tooltip$d(theme), Backdrop$d(theme), Typography$d(theme), CssBaseline$d(theme), Autocomplete$d(theme), ToggleButton$d(theme), IconButton$d(theme), Picker$d(), Rating$d(theme), Menu$d(), Alert$d(theme), Link$d(), Badge$d());
 }
 
 var kalinchenko = {
@@ -9513,9 +9543,695 @@ var kalinchenko = {
   componentsOverride: ComponentsOverrides$d
 };
 
+// ----------------------------------------------------------------------
+var lighterenRate$e = 1.5;
+var lightenRate$e = 7.5;
+var darkenRate$e = 15;
+var darkerRate$e = 30;
+var primary$e = '#0E2F76';
+var secondary$e = '#49649D';
+var warning$e = '#FF9690';
+var success$e = '#4DAE00';
+var info$e = '#398CB0';
+var error$e = '#FF4D75';
+var hero$e = '#F57069';
+var PRIMARY$e = {
+  lighter: /*#__PURE__*/tinycolor(primary$e).lighten(lighterenRate$e).toHexString(),
+  main: primary$e,
+  light: /*#__PURE__*/tinycolor(primary$e).lighten(lightenRate$e).toHexString(),
+  dark: /*#__PURE__*/tinycolor(primary$e).darken(darkenRate$e).toHexString(),
+  darker: /*#__PURE__*/tinycolor(primary$e).darken(darkerRate$e).toHexString(),
+  contrastText: '#fff'
+};
+var SECONDARY$e = {
+  lighter: '#5D9ED1',
+  main: secondary$e,
+  light: /*#__PURE__*/tinycolor(secondary$e).lighten(lightenRate$e).toHexString(),
+  dark: /*#__PURE__*/tinycolor(secondary$e).darken(darkenRate$e).toHexString(),
+  contrastText: '#D0F2FF',
+  darker: '#827657'
+};
+var INFO$e = {
+  lighter: '#D0F2FF',
+  main: info$e,
+  light: /*#__PURE__*/tinycolor(info$e).lighten(lightenRate$e).toHexString(),
+  dark: /*#__PURE__*/tinycolor(info$e).darken(darkenRate$e).toHexString(),
+  contrastText: '#fff',
+  darker: '#04297A'
+};
+var SUCCESS$e = {
+  lighter: '#E9FCD4',
+  main: success$e,
+  light: /*#__PURE__*/tinycolor(success$e).lighten(lightenRate$e).toHexString(),
+  dark: /*#__PURE__*/tinycolor(success$e).darken(darkenRate$e).toHexString(),
+  contrastText: '#ccc',
+  darker: '#08660D'
+};
+var WARNING$e = {
+  lighter: '#FFF7CD',
+  main: warning$e,
+  light: /*#__PURE__*/tinycolor(warning$e).lighten(lightenRate$e).toHexString(),
+  dark: /*#__PURE__*/tinycolor(warning$e).darken(darkenRate$e).toHexString(),
+  darker: '#7A4F01',
+  contrastText: GREY[800]
+};
+var ERROR$e = {
+  lighter: '#FFE7D9',
+  main: error$e,
+  light: /*#__PURE__*/tinycolor(error$e).lighten(lightenRate$e).toHexString(),
+  dark: /*#__PURE__*/tinycolor(error$e).darken(darkenRate$e).toHexString(),
+  darker: '#7A0C2E',
+  contrastText: '#fff'
+};
+var GRADIENTS$e = {
+  primary: /*#__PURE__*/createGradient(PRIMARY$e.light, PRIMARY$e.main),
+  info: /*#__PURE__*/createGradient(INFO$e.light, INFO$e.main),
+  success: /*#__PURE__*/createGradient(SUCCESS$e.light, SUCCESS$e.main),
+  warning: /*#__PURE__*/createGradient(WARNING$e.light, WARNING$e.main),
+  error: /*#__PURE__*/createGradient(ERROR$e.light, ERROR$e.main),
+  one: '#B5A788',
+  two: '#AA9161'
+};
+var palette$e = {
+  hero: hero$e,
+  primary: /*#__PURE__*/_extends({}, PRIMARY$e),
+  secondary: /*#__PURE__*/_extends({}, SECONDARY$e),
+  info: /*#__PURE__*/_extends({}, INFO$e),
+  success: /*#__PURE__*/_extends({}, SUCCESS$e),
+  warning: /*#__PURE__*/_extends({}, WARNING$e),
+  error: /*#__PURE__*/_extends({}, ERROR$e),
+  grey: GREY,
+  gradients: GRADIENTS$e,
+  divider: GREY[50024],
+  text: {
+    primary: GREY[800],
+    secondary: GREY[600],
+    boby2: GREY[600],
+    subtitle2: GREY[50080],
+    disabled: GREY[400]
+  },
+  background: {
+    paper: '#fff',
+    "default": '#fff',
+    neutral: GREY[200],
+    warning: '#C2C4CB',
+    error: '#D9DEEC',
+    info: '#F1F4FC',
+    infoGadient: /*#__PURE__*/createGradient(INFO$e.lighter, INFO$e.light),
+    success: '#FFEED6'
+  },
+  action: {
+    active: GREY[600],
+    hover: GREY[5008],
+    selected: GREY[50016],
+    disabled: GREY[50080],
+    disabledBackground: GREY[50024],
+    focus: GREY[50024],
+    hoverOpacity: 0.08,
+    disabledOpacity: 0.48,
+    toggle1: '#5D9ED1',
+    toggle2: '#5F79AE',
+    toggle3: '#fff',
+    toggle4: '#fff'
+  },
+  sideBar: {
+    color: '#7C7D80',
+    colorLeft: '#0B2660',
+    colorHover: '#5D9ED1',
+    colorActive: '#000000',
+    bg: '#fff'
+  },
+  baseButton: {
+    bgColor: ' linear-gradient(139.78deg, #0E2F76 3.01%, #0B2660 95.95%)',
+    shadow: '0px 4px 15px 0px rgba(35, 40, 48, 0.08)'
+  },
+  bgLight: {
+    one: '#F1F4FC',
+    two: '#F1FCF9'
+  },
+  shadows: {
+    card: '0px 8px 24px 0px rgba(0, 0, 0, 0.09)',
+    firstHover: '0px 8px 24px 0px rgba(0, 0, 0, 0.09)'
+  }
+};
+
+var FONT_PRIMARY$e = 'Avenir Next Cyr';
+var typography$e = {
+  fontFamily: FONT_PRIMARY$e,
+  fontWeightRegular: 400,
+  fontWeightMedium: 500,
+  fontWeightBold: 600,
+  h1: {
+    fontSize: '2.0rem',
+    fontWeight: 500
+  },
+  h2: {
+    fontSize: '1.7rem',
+    fontWeight: 500
+  },
+  h3: {
+    fontSize: '1.64rem',
+    fontWeight: 500
+  },
+  h4: {
+    fontSize: '1.5rem'
+  },
+  h5: {
+    fontSize: '1.285rem'
+  },
+  h6: {
+    fontSize: '1.05rem'
+  },
+  subtitle1: {
+    fontWeight: 400,
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(16)
+  },
+  subtitle2: {
+    fontWeight: 450,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  },
+  body1: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(16)
+  },
+  body2: {
+    fontWeight: 400,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  },
+  caption: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem(12)
+  },
+  // overline: {
+  //   fontWeight: 500,
+  //   lineHeight: 1.5,
+  //   fontSize: pxToRem(12),
+  //   letterSpacing: 1.1,
+  //   textTransform: 'uppercase',
+  // },
+  button: {
+    fontWeight: 500,
+    lineHeight: 24 / 14,
+    fontSize: /*#__PURE__*/pxToRem(14)
+  }
+};
+
+// ----------------------------------------------------------------------
+function Card$e(theme) {
+  return {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Paper$e(theme) {
+  return {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#FFFFFF",
+          backgroundSize: "cover",
+          boxSizing: "border-box",
+          boxShadow: theme.palette.shadows.card,
+          transition: "none"
+        }
+      }
+    }
+  };
+}
+
+function Input$g(theme) {
+  return {
+    MuiInput: {
+      styleOverrides: {
+        underline: {
+          '&:before': {
+            borderBottom: '1px solid rgb(196 196 196)'
+          },
+          '&:hover:not(.Mui-disabled):before': {
+            borderBottom: '2px solid rgb(97, 87, 255, 0.3)'
+          }
+        }
+      }
+    },
+    MuiFilledInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: alpha$1(theme.palette.grey[500], 0.12),
+          '&:hover': {
+            backgroundColor: alpha$1(theme.palette.grey[500], 0.16)
+          },
+          '&.Mui-focused': {
+            backgroundColor: theme.palette.action.focus
+          },
+          '&.Mui-disabled': {
+            backgroundColor: theme.palette.action.disabledBackground
+          }
+        },
+        underline: {
+          '&:before': {
+            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
+          }
+        }
+      }
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: theme.spacing(0.8),
+          backgroundColor: 'transparent',
+          '&.Mui-focused': {
+            backgroundColor: '#fff'
+          },
+          '& fieldset': {
+            borderColor: theme.palette.grey
+          },
+          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+            borderColor: alpha$1(theme.palette.primary.main, 0.2)
+          },
+          '&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: alpha$1(theme.palette.primary.main, 0.2)
+          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: theme.palette.primary.main,
+            borderWidth: '2px'
+          },
+          '&.Mui-focused fieldset': {
+            borderWidth: '2px'
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Button$e(theme) {
+  return {
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          textTransform: 'inherit'
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'inherit',
+          borderRadius: 5,
+          fontStyle: 'normal',
+          fontWeight: 500,
+          boxShadow: 'none',
+          border: 0,
+          '&:hover': {
+            border: 0,
+            background: 'transparent'
+          },
+          '&.Mui-disabled': {
+            background: theme.palette.baseButton.bgColor + " !important",
+            opacity: theme.palette.action.disabledOpacity,
+            color: '#fff !important'
+          },
+          '&.Mui-select': {
+            backgroundColor: theme.palette.primary.main,
+            color: '#fff',
+            border: '1px solid #bdbdbd'
+          }
+        },
+        containedPrimary: {
+          color: '#fff',
+          background: theme.palette.baseButton.bgColor,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
+            boxShadow: 'none'
+          }
+        },
+        containedSecondary: {
+          color: theme.palette.primary.main,
+          background: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            background: theme.palette.bgLight.two,
+            boxShadow: 'none'
+          }
+        },
+        outlinedPrimary: {
+          color: theme.palette.primary.main,
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
+          '&:hover': {
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: 'none'
+          }
+        },
+        outlinedInfo: {
+          color: theme.palette.info.main,
+          backgroundColor: '#fff',
+          boxShadow: 'none',
+          '&:hover': {
+            backgroundColor: '#fff',
+            color: theme.palette.info.dark
+          }
+        },
+        outlinedSuccess: {
+          color: theme.palette.primary.dark,
+          backgroundColor: theme.palette.success.light,
+          '&:hover': {
+            color: theme.palette.primary.darker,
+            backgroundColor: theme.palette.success.light,
+            boxShadow: 'none'
+          }
+        },
+        containedSuccess: {
+          color: '#fff',
+          backgroundColor: theme.palette.success.main,
+          '&:hover': {
+            backgroundColor: theme.palette.success.light,
+            boxShadow: 'none'
+          }
+        },
+        containedWarning: {
+          color: '#fff',
+          backgroundColor: theme.palette.warning.main,
+          '&:hover': {
+            backgroundColor: theme.palette.warning.light,
+            boxShadow: 'none'
+          }
+        },
+        containedInfo: {
+          color: '#fff',
+          backgroundColor: theme.palette.info.main,
+          '&:hover': {
+            backgroundColor: theme.palette.info.light,
+            boxShadow: 'none'
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Tooltip$e(theme) {
+  return {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          backgroundColor: theme.palette.grey[800]
+        },
+        arrow: {
+          color: theme.palette.grey[800]
+        }
+      }
+    }
+  };
+}
+
+function Backdrop$e(theme) {
+  var varLow = alpha$1(theme.palette.grey[900], 0.6);
+  var varHigh = alpha$1(theme.palette.grey[900], 0.9);
+  return {
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          //          backgroundColor: theme.palette.grey[600],
+          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          "&.MuiBackdrop-invisible": {
+            background: "transparent"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Typography$e(theme) {
+  return {
+    MuiTypography: {
+      styleOverrides: {
+        paragraph: {
+          marginBottom: theme.spacing(2)
+        },
+        gutterBottom: {
+          marginBottom: theme.spacing(2)
+        },
+        body2: {
+          color: theme.palette.text.boby2
+        },
+        caption: {
+          fontSize: 14
+        },
+        caption_date: {
+          fontSize: 13
+        },
+        subtitle2: {
+          color: theme.palette.text.subtitle2
+        }
+      }
+    }
+  };
+}
+
+function CssBaseline$e(theme) {
+  return {
+    MuiCssBaseline: {
+      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n      "
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Autocomplete$e(theme) {
+  return {
+    MuiAutocomplete: {
+      styleOverrides: {
+        paper: {
+          boxShadow: theme.palette.shadows.card
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function ToggleButton$e(theme) {
+  return {
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          padding: "0px 12px",
+          border: "1px solid " + theme.palette.action.toggle1,
+          width: "100%",
+          height: 42,
+          boxSizing: "border-box",
+          borderRadius: theme.spacing(0.6),
+          textTransform: "none",
+          fontStyle: "normal",
+          fontWeight: 500,
+          color: theme.palette.action.toggle2,
+          background: theme.palette.action.toggle3,
+          boxShadow: theme.palette.shadows.card,
+          "&:hover": {
+            color: theme.palette.action.toggle4,
+            background: theme.palette.action.toggle2 + " !important"
+          },
+          "&.Mui-selected": {
+            color: theme.palette.action.toggle4,
+            backgroundColor: theme.palette.action.toggle1
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function AppBar$e(theme) {
+  return {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none !important',
+          background: "background: linear-gradient(139.78deg, " + theme.palette.primary.main + " 3.01%, #0B2660 95.95%)"
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function IconButton$e(theme) {
+  return {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          "& span > svg": {
+            color: theme.palette.primary.main
+          }
+        }
+      }
+    }
+  };
+}
+
+function Picker$e() {
+  return {
+    MuiPickerStaticWrapper: {
+      styleOverrides: {
+        root: {
+          minWidth: 'auto',
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+    MuiCalendarPicker: {
+      styleOverrides: {
+        root: {
+          width: 300
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Rating$e(theme) {
+  return {
+    MuiRating: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.dark,
+          "& span > span": {
+            top: 0,
+            left: 0
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Menu$e() {
+  return {
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Alert$e(theme) {
+  return {
+    MuiAlert: {
+      styleOverrides: {
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        },
+        standardWarning: {
+          backgroundColor: theme.palette.background.warning,
+          icon: {
+            color: theme.palette.warning + " !important"
+          }
+        },
+        standardError: {
+          backgroundColor: theme.palette.background.error,
+          icon: {
+            color: theme.palette.error + " !important"
+          }
+        },
+        standardInfo: {
+          backgroundColor: theme.palette.background.info,
+          icon: {
+            color: theme.palette.info + " !important"
+          }
+        },
+        standardSuccess: {
+          backgroundColor: theme.palette.background.success,
+          icon: {
+            color: theme.palette.success + " !important"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Link$e() {
+  return {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none'
+        }
+      }
+    }
+  };
+}
+
+function Badge$e() {
+  return {
+    MuiBadge: {
+      styleOverrides: {
+        colorWarning: {
+          color: '#fff',
+          fontWeight: 500
+        }
+      }
+    }
+  };
+}
+
+function Input$h(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+//
+function ComponentsOverrides$e(theme) {
+  return Object.assign(AppBar$e(theme), Card$e(theme), Input$g(theme), Paper$e(theme), Button$e(theme), Tooltip$e(theme), Backdrop$e(theme), Typography$e(theme), CssBaseline$e(theme), Autocomplete$e(theme), ToggleButton$e(theme), IconButton$e(theme), Picker$e(), Rating$e(theme), Menu$e(), Alert$e(theme), Link$e(), Badge$e(), Input$h(theme));
+}
+
+var celt = {
+  palette: palette$e,
+  typography: typography$e,
+  componentsOverride: ComponentsOverrides$e
+};
+
 function getTheme(name) {
-  console.log("name", name);
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : name === "kalinchenko" ? kalinchenko : mobimed;
+  //console.log('name', name);
+  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : name === "kalinchenko" ? kalinchenko : name === "celt" ? celt : mobimed;
 }
 
 var makeCustomTheme = function makeCustomTheme(name) {
@@ -9542,7 +10258,7 @@ function ThemeProvider(_ref) {
     injectFirst: true
   }, /*#__PURE__*/React.createElement(ThemeProvider$1, {
     theme: customTheme
-  }, /*#__PURE__*/React.createElement(CssBaseline$e, null), children));
+  }, /*#__PURE__*/React.createElement(CssBaseline$f, null), children));
 }
 
 export default ThemeProvider;
