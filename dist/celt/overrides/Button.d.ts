@@ -1,4 +1,4 @@
-import { Theme } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 export default function Button(theme: Theme): {
     MuiButtonBase: {
         styleOverrides: {
@@ -16,16 +16,16 @@ export default function Button(theme: Theme): {
                 fontWeight: number;
                 boxShadow: string;
                 border: number;
-                '&:hover': {
+                "&:hover": {
                     border: number;
                     background: string;
                 };
-                '&.Mui-disabled': {
+                "&.Mui-disabled": {
                     background: string;
                     opacity: number;
                     color: string;
                 };
-                '&.Mui-select': {
+                "&.Mui-select": {
                     backgroundColor: string;
                     color: string;
                     border: string;
@@ -35,7 +35,7 @@ export default function Button(theme: Theme): {
                 color: string;
                 background: string;
                 boxShadow: string;
-                '&:hover': {
+                "&:hover": {
                     background: string;
                     opacity: number;
                     boxShadow: string;
@@ -45,7 +45,7 @@ export default function Button(theme: Theme): {
                 color: string;
                 background: string;
                 boxShadow: string;
-                '&:hover': {
+                "&:hover": {
                     background: string;
                     boxShadow: string;
                 };
@@ -54,7 +54,7 @@ export default function Button(theme: Theme): {
                 color: string;
                 backgroundColor: string;
                 boxShadow: string;
-                '&:hover': {
+                "&:hover": {
                     backgroundColor: string;
                     color: string;
                     boxShadow: string;
@@ -64,7 +64,7 @@ export default function Button(theme: Theme): {
                 color: string;
                 backgroundColor: string;
                 boxShadow: string;
-                '&:hover': {
+                "&:hover": {
                     backgroundColor: string;
                     color: string;
                 };
@@ -72,7 +72,7 @@ export default function Button(theme: Theme): {
             outlinedSuccess: {
                 color: string;
                 backgroundColor: string;
-                '&:hover': {
+                "&:hover": {
                     color: string;
                     backgroundColor: string;
                     boxShadow: string;
@@ -81,7 +81,7 @@ export default function Button(theme: Theme): {
             containedSuccess: {
                 color: string;
                 backgroundColor: string;
-                '&:hover': {
+                "&:hover": {
                     backgroundColor: string;
                     boxShadow: string;
                 };
@@ -89,7 +89,7 @@ export default function Button(theme: Theme): {
             containedWarning: {
                 color: string;
                 backgroundColor: string;
-                '&:hover': {
+                "&:hover": {
                     backgroundColor: string;
                     boxShadow: string;
                 };
@@ -97,7 +97,7 @@ export default function Button(theme: Theme): {
             containedInfo: {
                 color: string;
                 backgroundColor: string;
-                '&:hover': {
+                "&:hover": {
                     backgroundColor: string;
                     boxShadow: string;
                 };

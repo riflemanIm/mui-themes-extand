@@ -9548,60 +9548,60 @@ var lighterenRate$e = 1.5;
 var lightenRate$e = 7.5;
 var darkenRate$e = 15;
 var darkerRate$e = 30;
-var primary$e = '#0E2F76';
-var secondary$e = '#49649D';
-var warning$e = '#FF9690';
-var success$e = '#4DAE00';
-var info$e = '#398CB0';
-var error$e = '#FF4D75';
-var hero$e = '#F57069';
+var primary$e = "#0E2F76";
+var secondary$e = "#5D9ED1";
+var warning$e = "#FF9690";
+var success$e = "#4DAE00";
+var info$e = "#398CB0";
+var error$e = "#FF4D75";
+var hero$e = "#0E2F76";
 var PRIMARY$e = {
   lighter: /*#__PURE__*/tinycolor(primary$e).lighten(lighterenRate$e).toHexString(),
   main: primary$e,
   light: /*#__PURE__*/tinycolor(primary$e).lighten(lightenRate$e).toHexString(),
   dark: /*#__PURE__*/tinycolor(primary$e).darken(darkenRate$e).toHexString(),
   darker: /*#__PURE__*/tinycolor(primary$e).darken(darkerRate$e).toHexString(),
-  contrastText: '#fff'
+  contrastText: "#fff"
 };
 var SECONDARY$e = {
-  lighter: '#5D9ED1',
+  lighter: "#5D9ED1",
   main: secondary$e,
   light: /*#__PURE__*/tinycolor(secondary$e).lighten(lightenRate$e).toHexString(),
   dark: /*#__PURE__*/tinycolor(secondary$e).darken(darkenRate$e).toHexString(),
-  contrastText: '#D0F2FF',
-  darker: '#827657'
+  contrastText: "#D0F2FF",
+  darker: "#827657"
 };
 var INFO$e = {
-  lighter: '#D0F2FF',
+  lighter: "#D0F2FF",
   main: info$e,
   light: /*#__PURE__*/tinycolor(info$e).lighten(lightenRate$e).toHexString(),
   dark: /*#__PURE__*/tinycolor(info$e).darken(darkenRate$e).toHexString(),
-  contrastText: '#fff',
-  darker: '#04297A'
+  contrastText: "#fff",
+  darker: "#04297A"
 };
 var SUCCESS$e = {
-  lighter: '#E9FCD4',
+  lighter: "#E9FCD4",
   main: success$e,
   light: /*#__PURE__*/tinycolor(success$e).lighten(lightenRate$e).toHexString(),
   dark: /*#__PURE__*/tinycolor(success$e).darken(darkenRate$e).toHexString(),
-  contrastText: '#ccc',
-  darker: '#08660D'
+  contrastText: "#ccc",
+  darker: "#08660D"
 };
 var WARNING$e = {
-  lighter: '#FFF7CD',
+  lighter: "#FFF7CD",
   main: warning$e,
   light: /*#__PURE__*/tinycolor(warning$e).lighten(lightenRate$e).toHexString(),
   dark: /*#__PURE__*/tinycolor(warning$e).darken(darkenRate$e).toHexString(),
-  darker: '#7A4F01',
+  darker: "#7A4F01",
   contrastText: GREY[800]
 };
 var ERROR$e = {
-  lighter: '#FFE7D9',
+  lighter: "#FFE7D9",
   main: error$e,
   light: /*#__PURE__*/tinycolor(error$e).lighten(lightenRate$e).toHexString(),
   dark: /*#__PURE__*/tinycolor(error$e).darken(darkenRate$e).toHexString(),
-  darker: '#7A0C2E',
-  contrastText: '#fff'
+  darker: "#7A0C2E",
+  contrastText: "#fff"
 };
 var GRADIENTS$e = {
   primary: /*#__PURE__*/createGradient(PRIMARY$e.light, PRIMARY$e.main),
@@ -9609,8 +9609,8 @@ var GRADIENTS$e = {
   success: /*#__PURE__*/createGradient(SUCCESS$e.light, SUCCESS$e.main),
   warning: /*#__PURE__*/createGradient(WARNING$e.light, WARNING$e.main),
   error: /*#__PURE__*/createGradient(ERROR$e.light, ERROR$e.main),
-  one: '#B5A788',
-  two: '#AA9161'
+  one: "#B5A788",
+  two: "#AA9161"
 };
 var palette$e = {
   hero: hero$e,
@@ -9631,14 +9631,14 @@ var palette$e = {
     disabled: GREY[400]
   },
   background: {
-    paper: '#fff',
-    "default": '#fff',
+    paper: "#fff",
+    "default": "#fff",
     neutral: GREY[200],
-    warning: '#C2C4CB',
-    error: '#D9DEEC',
-    info: '#F1F4FC',
+    warning: "#F7F7F8",
+    error: "#D9DEEC",
+    info: "#F1F4FC",
     infoGadient: /*#__PURE__*/createGradient(INFO$e.lighter, INFO$e.light),
-    success: '#FFEED6'
+    success: "#FFEED6"
   },
   action: {
     active: GREY[600],
@@ -9649,29 +9649,29 @@ var palette$e = {
     focus: GREY[50024],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
-    toggle1: '#5D9ED1',
-    toggle2: '#5F79AE',
-    toggle3: '#fff',
-    toggle4: '#fff'
+    toggle1: "#5D9ED1",
+    toggle2: "#5F79AE",
+    toggle3: "#fff",
+    toggle4: "#fff"
   },
   sideBar: {
-    color: '#7C7D80',
-    colorLeft: '#0B2660',
-    colorHover: '#5D9ED1',
-    colorActive: '#000000',
-    bg: '#fff'
+    color: "#7C7D80",
+    colorLeft: "#0B2660",
+    colorHover: "#5D9ED1",
+    colorActive: "#000000",
+    bg: "#fff"
   },
   baseButton: {
-    bgColor: ' linear-gradient(139.78deg, #0E2F76 3.01%, #0B2660 95.95%)',
-    shadow: '0px 4px 15px 0px rgba(35, 40, 48, 0.08)'
+    bgColor: " linear-gradient(139.78deg, #0E2F76 3.01%, #0B2660 95.95%)",
+    shadow: "0px 4px 15px 0px rgba(35, 40, 48, 0.08)"
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#F1FCF9'
+    one: "#F1F4FC",
+    two: "#F1FCF9"
   },
   shadows: {
-    card: '0px 8px 24px 0px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 8px 24px 0px rgba(0, 0, 0, 0.09)'
+    card: "0px 8px 24px 0px rgba(0, 0, 0, 0.09)",
+    firstHover: "0px 8px 24px 0px rgba(0, 0, 0, 0.09)"
   }
 };
 
@@ -9841,103 +9841,103 @@ function Button$e(theme) {
     MuiButtonBase: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit'
+          textTransform: "inherit"
         }
       }
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'inherit',
+          textTransform: "inherit",
           borderRadius: 5,
-          fontStyle: 'normal',
+          fontStyle: "normal",
           fontWeight: 500,
-          boxShadow: 'none',
+          boxShadow: "none",
           border: 0,
-          '&:hover': {
+          "&:hover": {
             border: 0,
-            background: 'transparent'
+            background: "transparent"
           },
-          '&.Mui-disabled': {
+          "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
             opacity: theme.palette.action.disabledOpacity,
-            color: '#fff !important'
+            color: "#fff !important"
           },
-          '&.Mui-select': {
+          "&.Mui-select": {
             backgroundColor: theme.palette.primary.main,
-            color: '#fff',
-            border: '1px solid #bdbdbd'
+            color: "#fff",
+            border: "1px solid #bdbdbd"
           }
         },
         containedPrimary: {
-          color: '#fff',
+          color: "#fff",
           background: theme.palette.baseButton.bgColor,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.baseButton.bgColor,
             opacity: 0.8,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSecondary: {
-          color: theme.palette.primary.main,
+          color: theme.palette.secondary.main,
           background: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             background: theme.palette.bgLight.two,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedPrimary: {
           color: theme.palette.primary.main,
           backgroundColor: theme.palette.bgLight.one,
           boxShadow: theme.palette.baseButton.shadow,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.bgLight.two,
             color: theme.palette.primary.dark,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         outlinedInfo: {
           color: theme.palette.info.main,
-          backgroundColor: '#fff',
-          boxShadow: 'none',
-          '&:hover': {
-            backgroundColor: '#fff',
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
             color: theme.palette.info.dark
           }
         },
         outlinedSuccess: {
           color: theme.palette.primary.dark,
           backgroundColor: theme.palette.success.light,
-          '&:hover': {
+          "&:hover": {
             color: theme.palette.primary.darker,
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedSuccess: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.success.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.success.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedWarning: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.warning.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.warning.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         },
         containedInfo: {
-          color: '#fff',
+          color: "#fff",
           backgroundColor: theme.palette.info.main,
-          '&:hover': {
+          "&:hover": {
             backgroundColor: theme.palette.info.light,
-            boxShadow: 'none'
+            boxShadow: "none"
           }
         }
       }
