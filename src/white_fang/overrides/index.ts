@@ -18,6 +18,8 @@ import Menu from './Menu';
 import Alert from './Alert';
 import Link from './Link';
 import Badge from './Badge';
+import Tab from './Tab';
+
 // ----------------------------------------------------------------------
 
 import { Theme } from '@mui/material/styles';
@@ -42,5 +44,6 @@ export default function ComponentsOverrides(theme: Theme) {
     Alert(theme),
     Link(),
     Badge(),
+    Tab(theme),
   );
 }

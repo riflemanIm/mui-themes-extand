@@ -53,7 +53,7 @@ export default function Input(theme: Theme) {
             borderColor: alpha(theme.palette.primary.main, 0.2),
           },
           '&:hover .MuiOutlinedInput-notchedOutline': {
-            borderColor: theme.palette.primary.dark, // root border color
+            borderColor: theme.palette.primary.main, // root border color
             borderWidth: '2px',
           },
           '&.Mui-focused fieldset': {
