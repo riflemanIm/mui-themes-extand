@@ -145,7 +145,7 @@ const palette = {
   },
   shadows: {
     card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)',
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)',
   },
 };
 

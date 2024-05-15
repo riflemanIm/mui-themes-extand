@@ -174,7 +174,7 @@ var palette = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -860,7 +860,7 @@ var palette$1 = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(103 162 171, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -1538,7 +1538,7 @@ var palette$2 = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(237 170 33, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -2215,7 +2215,7 @@ var palette$3 = {
   },
   shadows: {
     card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -2898,7 +2898,7 @@ var palette$4 = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -3574,7 +3574,7 @@ var palette$5 = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -4244,7 +4244,7 @@ var palette$6 = {
   },
   baseButton: {
     bgColor: 'linear-gradient(139.78deg, #44A357 3.01%, #28933E 95.95%)',
-    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
+    shadow: "0px 1px 4px " + /*#__PURE__*/tinycolor(secondary$6).setAlpha(0.3).toRgbString()
   },
   bgLight: {
     one: '#F4F4F4',
@@ -4252,7 +4252,7 @@ var palette$6 = {
   },
   shadows: {
     card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -4928,7 +4928,7 @@ var palette$7 = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -5597,7 +5597,7 @@ var palette$8 = {
   },
   baseButton: {
     bgColor: 'linear-gradient(139.78deg, #2AB6CA 3.01%, #28909B 95.95%)',
-    shadow: '0px 3px 5px rgba(101, 101, 101, 0.2)'
+    shadow: "0px 1px 4px " + /*#__PURE__*/tinycolor(secondary$8).setAlpha(0.3).toRgbString()
   },
   bgLight: {
     one: '#F1FBFC',
@@ -5605,7 +5605,7 @@ var palette$8 = {
   },
   shadows: {
     card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -6281,7 +6281,7 @@ var palette$9 = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -6949,7 +6949,7 @@ var palette$a = {
   },
   baseButton: {
     bgColor: 'linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)',
-    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)'
+    shadow: "0px 1px 4px " + /*#__PURE__*/tinycolor(secondary$a).setAlpha(0.3).toRgbString()
   },
   bgLight: {
     one: '#F6F4F0',
@@ -6957,7 +6957,7 @@ var palette$a = {
   },
   shadows: {
     card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -7627,7 +7627,7 @@ var palette$b = {
   },
   shadows: {
     card: '0px 2px 35px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -8305,7 +8305,7 @@ var palette$c = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(101, 101, 101, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -9000,7 +9000,7 @@ var palette$d = {
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 2px 35px rgba(111, 102, 255, 0.15)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -9671,7 +9671,7 @@ var palette$e = {
   },
   shadows: {
     card: '0px 8px 24px 0px rgba(0, 0, 0, 0.09)',
-    firstHover: '0px 8px 24px 0px rgba(0, 0, 0, 0.09)'
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)'
   }
 };
 
@@ -10230,8 +10230,8 @@ var celt = {
 };
 
 function getTheme(name) {
-  //console.log("name", name);
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : name === "kalinchenko" ? kalinchenko : name === "celt" ? celt : mobimed;
+  //console.log('name', name);
+  return name === 'drAnna' ? drAnna : name === 'gms' ? gms : name === 'medincenter' ? medincenter : name === 'medswiss' ? medswiss : name === 'mediadoc' ? mediadoc : name === 'minfin' ? minfin : name === 'pimu' ? pimu : name === 'ncn' ? ncn : name === 'sibgmu' ? sibgmu : name === 'mositalmed' ? mositalmed : name === 'skyfert' ? skyfert : name === 'white_fang' ? white_fang : name === 'kalinchenko' ? kalinchenko : name === 'celt' ? celt : mobimed;
 }
 
 var makeCustomTheme = function makeCustomTheme(name) {

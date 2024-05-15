@@ -131,7 +131,9 @@ const palette = {
   baseButton: {
     bgColor:
       'linear-gradient(163.61deg, #B5A788 3.01%, #AA9161 95.95%)',
-    shadow: '0px 3px 5px rgba(0, 0, 0, 0.08)',
+    shadow: `0px 1px 4px ${tinycolor(secondary)
+      .setAlpha(0.3)
+      .toRgbString()}`,
   },
   bgLight: {
     one: '#F6F4F0',
@@ -139,7 +141,7 @@ const palette = {
   },
   shadows: {
     card: '0px 2.13072px 26.634px rgba(78, 72, 190, 0.08)',
-    firstHover: '0px 2px 35px rgba(0, 0, 0, 0.15)',
+    firstHover: '0px 8px 32px 0px rgba(0, 0, 0, 0.18)',
   },
 };
 
