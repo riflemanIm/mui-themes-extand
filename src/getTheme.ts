@@ -15,7 +15,7 @@ import kalinchenko from "./kalinchenko";
 import celt from "./celt";
 
 export default function getTheme(name?: string) {
-  //console.log('name', name);
+  //console.log("name", name);
   return name === "drAnna"
     ? drAnna
     : name === "gms"
