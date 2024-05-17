@@ -19,7 +19,7 @@ import Alert from './Alert';
 import Link from './Link';
 import Badge from './Badge';
 import Tab from './Tab';
-
+import Skeleton from './Skeleton';
 // ----------------------------------------------------------------------
 
 import { Theme } from '@mui/material/styles';
@@ -45,5 +45,6 @@ export default function ComponentsOverrides(theme: Theme) {
     Link(),
     Badge(),
     Tab(theme),
+    Skeleton(),
   );
 }
