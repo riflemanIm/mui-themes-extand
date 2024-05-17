@@ -721,9 +721,24 @@ function Input$1(theme) {
   };
 }
 
+// ----------------------------------------------------------------------
+function Skeleton() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides(theme) {
-  return Object.assign(AppBar(theme), Card(theme), Input(theme), Paper(theme), Button(theme), Tooltip(theme), Backdrop(theme), Typography(theme), CssBaseline(theme), Autocomplete(theme), ToggleButton(theme), IconButton(theme), Picker(), Rating(theme), Menu(), Alert(theme), Link(), Badge(), Input$1(theme));
+  return Object.assign(AppBar(theme), Card(theme), Input(theme), Paper(theme), Button(theme), Tooltip(theme), Backdrop(theme), Typography(theme), CssBaseline(theme), Autocomplete(theme), ToggleButton(theme), IconButton(theme), Picker(), Rating(theme), Menu(), Alert(theme), Link(), Badge(), Input$1(theme), Skeleton());
 }
 
 var mobimed = {
@@ -1399,9 +1414,39 @@ function Badge$1() {
   };
 }
 
+function Input$3(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$1() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$1(theme) {
-  return Object.assign(AppBar$1(theme), Card$1(theme), Input$2(theme), Paper$1(theme), Button$1(theme), Tooltip$1(theme), Backdrop$1(theme), Typography$1(theme), CssBaseline$1(theme), Autocomplete$1(theme), ToggleButton$1(theme), IconButton$1(theme), Picker$1(), Rating$1(theme), Menu$1(), Alert$1(theme), Link$1(), Badge$1());
+  return Object.assign(AppBar$1(theme), Card$1(theme), Input$2(theme), Paper$1(theme), Button$1(theme), Tooltip$1(theme), Backdrop$1(theme), Typography$1(theme), CssBaseline$1(theme), Autocomplete$1(theme), ToggleButton$1(theme), IconButton$1(theme), Picker$1(), Rating$1(theme), Menu$1(), Alert$1(theme), Link$1(), Badge$1(), Input$3(theme), Skeleton$1());
 }
 
 var drAnna = {
@@ -1630,7 +1675,7 @@ function Paper$2(theme) {
   };
 }
 
-function Input$3(theme) {
+function Input$4(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -2077,9 +2122,39 @@ function Badge$2() {
   };
 }
 
+function Input$5(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$2() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$2(theme) {
-  return Object.assign(AppBar$2(theme), Card$2(theme), Input$3(theme), Paper$2(theme), Button$2(theme), Tooltip$2(theme), Backdrop$2(theme), Typography$2(theme), CssBaseline$2(theme), Autocomplete$2(theme), ToggleButton$2(theme), IconButton$2(theme), Picker$2(), Rating$2(theme), Menu$2(), Alert$2(theme), Link$2(), Badge$2());
+  return Object.assign(AppBar$2(theme), Card$2(theme), Input$4(theme), Paper$2(theme), Button$2(theme), Tooltip$2(theme), Backdrop$2(theme), Typography$2(theme), CssBaseline$2(theme), Autocomplete$2(theme), ToggleButton$2(theme), IconButton$2(theme), Picker$2(), Rating$2(theme), Menu$2(), Alert$2(theme), Link$2(), Badge$2(), Input$5(theme), Skeleton$2());
 }
 
 var gms = {
@@ -2307,7 +2382,7 @@ function Paper$3(theme) {
   };
 }
 
-function Input$4(theme) {
+function Input$6(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -2759,9 +2834,39 @@ function Badge$3() {
   };
 }
 
+function Input$7(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$3() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$3(theme) {
-  return Object.assign(AppBar$3(theme), Card$3(theme), Input$4(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(theme), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3());
+  return Object.assign(AppBar$3(theme), Card$3(theme), Input$6(theme), Paper$3(theme), Button$3(theme), Tooltip$3(theme), Backdrop$3(theme), Typography$3(theme), CssBaseline$3(theme), Autocomplete$3(theme), ToggleButton$3(theme), IconButton$3(theme), Picker$3(), Rating$3(theme), Menu$3(), Alert$3(theme), Link$3(), Badge$3(), Input$7(theme), Skeleton$3());
 }
 
 var medincenter = {
@@ -2990,7 +3095,7 @@ function Paper$4(theme) {
   };
 }
 
-function Input$5(theme) {
+function Input$8(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -3435,9 +3540,39 @@ function Badge$4() {
   };
 }
 
+function Input$9(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$4() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$4(theme) {
-  return Object.assign(AppBar$4(theme), Card$4(theme), Input$5(theme), Paper$4(theme), Button$4(theme), Tooltip$4(theme), Backdrop$4(theme), Typography$4(theme), CssBaseline$4(theme), Autocomplete$4(theme), ToggleButton$4(theme), IconButton$4(theme), Picker$4(), Rating$4(theme), Menu$4(), Alert$4(theme), Link$4(), Badge$4());
+  return Object.assign(AppBar$4(theme), Card$4(theme), Input$8(theme), Paper$4(theme), Button$4(theme), Tooltip$4(theme), Backdrop$4(theme), Typography$4(theme), CssBaseline$4(theme), Autocomplete$4(theme), ToggleButton$4(theme), IconButton$4(theme), Picker$4(), Rating$4(theme), Menu$4(), Alert$4(theme), Link$4(), Badge$4(), Input$9(theme), Skeleton$4());
 }
 
 var medswiss = {
@@ -3666,7 +3801,7 @@ function Paper$5(theme) {
   };
 }
 
-function Input$6(theme) {
+function Input$a(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -4113,9 +4248,39 @@ function Badge$5() {
   };
 }
 
+function Input$b(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$5() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$5(theme) {
-  return Object.assign(AppBar$5(theme), Card$5(theme), Input$6(theme), Paper$5(theme), Button$5(theme), Tooltip$5(theme), Backdrop$5(theme), Typography$5(theme), CssBaseline$5(theme), Autocomplete$5(theme), ToggleButton$5(theme), IconButton$5(theme), Picker$5(), Rating$5(theme), Menu$5(), Alert$5(theme), Link$5(), Badge$5());
+  return Object.assign(AppBar$5(theme), Card$5(theme), Input$a(theme), Paper$5(theme), Button$5(theme), Tooltip$5(theme), Backdrop$5(theme), Typography$5(theme), CssBaseline$5(theme), Autocomplete$5(theme), ToggleButton$5(theme), IconButton$5(theme), Picker$5(), Rating$5(theme), Menu$5(), Alert$5(theme), Link$5(), Badge$5(), Input$b(theme), Skeleton$5());
 }
 
 var mediadoc = {
@@ -4344,7 +4509,7 @@ function Paper$6(theme) {
   };
 }
 
-function Input$7(theme) {
+function Input$c(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -4789,9 +4954,39 @@ function Badge$6() {
   };
 }
 
+function Input$d(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$6() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$6(theme) {
-  return Object.assign(AppBar$6(theme), Card$6(theme), Input$7(theme), Paper$6(theme), Button$6(theme), Tooltip$6(theme), Backdrop$6(theme), Typography$6(theme), CssBaseline$6(theme), Autocomplete$6(theme), ToggleButton$6(theme), IconButton$6(theme), Picker$6(), Rating$6(theme), Menu$6(), Alert$6(theme), Link$6(), Badge$6());
+  return Object.assign(AppBar$6(theme), Card$6(theme), Input$c(theme), Paper$6(theme), Button$6(theme), Tooltip$6(theme), Backdrop$6(theme), Typography$6(theme), CssBaseline$6(theme), Autocomplete$6(theme), ToggleButton$6(theme), IconButton$6(theme), Picker$6(), Rating$6(theme), Menu$6(), Alert$6(theme), Link$6(), Badge$6(), Input$d(theme), Skeleton$6());
 }
 
 var minfin = {
@@ -5021,7 +5216,7 @@ function Paper$7(theme) {
   };
 }
 
-function Input$8(theme) {
+function Input$e(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -5466,9 +5661,39 @@ function Badge$7() {
   };
 }
 
+function Input$f(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$7() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$7(theme) {
-  return Object.assign(AppBar$7(theme), Card$7(theme), Input$8(theme), Paper$7(theme), Button$7(theme), Tooltip$7(theme), Backdrop$7(theme), Typography$7(theme), CssBaseline$7(theme), Autocomplete$7(theme), ToggleButton$7(theme), IconButton$7(theme), Picker$7(), Rating$7(theme), Menu$7(), Alert$7(theme), Link$7(), Badge$7());
+  return Object.assign(AppBar$7(theme), Card$7(theme), Input$e(theme), Paper$7(theme), Button$7(theme), Tooltip$7(theme), Backdrop$7(theme), Typography$7(theme), CssBaseline$7(theme), Autocomplete$7(theme), ToggleButton$7(theme), IconButton$7(theme), Picker$7(), Rating$7(theme), Menu$7(), Alert$7(theme), Link$7(), Badge$7(), Input$f(theme), Skeleton$7());
 }
 
 var pimu = {
@@ -5697,7 +5922,7 @@ function Paper$8(theme) {
   };
 }
 
-function Input$9(theme) {
+function Input$g(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -6142,9 +6367,39 @@ function Badge$8() {
   };
 }
 
+function Input$h(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$8() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$8(theme) {
-  return Object.assign(AppBar$8(theme), Card$8(theme), Input$9(theme), Paper$8(theme), Button$8(theme), Tooltip$8(theme), Backdrop$8(theme), Typography$8(theme), CssBaseline$8(theme), Autocomplete$8(theme), ToggleButton$8(theme), IconButton$8(theme), Picker$8(), Rating$8(theme), Menu$8(), Alert$8(theme), Link$8(), Badge$8());
+  return Object.assign(AppBar$8(theme), Card$8(theme), Input$g(theme), Paper$8(theme), Button$8(theme), Tooltip$8(theme), Backdrop$8(theme), Typography$8(theme), CssBaseline$8(theme), Autocomplete$8(theme), ToggleButton$8(theme), IconButton$8(theme), Picker$8(), Rating$8(theme), Menu$8(), Alert$8(theme), Link$8(), Badge$8(), Input$h(theme), Skeleton$8());
 }
 
 var ncn = {
@@ -6373,7 +6628,7 @@ function Paper$9(theme) {
   };
 }
 
-function Input$a(theme) {
+function Input$i(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -6818,9 +7073,39 @@ function Badge$9() {
   };
 }
 
+function Input$j(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$9() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$9(theme) {
-  return Object.assign(AppBar$9(theme), Card$9(theme), Input$a(theme), Paper$9(theme), Button$9(theme), Tooltip$9(theme), Backdrop$9(theme), Typography$9(theme), CssBaseline$9(theme), Autocomplete$9(theme), ToggleButton$9(theme), IconButton$9(theme), Picker$9(), Rating$9(theme), Menu$9(), Alert$9(theme), Link$9(), Badge$9());
+  return Object.assign(AppBar$9(theme), Card$9(theme), Input$i(theme), Paper$9(theme), Button$9(theme), Tooltip$9(theme), Backdrop$9(theme), Typography$9(theme), CssBaseline$9(theme), Autocomplete$9(theme), ToggleButton$9(theme), IconButton$9(theme), Picker$9(), Rating$9(theme), Menu$9(), Alert$9(theme), Link$9(), Badge$9(), Input$j(theme), Skeleton$9());
 }
 
 var sibgmu = {
@@ -7056,7 +7341,7 @@ function Paper$a(theme) {
   };
 }
 
-function Input$b(theme) {
+function Input$k(theme) {
   return {
     MuiInput: {
       styleOverrides: {
@@ -7489,9 +7774,39 @@ function Badge$a() {
   };
 }
 
+function Input$l(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$a() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$a(theme) {
-  return Object.assign(AppBar$a(theme), Card$a(theme), Input$b(theme), Paper$a(theme), Button$a(theme), Tooltip$a(theme), Backdrop$a(theme), Typography$a(theme), CssBaseline$a(theme), Autocomplete$a(theme), ToggleButton$a(theme), IconButton$a(theme), Picker$a(), Rating$a(theme), Menu$a(), Alert$a(theme), Link$a(), Badge$a());
+  return Object.assign(AppBar$a(theme), Card$a(theme), Input$k(theme), Paper$a(theme), Button$a(theme), Tooltip$a(theme), Backdrop$a(theme), Typography$a(theme), CssBaseline$a(theme), Autocomplete$a(theme), ToggleButton$a(theme), IconButton$a(theme), Picker$a(), Rating$a(theme), Menu$a(), Alert$a(theme), Link$a(), Badge$a(), Input$l(theme), Skeleton$a());
 }
 
 var mositalmed = {
@@ -7719,7 +8034,7 @@ function Paper$b(theme) {
   };
 }
 
-function Input$c(theme) {
+function Input$m(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -8167,9 +8482,39 @@ function Badge$b() {
   };
 }
 
+function Input$n(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$b() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$b(theme) {
-  return Object.assign(AppBar$b(theme), Card$b(theme), Input$c(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(theme), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b());
+  return Object.assign(AppBar$b(theme), Card$b(theme), Input$m(theme), Paper$b(theme), Button$b(theme), Tooltip$b(theme), Backdrop$b(theme), Typography$b(theme), CssBaseline$b(theme), Autocomplete$b(theme), ToggleButton$b(theme), IconButton$b(theme), Picker$b(), Rating$b(theme), Menu$b(), Alert$b(theme), Link$b(), Badge$b(), Input$n(theme), Skeleton$b());
 }
 
 var skyfert = {
@@ -8397,7 +8742,7 @@ function Paper$c(theme) {
   };
 }
 
-function Input$d(theme) {
+function Input$o(theme) {
   return {
     // MuiInputBase: {
     //   styleOverrides: {
@@ -8846,7 +9191,7 @@ function Badge$c() {
   };
 }
 
-function Input$e(theme) {
+function Input$p(theme) {
   return {
     MuiTab: {
       styleOverrides: {
@@ -8861,9 +9206,24 @@ function Input$e(theme) {
   };
 }
 
+// ----------------------------------------------------------------------
+function Skeleton$c() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$c(theme) {
-  return Object.assign(AppBar$c(theme), Card$c(theme), Input$d(theme), Paper$c(theme), Button$c(theme), Tooltip$c(theme), Backdrop$c(theme), Typography$c(theme), CssBaseline$c(theme), Autocomplete$c(theme), ToggleButton$c(theme), IconButton$c(theme), Picker$c(), Rating$c(theme), Menu$c(), Alert$c(theme), Link$c(), Badge$c(), Input$e(theme));
+  return Object.assign(AppBar$c(theme), Card$c(theme), Input$o(theme), Paper$c(theme), Button$c(theme), Tooltip$c(theme), Backdrop$c(theme), Typography$c(theme), CssBaseline$c(theme), Autocomplete$c(theme), ToggleButton$c(theme), IconButton$c(theme), Picker$c(), Rating$c(theme), Menu$c(), Alert$c(theme), Link$c(), Badge$c(), Input$p(theme), Skeleton$c());
 }
 
 var white_fang = {
@@ -9099,7 +9459,7 @@ function Paper$d(theme) {
   };
 }
 
-function Input$f(theme) {
+function Input$q(theme) {
   return {
     MuiInput: {
       styleOverrides: {
@@ -9532,9 +9892,39 @@ function Badge$d() {
   };
 }
 
+function Input$r(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          '&.Mui-selected': {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$d() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$d(theme) {
-  return Object.assign(AppBar$d(theme), Card$d(theme), Input$f(theme), Paper$d(theme), Button$d(theme), Tooltip$d(theme), Backdrop$d(theme), Typography$d(theme), CssBaseline$d(theme), Autocomplete$d(theme), ToggleButton$d(theme), IconButton$d(theme), Picker$d(), Rating$d(theme), Menu$d(), Alert$d(theme), Link$d(), Badge$d());
+  return Object.assign(AppBar$d(theme), Card$d(theme), Input$q(theme), Paper$d(theme), Button$d(theme), Tooltip$d(theme), Backdrop$d(theme), Typography$d(theme), CssBaseline$d(theme), Autocomplete$d(theme), ToggleButton$d(theme), IconButton$d(theme), Picker$d(), Rating$d(theme), Menu$d(), Alert$d(theme), Link$d(), Badge$d(), Input$r(theme), Skeleton$d());
 }
 
 var kalinchenko = {
@@ -9770,7 +10160,7 @@ function Paper$e(theme) {
   };
 }
 
-function Input$g(theme) {
+function Input$s(theme) {
   return {
     MuiInput: {
       styleOverrides: {
@@ -10203,7 +10593,7 @@ function Badge$e() {
   };
 }
 
-function Input$h(theme) {
+function Input$t(theme) {
   return {
     MuiTab: {
       styleOverrides: {
@@ -10218,9 +10608,24 @@ function Input$h(theme) {
   };
 }
 
+// ----------------------------------------------------------------------
+function Skeleton$e() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          }
+        }
+      }
+    }
+  };
+}
+
 //
 function ComponentsOverrides$e(theme) {
-  return Object.assign(AppBar$e(theme), Card$e(theme), Input$g(theme), Paper$e(theme), Button$e(theme), Tooltip$e(theme), Backdrop$e(theme), Typography$e(theme), CssBaseline$e(theme), Autocomplete$e(theme), ToggleButton$e(theme), IconButton$e(theme), Picker$e(), Rating$e(theme), Menu$e(), Alert$e(theme), Link$e(), Badge$e(), Input$h(theme));
+  return Object.assign(AppBar$e(theme), Card$e(theme), Input$s(theme), Paper$e(theme), Button$e(theme), Tooltip$e(theme), Backdrop$e(theme), Typography$e(theme), CssBaseline$e(theme), Autocomplete$e(theme), ToggleButton$e(theme), IconButton$e(theme), Picker$e(), Rating$e(theme), Menu$e(), Alert$e(theme), Link$e(), Badge$e(), Input$t(theme), Skeleton$e());
 }
 
 var celt = {
