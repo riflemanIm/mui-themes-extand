@@ -5,12 +5,12 @@ export default function Skeleton() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
+          "&::after": {
             background:
-              'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) ',
-          },
-        },
-      },
-    },
+              "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          }
+        }
+      }
+    }
   };
 }
