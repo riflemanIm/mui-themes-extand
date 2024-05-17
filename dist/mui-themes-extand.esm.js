@@ -727,8 +727,8 @@ function Skeleton() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -1435,8 +1435,8 @@ function Skeleton$1() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -2143,8 +2143,8 @@ function Skeleton$2() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -2855,8 +2855,8 @@ function Skeleton$3() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -3561,8 +3561,8 @@ function Skeleton$4() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -4269,8 +4269,8 @@ function Skeleton$5() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -4975,8 +4975,8 @@ function Skeleton$6() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -5682,8 +5682,8 @@ function Skeleton$7() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -6388,8 +6388,8 @@ function Skeleton$8() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -7094,8 +7094,8 @@ function Skeleton$9() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -7795,8 +7795,8 @@ function Skeleton$a() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -8503,8 +8503,8 @@ function Skeleton$b() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -9212,8 +9212,8 @@ function Skeleton$c() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -9913,8 +9913,8 @@ function Skeleton$d() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
@@ -10614,8 +10614,8 @@ function Skeleton$e() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          '&::after': {
-            background: 'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+          "&::after": {
+            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
           }
         }
       }
