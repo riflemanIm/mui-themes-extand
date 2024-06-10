@@ -176,8 +176,8 @@ var palette = {
     shadow: "0px 1px 4px " + /*#__PURE__*/tinycolor(secondary).setAlpha(0.3).toRgbString()
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#efefef'
+    one: '#F1FCF9',
+    two: '#F1F4FC'
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
@@ -3711,8 +3711,8 @@ var palette$5 = {
     shadow: "0px 1px 4px " + /*#__PURE__*/tinycolor(secondary$5).setAlpha(0.3).toRgbString()
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#efefef'
+    one: '#F1FCF9',
+    two: '#F1F4FC'
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
