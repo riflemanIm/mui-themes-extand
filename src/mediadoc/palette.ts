@@ -138,8 +138,8 @@ const palette = {
       .toRgbString()}`,
   },
   bgLight: {
-    one: '#F1F4FC',
-    two: '#efefef',
+    one: '#F1FCF9',
+    two: '#F1F4FC',
   },
   shadows: {
     card: '0px 2px 24px rgba(0, 0, 0, 0.09)',
