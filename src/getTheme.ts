@@ -1,48 +1,51 @@
-import mobimed from './mobimed';
-import drAnna from './drAnna';
-import gms from './gms';
-import medincenter from './medincenter';
-import medswiss from './medswiss';
-import mediadoc from './mediadoc';
-import minfin from './minfin';
-import pimu from './pimu';
-import ncn from './ncn';
-import sibgmu from './sibgmu';
-import mositalmed from './mositalmed';
-import skyfert from './skyfert';
-import white_fang from './white_fang';
-import kalinchenko from './kalinchenko';
-import celt from './celt';
+import mobimed from "./mobimed";
+import drAnna from "./drAnna";
+import gms from "./gms";
+import medincenter from "./medincenter";
+import medswiss from "./medswiss";
+import mediadoc from "./mediadoc";
+import minfin from "./minfin";
+import pimu from "./pimu";
+import ncn from "./ncn";
+import sibgmu from "./sibgmu";
+import mositalmed from "./mositalmed";
+import skyfert from "./skyfert";
+import white_fang from "./white_fang";
+import kalinchenko from "./kalinchenko";
+import celt from "./celt";
+import vetcenter from "./vetcenter";
 
 export default function getTheme(name?: string) {
   //console.log('name', name);
-  return name === 'drAnna'
+  return name === "drAnna"
     ? drAnna
-    : name === 'gms'
+    : name === "gms"
     ? gms
-    : name === 'medincenter'
+    : name === "medincenter"
     ? medincenter
-    : name === 'medswiss'
+    : name === "medswiss"
     ? medswiss
-    : name === 'mediadoc'
+    : name === "mediadoc"
     ? mediadoc
-    : name === 'minfin'
+    : name === "minfin"
     ? minfin
-    : name === 'pimu'
+    : name === "pimu"
     ? pimu
-    : name === 'ncn'
+    : name === "ncn"
     ? ncn
-    : name === 'sibgmu'
+    : name === "sibgmu"
     ? sibgmu
-    : name === 'mositalmed'
+    : name === "mositalmed"
     ? mositalmed
-    : name === 'skyfert'
+    : name === "skyfert"
     ? skyfert
-    : name === 'white_fang'
+    : name === "white_fang"
     ? white_fang
-    : name === 'kalinchenko'
+    : name === "kalinchenko"
     ? kalinchenko
-    : name === 'celt'
+    : name === "celt"
     ? celt
+    : name === "vetcenter"
+    ? vetcenter
     : mobimed;
 }
