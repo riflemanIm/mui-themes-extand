@@ -1,7 +1,7 @@
 {
   "name": "mui-themes-extand",
   "version": "1.8.8",
-  "description": "Boilerplate for extends mui5 themes ",
+  "description": "Boilerplate for extends MUI6 themes",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/riflemanIm/mui-themes-extand#readme",
   "dependencies": {
-    "@mui/material": "^5.14.15",
-    "@mui/styles": "^5.14.15",
+    "@mui/material": "^6.0.1",
+    "@mui/styles": "^6.0.1",
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {
@@ -38,7 +38,6 @@
     "@rollup/plugin-url": "^8.0.2",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
-    "@types/react-router-dom": "^5.3.3",
     "@types/tinycolor2": "^1.4.6",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
@@ -48,8 +47,8 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.38",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-postcss": "^4.0.2",
