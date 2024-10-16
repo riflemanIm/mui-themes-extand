@@ -146,7 +146,7 @@ var palette = {
     neutral: GREY[200],
     warning: "#FEF1F0",
     error: "#ECECEC",
-    info: "rgba(97, 87, 255, 0.1);",
+    info: "#F1F4FC",
     infoGadient: /*#__PURE__*/createGradient(INFO.lighter, INFO.light),
     success: "#FFE7CE"
   },
