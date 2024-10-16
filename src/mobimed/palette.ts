@@ -28,7 +28,7 @@ const PRIMARY = {
   darker: tinycolor(primary)
     .darken(darkerRate)
     .toHexString(),
-  contrastText: "#fff"
+  contrastText: "#fff",
 };
 
 const SECONDARY = {
@@ -43,7 +43,7 @@ const SECONDARY = {
   darker: tinycolor(primary)
     .darken(darkerRate)
     .toHexString(),
-  contrastText: "#ccc"
+  contrastText: "#ccc",
 };
 
 const INFO = {
@@ -56,7 +56,7 @@ const INFO = {
     .darken(darkenRate)
     .toHexString(),
   contrastText: "#fff",
-  darker: "#04297A"
+  darker: "#04297A",
 };
 
 const SUCCESS = {
@@ -69,7 +69,7 @@ const SUCCESS = {
     .darken(darkenRate)
     .toHexString(),
   contrastText: "#ccc",
-  darker: "#08660D"
+  darker: "#08660D",
 };
 
 const WARNING = {
@@ -82,7 +82,7 @@ const WARNING = {
     .darken(darkenRate)
     .toHexString(),
   darker: "#7A4F01",
-  contrastText: GREY[800]
+  contrastText: GREY[800],
 };
 
 const ERROR = {
@@ -95,7 +95,7 @@ const ERROR = {
     .darken(darkenRate)
     .toHexString(),
   darker: "#7A0C2E",
-  contrastText: "#fff"
+  contrastText: "#fff",
 };
 
 const GRADIENTS = {
@@ -105,7 +105,7 @@ const GRADIENTS = {
   warning: createGradient(WARNING.light, WARNING.main),
   error: createGradient(ERROR.light, ERROR.main),
   one: "#7385FF",
-  two: "#584DFF"
+  two: "#584DFF",
 };
 
 const palette = {
@@ -125,7 +125,7 @@ const palette = {
     secondary: GREY[600],
     boby2: GREY[600],
     subtitle2: GREY[500_80],
-    disabled: GREY[400]
+    disabled: GREY[400],
   },
   background: {
     paper: "#fff",
@@ -133,9 +133,9 @@ const palette = {
     neutral: GREY[200],
     warning: "#FEF1F0",
     error: "#ECECEC",
-    info: "rgba(97, 87, 255, 0.1);",
+    info: "#F1F4FC",
     infoGadient: createGradient(INFO.lighter, INFO.light),
-    success: "#FFE7CE"
+    success: "#FFE7CE",
   },
   action: {
     active: GREY[600],
@@ -149,29 +149,29 @@ const palette = {
     toggle1: "#828EFA",
     toggle2: "#6157FF",
     toggle3: "#F1F4FC",
-    toggle4: "#fff"
+    toggle4: "#fff",
   },
   sideBar: {
     color: "#7C7D80",
     colorLeft: "#7C7D80",
     colorHover: "#6157FF",
     colorActive: "#000",
-    bg: "#fff"
+    bg: "#fff",
   },
   baseButton: {
     bgColor: "linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)",
     shadow: `0px 1px 4px ${tinycolor(secondary)
       .setAlpha(0.3)
-      .toRgbString()}`
+      .toRgbString()}`,
   },
   bgLight: {
     one: "#F1FCF9",
-    two: "#F1F4FC"
+    two: "#F1F4FC",
   },
   shadows: {
     card: "0px 2px 24px rgba(0, 0, 0, 0.09)",
-    firstHover: "0px 8px 32px 0px rgba(0, 0, 0, 0.18)"
-  }
+    firstHover: "0px 8px 32px 0px rgba(0, 0, 0, 0.18)",
+  },
 };
 
 export default palette;
