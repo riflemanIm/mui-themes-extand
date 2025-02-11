@@ -1,5 +1,5 @@
 import { TypographyOptions } from "@mui/material/styles/createTypography";
-import { pxToRem } from "../paletteFuncs";
+import { pxToRem } from "@/themes/paletteFuncs";
 
 const FONT_PRIMARY = "Avenir Next Cyr";
 

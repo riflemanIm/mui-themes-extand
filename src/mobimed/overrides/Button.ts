@@ -24,7 +24,6 @@ export default function Button(theme: Theme) {
           border: 0,
           "&:hover": {
             border: 0,
-            background: "transparent",
           },
           "&.Mui-disabled": {
             background: `${theme.palette.baseButton.bgColor} !important`,

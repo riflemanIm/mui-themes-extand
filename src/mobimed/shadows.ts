@@ -1,7 +1,7 @@
 // material
 import { alpha } from "@mui/material";
 import palette from "./palette";
-import { createShadow } from "../paletteFuncs";
+import { createShadow } from "@/themes/paletteFuncs";
 
 // ----------------------------------------------------------------------
 

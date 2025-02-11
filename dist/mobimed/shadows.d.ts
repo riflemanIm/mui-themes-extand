@@ -12,5 +12,5 @@ export declare const customShadows: {
     warning: string;
     error: string;
 };
-declare const shadows: string[];
+declare const shadows: any;
 export default shadows;

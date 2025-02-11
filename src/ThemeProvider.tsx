@@ -6,7 +6,7 @@ import {
   createTheme,
   StyledEngineProvider,
   ThemeOptions,
-  Theme
+  Theme,
 } from "@mui/material/styles";
 
 import getTheme from "./getTheme";
@@ -25,7 +25,7 @@ const makeCustomTheme = (name?: string): Theme => {
 export default function ThemeProvider({
   children,
   name,
-  theme
+  theme,
 }: {
   children: React.ReactNode;
   name?: string;

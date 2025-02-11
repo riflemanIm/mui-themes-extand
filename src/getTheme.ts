@@ -14,38 +14,41 @@ import white_fang from "./white_fang";
 import kalinchenko from "./kalinchenko";
 import celt from "./celt";
 import vetcenter from "./vetcenter";
+import sm from "./sm";
 
 export default function getTheme(name?: string) {
   //console.log('name', name);
   return name === "drAnna"
     ? drAnna
     : name === "gms"
-    ? gms
-    : name === "medincenter"
-    ? medincenter
-    : name === "medswiss"
-    ? medswiss
-    : name === "mediadoc"
-    ? mediadoc
-    : name === "minfin"
-    ? minfin
-    : name === "pimu"
-    ? pimu
-    : name === "ncn"
-    ? ncn
-    : name === "sibgmu"
-    ? sibgmu
-    : name === "mositalmed"
-    ? mositalmed
-    : name === "skyfert"
-    ? skyfert
-    : name === "white_fang"
-    ? white_fang
-    : name === "kalinchenko"
-    ? kalinchenko
-    : name === "celt"
-    ? celt
-    : name === "vetcenter"
-    ? vetcenter
-    : mobimed;
+      ? gms
+      : name === "medincenter"
+        ? medincenter
+        : name === "medswiss"
+          ? medswiss
+          : name === "mediadoc"
+            ? mediadoc
+            : name === "minfin"
+              ? minfin
+              : name === "pimu"
+                ? pimu
+                : name === "ncn"
+                  ? ncn
+                  : name === "sibgmu"
+                    ? sibgmu
+                    : name === "mositalmed"
+                      ? mositalmed
+                      : name === "skyfert"
+                        ? skyfert
+                        : name === "white_fang"
+                          ? white_fang
+                          : name === "kalinchenko"
+                            ? kalinchenko
+                            : name === "celt"
+                              ? celt
+                              : name === "vetcenter"
+                                ? vetcenter
+                                : name === "sm"
+                                  ? sm
+                                  : mobimed;
 }

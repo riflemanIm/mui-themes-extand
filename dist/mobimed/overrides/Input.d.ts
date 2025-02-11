@@ -42,7 +42,7 @@ export default function Input(theme: Theme): {
                     backgroundColor: string;
                 };
                 '& fieldset': {
-                    borderColor: import("@mui/material").Color;
+                    borderColor: import("@mui/material/styles").Color;
                 };
                 '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
                     borderColor: string;
