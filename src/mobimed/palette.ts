@@ -9,52 +9,34 @@ const darkerRate = 30;
 const primary = "#6157FF";
 const secondary = "#73D7F5";
 const warning = "#F57069";
-const success = "#34DFA2";
+const success = "#FFEED6";
 const info = "#abb3ff";
 const error = "#f44336";
 const hero = "#6157FF";
 
 const PRIMARY = {
-  lighter: tinycolor(primary)
-    .lighten(lighterenRate)
-    .toHexString(),
+  lighter: tinycolor(primary).lighten(lighterenRate).toHexString(),
   main: primary,
-  light: tinycolor(primary)
-    .lighten(lightenRate)
-    .toHexString(),
-  dark: tinycolor(primary)
-    .darken(darkenRate)
-    .toHexString(),
-  darker: tinycolor(primary)
-    .darken(darkerRate)
-    .toHexString(),
+  light: tinycolor(primary).lighten(lightenRate).toHexString(),
+  dark: tinycolor(primary).darken(darkenRate).toHexString(),
+  darker: tinycolor(primary).darken(darkerRate).toHexString(),
   contrastText: "#fff",
 };
 
 const SECONDARY = {
   lighter: "#D6E4FF",
   main: secondary,
-  light: tinycolor(secondary)
-    .lighten(lightenRate)
-    .toHexString(),
-  dark: tinycolor(secondary)
-    .darken(darkenRate)
-    .toHexString(),
-  darker: tinycolor(primary)
-    .darken(darkerRate)
-    .toHexString(),
+  light: tinycolor(secondary).lighten(lightenRate).toHexString(),
+  dark: tinycolor(secondary).darken(darkenRate).toHexString(),
+  darker: tinycolor(primary).darken(darkerRate).toHexString(),
   contrastText: "#ccc",
 };
 
 const INFO = {
   lighter: "#D0F2FF",
   main: info,
-  light: tinycolor(info)
-    .lighten(lightenRate)
-    .toHexString(),
-  dark: tinycolor(info)
-    .darken(darkenRate)
-    .toHexString(),
+  light: tinycolor(info).lighten(lightenRate).toHexString(),
+  dark: tinycolor(info).darken(darkenRate).toHexString(),
   contrastText: "#fff",
   darker: "#04297A",
 };
@@ -62,12 +44,8 @@ const INFO = {
 const SUCCESS = {
   lighter: "#E9FCD4",
   main: success,
-  light: tinycolor(success)
-    .lighten(lightenRate)
-    .toHexString(),
-  dark: tinycolor(success)
-    .darken(darkenRate)
-    .toHexString(),
+  light: tinycolor(success).lighten(lightenRate).toHexString(),
+  dark: tinycolor(success).darken(darkenRate).toHexString(),
   contrastText: "#ccc",
   darker: "#08660D",
 };
@@ -75,12 +53,8 @@ const SUCCESS = {
 const WARNING = {
   lighter: "#FFF7CD",
   main: warning,
-  light: tinycolor(warning)
-    .lighten(lightenRate)
-    .toHexString(),
-  dark: tinycolor(warning)
-    .darken(darkenRate)
-    .toHexString(),
+  light: tinycolor(warning).lighten(lightenRate).toHexString(),
+  dark: tinycolor(warning).darken(darkenRate).toHexString(),
   darker: "#7A4F01",
   contrastText: GREY[800],
 };
@@ -88,12 +62,8 @@ const WARNING = {
 const ERROR = {
   lighter: "#FFE7D9",
   main: error,
-  light: tinycolor(error)
-    .lighten(lightenRate)
-    .toHexString(),
-  dark: tinycolor(error)
-    .darken(darkenRate)
-    .toHexString(),
+  light: tinycolor(error).lighten(lightenRate).toHexString(),
+  dark: tinycolor(error).darken(darkenRate).toHexString(),
   darker: "#7A0C2E",
   contrastText: "#fff",
 };
@@ -160,9 +130,7 @@ const palette = {
   },
   baseButton: {
     bgColor: "linear-gradient(163.61deg, #7385FF 3.01%, #584DFF 95.95%)",
-    shadow: `0px 1px 4px ${tinycolor(secondary)
-      .setAlpha(0.3)
-      .toRgbString()}`,
+    shadow: `0px 1px 4px ${tinycolor(secondary).setAlpha(0.3).toRgbString()}`,
   },
   bgLight: {
     one: "#F1FCF9",

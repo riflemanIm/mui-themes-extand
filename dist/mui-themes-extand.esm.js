@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
-import { alpha, CssBaseline as CssBaseline$g } from '@mui/material';
+import { alpha, CssBaseline as CssBaseline$h } from '@mui/material';
 import { alpha as alpha$1, StyledEngineProvider, ThemeProvider as ThemeProvider$1, createTheme } from '@mui/material/styles';
 import tinycolor from 'tinycolor2';
+import { pxToRem as pxToRem$1 } from '@/themes/paletteFuncs';
 
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
@@ -54,7 +55,7 @@ var darkerRate = 30;
 var primary = "#6157FF";
 var secondary = "#73D7F5";
 var warning = "#F57069";
-var success = "#34DFA2";
+var success = "#FFEED6";
 var info = "#abb3ff";
 var error = "#f44336";
 var hero = "#6157FF";
@@ -178,55 +179,55 @@ var palette = {
   }
 };
 
-var FONT_PRIMARY = 'Avenir Next Cyr';
+var FONT_PRIMARY = "Avenir Next Cyr";
 var typography = {
   fontFamily: FONT_PRIMARY,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 600,
   h1: {
-    fontSize: '2.0rem',
+    fontSize: "2.0rem",
     fontWeight: 500
   },
   h2: {
-    fontSize: '1.7rem',
+    fontSize: "1.7rem",
     fontWeight: 500
   },
   h3: {
-    fontSize: '1.64rem',
+    fontSize: "1.64rem",
     fontWeight: 500
   },
   h4: {
-    fontSize: '1.5rem'
+    fontSize: "1.5rem"
   },
   h5: {
-    fontSize: '1.285rem'
+    fontSize: "1.285rem"
   },
   h6: {
-    fontSize: '1.05rem'
+    fontSize: "1.05rem"
   },
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   // overline: {
   //   fontWeight: 500,
@@ -238,7 +239,7 @@ var typography = {
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -358,8 +359,7 @@ function Button(theme) {
           boxShadow: "none",
           border: 0,
           "&:hover": {
-            border: 0,
-            background: "transparent"
+            border: 0
           },
           "&.Mui-disabled": {
             background: theme.palette.baseButton.bgColor + " !important",
@@ -465,7 +465,7 @@ function Tooltip(theme) {
 }
 
 function Backdrop(theme) {
-  var varLow = alpha$1(theme.palette.grey[900], 0.6);
+  var varLow = alpha$1(theme.palette.grey[900], 0.92);
   var varHigh = alpha$1(theme.palette.grey[900], 0.9);
   return {
     MuiBackdrop: {
@@ -648,31 +648,34 @@ function Alert(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -712,7 +715,7 @@ function Input$1(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -727,8 +730,8 @@ function Skeleton() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -909,30 +912,30 @@ var typography$1 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -1356,31 +1359,34 @@ function Alert$1(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -1420,7 +1426,7 @@ function Input$3(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -1435,8 +1441,8 @@ function Skeleton$1() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -1617,30 +1623,30 @@ var typography$2 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -2064,31 +2070,34 @@ function Alert$2(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -2128,7 +2137,7 @@ function Input$5(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -2143,8 +2152,8 @@ function Skeleton$2() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -2324,30 +2333,30 @@ var typography$3 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -2840,7 +2849,7 @@ function Input$7(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -2855,8 +2864,8 @@ function Skeleton$3() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -3037,30 +3046,30 @@ var typography$4 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -3483,31 +3492,34 @@ function Alert$4(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -3546,7 +3558,7 @@ function Input$9(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -3561,8 +3573,8 @@ function Skeleton$4() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -3743,30 +3755,30 @@ var typography$5 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -4190,31 +4202,34 @@ function Alert$5(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -4254,7 +4269,7 @@ function Input$b(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -4269,8 +4284,8 @@ function Skeleton$5() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -4451,30 +4466,30 @@ var typography$6 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -4897,31 +4912,34 @@ function Alert$6(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -4960,7 +4978,7 @@ function Input$d(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -4975,8 +4993,8 @@ function Skeleton$6() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -5157,31 +5175,30 @@ var typography$7 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
-    //    textTransform: 'capitalize',
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -5604,31 +5621,34 @@ function Alert$7(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -5667,7 +5687,7 @@ function Input$f(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -5682,8 +5702,8 @@ function Skeleton$7() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -5864,30 +5884,30 @@ var typography$8 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -6310,31 +6330,34 @@ function Alert$8(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -6373,7 +6396,7 @@ function Input$h(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -6388,8 +6411,8 @@ function Skeleton$8() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -6570,30 +6593,30 @@ var typography$9 = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -7016,31 +7039,34 @@ function Alert$9(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -7079,7 +7105,7 @@ function Input$j(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -7094,8 +7120,8 @@ function Skeleton$9() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -7716,31 +7742,34 @@ function Alert$a(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -7780,7 +7809,7 @@ function Input$l(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -7795,8 +7824,8 @@ function Skeleton$a() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -7976,30 +8005,30 @@ var typography$b = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -8425,31 +8454,34 @@ function Alert$b(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -8488,7 +8520,7 @@ function Input$n(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -8503,8 +8535,8 @@ function Skeleton$b() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -8684,30 +8716,30 @@ var typography$c = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -9134,31 +9166,34 @@ function Alert$c(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -9197,7 +9232,7 @@ function Input$p(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -9212,8 +9247,8 @@ function Skeleton$c() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -9394,25 +9429,25 @@ var typography$d = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   // overline: {
   //   fontWeight: 500,
@@ -9424,7 +9459,7 @@ var typography$d = {
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -9834,31 +9869,34 @@ function Alert$d(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -9898,7 +9936,7 @@ function Input$r(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -9913,8 +9951,8 @@ function Skeleton$d() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
           }
         }
       }
@@ -10535,31 +10573,34 @@ function Alert$e(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -10599,7 +10640,7 @@ function Input$t(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -10614,8 +10655,10 @@ function Skeleton$e() {
     MuiSkeleton: {
       styleOverrides: {
         root: {
-          "&::after": {
-            background: "linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) "
+          '&::after': {
+            background:
+            //'linear-gradient(120deg,transparent,rgba(145, 158, 171, 0.5),transparent) '
+            'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%)'
           }
         }
       }
@@ -10795,30 +10838,30 @@ var typography$f = {
   subtitle1: {
     fontWeight: 400,
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   subtitle2: {
     fontWeight: 450,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(16)
+    fontSize: /*#__PURE__*/pxToRem$1(16)
   },
   body2: {
     fontWeight: 400,
     lineHeight: 22 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   },
   caption: {
     lineHeight: 1.5,
-    fontSize: /*#__PURE__*/pxToRem(12)
+    fontSize: /*#__PURE__*/pxToRem$1(12)
   },
   button: {
     fontWeight: 500,
     lineHeight: 24 / 14,
-    fontSize: /*#__PURE__*/pxToRem(14)
+    fontSize: /*#__PURE__*/pxToRem$1(14)
   }
 };
 
@@ -11245,31 +11288,34 @@ function Alert$f(theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1)
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
         },
         standardWarning: {
           backgroundColor: theme.palette.background.warning,
-          icon: {
-            color: theme.palette.warning + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
           }
         },
         standardError: {
           backgroundColor: theme.palette.background.error,
-          icon: {
-            color: theme.palette.error + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
           }
         },
         standardInfo: {
           backgroundColor: theme.palette.background.info,
-          icon: {
-            color: theme.palette.info + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
           }
         },
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
-          icon: {
-            color: theme.palette.success + " !important"
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
           }
         }
       }
@@ -11308,7 +11354,7 @@ function Input$v(theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary
           }
         }
@@ -11343,9 +11389,716 @@ var vetcenter = {
   componentsOverride: ComponentsOverrides$f
 };
 
+var lightenRate$g = 7.5;
+var darkenRate$g = 15;
+var darkerRate$g = 30;
+var primary$g = "#FF7009";
+var secondary$g = "#434343";
+var warning$g = "#FF0D00";
+var success$g = "#FFEED6";
+var info$g = "#DBB091";
+var error$g = "#C8316C";
+var hero$g = "#FF7009";
+var PRIMARY$g = {
+  lighter: "#FFDEC8",
+  main: primary$g,
+  light: /*#__PURE__*/tinycolor(primary$g).lighten(lightenRate$g).toHexString(),
+  dark: /*#__PURE__*/tinycolor(primary$g).darken(darkenRate$g).toHexString(),
+  darker: /*#__PURE__*/tinycolor(primary$g).darken(darkerRate$g).toHexString(),
+  contrastText: "#fff"
+};
+var SECONDARY$g = {
+  lighter: "#D6E4FF",
+  main: secondary$g,
+  light: /*#__PURE__*/tinycolor(secondary$g).lighten(lightenRate$g).toHexString(),
+  dark: /*#__PURE__*/tinycolor(secondary$g).darken(darkenRate$g).toHexString(),
+  darker: /*#__PURE__*/tinycolor(primary$g).darken(darkerRate$g).toHexString(),
+  contrastText: "#ccc"
+};
+var INFO$g = {
+  lighter: "#D0F2FF",
+  main: info$g,
+  light: /*#__PURE__*/tinycolor(info$g).lighten(lightenRate$g).toHexString(),
+  dark: /*#__PURE__*/tinycolor(info$g).darken(darkenRate$g).toHexString(),
+  contrastText: "#fff",
+  darker: "#04297A"
+};
+var SUCCESS$g = {
+  lighter: "#E9FCD4",
+  main: success$g,
+  light: /*#__PURE__*/tinycolor(success$g).lighten(lightenRate$g).toHexString(),
+  dark: /*#__PURE__*/tinycolor(success$g).darken(darkenRate$g).toHexString(),
+  contrastText: "#ccc",
+  darker: "#08660D"
+};
+var WARNING$g = {
+  lighter: "#FFF7CD",
+  main: warning$g,
+  light: /*#__PURE__*/tinycolor(warning$g).lighten(lightenRate$g).toHexString(),
+  dark: /*#__PURE__*/tinycolor(warning$g).darken(darkenRate$g).toHexString(),
+  darker: "#7A4F01",
+  contrastText: GREY[800]
+};
+var ERROR$g = {
+  lighter: "#FFE7D9",
+  main: error$g,
+  light: /*#__PURE__*/tinycolor(error$g).lighten(lightenRate$g).toHexString(),
+  dark: /*#__PURE__*/tinycolor(error$g).darken(darkenRate$g).toHexString(),
+  darker: "#7A0C2E",
+  contrastText: "#fff"
+};
+var GRADIENTS$g = {
+  primary: /*#__PURE__*/createGradient(PRIMARY$g.light, PRIMARY$g.main),
+  info: /*#__PURE__*/createGradient(INFO$g.light, INFO$g.main),
+  success: /*#__PURE__*/createGradient(SUCCESS$g.light, SUCCESS$g.main),
+  warning: /*#__PURE__*/createGradient(WARNING$g.light, WARNING$g.main),
+  error: /*#__PURE__*/createGradient(ERROR$g.light, ERROR$g.main),
+  one: "#FF7009",
+  two: "#E66305"
+};
+var palette$g = {
+  hero: hero$g,
+  primary: /*#__PURE__*/_extends({}, PRIMARY$g),
+  secondary: /*#__PURE__*/_extends({}, SECONDARY$g),
+  info: /*#__PURE__*/_extends({}, INFO$g),
+  success: /*#__PURE__*/_extends({}, SUCCESS$g),
+  warning: /*#__PURE__*/_extends({}, WARNING$g),
+  error: /*#__PURE__*/_extends({}, ERROR$g),
+  grey: GREY,
+  gradients: GRADIENTS$g,
+  divider: GREY[50024],
+  text: {
+    primary: GREY[800],
+    secondary: GREY[600],
+    boby2: GREY[600],
+    subtitle2: GREY[50080],
+    disabled: GREY[400]
+  },
+  background: {
+    paper: "#fff",
+    "default": "#fff",
+    neutral: GREY[200],
+    warning: "#FEF1F0",
+    error: "#FEF1F0",
+    info: "#FFF0E6",
+    infoGadient: /*#__PURE__*/createGradient(INFO$g.lighter, INFO$g.light),
+    success: "#FCF3ED"
+  },
+  action: {
+    active: GREY[600],
+    hover: GREY[5008],
+    selected: GREY[50016],
+    disabled: GREY[50080],
+    disabledBackground: GREY[50024],
+    focus: GREY[50024],
+    hoverOpacity: 0.08,
+    disabledOpacity: 0.48,
+    toggle1: "#FC8737",
+    toggle2: "#FF7009",
+    toggle3: "#EDEDED",
+    toggle4: "#fff"
+  },
+  sideBar: {
+    color: "#848281",
+    colorLeft: "#848281",
+    colorHover: "#FF7009",
+    colorActive: "#000",
+    bg: "#fff"
+  },
+  baseButton: {
+    bgColor: "linear-gradient(139.78deg, #FF7009 3.01%, #E66305 95.95%);",
+    shadow: "0px 4px 15px 0px rgba(35, 40, 48, 0.08)"
+  },
+  bgLight: {
+    one: "#F1FCF9",
+    two: "#FFF0E6"
+  },
+  shadows: {
+    card: "0px 2px 24px rgba(0, 0, 0, 0.09)",
+    firstHover: "0px 8px 32px 0px rgba(0, 0, 0, 0.18)"
+  }
+};
+
+var FONT_PRIMARY$g = "Avenir Next Cyr";
+var typography$g = {
+  fontFamily: FONT_PRIMARY$g,
+  fontWeightRegular: 400,
+  fontWeightMedium: 500,
+  fontWeightBold: 600,
+  h1: {
+    fontSize: "2.0rem",
+    fontWeight: 500
+  },
+  h2: {
+    fontSize: "1.7rem",
+    fontWeight: 500
+  },
+  h3: {
+    fontSize: "1.64rem",
+    fontWeight: 500
+  },
+  h4: {
+    fontSize: "1.5rem"
+  },
+  h5: {
+    fontSize: "1.285rem"
+  },
+  h6: {
+    fontSize: "1.05rem"
+  },
+  subtitle1: {
+    fontWeight: 400,
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem$1(16)
+  },
+  subtitle2: {
+    fontWeight: 450,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem$1(14)
+  },
+  body1: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem$1(16)
+  },
+  body2: {
+    fontWeight: 400,
+    lineHeight: 22 / 14,
+    fontSize: /*#__PURE__*/pxToRem$1(14)
+  },
+  caption: {
+    lineHeight: 1.5,
+    fontSize: /*#__PURE__*/pxToRem$1(12)
+  },
+  // overline: {
+  //   fontWeight: 500,
+  //   lineHeight: 1.5,
+  //   fontSize: pxToRem(12),
+  //   letterSpacing: 1.1,
+  //   textTransform: 'uppercase',
+  // },
+  button: {
+    fontWeight: 500,
+    lineHeight: 24 / 14,
+    fontSize: /*#__PURE__*/pxToRem$1(14)
+  }
+};
+
+// ----------------------------------------------------------------------
+function Card$g(theme) {
+  return {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1)
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Paper$g(theme) {
+  return {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#FFFFFF",
+          backgroundSize: "cover",
+          boxSizing: "border-box",
+          boxShadow: theme.palette.shadows.card,
+          transition: "none"
+        }
+      }
+    }
+  };
+}
+
+function Input$w(theme) {
+  return {
+    MuiInput: {
+      styleOverrides: {
+        underline: {
+          "&:before": {
+            borderBottom: "1px solid rgb(196 196 196)"
+          },
+          "&:hover:not(.Mui-disabled):before": {
+            borderBottom: "2px solid rgb(97, 87, 255, 0.3)"
+          }
+        }
+      }
+    },
+    MuiFilledInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: alpha$1(theme.palette.grey[500], 0.12),
+          "&:hover": {
+            backgroundColor: alpha$1(theme.palette.grey[500], 0.16)
+          },
+          "&.Mui-focused": {
+            backgroundColor: theme.palette.action.focus
+          },
+          "&.Mui-disabled": {
+            backgroundColor: theme.palette.action.disabledBackground
+          }
+        },
+        underline: {
+          "&:before": {
+            borderBottomColor: alpha$1(theme.palette.grey[500], 0.48)
+          }
+        }
+      }
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: theme.spacing(0.8),
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            backgroundColor: "#fff"
+          },
+          "& fieldset": {
+            borderColor: theme.palette.primary.lighter
+          },
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
+            borderColor: alpha$1(theme.palette.primary.main, 0.2)
+          },
+          "&.Mui-disabled:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: alpha$1(theme.palette.primary.main, 0.2)
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: theme.palette.primary.main,
+            borderWidth: "2px"
+          },
+          "&.Mui-focused fieldset": {
+            borderWidth: "2px"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Button$g(theme) {
+  return {
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          textTransform: "inherit"
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "inherit",
+          borderRadius: 5,
+          fontStyle: "normal",
+          fontWeight: 500,
+          boxShadow: "none",
+          border: 0,
+          "&:hover": {
+            border: 0
+          },
+          "&.Mui-disabled": {
+            background: theme.palette.baseButton.bgColor + " !important",
+            opacity: theme.palette.action.disabledOpacity,
+            color: "#fff !important"
+          },
+          "&.Mui-select": {
+            backgroundColor: theme.palette.primary.main,
+            color: "#fff",
+            border: "1px solid #bdbdbd"
+          }
+        },
+        containedPrimary: {
+          color: "#fff",
+          background: theme.palette.baseButton.bgColor,
+          boxShadow: theme.palette.baseButton.shadow,
+          "&:hover": {
+            background: theme.palette.baseButton.bgColor,
+            opacity: 0.8,
+            boxShadow: "none"
+          }
+        },
+        containedSecondary: {
+          color: theme.palette.hero,
+          background: theme.palette.bgLight.two,
+          boxShadow: theme.palette.baseButton.shadow,
+          "&:hover": {
+            background: theme.palette.bgLight.one,
+            boxShadow: "none"
+          }
+        },
+        outlinedPrimary: {
+          color: theme.palette.primary.main,
+          backgroundColor: theme.palette.bgLight.one,
+          boxShadow: theme.palette.baseButton.shadow,
+          "&:hover": {
+            backgroundColor: theme.palette.bgLight.two,
+            color: theme.palette.primary.dark,
+            boxShadow: "none"
+          }
+        },
+        outlinedInfo: {
+          color: theme.palette.primary.main,
+          backgroundColor: "#fff",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "#fff",
+            color: theme.palette.primary.dark
+          }
+        },
+        outlinedSuccess: {
+          color: theme.palette.primary.dark,
+          backgroundColor: theme.palette.success.light,
+          "&:hover": {
+            color: theme.palette.primary.darker,
+            backgroundColor: theme.palette.success.light,
+            boxShadow: "none"
+          }
+        },
+        containedSuccess: {
+          color: "#fff",
+          backgroundColor: theme.palette.success.main,
+          "&:hover": {
+            backgroundColor: theme.palette.success.light,
+            boxShadow: "none"
+          }
+        },
+        containedWarning: {
+          color: "#fff",
+          backgroundColor: theme.palette.warning.main,
+          "&:hover": {
+            backgroundColor: theme.palette.warning.light,
+            boxShadow: "none"
+          }
+        },
+        containedInfo: {
+          color: "#fff",
+          backgroundColor: theme.palette.info.main,
+          "&:hover": {
+            backgroundColor: theme.palette.info.light,
+            boxShadow: "none"
+          }
+        },
+        textPrimary: {
+          "&:hover": {
+            background: "transparent",
+            color: theme.palette.primary.dark
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Tooltip$g(theme) {
+  return {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          backgroundColor: theme.palette.grey[800]
+        },
+        arrow: {
+          color: theme.palette.grey[800]
+        }
+      }
+    }
+  };
+}
+
+function Backdrop$g(theme) {
+  var varLow = alpha$1(theme.palette.grey[900], 0.92);
+  var varHigh = alpha$1(theme.palette.grey[900], 0.9);
+  return {
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          //          backgroundColor: theme.palette.grey[600],
+          background: ["rgb(22,28,36)", "-moz-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "-webkit-linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)", "linear-gradient(75deg, " + varLow + " 0%, " + varHigh + " 100%)"],
+          "&.MuiBackdrop-invisible": {
+            background: "transparent"
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Typography$g(theme) {
+  return {
+    MuiTypography: {
+      styleOverrides: {
+        paragraph: {
+          marginBottom: theme.spacing(2)
+        },
+        gutterBottom: {
+          marginBottom: theme.spacing(2)
+        },
+        body2: {
+          color: theme.palette.text.boby2
+        },
+        caption: {
+          fontSize: 14
+        },
+        caption_date: {
+          fontSize: 13
+        },
+        subtitle2: {
+          color: theme.palette.text.subtitle2
+        }
+      }
+    }
+  };
+}
+
+function CssBaseline$g(theme) {
+  return {
+    MuiCssBaseline: {
+      styleOverrides: "\n        *: {\n          margin: 0;\n          padding: 0;\n          boxSizing: border-box;\n        }\n        html: {\n          width: 100%;\n          height: 100%;\n          webkit-overflow-scrolling: touch;\n        }\n        body: {\n          width: 100%;\n          height: 100%;\n          background-color:" + theme.palette.background["default"] + ";\n        }\n        #root: {\n          width: 100%;\n          height: 100%;\n        }\n        img: {\n          display: block;\n          maxWidth: 100%;\n        }\n        @font-face {\n          font-family: 'Avenir Next Cyr';\n          src: url(/fonts/Avenir/AvenirNextCyr-Regular.eot);\n          src: local('Avenir Next Cyr Regular'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix) format('embedded-opentype'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.woff) format('woff'),\n            url(/fonts/Avenir/AvenirNextCyr-Regular.ttf) format('truetype');\n          font-weight: normal;\n          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;\n        }\n      "
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Autocomplete$g(theme) {
+  return {
+    MuiAutocomplete: {
+      styleOverrides: {
+        paper: {
+          boxShadow: theme.palette.shadows.card
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function ToggleButton$g(theme) {
+  return {
+    MuiToggleButton: {
+      styleOverrides: {
+        root: {
+          padding: "0px 12px",
+          border: "1px solid " + theme.palette.action.toggle1,
+          width: "100%",
+          height: 42,
+          boxSizing: "border-box",
+          borderRadius: theme.spacing(0.6),
+          textTransform: "none",
+          fontStyle: "normal",
+          fontWeight: 500,
+          color: theme.palette.action.toggle2,
+          background: theme.palette.action.toggle3,
+          boxShadow: theme.palette.shadows.card,
+          "&:hover": {
+            color: theme.palette.action.toggle4,
+            background: theme.palette.action.toggle2 + " !important"
+          },
+          "&.Mui-selected": {
+            color: theme.palette.action.toggle4,
+            backgroundColor: theme.palette.action.toggle1
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function AppBar$g() {
+  return {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          boxShadow: "none !important",
+          background: "linear-gradient(139.78deg, #FF7009 3.01%, #E66305 95.95%)"
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function IconButton$g(theme) {
+  return {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          "& span > svg": {
+            color: theme.palette.primary.main
+          }
+        }
+      }
+    }
+  };
+}
+
+function Picker$g() {
+  return {
+    MuiPickerStaticWrapper: {
+      styleOverrides: {
+        root: {
+          minWidth: 'auto',
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+    MuiCalendarPicker: {
+      styleOverrides: {
+        root: {
+          width: 300
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Rating$g(theme) {
+  return {
+    MuiRating: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.dark,
+          "& span > span": {
+            top: 0,
+            left: 0
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Menu$g() {
+  return {
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          boxShadow: '0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A'
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Alert$g(theme) {
+  return {
+    MuiAlert: {
+      styleOverrides: {
+        root: {
+          // boxShadow: theme.palette.shadows.card,
+          borderRadius: theme.spacing(1),
+          "& .MuiAlert-icon": {
+            fontSize: theme.spacing(4)
+          }
+        },
+        standardWarning: {
+          backgroundColor: theme.palette.background.warning,
+          "& .MuiAlert-icon": {
+            color: theme.palette.warning.main + " !important"
+          }
+        },
+        standardError: {
+          backgroundColor: theme.palette.background.error,
+          "& .MuiAlert-icon": {
+            color: theme.palette.error.main + " !important"
+          }
+        },
+        standardInfo: {
+          backgroundColor: theme.palette.background.info,
+          "& .MuiAlert-icon": {
+            color: theme.palette.info.main + " !important"
+          }
+        },
+        standardSuccess: {
+          backgroundColor: theme.palette.background.success,
+          "& .MuiAlert-icon": {
+            color: theme.palette.success.dark
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Link$g() {
+  return {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none'
+        }
+      }
+    }
+  };
+}
+
+function Badge$g() {
+  return {
+    MuiBadge: {
+      styleOverrides: {
+        colorWarning: {
+          color: '#fff',
+          fontWeight: 500
+        }
+      }
+    }
+  };
+}
+
+function Input$x(theme) {
+  return {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: theme.palette.primary.light,
+          "&.Mui-selected": {
+            color: theme.palette.text.primary
+          }
+        }
+      }
+    }
+  };
+}
+
+// ----------------------------------------------------------------------
+function Skeleton$g() {
+  return {
+    MuiSkeleton: {
+      styleOverrides: {
+        root: {
+          '&::after': {
+            background: 'linear-gradient(110deg, transparent 10%, rgba(145, 158, 171, 0.5), transparent 90%) '
+          }
+        }
+      }
+    }
+  };
+}
+
+//
+function ComponentsOverrides$g(theme) {
+  return Object.assign(AppBar$g(), Card$g(theme), Input$w(theme), Paper$g(theme), Button$g(theme), Tooltip$g(theme), Backdrop$g(theme), Typography$g(theme), CssBaseline$g(theme), Autocomplete$g(theme), ToggleButton$g(theme), IconButton$g(theme), Picker$g(), Rating$g(theme), Menu$g(), Alert$g(theme), Link$g(), Badge$g(), Input$x(theme), Skeleton$g());
+}
+
+var sm = {
+  palette: palette$g,
+  typography: typography$g,
+  componentsOverride: ComponentsOverrides$g
+};
+
 function getTheme(name) {
   //console.log('name', name);
-  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : name === "kalinchenko" ? kalinchenko : name === "celt" ? celt : name === "vetcenter" ? vetcenter : mobimed;
+  return name === "drAnna" ? drAnna : name === "gms" ? gms : name === "medincenter" ? medincenter : name === "medswiss" ? medswiss : name === "mediadoc" ? mediadoc : name === "minfin" ? minfin : name === "pimu" ? pimu : name === "ncn" ? ncn : name === "sibgmu" ? sibgmu : name === "mositalmed" ? mositalmed : name === "skyfert" ? skyfert : name === "white_fang" ? white_fang : name === "kalinchenko" ? kalinchenko : name === "celt" ? celt : name === "vetcenter" ? vetcenter : name === "sm" ? sm : mobimed;
 }
 
 var makeCustomTheme = function makeCustomTheme(name) {
@@ -11372,7 +12125,7 @@ function ThemeProvider(_ref) {
     injectFirst: true
   }, /*#__PURE__*/React.createElement(ThemeProvider$1, {
     theme: customTheme
-  }, /*#__PURE__*/React.createElement(CssBaseline$g, null), children));
+  }, /*#__PURE__*/React.createElement(CssBaseline$h, null), children));
 }
 
 export default ThemeProvider;

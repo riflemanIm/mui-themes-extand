@@ -1,7 +1,7 @@
-import { TypographyOptions } from '@mui/material/styles/createTypography';
-import { pxToRem } from '../paletteFuncs';
+import { TypographyOptions } from "@mui/material/styles/createTypography";
+import { pxToRem } from "@/themes/paletteFuncs";
 
-const FONT_PRIMARY = 'Avenir Next Cyr';
+const FONT_PRIMARY = "Avenir Next Cyr";
 
 const typography: TypographyOptions = {
   fontFamily: FONT_PRIMARY,
@@ -9,25 +9,25 @@ const typography: TypographyOptions = {
   fontWeightMedium: 500,
   fontWeightBold: 600,
   h1: {
-    fontSize: '2.0rem',
+    fontSize: "2.0rem",
     fontWeight: 500,
   },
   h2: {
-    fontSize: '1.7rem',
+    fontSize: "1.7rem",
     fontWeight: 500,
   },
   h3: {
-    fontSize: '1.64rem',
+    fontSize: "1.64rem",
     fontWeight: 500,
   },
   h4: {
-    fontSize: '1.5rem',
+    fontSize: "1.5rem",
   },
   h5: {
-    fontSize: '1.285rem',
+    fontSize: "1.285rem",
   },
   h6: {
-    fontSize: '1.05rem',
+    fontSize: "1.05rem",
   },
   subtitle1: {
     fontWeight: 400,

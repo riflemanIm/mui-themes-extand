@@ -1,4 +1,4 @@
-import { Theme, alpha } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 
 export default function Input(theme: Theme) {
   return {
@@ -6,7 +6,7 @@ export default function Input(theme: Theme) {
       styleOverrides: {
         root: {
           color: theme.palette.primary.light,
-          '&.Mui-selected': {
+          "&.Mui-selected": {
             color: theme.palette.text.primary,
           },
         },

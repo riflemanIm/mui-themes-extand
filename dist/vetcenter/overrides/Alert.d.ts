@@ -1,32 +1,34 @@
-import { Theme } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 export default function Alert(theme: Theme): {
     MuiAlert: {
         styleOverrides: {
             root: {
-                boxShadow: string;
                 borderRadius: string;
+                "& .MuiAlert-icon": {
+                    fontSize: string;
+                };
             };
             standardWarning: {
                 backgroundColor: string;
-                icon: {
+                "& .MuiAlert-icon": {
                     color: string;
                 };
             };
             standardError: {
                 backgroundColor: string;
-                icon: {
+                "& .MuiAlert-icon": {
                     color: string;
                 };
             };
             standardInfo: {
                 backgroundColor: string;
-                icon: {
+                "& .MuiAlert-icon": {
                     color: string;
                 };
             };
             standardSuccess: {
                 backgroundColor: string;
-                icon: {
+                "& .MuiAlert-icon": {
                     color: string;
                 };
             };

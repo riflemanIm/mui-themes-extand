@@ -1,10 +1,10 @@
-import { Theme } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 export default function Input(theme: Theme): {
     MuiTab: {
         styleOverrides: {
             root: {
                 color: string;
-                '&.Mui-selected': {
+                "&.Mui-selected": {
                     color: string;
                 };
             };
