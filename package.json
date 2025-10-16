@@ -1,6 +1,6 @@
 {
   "name": "mui-themes-extand",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Boilerplate for extends MUI6 themes",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
