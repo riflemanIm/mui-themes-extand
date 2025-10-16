@@ -28,6 +28,9 @@ export default defineConfig({
     },
     rollupOptions: {
       external: externalPackages,
+      output: {
+        exports: "named",
+      },
     },
     sourcemap: true,
     emptyOutDir: true,

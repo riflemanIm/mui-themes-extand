@@ -6,7 +6,16 @@
     "emitDeclarationOnly": true,
     "noEmit": false,
     "allowJs": false,
-    "outDir": "dist"
+    "outDir": "dist",
+    "types": []
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "src/__tests__",
+    "**/*.test.*",
+    "src/setupTests.ts"
+  ]
 }

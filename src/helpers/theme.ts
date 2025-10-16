@@ -1,4 +1,9 @@
-const isNavigatorAvailable = typeof navigator !== "undefined";
-
 export const isWebKit =
-  isNavigatorAvailable && /AppleWebKit/i.test(navigator.userAgent);
+  typeof navigator !== "undefined" &&
+  (() => {
+    const ua = navigator.userAgent;
+    const isIOS = /iP(hone|ad|od)/i.test(ua);
+    const isSafariDesktop =
+      /^((?!chrome|crios|android|fxios|edg).)*safari/i.test(ua);
+    return isIOS || isSafariDesktop;
+  })();
