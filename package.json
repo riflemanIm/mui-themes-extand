@@ -2,14 +2,14 @@
   "name": "mui-themes-extand",
   "version": "3.0.1",
   "description": "Boilerplate for extends MUI6 themes",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "default": "./dist/index.es.js"
     }
   },

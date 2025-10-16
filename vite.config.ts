@@ -24,7 +24,8 @@ export default defineConfig({
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "MuiThemesExtand",
       formats: ["es", "cjs"],
-      fileName: (format) => (format === "es" ? "index.es" : "index"),
+      fileName: (format) =>
+        format === "es" ? "index.es.js" : "index.cjs",
     },
     rollupOptions: {
       external: externalPackages,
