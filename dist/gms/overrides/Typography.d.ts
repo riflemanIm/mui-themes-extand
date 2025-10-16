@@ -23,3 +23,4 @@ export default function Typography(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Typography.d.ts.map

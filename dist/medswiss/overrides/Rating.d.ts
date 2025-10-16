@@ -12,3 +12,4 @@ export default function Rating(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Rating.d.ts.map

@@ -12,3 +12,4 @@ export default function Paper(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Paper.d.ts.map

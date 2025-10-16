@@ -109,6 +109,11 @@ export default function getTheme(name?: string): {
             toggle3: string;
             toggle4: string;
         };
+        appBar: {
+            background: string;
+            iconColor: string;
+            color: string;
+        };
         sideBar: {
             color: string;
             colorLeft: string;
@@ -132,3 +137,4 @@ export default function getTheme(name?: string): {
     typography: import("@mui/material").TypographyVariantsOptions;
     componentsOverride: typeof import("./medincenter/overrides").default;
 };
+//# sourceMappingURL=getTheme.d.ts.map

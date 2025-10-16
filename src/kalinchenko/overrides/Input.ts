@@ -1,7 +1,17 @@
-import { Theme, alpha } from "@mui/material/styles";
+import { isWebKit } from "@/helpers/theme";
+import { Components, Theme, alpha } from "@mui/material/styles";
 
-export default function Input(theme: Theme) {
+export default function Input(theme: Theme): Components<Theme> {
   return {
+    ...(isWebKit && {
+      MuiTextField: {
+        defaultProps: {
+          slotProps: {
+            inputLabel: { shrink: true },
+          },
+        },
+      },
+    }),
     MuiInput: {
       styleOverrides: {
         underline: {
@@ -54,10 +64,10 @@ export default function Input(theme: Theme) {
           },
           "&:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: theme.palette.primary.dark, // root border color
-            borderWidth: "2px",
+            borderWidth: 2,
           },
           "&.Mui-focused fieldset": {
-            borderWidth: "2px",
+            borderWidth: 2,
           },
         },
       },

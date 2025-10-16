@@ -7,3 +7,4 @@ export default function Menu(): {
         };
     };
 };
+//# sourceMappingURL=Menu.d.ts.map

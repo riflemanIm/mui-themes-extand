@@ -21,3 +21,4 @@ export declare const GREY: {
     50056: string;
     50080: string;
 };
+//# sourceMappingURL=paletteFuncs.d.ts.map

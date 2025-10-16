@@ -110,6 +110,11 @@ declare const _default: {
             toggle3: string;
             toggle4: string;
         };
+        appBar: {
+            background: string;
+            iconColor: string;
+            color: string;
+        };
         sideBar: {
             color: string;
             colorLeft: string;
@@ -134,3 +139,4 @@ declare const _default: {
     componentsOverride: typeof componentsOverride;
 };
 export default _default;
+//# sourceMappingURL=index.d.ts.map

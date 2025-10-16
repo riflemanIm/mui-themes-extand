@@ -12,5 +12,6 @@ export declare const customShadows: {
     warning: string;
     error: string;
 };
-declare const shadows: any;
+declare const shadows: string[];
 export default shadows;
+//# sourceMappingURL=shadows.d.ts.map

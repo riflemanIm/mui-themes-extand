@@ -3,6 +3,7 @@ export default function Alert(theme: Theme): {
     MuiAlert: {
         styleOverrides: {
             root: {
+                padding: string;
                 borderRadius: string;
                 "& .MuiAlert-icon": {
                     fontSize: string;
@@ -35,3 +36,4 @@ export default function Alert(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Alert.d.ts.map

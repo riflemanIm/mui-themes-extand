@@ -15,6 +15,15 @@ export default function Typography(theme: Theme) {
         body2: {
           color: theme.palette.text.boby2,
         },
+        h3: {
+          color: theme.palette.text.primary,
+        },
+        h4: {
+          color: theme.palette.text.primary,
+        },
+        h5: {
+          color: theme.palette.text.primary,
+        },
 
         caption: {
           fontSize: 14,

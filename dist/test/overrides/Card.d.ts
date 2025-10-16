@@ -9,3 +9,4 @@ export default function Card(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Card.d.ts.map

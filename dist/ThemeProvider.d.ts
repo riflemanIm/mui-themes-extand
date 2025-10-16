@@ -4,4 +4,5 @@ export default function ThemeProvider({ children, name, theme, }: {
     children: React.ReactNode;
     name?: string;
     theme?: Theme;
-}): React.JSX.Element;
+}): import("react/jsx-runtime").JSX.Element;
+//# sourceMappingURL=ThemeProvider.d.ts.map

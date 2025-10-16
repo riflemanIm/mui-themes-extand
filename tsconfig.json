@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -11,14 +15,35 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "baseUrl": ".",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "react": ["./node_modules/@types/react"]
-    }
+      "react": [
+        "./node_modules/@types/react"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@/helpers/*": [
+        "src/helpers/*"
+      ],
+      "@/themes/*": [
+        "src/themes/*"
+      ]
+    },
+    "types": [
+      "vitest/globals"
+    ]
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "build"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ]
 }

@@ -7,10 +7,10 @@ export default function Alert(theme: Theme) {
     MuiAlert: {
       styleOverrides: {
         root: {
-          // boxShadow: theme.palette.shadows.card,
-          borderRadius: theme.spacing(1),
+          padding: `${theme.spacing(2)} ${theme.spacing(2)} ${theme.spacing(1.5)}`,
+          borderRadius: theme.spacing(2.5),
           "& .MuiAlert-icon": {
-            fontSize: theme.spacing(4),
+            fontSize: theme.spacing(4.5),
           },
         },
         standardWarning: {
@@ -34,7 +34,7 @@ export default function Alert(theme: Theme) {
         standardSuccess: {
           backgroundColor: theme.palette.background.success,
           "& .MuiAlert-icon": {
-            color: theme.palette.success.dark,
+            color: theme.palette.primary.main,
           },
         },
       },

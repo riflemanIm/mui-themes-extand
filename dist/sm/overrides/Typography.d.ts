@@ -11,6 +11,15 @@ export default function Typography(theme: Theme): {
             body2: {
                 color: string;
             };
+            h3: {
+                color: string;
+            };
+            h4: {
+                color: string;
+            };
+            h5: {
+                color: string;
+            };
             caption: {
                 fontSize: number;
             };
@@ -23,3 +32,4 @@ export default function Typography(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Typography.d.ts.map

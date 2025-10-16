@@ -4,3 +4,4 @@ export default function CssBaseline(theme: Theme): {
         styleOverrides: string;
     };
 };
+//# sourceMappingURL=CssBaseline.d.ts.map

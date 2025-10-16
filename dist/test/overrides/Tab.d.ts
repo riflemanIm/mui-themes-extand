@@ -1,5 +1,5 @@
 import { Theme } from "@mui/material/styles";
-export default function Input(theme: Theme): {
+export default function Tab(theme: Theme): {
     MuiTab: {
         styleOverrides: {
             root: {
@@ -11,3 +11,4 @@ export default function Input(theme: Theme): {
         };
     };
 };
+//# sourceMappingURL=Tab.d.ts.map

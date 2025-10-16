@@ -54,38 +54,10 @@ declare module "@mui/material/styles" {
   // add inside palette
   export interface Palette {
     hero: React.CSSProperties["color"];
-    primary: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    secondary: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    info: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    success: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
+    primary: PaletteColor;
+    secondary: PaletteColor;
+    info: PaletteColor;
+    success: PaletteColor;
     divider: string;
     grey: string[];
     gradients: TypeGradients;
@@ -107,6 +79,7 @@ declare module "@mui/material/styles" {
       success: React.CSSProperties["color"];
     };
     action: TypeAction;
+    appBar: AppBarColors;
     sideBar: {
       color: React.CSSProperties["color"];
       colorLeft: React.CSSProperties["color"];
@@ -130,54 +103,12 @@ declare module "@mui/material/styles" {
 
   export interface PaletteOptions {
     hero: React.CSSProperties["color"];
-    primary: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    secondary: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    info: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    success: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    warning: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
-    error: {
-      lighter: React.CSSProperties["color"];
-      main: React.CSSProperties["color"];
-      light: React.CSSProperties["color"];
-      dark: React.CSSProperties["color"];
-      contrastText: React.CSSProperties["color"];
-      darker: React.CSSProperties["color"];
-    };
+    primary: PaletteColor;
+    secondary: PaletteColor;
+    info: PaletteColor;
+    success: PaletteColor;
+    warning: PaletteColor;
+    error: PaletteColor;
 
     divider?: string;
     grey: string[];
@@ -201,6 +132,7 @@ declare module "@mui/material/styles" {
     };
     action: TypeAction;
 
+    appBar: AppBarColors;
     sideBar: {
       color: React.CSSProperties["color"];
       colorLeft: React.CSSProperties["color"];
@@ -220,5 +152,11 @@ declare module "@mui/material/styles" {
       card: string;
       firstHover: string;
     };
+  }
+
+  interface AppBarColors {
+    background: React.CSSProperties["color"];
+    iconColor: React.CSSProperties["color"];
+    color: React.CSSProperties["color"];
   }
 }

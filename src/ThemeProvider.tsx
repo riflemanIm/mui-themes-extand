@@ -9,9 +9,9 @@ import {
   Theme,
 } from "@mui/material/styles";
 
-import getTheme from "./getTheme";
+import getTheme, { ThemeName } from "./getTheme";
 
-const makeCustomTheme = (name?: string): Theme => {
+export const makeCustomTheme = (name?: ThemeName): Theme => {
   const { palette, typography, componentsOverride } = getTheme(name);
 
   const themeOptions: ThemeOptions = { palette, typography };
@@ -28,7 +28,7 @@ export default function ThemeProvider({
   theme,
 }: {
   children: React.ReactNode;
-  name?: string;
+  name?: ThemeName;
   theme?: Theme;
 }) {
   const customTheme = useMemo<Theme>(

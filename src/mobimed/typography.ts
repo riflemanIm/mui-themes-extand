@@ -25,6 +25,7 @@ const typography: TypographyOptions = {
   },
   h5: {
     fontSize: "1.285rem",
+    fontWeight: 500,
   },
   h6: {
     fontSize: "1.05rem",
@@ -35,7 +36,7 @@ const typography: TypographyOptions = {
     fontSize: pxToRem(16),
   },
   subtitle2: {
-    fontWeight: 450,
+    fontWeight: 500,
     lineHeight: 22 / 14,
     fontSize: pxToRem(14),
   },
@@ -44,7 +45,7 @@ const typography: TypographyOptions = {
     fontSize: pxToRem(16),
   },
   body2: {
-    fontWeight: 400,
+    fontWeight: 500,
     lineHeight: 22 / 14,
     fontSize: pxToRem(14),
   },

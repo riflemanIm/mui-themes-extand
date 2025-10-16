@@ -8,3 +8,4 @@ export default function Badge(): {
         };
     };
 };
+//# sourceMappingURL=Badge.d.ts.map

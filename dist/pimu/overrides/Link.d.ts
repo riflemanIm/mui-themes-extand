@@ -7,3 +7,4 @@ export default function Link(): {
         };
     };
 };
+//# sourceMappingURL=Link.d.ts.map

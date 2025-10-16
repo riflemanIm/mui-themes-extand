@@ -108,6 +108,11 @@ declare const palette: {
         toggle3: string;
         toggle4: string;
     };
+    appBar: {
+        background: string;
+        iconColor: string;
+        color: string;
+    };
     sideBar: {
         color: string;
         colorLeft: string;
@@ -129,3 +134,4 @@ declare const palette: {
     };
 };
 export default palette;
+//# sourceMappingURL=palette.d.ts.map

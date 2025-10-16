@@ -1,11 +1,7 @@
 import tinycolor from "tinycolor2";
 import { GREY, createGradient } from "../paletteFuncs";
+import { DARKEN_RATE, DARKER_RATE, LIGHTEN_RATE, LIGHTEREN_RATE } from "@/themes/shared/constants";
 // ----------------------------------------------------------------------
-const lighterenRate = 1.5;
-const lightenRate = 7.5;
-const darkenRate = 15;
-const darkerRate = 30;
-
 const primary = "#6157FF";
 const secondary = "#73D7F5";
 const warning = "#F57069";
@@ -15,28 +11,28 @@ const error = "#f44336";
 const hero = "#6157FF";
 
 const PRIMARY = {
-  lighter: tinycolor(primary).lighten(lighterenRate).toHexString(),
+  lighter: tinycolor(primary).lighten(LIGHTEREN_RATE).toHexString(),
   main: primary,
-  light: tinycolor(primary).lighten(lightenRate).toHexString(),
-  dark: tinycolor(primary).darken(darkenRate).toHexString(),
-  darker: tinycolor(primary).darken(darkerRate).toHexString(),
+  light: tinycolor(primary).lighten(LIGHTEN_RATE).toHexString(),
+  dark: tinycolor(primary).darken(DARKEN_RATE).toHexString(),
+  darker: tinycolor(primary).darken(DARKER_RATE).toHexString(),
   contrastText: "#fff",
 };
 
 const SECONDARY = {
   lighter: "#D6E4FF",
   main: secondary,
-  light: tinycolor(secondary).lighten(lightenRate).toHexString(),
-  dark: tinycolor(secondary).darken(darkenRate).toHexString(),
-  darker: tinycolor(primary).darken(darkerRate).toHexString(),
+  light: tinycolor(secondary).lighten(LIGHTEN_RATE).toHexString(),
+  dark: tinycolor(secondary).darken(DARKEN_RATE).toHexString(),
+  darker: tinycolor(primary).darken(DARKER_RATE).toHexString(),
   contrastText: "#ccc",
 };
 
 const INFO = {
   lighter: "#D0F2FF",
   main: info,
-  light: tinycolor(info).lighten(lightenRate).toHexString(),
-  dark: tinycolor(info).darken(darkenRate).toHexString(),
+  light: tinycolor(info).lighten(LIGHTEN_RATE).toHexString(),
+  dark: tinycolor(info).darken(DARKEN_RATE).toHexString(),
   contrastText: "#fff",
   darker: "#04297A",
 };
@@ -44,8 +40,8 @@ const INFO = {
 const SUCCESS = {
   lighter: "#E9FCD4",
   main: success,
-  light: tinycolor(success).lighten(lightenRate).toHexString(),
-  dark: tinycolor(success).darken(darkenRate).toHexString(),
+  light: tinycolor(success).lighten(LIGHTEN_RATE).toHexString(),
+  dark: tinycolor(success).darken(DARKEN_RATE).toHexString(),
   contrastText: "#ccc",
   darker: "#08660D",
 };
@@ -53,8 +49,8 @@ const SUCCESS = {
 const WARNING = {
   lighter: "#FFF7CD",
   main: warning,
-  light: tinycolor(warning).lighten(lightenRate).toHexString(),
-  dark: tinycolor(warning).darken(darkenRate).toHexString(),
+  light: tinycolor(warning).lighten(LIGHTEN_RATE).toHexString(),
+  dark: tinycolor(warning).darken(DARKEN_RATE).toHexString(),
   darker: "#7A4F01",
   contrastText: GREY[800],
 };
@@ -62,8 +58,8 @@ const WARNING = {
 const ERROR = {
   lighter: "#FFE7D9",
   main: error,
-  light: tinycolor(error).lighten(lightenRate).toHexString(),
-  dark: tinycolor(error).darken(darkenRate).toHexString(),
+  light: tinycolor(error).lighten(LIGHTEN_RATE).toHexString(),
+  dark: tinycolor(error).darken(DARKEN_RATE).toHexString(),
   darker: "#7A0C2E",
   contrastText: "#fff",
 };
@@ -120,6 +116,11 @@ const palette = {
     toggle2: "#6157FF",
     toggle3: "#F1F4FC",
     toggle4: "#fff",
+  },
+  appBar: {
+    background: PRIMARY.main,
+    iconColor: "rgba(255, 255, 255, 0.9) !important",
+    color: "#fff",
   },
   sideBar: {
     color: "#7C7D80",

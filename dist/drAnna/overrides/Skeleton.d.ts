@@ -9,3 +9,4 @@ export default function Skeleton(): {
         };
     };
 };
+//# sourceMappingURL=Skeleton.d.ts.map

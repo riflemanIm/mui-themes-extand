@@ -82,6 +82,7 @@ declare module "@mui/material/styles" {
     text: TypeText;
     background: TypeBackground;
     action: TypeAction;
+    appBar: AppBarColors;
     sideBar: {
       color: string;
       colorLeft: string;
@@ -103,6 +104,12 @@ declare module "@mui/material/styles" {
     };
   }
 
+  interface AppBarColors {
+    background: string;
+    iconColor: string;
+    color: string;
+  }
+
   export interface PaletteOptions {
     hero: string;
     primary?: PaletteColorOptions;
@@ -119,6 +126,7 @@ declare module "@mui/material/styles" {
     background?: Partial<TypeBackground>;
     action?: Partial<TypeAction>;
 
+    appBar: AppBarColors;
     sideBar: {
       color: string;
       colorLeft: string;
